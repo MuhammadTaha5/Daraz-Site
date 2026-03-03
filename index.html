@@ -51,7 +51,7 @@
         </nav>
 
     </header>
-    <div style="display: flex;">
+    <div style="display: flex; justify-content: center;">
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel"
             style="height: 300px; width: 1000px;">
             <div class="carousel-indicators">
@@ -136,7 +136,7 @@
             </button>
         </div>
         <div class="pc-download-module">
-            <div class="flex flex-row flex-items-center" style="display: flex; align-items: center; gap: 20px; background: FFFFFFF;
+            <div class="flex flex-row flex-items-center" style="display: flex; align-items: center; gap: 10px; background: FFFFFFF;
 background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(252, 252, 252, 1) 4%, rgba(253, 160, 106, 1) 46%);">
                 <div class="common-img logo" style="width: 30px; height: 50px;">
                     <picture style="width: 100%; height: 100%;">
@@ -149,59 +149,64 @@ background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(252, 252, 252, 1) 4
                             src="https://img.lazcdn.com/us/domino/1ee015d6a5c62fd0339c88c657c1c183.jpg_120x120q80.jpg"
                             style="height: 100%; width: 100%;">
                     </picture>
-                </div><span class="title two-line-clamp">TRY DARAZ APP</span>
+                </div>
+                <span class="title two-line-clamp">TRY DARAZ APP</span>
             </div>
-            <div class="module-content" 
-            style="background: #833AB4; background: linear-gradient(183deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);">
+            <div class="module-content" style="background: #ff9900;
+background: linear-gradient(3deg, rgba(255, 153, 0, 1) 0%, rgba(250, 75, 0, 1) 34%, rgba(252, 176, 69, 1) 100%);">
                 <div class="score flex flex-row flex-items-center">
                     <span class="rated-txt" style="font-size: 12px; color: white;">
                         <i class="fa-solid fa-star"></i>
                         4.8 Rated
                     </span>
                 </div>
-                <div class="enjoy-tips-wrap flex flex-justify-center" style="color: white;">
+                <div class="enjoy-tips-wrap flex flex-justify-center"
+                    style="color: white; font-size: 12px; font-weight: bold; text-align: center; margin-bottom: 10px;">
                     <span class="enjoy-tips two-line-clamp">Download the App now</span>
                 </div>
-                <div class="free-voucher-icons">
-                    <div class="icon-item flex flex-row flex-items-center">
-                        <div class="common-img badge" style="width: 60px; height: 50px;">
+                <div class="free-voucher-icons"
+                    style="display: flex; flex-direction: column; gap: 2px; align-items: center; padding: 0 30px;">
+                    <div style="display: flex; align-items: center; gap: 10px;">
+                        <div style="width: 40px; height: 40px;">
                             <img src="assets/cardimg.avif" alt="" style="height: 100%; width: 100%;">
                         </div>
-                        <span class="txt two-line-clamp">
+                        <div class="txt two-line-clamp" style="color: white; width: 80px;">
                             Free Shipping
-                        </span>
+                        </div>
                     </div>
-                    <div class="icon-item flex flex-row flex-items-center">
-                        <div class="common-img badge" style="width: 60px; height: 50px;">
-                            <img src="assets/cardimg2.avif" alt=""  style="height: 100%; width: 100%;">
-                        </div><span class="txt two-line-clamp">Exclusive Vouchers</span>
+                    <div style="display: flex; align-items: center; gap: 10px;">
+                        <div style="width: 40px; height: 40px;">
+                            <img src="assets/cardimg2.avif" alt="" style="height: 100%; width: 100%;">
+                        </div>
+                        <div class="txt two-line-clamp" style="color: white;width: 80px; ">
+                            Exclusive Vouchers
+                        </div>
                     </div>
                 </div>
 
             </div>
             <div class="module-qr">
-                <div class="content flex flex-row flex-items-center">
-                    <div class="common-img qr-code-image">
-                        <picture>
-                            <source
-                                srcset="https://img.drz.lazcdn.com/g/tps/imgextra/i2/O1CN01jHjmpl1pxcRVgFrYS_!!6000000005427-0-tps-150-150.jpg_360x360q80.jpg_.avif"
-                                type="image/avif">
-                            <source
-                                srcset="https://img.drz.lazcdn.com/g/tps/imgextra/i2/O1CN01jHjmpl1pxcRVgFrYS_!!6000000005427-0-tps-150-150.jpg_360x360q80.jpg_.webp"
-                                type="image/webp"><img
-                                src="https://img.drz.lazcdn.com/g/tps/imgextra/i2/O1CN01jHjmpl1pxcRVgFrYS_!!6000000005427-0-tps-150-150.jpg_360x360q80.jpg">
-                        </picture>
+                <div class="downloadingSection">
+                    <div style="width: 80px; height: 80px;">
+                        <img src="https://img.drz.lazcdn.com/g/tps/imgextra/i2/O1CN01jHjmpl1pxcRVgFrYS_!!6000000005427-0-tps-150-150.jpg_360x360q80.jpg_.avif"
+                            alt="" style="width: 100%; height: 100%;">
                     </div>
-                    <div class="download-btn flex flex-col flex-justify-between"><a
-                            href="https://apps.apple.com/pk/app/daraz-online-shopping-app/id978058048"
-                            class="btn btn-1"></a><a
-                            href="https://play.google.com/store/apps/details?id=com.daraz.android"
-                            class="btn btn-2"></a></div>
-                </div><span class="download-tips two-line-clamp">Download the App Now!</span>
+                    <div class="downloadSection">
+                        <a href="">
+                            <img src="assets/appleIcon.png" alt="">
+                            App Store
+                        </a>
+                        <a href="">
+                            <img src="assets/playstore.png" alt="">
+                            Google Play
+                        </a>
+                    </div>
+                </div>
+                <span class="download-tips two-line-clamp" style="font-size: 12px;">Download the App Now!</span>
             </div>
         </div>
     </div>
-    <section class="banner">
+    <section class="banner" style="display: flex; justify-content: center;">
         <img src="assets/gif.webp" alt="">
     </section>
     <main>
@@ -501,10 +506,43 @@ background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(252, 252, 252, 1) 4
                 </ul>
             </div>
         </section>
+        <div class="container">
+            <div class="row row-cols-6">
+                <div class="col">
+                    <div class="card">
+                        <div class="img">
+                            <img src="assets/shopImg1.avif" alt="">
+                        </div>
+                        <div class="cardDetail">
+                            <p>Home Fabric Folding Storage Storage Box With Lid Dustproof Portable Box Clothing Sundries
+                                Multifunctional Storage Box</p>
+                            <div class="itemPrice" style="display: flex; gap: 4px;">
+                                <p>RS.205</p>
+                                <span class="itemDiscount" style="color: grey !important; position: relative; top: 4px;">-59%</span>
+                            </div>
+                            <div class="productRating">
+                                <span>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+                                <span class="comments">355</span>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
 
     </main>
 
 
 </body>
+<script src="scripts.js"></script>
 
 </html>
