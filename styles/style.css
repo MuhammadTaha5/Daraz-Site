@@ -338,3 +338,31 @@ section.categories{
 .productRating .comments{
     color: grey;
 }
+
+.footer-first{
+    display: flex;
+    justify-content: space-evenly;
+}
+.customerCare{
+    color: rgb(15, 19, 109);
+
+}
+.footer-first-title{
+    font-size: 14px;
+    font-weight: 400;
+}
+.customerCare ul, .darazCare ul{
+    list-style: none;
+    padding-left: 0%;
+
+}
+.customerCare ul li a, .darazCare ul li a{
+    color: rgb(15, 19, 109);
+    font-size: 12px;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+.customerCare ul li a:hover, .darazCare ul li a:hover{
+    text-decoration: underline;
+}
