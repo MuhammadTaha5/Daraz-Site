@@ -349,20 +349,63 @@ section.categories{
 }
 .footer-first-title{
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 500;
 }
 .customerCare ul, .darazCare ul{
     list-style: none;
     padding-left: 0%;
+    line-height: 0.9rem;
 
 }
 .customerCare ul li a, .darazCare ul li a{
     color: rgb(15, 19, 109);
     font-size: 12px;
-    font-weight: 300;
+    font-weight: 400;
     text-decoration: none;
 }
 
 .customerCare ul li a:hover, .darazCare ul li a:hover{
     text-decoration: underline;
+}
+
+.footerLogoLink{
+    display: flex;
+}
+.footerLogoLink div:nth-child(1){
+    display: flex;
+    align-items: start;
+    gap: 10px;
+}
+.darazImgFooter{
+    width: 60px;
+    height: 60px;
+}
+.downloadCom{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.footer-second{
+    display: flex;
+}
+
+.footer-second .payment-methods-type{
+    display: flex;
+    flex-wrap: wrap;
+    width: 350px;
+    gap: 6px;
+
+}
+
+.footer-second .payment-methods-type span{
+    width: auto;
+    height: 28px;
+}
+.footer-second .payment-methods-type span img {
+    width: 100%;
+    height: 100%;
+}
+
+.footer-second{
+    margin: 0 30px;
 }
