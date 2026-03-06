@@ -1,7 +1,10 @@
 //Empty Products array to store products
 let products = [];
 //async function to load products store in json file.
-async function loadProducts() {
+// a separate file is created to hold the data of 20-25 products and fetch method is used to get the products and 
+// convert into json object
+async function loadProducts() //method to load the products
+{
     const res = await fetch("assets/products.json");
     const data = await res.json();
     return data;
@@ -44,3 +47,4 @@ async function init() {
 }
 
 init();
+//making function call
