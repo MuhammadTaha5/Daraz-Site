@@ -48,3 +48,27 @@ async function init() {
 
 init();
 //making function call
+
+let loginEmailSection = document.getElementById("loginEmail")
+let loginPhoneSection = document.getElementById("loginPhone")
+
+let emailLoginButton = document.getElementById("emailLoginButton")
+let phoneLoginButton = document.getElementById("phoneLoginButton")
+
+emailLoginButton.addEventListener("click", ()=>{
+    loginEmailSection.style.display = "flex";
+    loginPhoneSection.style.display = "none";
+    emailLoginButton.className = "active";
+    phoneLoginButton.className = "inactive";
+
+})
+
+
+phoneLoginButton.addEventListener("click", ()=>{
+    loginEmailSection.style.display = "none";
+    loginPhoneSection.style.display = "flex";
+    emailLoginButton.className = "inactive";
+    phoneLoginButton.className = "active";
+    
+
+})
