@@ -1,0 +1,22 @@
+.CategoriesHeader div span{
+    list-style: none;
+    padding: 0%;
+    color: #0f136d;
+    font-family: "Roboto", sans-serif !important; 
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 40px;
+    margin-left: 20px;
+    opacity: .85;
+}
+.categoriesOptions li{
+    height: fit-content;
+     list-style: none;
+     padding: 0%;
+}
+.CategoriesHeader{
+    margin-left: 30px;
+}
+.categoriesOptions{
+    padding: 0%;
+}
