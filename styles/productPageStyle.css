@@ -27,6 +27,7 @@ body{
     flex-direction: column;
     position: absolute;
     padding: 5px 10px;
+    z-index: 6;
 
     
 }
@@ -86,6 +87,8 @@ body{
 }
 .productDetails{
     display: flex;
+    position: relative;
+    z-index: 2;
 }
 .mainImg{
     height: 330px;
@@ -100,6 +103,15 @@ h1#productName{
     font-size: 22px;
     font-weight: 400;
     color: black;
+    -webkit-line-clamp: 2; 
+    line-clamp: 2;
+    display: -webkit-box;       /* Required for line clamping */
+  -webkit-box-orient: vertical; /* Required for line clamping */
+  -webkit-line-clamp: 2;      /* Number of lines to show */
+  overflow: hidden;           /* Hide extra text */
+  text-overflow: ellipsis;    /* Show … at the end */
+  line-height: 1.2em;         /* Adjust line spacing if needed */
+  max-height: 2.4em;          /* line-height × number of lines */
 
 }
 .productRatingStars i::before{
@@ -472,4 +484,69 @@ h1#productName{
 .likesAndColor span, .likesAndColor i{
     color: #757575;
     font-size: 12px;
+}
+
+
+.product-slider{
+    width: 100%;
+}
+
+
+
+/* Thumbnail wrapper */
+.thumb-wrapper{
+    display:flex;
+    align-items:center;
+    margin-top:10px;
+}
+
+/* arrows */
+.arrow{
+    border:none;
+    background:#ffffff;
+    padding:8px 2px;
+    cursor:pointer;
+}
+
+/* thumbnails container */
+.thumbnails{
+    display:flex;
+    gap:10px;
+    overflow:hidden;
+    width:300px;
+    scroll-behavior:smooth;
+}
+.thumbnails{
+    display: flex;
+    gap: 10px;
+    width: 100%;      /* visible area */
+    overflow-x: auto;  /* enable horizontal scroll */
+    scroll-behavior: smooth;
+     scrollbar-width: none;
+}
+
+.thumbnails img{
+    width: 70px;
+    height: 70px;
+    flex-shrink: 0;    /* prevent images from shrinking */
+    cursor: pointer;
+}
+
+
+.img-zoom-lens {
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  /*set the size of the lens:*/
+  width: 40px;
+  height: 40px;
+}
+
+.img-zoom-result {
+  border: 1px solid #d4d4d4;
+  /*set the size of the result div:*/
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  visibility: hidden;
+
 }
