@@ -346,7 +346,8 @@
             </div>
             <div style="padding: 0 20px;">
                 <div id="myresult" class="img-zoom-result"></div>
-                <h1  id="productName" style="-webkit-line-clamp: 2; line-clamp: 2;">Mini Diecast KIA SPORTAGE Motor Car - Toynix</h1>
+                <h1 id="productName" style="-webkit-line-clamp: 2; line-clamp: 2;">Mini Diecast KIA SPORTAGE Motor Car -
+                    Toynix</h1>
                 <div class="productRatingAndShare">
                     <div>
                         <span class="productRatingStars">
@@ -1262,24 +1263,23 @@ Speed:10/10 very good color interior light and sound
 
 
     <script>
-    function changeImage(img){
-    document.getElementById("mainProductImg").src = img.src;
-}
-function scrollThumbs(direction){
-    const container = document.getElementById("thumbContainer");
+        function changeImage(img) {
+            document.getElementById("mainProductImg").src = img.src;
+        }
+        function scrollThumbs(direction) {
+            const container = document.getElementById("thumbContainer");
 
-    console.log("Scroll clicked");
+            console.log("Scroll clicked");
 
-    container.scrollBy({
-        left: direction * 150,
-        behavior: "smooth"
-    });
-}
-</script>
-<script src="scripts.js"></script>
-<script src="productPageScript.js"></script>
+            container.scrollBy({
+                left: direction * 150,
+                behavior: "smooth"
+            });
+        }
+    </script>
+    <script src="scripts/scripts.js"></script>
+    <script src="scripts/productPageScript.js"></script>
 </body>
-
 
 
 </html>

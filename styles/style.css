@@ -595,7 +595,7 @@ section.categories {
 
 .forth-footer {
     display: flex;
-    margin: 30px 60px;
+    padding: 30px 60px;
     gap: 40px;
     justify-content: space-between;
 
@@ -925,18 +925,68 @@ section.categories {
     justify-content: center;
     align-items: center;
     gap: 10px;
+    cursor: pointer;
+    
 }
+
+@keyframes popup {
+    0% {
+        
+        opacity: 0;
+        transform: scale(0.1);
+        transform-origin: bottom right;
+        transition: all 0.1s ease-out;
+
+    }
+
+    100% {
+        
+        opacity: 1;
+        transform: scale(1);
+
+    }
+
+}
+@keyframes dispop {
+
+    0%{
+        opacity: 1;
+        transform: scale(1);
+        transform-origin: bottom right;
+    }
+
+    100%{
+        opacity: 0;
+        transform: scale(0.1);
+        transform-origin: bottom right;
+    }
+
+}
+.openBox{
+    animation: dispop 0.5s forwards;
+}
+.closeBox{
+    animation: dispop 0.5s forwards;
+}
+
 .message-expand{
     position: fixed;
     right: 50px;
     bottom: 0px;
     width: 740px;
     height: 500px;
-    display: flex;
+    display: none;
     z-index: 7;
-    border: 1px solid black;
+    border: 1px solid #bebebe;
     background-color: white;
+    /* animation: popup 0.5s forwards; */
+    
+    
 }
+.openBox{
+    animation: popup 0.5s forwards;
+}
+
 .message-expand .messages{
     display: flex;
     flex-direction: column;
@@ -962,4 +1012,44 @@ section.categories {
     display: flex;
     justify-content: space-between;
     position: relative;
+    border-bottom: 1px solid #bebebe;
+}
+.messagePromotion div:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.messagePromotion div:nth-child(2) i{
+    font-size: 46px;
+    color: #a1a1a1;
+    margin-bottom: 35px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.messagePromotion div:nth-child(2) a{
+    font-size: 12px;
+    font-weight: 700;
+    color: #00b5e0;
+}
+
+.messagePromotion div:nth-child(2) p{
+    color: rgb(117, 117, 117);
+    font-size: 14px;
+    font-weight: 400;
+    width: 285px;
+    text-align: center;
+}
+.messagePromotion div:nth-child(2) div a{
+    color: rgb(76, 130, 150);
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: 400;
+}
+.itemPriceDetail span:nth-child(1){
+    text-decoration: line-through;
+}
+.cards a{
+    cursor: pointer;
 }
