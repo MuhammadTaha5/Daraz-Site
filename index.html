@@ -17,17 +17,26 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+
 </head>
 
 <body>
+    <div style="position: fixed; bottom: 40px; left: 0; background-color: #0f136d; width: 80px; z-index: 3;">
+
+    </div>
     <header>
         <nav>
             <div class="headerOptions">
                 <span><a href="#">Save More on App</a></span>
                 <span><a href="#">SELL ON DARAZ</a></span>
                 <span><a href="#">Help & Support</a></span>
-                <span><a href="#">Login</a></span>
-                <span><a href="#">SIGN UP</a></span>
+                <span><button type="button" class="btn loginButton" data-bs-toggle="modal" data-bs-target="#loginModel" style="padding: 0; height: fit-content; display: flex; align-items: start;">
+                        Login
+                    </button></span>
+                <span><button type="button" class="btn signUpButtonNav" data-bs-toggle="modal" style="padding: 0;"
+                        data-bs-target="#signupModel">
+                        Sign Up
+                    </button></span>
                 <span><a href="#">زبان تبدیل کری</a></span>
             </div>
             <div class="logoSide">
@@ -51,6 +60,140 @@
         </nav>
 
     </header>
+    <!-- Modal -->
+    <div class="modal fade" id="loginModel" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog" style="width: 444px;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="model-LoginOption">
+                        <div style="cursor: pointer;" class="active" id="emailLoginButton">
+                            Password
+                        </div>
+                        <div class="inactive">|</div>
+                        <div class="inactive" style="cursor: pointer;" id="phoneLoginButton">
+                            Phone Number
+                        </div>
+                    </div>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+                        style="position: absolute; right: 30px;"></button>
+                </div>
+
+                <form id="loginEmail" action="" class="modal-body" style="gap: 10px;">
+                    <div>
+                        <input type="email" class="form-control" id="exampleFormControlInput1"
+                            placeholder="Please enter your Phone or Email">
+                    </div>
+                    <div>
+                        <div style="display: flex; align-items: center;">
+                            <input type="text" class="form-control" id="validationServer03"
+                                aria-describedby="validationServer03Feedback" required
+                                placeholder="Please enter your Password" style="position: relative;"><i
+                                class="fa-regular fa-eye" style="position: absolute; right: 60px;"></i>
+                        </div>
+                        <div id="validationServer03Feedback" class="invalid-feedback" style="display: none;">
+                            You can't leave this empty.
+                        </div>
+                    </div>
+                    <div class="forgotDiv"><a href="#" class="forgotPassword">Forgot password?</a></div>
+                    <div>
+                        <input type="submit" name="" id="loginButton" value="LOGIN">
+                    </div>
+                </form>
+                <form id="loginPhone" action="" class="modal-body"
+                    style="display: none; gap: 10px; flex-direction: column;">
+                    <div class="phoneSectionLogin">
+                        <div>
+                            <span>PK</span>
+                            <span>+92</span>
+                        </div>
+                        <div style="flex-grow: 2; ">
+                            <input type="number" name="" id="" placeholder="Please enter your phone number"
+                                style="width: 100%;">
+                        </div>
+                    </div>
+
+
+                    <button type="submit" class="submitLoginPhone"><img src="assets/whatsappIcon.png" alt=""
+                            style="width: 30px; height: 30px; position: absolute; left: 10px;">Send code
+                        via Whatsapp</button>
+
+
+                </form>
+                <div style="text-align: center;">
+                    <span>Don't have an account?</span>
+                    <span><a href="#" data-bs-toggle="modal" data-bs-target="#signupModel"  data-bs-dismiss="modal" aria-label="Close">Sign up</a></span>
+                </div>
+                <div class="noAccount">
+
+                    <div class="loginThirdParty">
+                        <div>
+                            Or, login with
+                        </div>
+                        <div>
+                            <a><img src="assets/googleIcon.png" alt=""><span>Google</span></a>
+                            <a><img src="assets/facebookIcon - Copy.png" alt=""><span>Facebook</span></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="signupModel" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog" style="width: 444px;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="model-LoginOption">
+                        Sign Up
+                    </div>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+                        style="position: absolute; right: 30px;"></button>
+                </div>
+                <form id="loginPhone" action="" class="modal-body" style="gap: 10px; flex-direction: column;">
+                    <div class="phoneSectionLogin">
+                        <div>
+                            <span>PK</span>
+                            <span>+92</span>
+                        </div>
+                        <div style="flex-grow: 2; ">
+                            <input type="number" name="" id="" placeholder="Please enter your phone number"
+                                style="width: 100%;">
+                        </div>
+                    </div>
+                    <div style="display: flex; gap: 5px; font-size: 14px; font-weight: 400; color: rgb(133, 139, 156)">
+                        <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="..." style="width: 20px;">
+                        <label for="privacyPolicyCheck">By creating and/or using your account, you agree to our <a href="#">Terms of Use</a>  and <a href="#">Privacy Policy.</a></label>
+                    </div>
+
+
+                    <button type="submit" class="submitLoginPhone"><img src="assets/whatsappIcon.png" alt=""
+                            style="width: 30px; height: 30px; position: absolute; left: 10px;">Send code
+                        via Whatsapp</button>
+
+
+                </form>
+                <div style="text-align: center;">
+                    <span>Already have an account?</span>
+                    <span><a href="#" data-bs-toggle="modal" data-bs-target="#loginModel"  data-bs-dismiss="modal" aria-label="Close"> Log in Now</a></span>
+                </div>
+                <div class="noAccount">
+
+                    <div class="loginThirdParty">
+                        <div>
+                            Or, login with
+                        </div>
+                        <div>
+                            <a><img src="assets/googleIcon.png" alt=""><span>Google</span></a>
+                            <a><img src="assets/facebookIcon - Copy.png" alt=""><span>Facebook</span></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
     <div style="display: flex; justify-content: center;">
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel"
             style="height: 300px; width: 1000px;">
@@ -544,17 +687,21 @@ background: linear-gradient(3deg, rgba(255, 153, 0, 1) 0%, rgba(250, 75, 0, 1) 3
 
             </div>
             <!-- load Products Button  -->
-            <div class="row" style="margin: 30px 0;" >
+            <div class="row" style="margin: 30px 0;">
                 <div class="col" style="display: flex; justify-content: center;">
-                    <a href="#" style="color: #1a9cb8; border: 1px solid #1a9cb8; width: 387px; text-align: center; padding: 10px 20px; font-size: 14px; text-decoration: none;">Load More </a>
+                    <a href="#"
+                        style="color: #1a9cb8; border: 1px solid #1a9cb8; width: 387px; text-align: center; padding: 10px 20px; font-size: 14px; text-decoration: none;">Load
+                        More </a>
                 </div>
             </div>
 
         </div>
+
         <section class="footer-first">
+            <!-- First Footer Customer Section -->
             <div class="customerCare">
                 <h3 class="footer-first-title">
-                    Customer  Care
+                    Customer Care
                 </h3>
                 <ul>
                     <li><a href="#">Help Center</a></li>
@@ -567,6 +714,7 @@ background: linear-gradient(3deg, rgba(255, 153, 0, 1) 0%, rgba(250, 75, 0, 1) 3
                     <li><a href="#">Daraz Pick up Points</a></li>
                 </ul>
             </div>
+            <!-- Daraz Care Section -->
             <div class="darazCare">
                 <h3 class="footer-first-title">
                     Daraz
@@ -588,25 +736,434 @@ background: linear-gradient(3deg, rgba(255, 153, 0, 1) 0%, rgba(250, 75, 0, 1) 3
                     <li><a href="#">Join Daraz Affiliate Program</a></li>
                 </ul>
             </div>
-            <div>
-                <div>
-                    <img src="assets/darazFooterLogo.png" alt="">
-                    <div>
-                        <span>Happy Shopping</span>
-                        <span>Download App</span>
+            <div class="footerLogoLink">
+                <div style="flex: 1 1 300px;">
+                    <div class="darazImgFooter">
+                        <img src="assets/darazFooterLogo.png" alt="">
+                    </div>
+                    <div class="downloadCom">
+                        <span style="color: #f36f36; font-size: 16px;font-weight: 400;">Happy Shopping</span>
+                        <span style="color: #0f136d; font-size: 14px; font-weight: 400; padding-top: 2px;">Download
+                            App</span>
                     </div>
                 </div>
-                <div>
-                    <span><img src="assets/appStoreFooterLogo.png" alt=""></span>
-                    <span><img src="assets/googleFooterLogo.png" alt=""></span>
-                    <span><img src="assets/appGalleryFooter.png" alt=""></span>
+                <div class="container" style="padding: 0; flex: 1 1 300px;">
+                    <div class="row row-cols-2">
+                        <div class="col" style="padding: 0; width: 130px;">
+
+                            <span><img src="assets/appStoreFooterLogo.png" alt=""></span>
+
+                        </div>
+                        <div class="col" style="padding: 0; width: 130px;">
+
+                            <span><img src="assets/googleFooterLogo.png" alt=""></span>
+
+                        </div>
+                        <div class="col" style="padding: 0; width: 130px;">
+
+                            <span><img src="assets/appGalleryFooter.png" alt=""></span>
+
+
+                        </div>
+
+                    </div>
+
                 </div>
             </div>
 
         </section>
+        <section class="footer-second">
+            <div class="payment-method">
+                <h3 style="color: #183544; font-size: 16px; font-weight: 400; line-height: 2.2em; margin-bottom: 15px;">
+                    Payment Method</h3>
+                <div class="payment-methods-type">
+                    <span><img src="assets/paymentCash.png" alt=""></span>
+                    <span><img src="assets/paymentVisa.png" alt=""></span>
+                    <span><img src="assets/paymentMasterCard.png" alt=""></span>
+                    <span><img src="assets/paymentEasypaisa.png" alt=""></span>
+                    <span><img src="assets/paymentDaraz.png" alt=""></span>
+                    <span><img src="assets/paymentJazzCash.png" alt=""></span>
+                    <span><img src="assets/paymentUnion.png" alt=""></span>
+                    <span><img src="assets/paymentHBL.png" alt=""></span>
+                    <span><img src="assets/paymentEasyInstallment.png" alt=""></span>
+                </div>
+            </div>
+            <div class="verify-method">
+                <h3 style="color: #183544; font-size: 16px; font-weight: 400; line-height: 2.2em; margin-bottom: 15px;">
+                    Verified by</h3>
+                <div class="verify-methods-type">
+                    <span><img src="assets/pciDSS.png" alt=""></span>
+
+                </div>
+            </div>
 
 
+        </section>
+        <!-- 2 columns daraz bio -->
+        <section class="footerThird">
+            <div style="column-count: 2; width: 50%;">
+                <!-- added column count 2 to given a display of newspaper type look -->
+                <!-- first div given 50% of container width -->
+                <div style="padding-right: 25%">
+                    <h1 class="footer-title">
+                        How Daraz Transformed Online Shopping in Pakistan
+                    </h1>
+                    <p>How Daraz Transformed Online Shopping in Pakistan</p>
+                </div>
+                <div style="padding-right: 25%">
+                    Daraz first made waves in Pakistan's e-commerce market after its introduction in 2012. We have since
+                    grown to become Pakistan's largest platform for online shopping with a network spread across Asia in
+                    Pakistan, Bangladesh, Sri Lanka, Myanmar, and Daraz.com.np. Our vision was to provide a safe,
+                    efficient online marketplace platform for vendors and customers across the country to come together.
+                    We started off exclusively as an online fashion retail platform and over the years expanded to
+                    become a complete one-stop solution for all your buying needs. Daraz prides itself on not being just
+                    another ecommerce venture in Asia. We work tirelessly to make sure that we provide users with the
+                    best online online shopping experience and value for their purchases. Whether you shop online
+                    through our website or our online shopping mobile App, you can expect easy navigation, customized
+                    recommendations, and a smooth online shopping experience guaranteed.
+
+                </div>
+                <div style="padding-right: 25%">
+                    <h1 class="footer-title">
+                        What Makes Us Different from Other Online Shopping Platforms?
+                    </h1>
+                    <b>Select from the Largest Online Marketplace in Pakistan</b>
+                    <br>
+                    <p>
+                        With over 15 million products to select from, Daraz offers its customers the most comprehensive
+                        listing of products in the country. Whether you’re looking for electronics, apparel, appliances,
+                        or groceries – there is something for everyone.
+                    </p>
+                    <b>Hassle Free Delivery </b>
+                    <p>
+                        Online shopping is only as good as its execution and Daraz promises hassle free delivery right
+                        from the moment you order to when your package is dropped at your door. We cater to both major
+                        and smaller cities alike, and give you the choice to track your package as it makes its way to
+                        you so you always know your order status. If you are unsatisfied with any aspect of your order,
+                        we have a simple 7-day return or exchange policy.
+                    </p>
+
+                    <b>Payment Options to Suit Every Style </b>
+
+                    <p>
+                        You can choose to pay through a credit/debit card, opt for cash on delivery or even go for EMI
+                        (easy monthly instalments). You can also avail exclusive offers by downloading Daraz Wallet – a
+                        closed loop digital wallet that offers you a secure, easy way to make payments. We also have
+                        easypaisa & jazzcash payment method for our customers' ease
+                    </p>
+
+                    <b>Shop from Verified Vendors </b>
+
+                    <p>
+                        Daraz understands that online shopping in Pakistan comes with its fair share of risks. This is
+                        why with Daraz Marketplace and Daraz Mall customers have the security of choosing from verified
+                        vendors and brands from Karachi, Lahore, Islamabad and all across Pakistan. Now you’ll never
+                        have to second guess authenticity because Daraz makes sure to do it for you!
+                    </p>
+
+                    <b>Shop Around the World with Daraz Global Collection</b>
+                    <p>
+                        International sellers and local convenience come together with Daraz Global collection. Get the
+                        chance to shop online from vendors around the world without leaving the Daraz website. Featuring
+                        thousands of novelty gadgets and accessories, Daraz Global Collection offers you a selection of
+                        products that you won’t find anywhere else when you’re online shopping in Pakistan.
+                    </p>
+
+                    <b>
+                        Avail Exclusive Discounts, Offers, and Promotions
+                    </b>
+                    <p>
+                        Online shopping with Daraz means you get the chance to avail exclusive online-only promotional
+                        packages as well as discount vouchers from our vendors when you shop from their pages. Our flash
+                        sales give you customized product offers all curated with the help of our advanced AI technology
+                        so you always have deals you’ll actually be interested in!
+                    </p>
+
+                    <b>
+                        Buy Value, not Just Goods with Daraz Care
+                    </b>
+                    <p>
+                        Daraz does not just cater online shopping in Pakistan but also aims to simplify the way you give
+                        back to society. With charities spanning across sectors of education, health care, environmental
+                        preservation, and shelters, you can choose to make a big difference with a few, simple clicks.
+                    </p>
+                    <b>
+                        Simplify Corporate Purchases
+                    </b>
+                    <p>
+                        Who says corporate purchases need to be a complicated affair? When you opt for Daraz Corporate,
+                        you get an efficient and transparent solution for your business’ bulk purchasing needs. We’re
+                        proud to be working with some of the most prestigious organizations in Pakistan across a number
+                        of different industries.
+                    </p>
+
+                </div>
+
+
+            </div>
+            <!-- 3 footer section technology anchor links -->
+            <div style="width: 25%; padding-right: 7%">
+                <!-- 2nd div given 25% of container width -->
+
+                <h1 class="footer-title">
+                    Top Categories & Brands
+                </h1>
+                <span>MOBILE PHONES IN PAKISTAN</span>
+                <p>
+                    <a href="#">Apple Iphones</a>,
+                    <a href="#">Honor Mobiles</a>,
+                    <a href="#">Huawei Mobiles</a>,
+                    <a href="#">Tecno Mobiles</a>,
+                    <a href="#">Redmi Mobiles</a>,
+                    <a href="#">Xiaomo Mi Mobiles</a>,
+                    <a href="#">Nokia Mobiles</a>,
+                    <a href="#">One Plus Mobiles</a>,
+                    <a href="#">Oppo Mobiles Phones</a>,
+                    <a href="#">Realme Mobiles</a>,
+                    <a href="">Samsung Mobiles</a>,
+                    <a href="#">Vivo Mobiles Phone</a>,
+                    <a href="#">Mobile accessories</a>,
+                    <a href="#">Smart Watches</a>
+                </p>
+                <span>LATEST LAPTOPS</span>
+                <p>
+                    <a href="#">Dell Laptops</a>,
+                    <a href="#">HP Laptops</a>,
+                    <a href="#">Lenovo Laptops</a>,
+                    <a href="#">Mouse</a>,
+                    <a href="#">Gaming Graphic Cards</a>,
+                    <a href="#">Lenovo ideapad3</a>,
+                    <a href="#">Macbook pro i3</a>,
+                    <a href="#">Hp Probook 650 G2</a>
+                </p>
+                <span>LED TV</span>
+                <p>
+                    <a href="#">ChangHong LED TV</a>,
+                    <a href="#">LG LED TV</a>,
+                    <a href="#">Samsung Led TV</a>,
+                    <a href="#">Sony Led TV</a>,
+                    <a href="#">TCL LED TVs</a>,
+                </p>
+                <span>HOME APPLIANCES</span>
+                <p>
+                    <a href="#">Microwave Oven</a>,
+                    <a href="#">Geyser</a>,
+                    <a href="#">Heater</a>,
+                    <a href="#">Refrigenerators</a>,
+                    <a href="#">Deep freezers</a>,
+                    <a href="#">Generators</a>,
+                    <a href="#">Water Dispenser</a>,
+                    <a href="#">Fans</a>,
+                    <a href="#">Room Cooler</a>,
+                    <a href="#">Table Fans</a>,
+                    <a href="#">Wall Fans</a>,
+                    <a href="#">Exhaust Fans</a>,
+                    <a href="#">Pedestal Fans</a>,
+                    <a href="#">Window AC</a>,
+                    <a href="#">Solar Panel</a>,
+                    <a href="#">Washing Machines</a>
+                </p>
+                <span>DSLR CAMERAS</span>
+                <p>
+                    <a href="#">Camera Tripods</a>,
+                    <a href="#">Drones</a>,
+                    <a href="#">IP & CCTV CAMERAS</a>,
+                    <a href="#">Nikon D5600</a>,
+                    <a href="#">Canon 200D</a>,
+                    <a href="#">Canon 1200D</a>,
+                    <a href="#">FujiFilms Instant Mini 11</a>,
+                    <a href="#">Canon M50</a>
+                </p>
+                <span>HEALTH & BEAUTY</span>
+                <p>
+                    <a href="#">sunisa foundation</a>,
+                    <a href="#">Biofad</a>
+                    <a href="#">janssen facial kit</a>
+                    <a href="#">Glutathione Injection</a>
+                    <a href="#">Glutathione Cream</a>
+                    <a href="#">Sauvage</a>
+                    <a href="#">Glutathione Tablets</a>
+                    <a href="#">Glutathione Soap</a>
+                    <a href="#">Infrared Thermometers</a>
+                    <a href="#">N95 Mask</a>
+                </p>
+
+                <span>TRENDING</span>
+                <p>
+                    <a href="#">Online Bills</a>,
+                    <a href="#">Core I5 Laptop</a>,
+                    <a href="#">Gtx 1060</a>,
+                    <a href="#">Samsung A32</a>,
+                    <a href="#">Samsung A51</a>,
+                    <a href="#">Samsung A52</a>,
+                    <a href="#">Samsung A71</a>,
+                    <a href="#"> Samsung A72</a>,
+                    <a href="#">Samsung M31</a>,
+                    <a href="#">Samsung S20</a>,
+                    <a href="#">Samsung S20 Ultra 5G</a>,
+                    <a href="#">Samsung S21</a>,
+                    <a href="#">Samsung S21 Ultra</a>,
+                    <a href="#">Tecno Spark 6</a>,
+                    <a href="#"> Vivo V20</a>,
+                    <a href="#">Poco X3 Pro</a>,
+                    <a href="#">Vivo V21</a>,
+                    <a href="#"> Vivo V21E</a>,
+                    <a href="#"> Vivo X70 Pro</a>,
+                    <a href="#">Vivo Y12</a>,
+                    <a href="#"> Vivo Y12S</a>,
+                    <a href="#">Vivo Y1S</a>,
+                    <a href="#">Vivo Y20</a>,
+                    <a href="#">Vivo Y51</a>,
+                    <a href="#">Vivo Y51S</a>,
+                    <a href="#">Oppo F19 Pro</a>,
+                    <a href="#">Oppo Reno 6</a>,
+                    <a href="#">Xiaomi Poco F3</a>,
+                    <a href="#">Xiaomi Poco M3</a>,
+                    <a href="#">Xiaomi Poco X3</a>,
+                    <a href="#">Xiaomi Poco X3 Gt</a>,
+                    <a href="#">Xiaomi Redmi 9C</a>,
+                    <a href="#">Xiaomi Redmi Note 10 Pro</a>,
+                    <a href="#">Sharp Aquos R2</a>
+                </p>
+            </div>
+            <div style="width: 25%; padding-right: 7%">
+                <span>WOMEN'S FASHION</span>
+                <p>
+                    <a href="#">Warda</a>,
+                    <a href="#">Salitex</a>,
+                    <a href="#">Bonanza Satrangi</a>,
+                    <a href="#">Edenrobe</a>,
+                    <a href="#">Firdous</a>,
+                    <a href="#">Junaid Jamshed</a>,
+                    <a href="#">Limelight</a>,
+                    <a href="#">Sana Safinaz</a>,
+                    <a href="#">Mahru</a>,
+                    <a href="#">Pushup Bra</a>,
+                    <a href="#">Women Undergarments</a>
+                </p>
+                <span>MEN'S FASHION</span>
+                <p>
+                    <a href="#">Men's Shirts</a>,
+                    <a href="#">Men's T-Shirts</a>
+                </p>
+                <span>ONLINE GROCERY STORE</span>
+                <p>
+                    <a href="#">Oil & Ghee</a>,
+                    <a href="#">Basmati Rice</a>,
+                    <a href="#">Dried Fruits</a>,
+                    <a href="#">Chocolates</a>,
+                    <a href="#">Mattresses</a>
+                </p>
+                <span>ONLINE BOOK STORE</span>
+                <p>
+                    <a href="#">English Books</a>,
+                    <a href="#">Islamic Books</a>,
+                    <a href="#">History Books</a>,
+                    <a href="#">English Literature Books</a>,
+                    <a href="#">Kids Urdu Stories</a>,
+                    <a href="#">Pride & Prejudice</a>,
+                    <a href="#">Harry Potter Story Books</a>,
+                    <a href="#">Namal Novel</a>,
+                    <a href="#">Nimra Ahmed Novels</a>
+                </p>
+                <span>AIR CONDITIONERS</span>
+                <p>
+                    <a href="#">Kenwood Ac</a>,
+                    <a href="#">Haier Ac</a>,
+                    <a href="#">Gree Ac</a>,
+                    <a href="#">Dawlance Ac</a>,
+                    <a href="#">Orient Ac</a>,
+                    <a href="#">Ecostar Ac</a>,
+                    <a href="#">Inverex Solar Ac</a>,
+                    <a href="#">Pel Ac</a>
+                </p>
+                <span>TOP MOBILE PHONES</span>
+                <p>
+                    <a href="#">Nokia G20</a>
+                    <a href="#">redmi 9</a>
+                    <a href="#">realme 7 pro</a>
+                    <a href="#">realme c15</a> ,
+                    <a href="#">realme c21</a>,
+                    <a href="#">vivo y20s</a>,
+                    <a href="#">realme c11 Price in Pakistan</a>,
+                    <a href="#">itel vision 1 pro price in pakistan</a>,
+                    <a href="#">samsung galaxy a02 price in pakistan</a>,
+                    <a href="#">Infinix Hot 10</a>,
+                    <a href="#">Infinix Hot 8</a>,
+                    <a href="#">Infinix Hot 9</a>,
+                    <a href="#">Infinix Note 10 Pro</a>,
+                    <a href="#">Infinix Note 7</a>,
+                    <a href="#">Infinix Note 8</a>,
+                    <a href="#">Infinix Zero 8</a>,
+                    <a href="#">Inifnix Smart 5</a>,
+                    <a href="#">iPhone 11</a>,
+                    <a href="#">iPhone 12</a>,
+                    <a href="#">iphone 12 Pro Max</a>,
+                    <a href="#">iPhone 12 Pro</a>,
+                    <a href="#">iPhone 6</a>,
+                    <a href="#">Itel A25</a>
+                    <a href="#">Mi 10T</a>,
+                    <a href="#">Nokia 105</a>,
+                    <a href="#">Oppo A15</a>,
+                    <a href="#">Oppo A15S</a>,
+                    <a href="#">Oppo A53</a>,
+                    <a href="#">Oppo A54</a>,
+                    <a href="#">Infinix Zero X Pro</a>,
+                    <a href="#">Infinix Zero X Neo</a>,
+                    <a href="#">Oppo F19</a>,
+                    <a href="#">Oppo Reno 5</a>,
+                    <a href="#">Oppo Reno 5 Pro</a>,
+                    <a href="#">Xiaomi Poco M3 Pro</a>,
+                    <a href="#">Realme 6 Pro</a>,
+                    <a href="#">Realme 8</a> ,
+                    <a href="#">Realme Narzo 30A</a>,
+                    <a href="#">Samsung A02S</a>,
+                    <a href="#">Samsung A12</a>,
+                    <a href="#">Samsung A31</a>,
+                    <a href="#">Vivo Y33s</a>,
+                    <a href="#">Infinix Note 11</a>,
+                    <a href="#">Tecno Spark 6 Go</a>,
+                    <a href="#">Samsung A52s</a>,
+                    <a href="#">Samsung Tab A7 Lite</a>
+
+                </p>
+            </div>
+        </section>
+        <section class="forth-footer">
+            <div style="display: flex; gap: 40px;">
+                <div>
+                    <h3 class="footer-title">
+                        Daraz International
+                    </h3>
+                    <div class="darazStores">
+                        <a href="#"><img src="assets/pakFlag.png" alt=""><span>Pakistan</span></a>
+                        <a href="#"><img src="assets/banFlag.png" alt=""><span>Bangladesh</span></a>
+                        <a href="#"><img src="assets/sriFlag.png" alt=""><span>Srilanka</span></a>
+                        <a href="#"><img src="assets/myanFlag.png" alt=""><span>Myanmar</span></a>
+                        <a href="#"><img src="assets/nepFlag.png" alt=""><span>Nepal</span></a>
+                    </div>
+
+
+                </div>
+                <div>
+                    <h3 class="footer-title">
+                        Follow Us
+                    </h3>
+                    <div class="darazFollowLinks">
+                        <a href="#"><img src="assets/facebookIcon.png" alt=""></a>
+                        <a href="#"><img src="assets/vicon.png" alt=""></a>
+                        <a href="#"><img src="assets/instaIcon.png" alt=""></a>
+                        <a href="#"><img src="assets/youtubeIcon.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <div>
+                © Daraz 2026
+            </div>
+        </section>
     </main>
+
+
 
 
 </body>
