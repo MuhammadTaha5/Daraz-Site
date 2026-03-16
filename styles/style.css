@@ -1053,3 +1053,8 @@ section.categories {
 .cards a{
     cursor: pointer;
 }
+.footer-first, .footer-second, .footerThird, .forth-footer{
+    max-width: 1320px;
+    margin: auto;
+    padding: 10px 40px;
+}
