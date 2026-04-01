@@ -22,89 +22,92 @@
 </head>
 
 <body>
-    <div class="headerOptions" id="headerOptions" style="background-color: #f85606; margin-bottom: 0%;">
-        <span>
-            <button type="button" class="btn btn-secondary" data-bs-toggle="popover" data-bs-html="true"
-                data-bs-content="" id="popoverBtnSave" data-bs-custom-class="SavePopover">
-                Save More ON APP
-            </button>
-        </span>
-        <div id="popoverContentSave" class="SavePopover" style="display:none;">
-            <div>
-                Download the App
+    <div style="background-color: #f85606;">
+        <div onscroll="getPosition('headerOptions')" class="headerOptions" id="headerOptions"
+            style="background-color: #f85606; margin-bottom: 0%;">
+            <span>
+                <button type="button" class="btn btn-secondary" data-bs-toggle="popover" data-bs-html="true"
+                    data-bs-content="" id="popoverBtnSave" data-bs-custom-class="SavePopover">
+                    Save More ON APP
+                </button>
+            </span>
+            <div id="popoverContentSave" class="SavePopover" style="display:none;">
+                <div>
+                    Download the App
+                </div>
+                <div>
+                    <img src="assets/qr.png" alt="">
+                </div>
+                <div>
+                    <img src="assets/appStoreFooterLogo.png" alt="">
+                    <img src="assets/googleFooterLogo.png" alt="">
+                </div>
             </div>
-            <div>
-                <img src="assets/qr.png" alt="">
-            </div>
-            <div>
-                <img src="assets/appStoreFooterLogo.png" alt="">
-                <img src="assets/googleFooterLogo.png" alt="">
-            </div>
-        </div>
-        <span><a href="#">SELL ON DARAZ</a></span>
+            <span style="padding-top: 1px; display: flex; align-items: start;"><a href="#">SELL ON DARAZ</a></span>
 
-        <span>
-            <button type="button" class="btn btn-secondary" data-bs-toggle="popover" data-bs-html="true"
-                data-bs-content="" id="popoverBtnHelp" data-bs-custom-class="helpCenterPopover">
-                Help & Support
-            </button>
-        </span>
+            <span>
+                <button type="button" class="btn btn-secondary" data-bs-toggle="popover" data-bs-html="true"
+                    data-bs-content="" id="popoverBtnHelp" data-bs-custom-class="helpCenterPopover">
+                    Help & Support
+                </button>
+            </span>
 
-        <div id="popoverContentHelp" class="helpCenterPopover" style="display:none;">
-            <div>
-                <img style="width: 10px; height: 10px;" src="assets/support.png" alt="">
-                <span>Help Center</span>
-            </div>
-            <div>
-                <img src="assets/support.png" alt="">
-                <span>Contact Customer Care</span>
-            </div>
-            <div>
-                <i class="fa-solid fa-box"></i>
-                <span>Order</span>
-            </div>
-            <div>
-                <i class="fa-solid fa-van-shuttle"></i>
-                <span>Shipping and Delivery</span>
-            </div>
-            <div>
-                <i class="fa-solid fa-credit-card"></i>
-                <span>Payment</span>
-            </div>
-            <div>
-                <i class="fa-solid fa-arrow-rotate-left"></i>
-                <span>Return & Refund</span>
-            </div>
+            <div id="popoverContentHelp" class="helpCenterPopover" style="display:none;">
+                <div>
+                    <img style="width: 10px; height: 10px;" src="assets/support.png" alt="">
+                    <span>Help Center</span>
+                </div>
+                <div>
+                    <img src="assets/support.png" alt="">
+                    <span>Contact Customer Care</span>
+                </div>
+                <div>
+                    <i class="fa-solid fa-box"></i>
+                    <span>Order</span>
+                </div>
+                <div>
+                    <i class="fa-solid fa-van-shuttle"></i>
+                    <span>Shipping and Delivery</span>
+                </div>
+                <div>
+                    <i class="fa-solid fa-credit-card"></i>
+                    <span>Payment</span>
+                </div>
+                <div>
+                    <i class="fa-solid fa-arrow-rotate-left"></i>
+                    <span>Return & Refund</span>
+                </div>
 
-        </div>
-        <span>
-            <button type="button" class="btn loginButton" data-bs-toggle="modal" data-bs-target="#loginModel"
-                style="padding: 6px 0; height: fit-content; display: flex; align-items: start;">
-                Login
-            </button>
-        </span>
-        <span><button type="button" class="btn signUpButtonNav" data-bs-toggle="modal"
-                style="padding: 6px 0; height: fit-content;" data-bs-target="#signupModel">
-                Sign Up
-            </button></span>
-        <span>
-            <button type="button" class="btn btn-secondary" data-bs-toggle="popover" data-bs-html="true"
-                data-bs-content="" id="popoverBtnLanguage" data-bs-custom-class="languagePopover">
-                زبان تبدیل کری
-            </button>
-        </span>
-
-        <div id="popoverContentLanguage" class="languagePopover" style="display:none;">
-            <div>
-                <img src="assets/pakFlag.png" alt=""><span>Ur / Urdu</span>
-                <img src="assets/englandFlag.png" alt=""><span>EN | English</span>
             </div>
+            <span>
+                <button type="button" class="btn loginButton" data-bs-toggle="modal" data-bs-target="#loginModel"
+                    style="padding: 6px 0; height: fit-content; display: flex; align-items: start;">
+                    Login
+                </button>
+            </span>
+            <span><button type="button" class="btn signUpButtonNav" data-bs-toggle="modal"
+                    style="padding: 6px 0; height: fit-content;" data-bs-target="#signupModel">
+                    Sign Up
+                </button></span>
+            <span>
+                <button type="button" class="btn btn-secondary" data-bs-toggle="popover" data-bs-html="true"
+                    data-bs-content="" id="popoverBtnLanguage" data-bs-custom-class="languagePopover">
+                    زبان تبدیل کری
+                </button>
+            </span>
+
+            <div id="popoverContentLanguage" class="languagePopover" style="display:none;">
+                <div>
+                    <img src="assets/pakFlag.png" alt=""><span>Ur / Urdu</span>
+                    <img src="assets/englandFlag.png" alt=""><span>EN | English</span>
+                </div>
 
 
+            </div>
         </div>
     </div>
-    <header style="position: sticky; top: 0; z-index: 4;">
-        <nav>
+    <header style="position: sticky; top: 0; z-index: 4; height: 75px; padding-top: 4px; align-items: center;">
+        <nav style="max-width: 1188px; margin: auto; display: flex; align-items: center; padding: 10px 0;">
 
             <div class="logoSide" style="position: sticky; top: 0;">
                 <div class="logoImg">
@@ -126,8 +129,7 @@
 
         </nav>
 
-    </header>
-    <!-- Modal -->
+    </header>    <!-- Modal -->
     <div class="modal" id="loginModel" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
         aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog" style="width: 444px; overflow: hidden;">
@@ -287,7 +289,7 @@
             </div>
         </div>
     </div>
-    <section class="CategoriesHeader" style="position: sticky; top: 85px; background-color: white; z-index: 10;">
+    <section class="CategoriesHeader" style="position: sticky; top: 75px; background-color: white; z-index: 10;">
         <div class="categoriesWrapper" style="z-index: 9;">
             <span class="categories">Categories <i class="fa-solid fa-angle-down"></i></span>
             <ul class="categoriesOptions">
