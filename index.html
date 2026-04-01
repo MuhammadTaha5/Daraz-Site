@@ -22,91 +22,92 @@
 </head>
 
 <body>
+    <div style="background-color: #f85606;">
+        <div onscroll="getPosition('headerOptions')" class="headerOptions" id="headerOptions"
+            style="background-color: #f85606; margin-bottom: 0%;">
+            <span>
+                <button type="button" class="btn btn-secondary" data-bs-toggle="popover" data-bs-html="true"
+                    data-bs-content="" id="popoverBtnSave" data-bs-custom-class="SavePopover">
+                    Save More ON APP
+                </button>
+            </span>
+            <div id="popoverContentSave" class="SavePopover" style="display:none;">
+                <div>
+                    Download the App
+                </div>
+                <div>
+                    <img src="assets/qr.png" alt="">
+                </div>
+                <div>
+                    <img src="assets/appStoreFooterLogo.png" alt="">
+                    <img src="assets/googleFooterLogo.png" alt="">
+                </div>
+            </div>
+            <span style="padding-top: 1px; display: flex; align-items: start;"><a href="#">SELL ON DARAZ</a></span>
 
-    <div onscroll="getPosition('headerOptions')" class="headerOptions" id="headerOptions"
-        style="background-color: #f85606; margin-bottom: 0%;">
-        <span>
-            <button type="button" class="btn btn-secondary" data-bs-toggle="popover" data-bs-html="true"
-                data-bs-content="" id="popoverBtnSave" data-bs-custom-class="SavePopover">
-                Save More ON APP
-            </button>
-        </span>
-        <div id="popoverContentSave" class="SavePopover" style="display:none;">
-            <div>
-                Download the App
-            </div>
-            <div>
-                <img src="assets/qr.png" alt="">
-            </div>
-            <div>
-                <img src="assets/appStoreFooterLogo.png" alt="">
-                <img src="assets/googleFooterLogo.png" alt="">
-            </div>
-        </div>
-        <span><a href="#">SELL ON DARAZ</a></span>
+            <span>
+                <button type="button" class="btn btn-secondary" data-bs-toggle="popover" data-bs-html="true"
+                    data-bs-content="" id="popoverBtnHelp" data-bs-custom-class="helpCenterPopover">
+                    Help & Support
+                </button>
+            </span>
 
-        <span>
-            <button type="button" class="btn btn-secondary" data-bs-toggle="popover" data-bs-html="true"
-                data-bs-content="" id="popoverBtnHelp" data-bs-custom-class="helpCenterPopover">
-                Help & Support
-            </button>
-        </span>
+            <div id="popoverContentHelp" class="helpCenterPopover" style="display:none;">
+                <div>
+                    <img style="width: 10px; height: 10px;" src="assets/support.png" alt="">
+                    <span>Help Center</span>
+                </div>
+                <div>
+                    <img src="assets/support.png" alt="">
+                    <span>Contact Customer Care</span>
+                </div>
+                <div>
+                    <i class="fa-solid fa-box"></i>
+                    <span>Order</span>
+                </div>
+                <div>
+                    <i class="fa-solid fa-van-shuttle"></i>
+                    <span>Shipping and Delivery</span>
+                </div>
+                <div>
+                    <i class="fa-solid fa-credit-card"></i>
+                    <span>Payment</span>
+                </div>
+                <div>
+                    <i class="fa-solid fa-arrow-rotate-left"></i>
+                    <span>Return & Refund</span>
+                </div>
 
-        <div id="popoverContentHelp" class="helpCenterPopover" style="display:none;">
-            <div>
-                <img style="width: 10px; height: 10px;" src="assets/support.png" alt="">
-                <span>Help Center</span>
             </div>
-            <div>
-                <img src="assets/support.png" alt="">
-                <span>Contact Customer Care</span>
-            </div>
-            <div>
-                <i class="fa-solid fa-box"></i>
-                <span>Order</span>
-            </div>
-            <div>
-                <i class="fa-solid fa-van-shuttle"></i>
-                <span>Shipping and Delivery</span>
-            </div>
-            <div>
-                <i class="fa-solid fa-credit-card"></i>
-                <span>Payment</span>
-            </div>
-            <div>
-                <i class="fa-solid fa-arrow-rotate-left"></i>
-                <span>Return & Refund</span>
-            </div>
+            <span>
+                <button type="button" class="btn loginButton" data-bs-toggle="modal" data-bs-target="#loginModel"
+                    style="padding: 6px 0; height: fit-content; display: flex; align-items: start;">
+                    Login
+                </button>
+            </span>
+            <span><button type="button" class="btn signUpButtonNav" data-bs-toggle="modal"
+                    style="padding: 6px 0; height: fit-content;" data-bs-target="#signupModel">
+                    Sign Up
+                </button></span>
+            <span>
+                <button type="button" class="btn btn-secondary" data-bs-toggle="popover" data-bs-html="true"
+                    data-bs-content="" id="popoverBtnLanguage" data-bs-custom-class="languagePopover">
+                    زبان تبدیل کری
+                </button>
+            </span>
 
-        </div>
-        <span>
-            <button type="button" class="btn loginButton" data-bs-toggle="modal" data-bs-target="#loginModel"
-                style="padding: 6px 0; height: fit-content; display: flex; align-items: start;">
-                Login
-            </button>
-        </span>
-        <span><button type="button" class="btn signUpButtonNav" data-bs-toggle="modal"
-                style="padding: 6px 0; height: fit-content;" data-bs-target="#signupModel">
-                Sign Up
-            </button></span>
-        <span>
-            <button type="button" class="btn btn-secondary" data-bs-toggle="popover" data-bs-html="true"
-                data-bs-content="" id="popoverBtnLanguage" data-bs-custom-class="languagePopover">
-                زبان تبدیل کری
-            </button>
-        </span>
-
-        <div id="popoverContentLanguage" class="languagePopover" style="display:none;">
-            <div>
-                <img src="assets/pakFlag.png" alt=""><span>Ur / Urdu</span>
-                <img src="assets/englandFlag.png" alt=""><span>EN | English</span>
-            </div>
+            <div id="popoverContentLanguage" class="languagePopover" style="display:none;">
+                <div>
+                    <img src="assets/pakFlag.png" alt=""><span>Ur / Urdu</span>
+                    <img src="assets/englandFlag.png" alt=""><span>EN | English</span>
+                </div>
 
 
+            </div>
         </div>
     </div>
-    <header style="position: sticky; top: 0; z-index: 4;">
-        <nav>
+    <header style="position: sticky; top: 0; z-index: 4; height: 75px; padding-top: 4px; align-items: center;">
+        <nav style="max-width: 1188px; margin: auto; display: flex; align-items: center; padding: 10px 0;">
 
             <div class="logoSide" style="position: sticky; top: 0;">
                 <div class="logoImg">
@@ -289,9 +290,9 @@
             </div>
         </div>
     </div>
-    <div style="display: flex; justify-content: center;">
+    <div style="display: flex; justify-content: center; height: 344px;">
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel"
-            style="height: 300px; width: 1000px;">
+            style="height: 100%; width: 1000px;">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
                     aria-current="true" aria-label="Slide 1"></button>
@@ -319,7 +320,7 @@
                     aria-label="Slide 10"></button>
 
             </div>
-            <div class="carousel-inner" style="height: 300px; width: 1000px;">
+            <div class="carousel-inner" style="height: 100%; max-width:  1188px;">
                 <div class="carousel-item active">
                     <img src="assets/carouselC1.avif" class="d-block w-100" alt="...">
                 </div>
@@ -373,13 +374,13 @@
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
-        <div class="pc-download-module" style="width: 200px; height: 300px;">
+        <div class="pc-download-module" style="width: 200px; height: 100%;">
 
             <img src="assets/darazFlashCard.png" alt="" srcset="" style="width: 100%; height: 100%;">
         </div>
     </div>
-    <section class="banner" style="display: flex; justify-content: center;">
-        <img src="assets/gif.webp" alt="">
+    <section class="banner" style="display: flex; justify-content: center; margin-top: 24px; height: 140px;">
+        <img src="assets/gif.webp" alt="" style="height: 100%; max-width: 1188px;">
     </section>
     <main>
         <section class="flashSale" id="flashSale" style="max-width: 1188px; margin: auto;">
@@ -388,20 +389,21 @@
             </p>
             <div class="cardFsContent">
                 <div class="fsStatus">
-                    <p>One Sale Now</p>
+                    <p>On Sale Now</p>
                     <a href="#">Shop All Products</a>
                 </div>
-                <hr>
-                <div class="cards">
+                <hr style="margin: 2px 0;">
+                <div class="cards" style="padding: 4px 4px;">
                     <div class="card">
                         <a href="" style="color: inherit; text-decoration: none;">
                             <div class="img">
                                 <img src="assets/shopImg1.avif" alt="" id="fsProductImgLink">
                             </div>
                             <div class="cardDetail">
-                                <p id="fsProductTitle">Home Fabric Folding Storage Storage Box With Lid Dustproof Portable Box Clothing Sundries Multifunctional Storage Box</p>
+                                <p id="fsProductTitle">Home Fabric Folding Storage Storage Box With Lid Dustproof
+                                    Portable Box Clothing Sundries Multifunctional Storage Box</p>
                                 <div class="itemPrice">
-                                    <p >RS. <span id="fsProductPrice">205</span></p>
+                                    <p>Rs. <span id="fsProductPrice">205</span></p>
                                 </div>
                                 <div class="itemPriceDetail">
                                     <span style="text-decoration: line-through;">
@@ -419,9 +421,10 @@
                                 <img src="assets/shopImg2.avif" alt="" id="fsProductImgLink">
                             </div>
                             <div class="cardDetail">
-                                <p id="fsProductTitle">Daachi Posture belt, posture corrector belt, Back support belt, Back Pain Relief Shoulder Back Support Belt</p>
+                                <p id="fsProductTitle">Daachi Posture belt, posture corrector belt, Back support belt,
+                                    Back Pain Relief Shoulder Back Support Belt</p>
                                 <div class="itemPrice">
-                                    <p >RS. <span id="fsProductPrice">666</span></p>
+                                    <p>Rs. <span id="fsProductPrice">666</span></p>
                                 </div>
                                 <div class="itemPriceDetail">
                                     <span>
@@ -441,7 +444,7 @@
                             <div class="cardDetail">
                                 <p id="fsProductTitle">Laptop bag, Backpacks Travel bag</p>
                                 <div class="itemPrice">
-                                    <p >RS. <span id="fsProductPrice">492</span></p>
+                                    <p>Rs. <span id="fsProductPrice">492</span></p>
                                 </div>
                                 <div class="itemPriceDetail">
                                     <span>
@@ -459,9 +462,10 @@
                                 <img src="assets/shopImg1.avif" alt="" id="fsProductImgLink">
                             </div>
                             <div class="cardDetail">
-                                <p id="fsProductTitle">pack of 3-Improved Quality LARGE Storage Bags FOR SHIRTS CLOTHS AND BLANCKETS DOUBLE ZIPPER Organizer</p>
+                                <p id="fsProductTitle">pack of 3-Improved Quality LARGE Storage Bags FOR SHIRTS CLOTHS
+                                    AND BLANCKETS DOUBLE ZIPPER Organizer</p>
                                 <div class="itemPrice">
-                                    <p >RS. <span id="fsProductPrice">404</span></p>
+                                    <p>Rs. <span id="fsProductPrice">404</span></p>
                                 </div>
                                 <div class="itemPriceDetail">
                                     <span>
@@ -481,7 +485,7 @@
                             <div class="cardDetail">
                                 <p id="fsProductTitle">Samsung Galaxy S26 Ultra - 512 GB - Get Free Galaxy Tab A11</p>
                                 <div class="itemPrice">
-                                    <p >RS. <span id="fsProductPrice">489,996</span></p>
+                                    <p>Rs. <span id="fsProductPrice">489,996</span></p>
                                 </div>
                                 <div class="itemPriceDetail">
                                     <span>
@@ -501,7 +505,7 @@
                             <div class="cardDetail">
                                 <p id="fsProductTitle">Knorr Blazing Noodles 110G</p>
                                 <div class="itemPrice">
-                                    <p >RS. <span id="fsProductPrice">196</span></p>
+                                    <p>Rs. <span id="fsProductPrice">196</span></p>
                                 </div>
                                 <div class="itemPriceDetail">
                                     <span>
@@ -688,11 +692,11 @@
                 </ul>
             </div>
         </section>
-        <div class="container" id="just-for-you" style="max-width: 1188px">
+        <div class="container" id="just-for-you" style="max-width: 1188px; padding: 24px 0 0 0 !important;">
             <p class="fs-banner">
                 Just For You
             </p>
-            <div class="row row-cols-6 row-cols-sm-4 row-cols-md-6" id="storeProducts" style="row-gap:20px;">
+            <div class="row row-cols-6 row-cols-sm-4 row-cols-md-6" id="storeProducts" style="row-gap:14px;">
                 <div class="col">
                     <div class="card">
                         <a href="#" style="color: inherit; text-decoration: none;">
@@ -736,7 +740,7 @@
 
         </div>
 
-        <section class="footer-first" style="max-width: 1188px;">
+        <section class="footer-first" style="max-width: 1188px; margin: auto;">
             <!-- First Footer Customer Section -->
             <div class="customerCare">
                 <h3 class="footer-first-title">
