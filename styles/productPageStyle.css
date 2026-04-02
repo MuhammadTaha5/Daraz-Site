@@ -44,7 +44,7 @@ body{
 }
 .categoriesWrapper{
     position: relative;
-    width: 200px;
+    
 }
 
 .categoriesOptions{
@@ -61,7 +61,7 @@ body{
     font-size: 12px;
 }
 
-.categoriesWrapper:hover .categoriesOptions{
+#dropCategory:hover .categoriesOptions{
     display: block;
 }
 .categoriesOptions li a:hover{
@@ -71,10 +71,12 @@ body{
 }
 
 .productRoute{
-    padding: 10px 40px;
+    padding: 10px 0px;
     font-size: 14px;
     font-size: 300;
     font-family: "Roboto", sans-serif !important; 
+    max-width: 1188px;
+    margin: auto;
 
 }
 .productRoute span{
@@ -89,6 +91,8 @@ body{
     display: flex;
     position: relative;
     z-index: 2;
+    padding-top: 10px;
+    background-color: white;
 }
 .mainImg{
     height: 330px;
@@ -331,8 +335,8 @@ h1#productName{
 }
 .productTextDetail, .productsReviews{
     width: 988px;
-    margin: 10px 30px;
-    padding: 10px 30px;
+    background-color: white;
+    margin-top: 14px;
 }
 .productTextDetail h2, .productRatingSection h2{
     padding-left: 24px;
@@ -398,13 +402,15 @@ h1#productName{
 .mainRating{
     display: flex;
     gap: 40px;
-    padding: 0 30px;
+    padding: 20px 24px;
 }
 .starRowsRating div:nth-child(3){
     font-size: 12px;
 }
 .productRatingSection{
-    padding: 20px 30px;
+    width: 988px;
+    background-color: white;
+    margin-top: 14px;
 }
 .avgScore{
     font-size: 48px;
@@ -418,23 +424,34 @@ h1#productName{
     font-size: 12px;
     color: #757575;
 }
+
 .sort-section span:nth-child(1),.sort-section span:nth-child(2), .filter-section span:nth-child(1), .filter-section span:nth-child(2) {
     color: rgb(117, 117, 117);
     font-size: 13px;
 }
 .sort-section, .filter-section{
     font-size: 13px;
+    padding: 0 12px;
+    border-left: 1px solid #eff0f5;
+    height: 100%;
+    display: flex;
+    align-items: center;
 }
 .productReviewHeader{
     display: flex;
     justify-content: space-between;
     border-top: 1px solid #f2f2f2;
     border-bottom: 1px solid #f2f2f2;
-    padding: 10px 0;
+    height: 52px;
+    align-items: center;
+    
 }
 .sortAndFilter{
     display: flex;
-    gap: 10px;
+    align-items: center;
+}
+.productReview{
+    padding: 17px 21px;
 }
 .productReview .ratingStar{
     font-size: 15px;
@@ -554,4 +571,39 @@ h1#productName{
 .reviewMaterial pre{
     font-family: "Roboto", sans-serif !important; 
 
+}
+
+.product-specs {
+    list-style: none;
+    padding: 5px 14px 5px 24px;
+}
+
+.product-specs li {
+    position: relative;
+    padding-left: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+    line-height: 12px;
+    text-align: left;
+    color: #212121;
+
+    /* Prevent breaking in columns */
+    word-break: break-word;
+    break-inside: avoid;
+    page-break-inside: avoid;
+    -webkit-column-break-inside: avoid;
+
+    margin-bottom: 8px;
+}
+
+
+.product-specs li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 6px;
+    width: 5px;
+    height: 5px;
+    background-color: black;
+    border-radius: 50%;
 }
