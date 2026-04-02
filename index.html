@@ -22,7 +22,7 @@
 </head>
 
 <body>
-    <div style="background-color: #f85606;">
+    <div style="background-color: #f85606;" class="upperNavbar">
         <div onscroll="getPosition('headerOptions')" class="headerOptions" id="headerOptions"
             style="background-color: #f85606; margin-bottom: 0%;">
             <span>
@@ -107,7 +107,7 @@
         </div>
     </div>
     <header style="position: sticky; top: 0; z-index: 4; height: 75px; padding-top: 4px; align-items: center;">
-        <nav style="max-width: 1188px; margin: auto; display: flex; align-items: center; padding: 10px 0;">
+        <nav>
 
             <div class="logoSide" style="position: sticky; top: 0;">
                 <div class="logoImg">
@@ -290,7 +290,7 @@
             </div>
         </div>
     </div>
-    <div style="display: flex; justify-content: center; height: 344px;">
+    <div class="carousel">
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval='2000'
             data-bs-wrap="true" style="height: 100%; width: 1000px; position: relative !important;">
             <div class="carousel-indicators">
@@ -380,8 +380,8 @@
             <img src="assets/darazFlashCard.png" alt="" srcset="" style="width: 100%; height: 100%;">
         </div>
     </div>
-    <section class="banner" style="display: flex; justify-content: center; margin-top: 24px; height: 140px;">
-        <img src="assets/gif.webp" alt="" style="height: 100%; max-width: 1188px;">
+    <section class="banner" >
+        <img src="assets/gif.webp" alt="">
     </section>
     <main>
         <section class="flashSale" id="flashSale" style="max-width: 1188px; margin: auto;">
@@ -697,7 +697,7 @@
             <p class="fs-banner">
                 Just For You
             </p>
-            <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-6" id="storeProducts" style="row-gap:14px; max-width: 1188px;">
+            <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-6" id="storeProducts"  max-width: 1188px;">
                 <div class="col">
                     <div class="card">
                         <a href="#" style="color: inherit; text-decoration: none;">
@@ -743,6 +743,7 @@
 
         <section class="footer-first" style="max-width: 1188px; margin: auto;">
             <!-- First Footer Customer Section -->
+            
             <div class="customerCare">
                 <h3 class="footer-first-title">
                     Customer Care
@@ -780,6 +781,7 @@
                     <li><a href="#">Join Daraz Affiliate Program</a></li>
                 </ul>
             </div>
+            
             <div class="footerLogoLink">
                 <div style="flex: 1 1 300px;">
                     <div class="darazImgFooter">
@@ -1174,7 +1176,7 @@
             </div>
         </section>
         <section class="forth-footer">
-            <div style="display: flex; gap: 40px;">
+            <div style="display: flex; gap: 40px;" class="forthInner">
                 <div>
                     <h3 class="footer-title">
                         Daraz International
