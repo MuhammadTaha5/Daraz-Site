@@ -7,7 +7,7 @@ const img = params.get("img")
 document.querySelector("h1#productName").textContent = title
 document.getElementById("mainProductImg").src = "assets/" + img
 document.getElementById("discPrice").textContent = "Rs. " +price
-document.getElementById("hookImg").src = "assets/" + img
+//document.getElementById("hookImg").src = "assets/" + img
 
 
 

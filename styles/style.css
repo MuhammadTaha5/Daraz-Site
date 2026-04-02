@@ -1088,3 +1088,53 @@ section.categories {
 #storeProducts .card{
     margin-right: 2px;
 }
+
+.carousel {
+    position: relative;
+}
+.custom-arrow {
+    position: absolute !important;  
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    
+    width: 25px !important;
+    height: 25px !important;
+    background: rgb(119, 119, 119) !important;
+    
+    
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important; 
+
+    opacity: 0.4 !important;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2) !important;
+    z-index: 5 !important;
+}
+
+.carousel-control-prev.custom-arrow {
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+
+
+.carousel-control-next.custom-arrow {
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+
+.carousel-control-prev {
+    left: 10px;
+}
+
+.carousel-control-next {
+    right: 10px;
+}
+
+.arrow-icon {
+    font-size: 12px;
+    color: rgb(255, 255, 255) !important;
+}
+.carousel-item img {
+    height: 344px;       /* same as your container */
+    object-fit: cover;
+}

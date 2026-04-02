@@ -129,7 +129,7 @@
 
         </nav>
 
-    </header>    <!-- Modal -->
+    </header> <!-- Modal -->
     <div class="modal" id="loginModel" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
         aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog" style="width: 444px; overflow: hidden;">
@@ -289,23 +289,28 @@
             </div>
         </div>
     </div>
-    <section class="CategoriesHeader" style="position: sticky; top: 75px; background-color: white; z-index: 10;">
-        <div class="categoriesWrapper" style="z-index: 9;">
-            <span class="categories">Categories <i class="fa-solid fa-angle-down"></i></span>
-            <ul class="categoriesOptions">
-                <li><a href="#">Electronics Accessories</a></li>
-                <li><a href="#">TV & Home Appliances</a></li>
-                <li><a href="#">Health & beauty</a></li>
-                <li><a href="#">Mother & Baby</a></li>
-                <li><a href="#">Electronic Devices</a></li>
-                <li><a href="#">Groceries & Pets</a></li>
-                <li><a href="#">Home & Lifestyle</a></li>
-                <li><a href="#">Women's Fashion</a></li>
-                <li><a href="#">Men's Fashion</a></li>
-                <li><a href="#">Watches, Bags, and Jewellery</a></li>
-                <li><a href="#">Sports & Outdoor</a></li>
-                <li><a href="#">Automotive & Bikes</a></li>
-            </ul>
+    <section class="CategoriesHeader" style="position: sticky; top: 75px; background-color: white; z-index: 10; ">
+        <div style="max-width: 1188px; margin: auto;">
+
+
+            <div class="categoriesWrapper" id="dropCategory" style="z-index: 9; width: 200px;">
+                <span class="categories" style="font-weight: 500;">Categories <i
+                        class="fa-solid fa-angle-down"></i></span>
+                <ul class="categoriesOptions">
+                    <li><a href="#">Electronics Accessories</a></li>
+                    <li><a href="#">TV & Home Appliances</a></li>
+                    <li><a href="#">Health & beauty</a></li>
+                    <li><a href="#">Mother & Baby</a></li>
+                    <li><a href="#">Electronic Devices</a></li>
+                    <li><a href="#">Groceries & Pets</a></li>
+                    <li><a href="#">Home & Lifestyle</a></li>
+                    <li><a href="#">Women's Fashion</a></li>
+                    <li><a href="#">Men's Fashion</a></li>
+                    <li><a href="#">Watches, Bags, and Jewellery</a></li>
+                    <li><a href="#">Sports & Outdoor</a></li>
+                    <li><a href="#">Automotive & Bikes</a></li>
+                </ul>
+            </div>
         </div>
     </section>
     <section class="productRoute">
@@ -318,7 +323,8 @@
         </span>
 
     </section>
-    <main style="display: flex; justify-content: center; flex-direction: column; margin: 0 30px;">
+    <main
+        style="display: flex; justify-content: center; flex-direction: column; margin: 0 30px; max-width: 1188px; margin: auto;">
         <section class="productDetails">
             <div class="productImages">
                 <div class="mainImg">
@@ -475,7 +481,7 @@
                     </div>
                 </div>
                 <div class="list" style="display: flex; gap: 10px; justify-content: left;">
-                    <div class="icon"><i class="fa-solid fa-recycle"></i></div>
+                    <div class="icon" style="width: 24px; height: 24px; text-align: center;"><i class="fa-solid fa-recycle"></i></div>
                     <div class="mainText">
                         <span>14 days easy return</span>
                     </div>
@@ -555,22 +561,30 @@
             </div>
 
         </section>
-        <section class="productTextDetail">
+        <section class="productTextDetail" >
             <h2>
                 Product details of
             </h2>
-            <p>🔥 Why Choose the Mini Diecast KIA SPORTAGE?
-
-                The Mini Diecast KIA SPORTAGE Motor Car is not just another toy – it’s a high-quality miniature KIA car
-                with lifelike features, built for both kids and collectors. The working lights and sounds make it more
-                than a display piece – it’s a realistic toy car that sparks creativity, excitement, and learning.
-
-                Whether you’re building a mini car collection, gifting a young car enthusiast, or just love KIA diecast
-                cars, this model offers unbeatable value. It’s compact, durable, and ready for action—just like the real
-                KIA SPORTAGE SUV.
-            </p>
-            <img src="assets/hookImgCar.webp" alt="" srcset="" id="hookImg">
-            <a href="#">View More</a>
+            <ul class="product-specs">
+                <li>Power type: AA battery (not included)</li>
+                <li>Shape: Round wall clock</li>
+                <li>Pattern: Laser cut design</li>
+                <li>12-hour display format</li>
+                <li>Movement: Quartz</li>
+                <li>High-quality motor</li>
+                <li>Quantity: 1 piece</li>
+                <li>Uses: Wall decoration for home or office</li>
+                <li>Size: 24x24 inches with 6-inch needles</li>
+                <li>Elegant design with English words</li>
+                <li>Includes map guide for installation</li>
+                <li>Enhances beauty of living room, drawing room, or office</li>
+                <li>Antique-style wooden design</li>
+                <li>Large needles and digits for easy time reading</li>
+                <li>Digits available in English letters or numbers</li>
+                <li>Double-sided adhesive tape included for installation</li>
+            </ul>
+            <!-- <img src="assets/hookImgCar.webp" alt="" srcset="" id="hookImg"> -->
+            <a href="#" style="margin-bottom:20px ;">View More</a>
 
         </section>
         <section class="productRatingSection">
@@ -672,19 +686,19 @@
 
 
         </section>
-        <section class="productsReviews">
+        <section class="productsReviews" style="margin-top: 0;">
             <div class="productReviewHeader">
-                <div>
+                <div style="padding-left: 24px;">
                     Product Reviews
                 </div>
-                <div class="sortAndFilter">
+                <div class="sortAndFilter" style="height: 100%;">
                     <div class="sort-section">
                         <span>
                             <i class="fa-solid fa-arrow-up" style="position: relative; bottom: 2px;"></i><i
                                 class="fa-solid fa-arrow-down" style="position: relative; right: 2px;"></i>
                         </span>
-                        <span>
-                            Sort
+                        <span style="margin-right: 6px;">
+                            Sort:
                         </span>
                         <span>
                             Relevance
@@ -694,8 +708,8 @@
                         <span>
                             <i class="fa-solid fa-filter"></i>
                         </span>
-                        <span>
-                            Filter
+                        <span style="margin-right: 6px;">
+                            Filter:
                         </span>
                         <span>
                             All Star
@@ -703,7 +717,7 @@
                     </div>
                 </div>
             </div>
-            <div class="productReview">
+            <div class="productReview" >
                 <div class="eachReviewHead">
                     <div>
                         <div class="ratingStar">
@@ -794,7 +808,7 @@ Speed:10/10 very good color interior light and sound
                 </div>
 
             </div>
-            <hr>
+            
 
         </section>
     </main>

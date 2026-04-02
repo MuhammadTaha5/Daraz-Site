@@ -291,8 +291,8 @@
         </div>
     </div>
     <div style="display: flex; justify-content: center; height: 344px;">
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel"
-            style="height: 100%; width: 1000px;">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval='2000'
+            data-bs-wrap="true" style="height: 100%; width: 1000px; position: relative !important;">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
                     aria-current="true" aria-label="Slide 1"></button>
@@ -318,6 +318,8 @@
                     aria-label="Slide 9"></button>
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="11"
                     aria-label="Slide 10"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="12"
+                    aria-label="Slide 11"></button>
 
             </div>
             <div class="carousel-inner" style="height: 100%; max-width:  1188px;">
@@ -363,15 +365,14 @@
 
 
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            <button class="carousel-control-prev custom-arrow" type="button" data-bs-target="#carouselExampleIndicators"
                 data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
+                <span class="arrow-icon">&#10094;</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+
+            <button class="carousel-control-next custom-arrow" type="button" data-bs-target="#carouselExampleIndicators"
                 data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
+                <span class="arrow-icon">&#10095;</span>
             </button>
         </div>
         <div class="pc-download-module" style="width: 200px; height: 100%;">
@@ -696,7 +697,7 @@
             <p class="fs-banner">
                 Just For You
             </p>
-            <div class="row row-cols-6 row-cols-sm-4 row-cols-md-6" id="storeProducts" style="row-gap:14px;">
+            <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-6" id="storeProducts" style="row-gap:14px; max-width: 1188px;">
                 <div class="col">
                     <div class="card">
                         <a href="#" style="color: inherit; text-decoration: none;">
