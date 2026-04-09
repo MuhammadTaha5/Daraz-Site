@@ -24,6 +24,7 @@ header {
     font-family: "Roboto", sans-serif;
 }
 
+
 .banner {
     width: 100%;
     margin: auto;
@@ -38,10 +39,11 @@ header {
     display: flex;
     gap: 24px;
     justify-content: end;
-    padding: 0 20px;
+    padding: 0 0px;
     margin-bottom: 20px;
     max-width: 1188px;
     margin: auto;
+    height: 25px;
 }
 .SavePopover img{
     width: 100px;
@@ -68,14 +70,15 @@ header {
     color: white !important;
     text-transform: uppercase !important;
     transition: color .2s !important;
-    font-family: "Roboto", sans-serif !important;
+    line-height: 25px !important;
     font-size: 12px !important;
     font-weight: 400 !important;
     color: inherit !important;
     background-color: inherit !important;
     border: 0;
     box-shadow: none;
-    padding-top: 1px !important;
+    padding-top: 0px !important;
+    font-family: 'Roboto', 'Helvetica Neue', Helvetica, Tahoma, Arial, sans-serif !important;
 
 
 }
@@ -124,12 +127,13 @@ button:focus{
 .logoSide {
     display: flex;
     align-items: center;
-    gap: 40px;
+    gap: 30px;
     /* margin-left: 120px; */
     width: max-content;
 }
 
 .logoSide .logoImg {
+    padding-top: 3px;
     height: 40px;
     width: 200px;
 }
@@ -509,6 +513,7 @@ section.categories {
 
 .footerLogoLink {
     display: flex;
+    
 }
 
 .footerLogoLink div:nth-child(1) {
@@ -530,6 +535,8 @@ section.categories {
 
 .footer-second {
     display: flex;
+    background-color: white;
+    width: 100% !important;
     
 }
 
@@ -560,7 +567,7 @@ section.categories {
 .footer-title {
     color: #606060;
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 200;
     line-height: 20px;
     margin: 0 0 5px;
 
@@ -601,7 +608,7 @@ section.categories {
 .footer-title {
     color: #606060;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 400;
     line-height: 20px;
     margin: 0 0 5px;
 }
@@ -634,6 +641,11 @@ section.categories {
     gap: 14px;
 
 
+}
+.darazStores span{
+    font-weight: 400;
+    font-size: 14px;
+    color: #606060;
 }
 
 .forth-footer .darazStores a:hover {
@@ -688,10 +700,11 @@ section.categories {
 
 .forgotPassword {
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 400;
     text-align: end;
     color: #858b9c;
     ;
+    text-decoration: none;
 }
 
 #loginButton,
@@ -702,7 +715,7 @@ section.categories {
     width: 100%;
     border: 0;
     color: white;
-    height: 45px;
+    height: 40px;
     border-radius: 6px;
 }
 
@@ -733,7 +746,7 @@ section.categories {
     font-weight: 400;
     gap: 10px;
     color: #858b9c;
-    margin-top: 60px;
+    margin-top: 50px;
 }
 
 .noAccount img {
@@ -757,9 +770,14 @@ section.categories {
     margin-left: 10px;
 
 }
+#loginModel .modal-dialog, #signupModel .modal-dialog {
+    margin-top: 55px; /* adjust as needed */
+}
 
 .modal-content {
-    padding-bottom: 30px;
+    
+    overflow: hidden;
+    height: 447px;
 }
 
 .phoneSectionLogin {
@@ -1075,11 +1093,37 @@ section.categories {
 .cards a{
     cursor: pointer;
 }
-.footer-first, .footer-second, .footerThird, .forth-footer{
+.footer-first, .footerThird{
     padding: 20px 0 25px 0;
     max-width: 1180px;
     margin: auto;
     
+}
+.footer-second, .forth-footer{
+    width: 100%;
+    margin: auto;
+    padding: 20px 0 25px 0;
+    background-color: white;
+}
+.footer-second, .forth-footer{
+    padding: 20px 0 25px 42px;
+}
+.forth-footer{
+    padding-bottom: 40px;
+    padding-right: 30px;
+}
+.footer-second .footer2,.forth-footer .footer4{
+    min-width: 1188px;
+    
+    margin: auto;
+    display: flex;
+
+}
+.footer4{
+    justify-content: space-between;
+}
+.forth-footer{
+    padding-top: 30px;
 }
 .flashSale .card{
     border-width: 0px;
@@ -1137,4 +1181,22 @@ section.categories {
 .carousel-item img {
     height: 344px;       /* same as your container */
     object-fit: cover;
+}
+.customerCare li, .darazCare li{
+    width: 297px;
+}
+
+.cart-icon img {
+    width: 35px;
+    height: 35px;
+    filter: brightness(0) invert(1);
+}
+
+#spacer {
+    transition: all 0.3s ease;
+}
+
+#spacer.hide {
+    height: 0;
+    overflow: hidden;
 }

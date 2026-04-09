@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="styles/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/png" href="assets/darazFavicon.png">
     <link href="bootstrap.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
@@ -22,9 +23,10 @@
 </head>
 
 <body>
-    <div style="background-color: #f85606;">
-        <div onscroll="getPosition('headerOptions')" class="headerOptions" id="headerOptions"
-            style="background-color: #f85606; margin-bottom: 0%;">
+
+    <div style="background-color: #f85606; ">
+        <div onscroll="getPosition('headerOptions')" class="headerOptions" id="headerOptions" style="background-color: #f85606; margin-bottom: 0%; 
+    font-family: 'Roboto', 'Helvetica Neue', Helvetica, Tahoma, Arial, sans-serif !important">
             <span>
                 <button type="button" class="btn btn-secondary" data-bs-toggle="popover" data-bs-html="true"
                     data-bs-content="" id="popoverBtnSave" data-bs-custom-class="SavePopover">
@@ -43,7 +45,8 @@
                     <img src="assets/googleFooterLogo.png" alt="">
                 </div>
             </div>
-            <span style="padding-top: 1px; display: flex; align-items: start;"><a href="#">SELL ON DARAZ</a></span>
+            <span style="padding-top: 1px; display: flex; align-items: start;" class="sellondaraz"><a href="#">SELL ON
+                    DARAZ</a></span>
 
             <span>
                 <button type="button" class="btn btn-secondary" data-bs-toggle="popover" data-bs-html="true"
@@ -91,7 +94,8 @@
                 </button></span>
             <span>
                 <button type="button" class="btn btn-secondary" data-bs-toggle="popover" data-bs-html="true"
-                    data-bs-content="" id="popoverBtnLanguage" data-bs-custom-class="languagePopover">
+                    data-bs-content="" id="popoverBtnLanguage" data-bs-custom-class="languagePopover"
+                    style="padding-right: 0px !important;">
                     زبان تبدیل کری
                 </button>
             </span>
@@ -106,8 +110,9 @@
             </div>
         </div>
     </div>
-    <header style="position: sticky; top: 0; z-index: 4; height: 75px; padding-top: 4px; align-items: center;">
-        <nav style="max-width: 1188px; margin: auto; display: flex; align-items: center; padding: 10px 0;">
+    <header
+        style="position: sticky; top: 0; z-index: 4; height: max-content; padding-top: 11px ; padding-bottom: 11px;  align-items: center; z-index: 100;">
+        <nav style="max-width: 1188px; margin: auto; display: flex; align-items: center;">
 
             <div class="logoSide" style="position: sticky; top: 0;">
                 <div class="logoImg">
@@ -117,23 +122,27 @@
                 </div>
                 <div class="search">
                     <div class="searchInput">
-                        <input type="text" name="" id="" placeholder="Search in Daraz">
+                        <input type="text" name="" id="" placeholder="Search in Daraz" style="border-radius: 2px;">
                         <span><i class="fa-solid fa-magnifying-glass"></i></span>
                     </div>
                     <div class="cart-icon">
-                        <i class="fa-solid fa-cart-shopping"></i>
+                        <img src="assets/trolley.png" alt="">
                     </div>
                 </div>
             </div>
 
 
         </nav>
+        <div id="spacer" style="height: 25px;">
+
+
+        </div>
 
     </header>
     <!-- Modal -->
     <div class="modal" id="loginModel" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
         aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog" style="width: 444px; overflow: hidden;">
+        <div class="modal-dialog" style="width: 444px; height: 447px ; overflow: hidden;">
             <div class="modal-content">
                 <div class="animationModel">
                     <div class="modal-header">
@@ -174,15 +183,15 @@
                             </div>
                         </div>
                         <div class="forgotDiv"><a href="#" class="forgotPassword">Forgot password?</a></div>
-                        <div>
+                        <div style="padding-top: 4px;">
                             <input type="submit" name="" id="loginButton" value="LOGIN">
                         </div>
                     </form>
                     <form id="loginwithPhone" action="" class="modal-body"
                         style="display: none; gap: 60px; flex-direction: column; margin-top: 50px;">
                         <div class="phoneSectionLogin">
-                            <div>
-                                <span>PK</span>
+                            <div style="display: flex; gap: 4px;">
+                                <span style="font-size: 10px; position: relative; top: 3px;">PK</span>
                                 <span>+92</span>
                             </div>
                             <div style="flex-grow: 2; ">
@@ -199,7 +208,7 @@
 
                     </form>
                     <div style="text-align: center;">
-                        <span>Don't have an account?</span>
+                        <span style="color: #858b9c; font-weight: 300;">Don't have an account?</span>
                         <span><a href="#" data-bs-toggle="modal" data-bs-target="#signupModel" data-bs-dismiss="modal"
                                 aria-label="Close" style="text-decoration: none;">Sign up</a></span>
                     </div>
@@ -222,7 +231,7 @@
     </div>
     <div class="modal" id="signupModel" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
         aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog" style="width: 444px; overflow: hidden;">
+        <div class="modal-dialog" style="width: 444px; height: 447px ; overflow: hidden;">
             <div class="modal-content">
                 <div class="animationModel">
                     <div class="modal-header" style="position: relative;">
@@ -697,7 +706,8 @@
             <p class="fs-banner">
                 Just For You
             </p>
-            <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-6" id="storeProducts" style="row-gap:14px; max-width: 1188px;">
+            <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-6" id="storeProducts"
+                style="row-gap:14px; max-width: 1188px;">
                 <div class="col">
                     <div class="card">
                         <a href="#" style="color: inherit; text-decoration: none;">
@@ -742,6 +752,7 @@
         </div>
 
         <section class="footer-first" style="max-width: 1188px; margin: auto;">
+
             <!-- First Footer Customer Section -->
             <div class="customerCare">
                 <h3 class="footer-first-title">
@@ -780,6 +791,7 @@
                     <li><a href="#">Join Daraz Affiliate Program</a></li>
                 </ul>
             </div>
+
             <div class="footerLogoLink">
                 <div style="flex: 1 1 300px;">
                     <div class="darazImgFooter">
@@ -816,28 +828,32 @@
             </div>
 
         </section>
-        <section class="footer-second" style="max-width: 1188px;">
-            <div class="payment-method">
-                <h3 style="color: #183544; font-size: 16px; font-weight: 400; line-height: 2.2em; margin-bottom: 15px;">
-                    Payment Method</h3>
-                <div class="payment-methods-type">
-                    <span><img src="assets/paymentCash.png" alt=""></span>
-                    <span><img src="assets/paymentVisa.png" alt=""></span>
-                    <span><img src="assets/paymentMasterCard.png" alt=""></span>
-                    <span><img src="assets/paymentEasypaisa.png" alt=""></span>
-                    <span><img src="assets/paymentDaraz.png" alt=""></span>
-                    <span><img src="assets/paymentJazzCash.png" alt=""></span>
-                    <span><img src="assets/paymentUnion.png" alt=""></span>
-                    <span><img src="assets/paymentHBL.png" alt=""></span>
-                    <span><img src="assets/paymentEasyInstallment.png" alt=""></span>
+        <section class="footer-second">
+            <div class="footer2">
+                <div class="payment-method">
+                    <h3
+                        style="color: #183544; font-size: 16px; font-weight: 400; line-height: 2.2em; margin-bottom: 15px;">
+                        Payment Method</h3>
+                    <div class="payment-methods-type">
+                        <span><img src="assets/paymentCash.png" alt=""></span>
+                        <span><img src="assets/paymentVisa.png" alt=""></span>
+                        <span><img src="assets/paymentMasterCard.png" alt=""></span>
+                        <span><img src="assets/paymentEasypaisa.png" alt=""></span>
+                        <span><img src="assets/paymentDaraz.png" alt=""></span>
+                        <span><img src="assets/paymentJazzCash.png" alt=""></span>
+                        <span><img src="assets/paymentUnion.png" alt=""></span>
+                        <span><img src="assets/paymentHBL.png" alt=""></span>
+                        <span><img src="assets/paymentEasyInstallment.png" alt=""></span>
+                    </div>
                 </div>
-            </div>
-            <div class="verify-method">
-                <h3 style="color: #183544; font-size: 16px; font-weight: 400; line-height: 2.2em; margin-bottom: 15px;">
-                    Verified by</h3>
-                <div class="verify-methods-type">
-                    <span><img src="assets/pciDSS.png" alt=""></span>
+                <div class="verify-method">
+                    <h3
+                        style="color: #183544; font-size: 16px; font-weight: 400; line-height: 2.2em; margin-bottom: 15px;">
+                        Verified by</h3>
+                    <div class="verify-methods-type">
+                        <span><img src="assets/pciDSS.png" alt=""></span>
 
+                    </div>
                 </div>
             </div>
 
@@ -1174,35 +1190,37 @@
             </div>
         </section>
         <section class="forth-footer">
-            <div style="display: flex; gap: 40px;">
-                <div>
-                    <h3 class="footer-title">
-                        Daraz International
-                    </h3>
-                    <div class="darazStores">
-                        <a href="#"><img src="assets/pakFlag.png" alt=""><span>Pakistan</span></a>
-                        <a href="#"><img src="assets/banFlag.png" alt=""><span>Bangladesh</span></a>
-                        <a href="#"><img src="assets/sriFlag.png" alt=""><span>Srilanka</span></a>
-                        <a href="#"><img src="assets/myanFlag.png" alt=""><span>Myanmar</span></a>
-                        <a href="#"><img src="assets/nepFlag.png" alt=""><span>Nepal</span></a>
-                    </div>
+            <div class="footer4">
+                <div style="display: flex; gap: 70px;">
+                    <div>
+                        <h3 class="footer-title">
+                            Daraz International
+                        </h3>
+                        <div class="darazStores">
+                            <a href="#"><img src="assets/pakFlag.png" alt=""><span>Pakistan</span></a>
+                            <a href="#"><img src="assets/banFlag.png" alt=""><span>Bangladesh</span></a>
+                            <a href="#"><img src="assets/sriFlag.png" alt=""><span>Srilanka</span></a>
+                            <a href="#"><img src="assets/myanFlag.png" alt=""><span>Myanmar</span></a>
+                            <a href="#"><img src="assets/nepFlag.png" alt=""><span>Nepal</span></a>
+                        </div>
 
 
-                </div>
-                <div>
-                    <h3 class="footer-title">
-                        Follow Us
-                    </h3>
-                    <div class="darazFollowLinks">
-                        <a href="#"><img src="assets/facebookIcon.png" alt=""></a>
-                        <a href="#"><img src="assets/vicon.png" alt=""></a>
-                        <a href="#"><img src="assets/instaIcon.png" alt=""></a>
-                        <a href="#"><img src="assets/youtubeIcon.png" alt=""></a>
+                    </div>
+                    <div>
+                        <h3 class="footer-title">
+                            Follow Us
+                        </h3>
+                        <div class="darazFollowLinks">
+                            <a href="#"><img src="assets/facebookIcon.png" alt=""></a>
+                            <a href="#"><img src="assets/vicon.png" alt=""></a>
+                            <a href="#"><img src="assets/instaIcon.png" alt=""></a>
+                            <a href="#"><img src="assets/youtubeIcon.png" alt=""></a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div>
-                © Daraz 2026
+                <div>
+                    © Daraz 2026
+                </div>
             </div>
         </section>
     </main>
