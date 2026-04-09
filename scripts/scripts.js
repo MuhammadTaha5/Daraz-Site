@@ -14,8 +14,14 @@ function getPosition(pos) {
     let getRegion = navigatorMain.querySelector(`#${pos}`)
     console.log(getRegion)
 }
+
+window.onscroll = function () {
+    document.getElementById("spacer").style.display =
+        window.scrollY > 50 ? "none" : "block";
+};
 //function to display product on main page
 let displayProducts = document.getElementById("storeProducts");
+
 
 
 async function init() {
