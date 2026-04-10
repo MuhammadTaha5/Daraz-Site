@@ -35,15 +35,22 @@ header {
 }
 
 .headerOptions {
+    font-family: "Roboto-Regular";
+  src: url(https://g.lazcdn.com/g/lzdfe/static/0.0.29/Roboto/cyrillic-ext.woff2)
+    format("woff2");
+  font-display: swap;
     color: white;
     display: flex;
-    gap: 24px;
+    
     justify-content: end;
     padding: 0 0px;
     margin-bottom: 20px;
     max-width: 1188px;
     margin: auto;
     height: 25px;
+}
+.headerOptions span{
+    padding: 0 14px;
 }
 .SavePopover img{
     width: 100px;
@@ -97,16 +104,17 @@ button:focus{
 
 .helpCenterPopover {
 
-    
     flex-direction: column;
-    gap: 8px;
+    gap: 12px;
+    height: max-content !important;
+    width: 200px;
 }
 
 .helpCenterPopover div {
 
     display: block;
     align-items: center;
-    gap: 8px;
+    gap: 20px;
     padding: 5px;
     cursor: pointer;
 }
@@ -118,10 +126,11 @@ button:focus{
 
 .helpCenterPopover div img,
 .helpCenterPopover div i {
-    width: 16px !important;
-    height: 16px !important;
+    width: 20px !important;
+    height: 20px !important;
     font-size: 16px !important;
     flex: 0 0 50px;
+    
 }
 
 .logoSide {
