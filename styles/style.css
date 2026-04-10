@@ -1026,7 +1026,7 @@ section.categories {
     width: 740px;
     height: 500px;
     display: none;
-    z-index: 7;
+    z-index: 1000;
     border: 1px solid #bebebe;
     background-color: white;
     /* animation: popup 0.5s forwards; */
