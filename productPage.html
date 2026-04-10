@@ -152,10 +152,10 @@
     </header> <!-- Modal -->
     <div class="modal" id="loginModel" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
         aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog" style="width: 444px; overflow: hidden;">
+        <div class="modal-dialog" style="width: 444px; height: 447px ; overflow: hidden;">
             <div class="modal-content">
                 <div class="animationModel">
-                    <div class="modal-header">
+                    <div class="modal-header" style="border-bottom-width: 0 !important;">
                         <div class="model-LoginOption" style="position: relative;">
                             <div id="errorBoxLogin" class="hidden">
                                 <span style="display: flex; align-items: center; gap: 10px;">
@@ -185,7 +185,8 @@
                                 <input type="password" class="form-control" id="loginPassword"
                                     aria-describedby="validationServer03Feedback"
                                     placeholder="Please enter your Password" style="position: relative;">
-                                <i class="fa-regular fa-eye" id="showPass" style="position: absolute; right: 60px;"></i>
+                                <img src="assets/eyebrow.png" id="showPass" 
+     style="position: absolute; right: 60px; width: 20px; height: 20px; cursor: pointer; filter: grayscale(100%);">
 
                             </div>
                             <div id="passwordFeedback" class="invalid-feedback" style="display: none;">
@@ -193,15 +194,15 @@
                             </div>
                         </div>
                         <div class="forgotDiv"><a href="#" class="forgotPassword">Forgot password?</a></div>
-                        <div>
+                        <div style="padding-top: 4px;">
                             <input type="submit" name="" id="loginButton" value="LOGIN">
                         </div>
                     </form>
                     <form id="loginwithPhone" action="" class="modal-body"
-                        style="display: none; gap: 60px; flex-direction: column; margin-top: 50px;">
+                        style="display: none; gap: 60px; flex-direction: column; margin-top: 40px;">
                         <div class="phoneSectionLogin">
-                            <div>
-                                <span>PK</span>
+                            <div style="display: flex; gap: 4px; height: 48px;">
+                                <span style="font-size: 10px; position: relative; top: 3px;">PK</span>
                                 <span>+92</span>
                             </div>
                             <div style="flex-grow: 2; ">
@@ -218,7 +219,7 @@
 
                     </form>
                     <div style="text-align: center;">
-                        <span>Don't have an account?</span>
+                        <span style="color: #858b9c; font-weight: 300;">Don't have an account?</span>
                         <span><a href="#" data-bs-toggle="modal" data-bs-target="#signupModel" data-bs-dismiss="modal"
                                 aria-label="Close" style="text-decoration: none;">Sign up</a></span>
                     </div>
@@ -241,7 +242,7 @@
     </div>
     <div class="modal" id="signupModel" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
         aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog" style="width: 444px; overflow: hidden;">
+        <div class="modal-dialog" style="width: 444px; height: 447px ; overflow: hidden;">
             <div class="modal-content">
                 <div class="animationModel">
                     <div class="modal-header" style="position: relative;">
@@ -263,7 +264,7 @@
                     <form id="signUpPhone" action="" class="modal-body" style="gap: 10px; flex-direction: column;">
                         <div class="phoneSectionLogin">
                             <div>
-                                <span>PK</span>
+                                <span style="font-size: 10px; position: relative; top: 3px;">PK</span>
                                 <span>+92</span>
                             </div>
                             <div style="flex-grow: 2; ">
@@ -887,142 +888,149 @@ Speed:10/10 very good color interior light and sound
 
         </div>
     </div>
-    <section class="footer-first">
-        <!-- First Footer Customer Section -->
-        <div class="customerCare">
-            <h3 class="footer-first-title">
-                Customer Care
-            </h3>
-            <ul>
-                <li><a href="#">Help Center</a></li>
-                <li><a href="#">How to Buy</a></li>
-                <li><a href="#">Corporate & Bulk Purchasing</a></li>
-                <li><a href="#">Returns and Refunds</a></li>
-                <li><a href="#">Daraz Shop</a></li>
-                <li><a href="#">Contact Us</a></li>
-                <li><a href="#">Purchase Protection</a></li>
-                <li><a href="#">Daraz Pick up Points</a></li>
-            </ul>
-        </div>
-        <!-- Daraz Care Section -->
-        <div class="darazCare">
-            <h3 class="footer-first-title">
-                Daraz
-            </h3>
-            <ul>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Digital Payments</a></li>
-                <li><a href="#">Daraz Donates</a></li>
-                <li><a href="#">Daraz Blog</a></li>
-                <li><a href="#">Terms & Conditions</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">NTN Number: 4012118-6</a></li>
-                <li><a href="#">STRN Number: 1700401211818</a></li>
-                <li><a href="#">Online Shopping App</a></li>
-                <li><a href="#">Online Grocery Shooping</a></li>
-                <li><a href="#">Daraz Exclusive</a></li>
-                <li><a href="#">Daraz University</a></li>
-                <li><a href="#">Sell on Daraz</a></li>
-                <li><a href="#">Join Daraz Affiliate Program</a></li>
-            </ul>
-        </div>
-        <div class="footerLogoLink">
-            <div style="flex: 1 1 300px;">
-                <div class="darazImgFooter">
-                    <img src="assets/darazFooterLogo.png" alt="">
+    <section class="footer-first" >
+        <div class="foorter1" >
+            <!-- First Footer Customer Section -->
+            <div class="customerCare">
+                <h3 class="footer-first-title">
+                    Customer Care
+                </h3>
+                <ul>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">How to Buy</a></li>
+                    <li><a href="#">Corporate & Bulk Purchasing</a></li>
+                    <li><a href="#">Returns and Refunds</a></li>
+                    <li><a href="#">Daraz Shop</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Purchase Protection</a></li>
+                    <li><a href="#">Daraz Pick up Points</a></li>
+                </ul>
+            </div>
+            <!-- Daraz Care Section -->
+            <div class="darazCare">
+                <h3 class="footer-first-title">
+                    Daraz
+                </h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Digital Payments</a></li>
+                    <li><a href="#">Daraz Donates</a></li>
+                    <li><a href="#">Daraz Blog</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">NTN Number: 4012118-6</a></li>
+                    <li><a href="#">STRN Number: 1700401211818</a></li>
+                    <li><a href="#">Online Shopping App</a></li>
+                    <li><a href="#">Online Grocery Shooping</a></li>
+                    <li><a href="#">Daraz Exclusive</a></li>
+                    <li><a href="#">Daraz University</a></li>
+                    <li><a href="#">Sell on Daraz</a></li>
+                    <li><a href="#">Join Daraz Affiliate Program</a></li>
+                </ul>
+            </div>
+            <div class="footerLogoLink">
+                <div style="flex: 1 1 300px;">
+                    <div class="darazImgFooter">
+                        <img src="assets/darazFooterLogo.png" alt="">
+                    </div>
+                    <div class="downloadCom">
+                        <span style="color: #f36f36; font-size: 16px;font-weight: 400;">Happy Shopping</span>
+                        <span style="color: #0f136d; font-size: 14px; font-weight: 400; padding-top: 2px;">Download
+                            App</span>
+                    </div>
                 </div>
-                <div class="downloadCom">
-                    <span style="color: #f36f36; font-size: 16px;font-weight: 400;">Happy Shopping</span>
-                    <span style="color: #0f136d; font-size: 14px; font-weight: 400; padding-top: 2px;">Download
-                        App</span>
+                <div class="container" style="padding: 0; flex: 1 1 300px;">
+                    <div class="row row-cols-2">
+                        <div class="col" style="padding: 0; width: 130px;">
+
+                            <span><img src="assets/appStoreFooterLogo.png" alt=""></span>
+
+                        </div>
+                        <div class="col" style="padding: 0; width: 130px;">
+
+                            <span><img src="assets/googleFooterLogo.png" alt=""></span>
+
+                        </div>
+                        <div class="col" style="padding: 0; width: 130px;">
+
+                            <span><img src="assets/appGalleryFooter.png" alt=""></span>
+
+
+                        </div>
+
+                    </div>
+
                 </div>
             </div>
-            <div class="container" style="padding: 0; flex: 1 1 300px;">
-                <div class="row row-cols-2">
-                    <div class="col" style="padding: 0; width: 130px;">
-
-                        <span><img src="assets/appStoreFooterLogo.png" alt=""></span>
-
-                    </div>
-                    <div class="col" style="padding: 0; width: 130px;">
-
-                        <span><img src="assets/googleFooterLogo.png" alt=""></span>
-
-                    </div>
-                    <div class="col" style="padding: 0; width: 130px;">
-
-                        <span><img src="assets/appGalleryFooter.png" alt=""></span>
-
-
-                    </div>
-
-                </div>
-
-            </div>
         </div>
-
     </section>
     <section class="footer-second">
-        <div class="payment-method">
-            <h3 style="color: #183544; font-size: 16px; font-weight: 400; line-height: 2.2em; margin-bottom: 15px;">
-                Payment Method</h3>
-            <div class="payment-methods-type">
-                <span><img src="assets/paymentCash.png" alt=""></span>
-                <span><img src="assets/paymentVisa.png" alt=""></span>
-                <span><img src="assets/paymentMasterCard.png" alt=""></span>
-                <span><img src="assets/paymentEasypaisa.png" alt=""></span>
-                <span><img src="assets/paymentDaraz.png" alt=""></span>
-                <span><img src="assets/paymentJazzCash.png" alt=""></span>
-                <span><img src="assets/paymentUnion.png" alt=""></span>
-                <span><img src="assets/paymentHBL.png" alt=""></span>
-                <span><img src="assets/paymentEasyInstallment.png" alt=""></span>
+            <div class="footer2">
+                <div class="payment-method">
+                    <h3
+                        style="color: #183544; font-size: 16px; font-weight: 400; line-height: 2.2em; margin-bottom: 15px;">
+                        Payment Method</h3>
+                    <div class="payment-methods-type">
+                        <span><img src="assets/paymentCash.png" alt=""></span>
+                        <span><img src="assets/paymentVisa.png" alt=""></span>
+                        <span><img src="assets/paymentMasterCard.png" alt=""></span>
+                        <span><img src="assets/paymentEasypaisa.png" alt=""></span>
+                        <span><img src="assets/paymentDaraz.png" alt=""></span>
+                        <span><img src="assets/paymentJazzCash.png" alt=""></span>
+                        <span><img src="assets/paymentUnion.png" alt=""></span>
+                        <span><img src="assets/paymentHBL.png" alt=""></span>
+                        <span><img src="assets/paymentEasyInstallment.png" alt=""></span>
+                    </div>
+                </div>
+                <div class="verify-method">
+                    <h3
+                        style="color: #183544; font-size: 16px; font-weight: 400; line-height: 2.2em; margin-bottom: 15px;">
+                        Verified by</h3>
+                    <div class="verify-methods-type">
+                        <span><img src="assets/pciDSS.png" alt=""></span>
+
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="verify-method">
-            <h3 style="color: #183544; font-size: 16px; font-weight: 400; line-height: 2.2em; margin-bottom: 15px;">
-                Verified by</h3>
-            <div class="verify-methods-type">
-                <span><img src="assets/pciDSS.png" alt=""></span>
-
-            </div>
-        </div>
 
 
-    </section>
+        </section>
     <!-- 2 columns daraz bio -->
 
     <section class="forth-footer">
-        <div style="display: flex; gap: 50px;">
-            <div style="margin-right: 20px;">
-                <h3 class="footer-title">
-                    Daraz International
-                </h3>
-                <div class="darazStores">
-                    <a href="#"><img src="assets/pakFlag.png" alt=""><span>Pakistan</span></a>
-                    <a href="#"><img src="assets/banFlag.png" alt=""><span>Bangladesh</span></a>
-                    <a href="#"><img src="assets/sriFlag.png" alt=""><span>Srilanka</span></a>
-                    <a href="#"><img src="assets/myanFlag.png" alt=""><span>Myanmar</span></a>
-                    <a href="#"><img src="assets/nepFlag.png" alt=""><span>Nepal</span></a>
-                </div>
+            <div class="footer4">
+                <div style="display: flex; gap: 70px;">
+                    <div>
+                        <h3 class="footer-title">
+                            Daraz International
+                        </h3>
+                        <div class="darazStores">
+                            <a href="#"><img src="assets/pakFlag.png" alt=""><span>Pakistan</span></a>
+                            <a href="#"><img src="assets/banFlag.png" alt=""><span>Bangladesh</span></a>
+                            <a href="#"><img src="assets/sriFlag.png" alt=""><span>Srilanka</span></a>
+                            <a href="#"><img src="assets/myanFlag.png" alt=""><span>Myanmar</span></a>
+                            <a href="#"><img src="assets/nepFlag.png" alt=""><span>Nepal</span></a>
+                        </div>
 
 
-            </div>
-            <div>
-                <h3 class="footer-title">
-                    Follow Us
-                </h3>
-                <div class="darazFollowLinks">
-                    <a href="#"><img src="assets/facebookIcon.png" alt=""></a>
-                    <a href="#"><img src="assets/vicon.png" alt=""></a>
-                    <a href="#"><img src="assets/instaIcon.png" alt=""></a>
-                    <a href="#"><img src="assets/youtubeIcon.png" alt=""></a>
+                    </div>
+                    <div>
+                        <h3 class="footer-title">
+                            Follow Us
+                        </h3>
+                        <div class="darazFollowLinks">
+                            <a href="#"><img src="assets/facebookIcon.png" alt=""></a>
+                            <a href="#"><img src="assets/vicon.png" alt=""></a>
+                            <a href="#"><img src="assets/instaIcon.png" alt=""></a>
+                            <a href="#"><img src="assets/youtubeIcon.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    © Daraz 2026
                 </div>
             </div>
-        </div>
-        <div>
-            © Daraz 2026
-        </div>
-    </section>
+        </section>
 
 
     <script>

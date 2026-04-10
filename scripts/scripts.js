@@ -183,18 +183,21 @@ function showError(m, node) {
         messageBox.classList.remove('fade-out'); // Reset for next time
     }, duration + 500); // 3000ms duration + 500ms transition
 }
-let showPassword = document.getElementsByClassName("fa-eye")[0];
-showPassword.style.cursor = "pointer";
-showPassword.addEventListener("click", () => {
-    let password = showPassword.parentElement.querySelector("#loginPassword");
-    if (password.type == "password") {
-        password.type = "text";
-    }
-    else {
-        password.type = "password"
-    }
+let showPassword = document.getElementById("showPass");
 
-})
+showPassword.style.cursor = "pointer";
+
+showPassword.addEventListener("click", () => {
+    let password = document.getElementById("loginPassword"); // more reliable
+
+    if (password.type === "password") {
+        password.type = "text";
+        showPassword.src = "assets/open-eye.png";  
+    } else {
+        password.type = "password";
+        showPassword.src = "assets/eyebrow.png";   
+    }
+});
 
 
 const btnSave = document.getElementById("popoverBtnSave")

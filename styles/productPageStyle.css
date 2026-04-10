@@ -1,5 +1,5 @@
 body{
-    background-color: #dad8d8;
+    background-color: #c0c0c0 !important;
 }
 .CategoriesHeader div span{
     list-style: none;
@@ -636,7 +636,7 @@ h1#productName{
 .alsoLikeSection{
     max-width: 1188px;
     margin: auto;
-    padding-bottom: 24px;
+    padding-bottom: 30px;
 }
 .alsoLikeCategory .productRating i{
     color: gold;
@@ -648,4 +648,19 @@ h1#productName{
 }
 .alsoLikeCategory .card p{
     margin-bottom: 0px;
+}
+.CategoriesHeader{
+    padding-left: 0px;
+    margin-left: 0%;
+}
+.footer-first{
+    background-color: rgb(243, 247, 255) !important;
+    max-width: 100% !important;
+    margin: 0;
+}
+.foorter1{
+    width: 1188px;
+
+    margin: auto;
+    display: flex;
 }

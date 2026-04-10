@@ -11,7 +11,7 @@ input::-webkit-inner-spin-button {
 
 body,
 html {
-    background-color: rgb(245, 245, 245) !important;
+    background-color: rgb(241, 241, 244) !important ;
 }
 
 header {
@@ -790,8 +790,9 @@ section.categories {
 .phoneSectionLogin div:nth-child(2) {
     flex-grow: 1;
     padding: 5px 5px;
-    border: 1px solid #858b9c;
-    height: 40px !important;
+    border: 1px solid #898989 !important;
+    color: #606060 !important;
+    height: 48px !important;
     font-size: 14px !important;
     font-weight: 400 !important;
     display: flex;
@@ -896,7 +897,7 @@ section.categories {
 
     color: #999;
     background-color: #f4f4f4;
-    padding: 5px 4px;
+    padding: 5px 3px;
 }
 
 .navigatorMain div {
@@ -1113,7 +1114,8 @@ section.categories {
     padding-right: 30px;
 }
 .footer-second .footer2,.forth-footer .footer4{
-    min-width: 1188px;
+    width: 1188px;
+    
     
     margin: auto;
     display: flex;

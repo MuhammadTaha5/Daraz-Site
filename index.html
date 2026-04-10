@@ -145,7 +145,7 @@
         <div class="modal-dialog" style="width: 444px; height: 447px ; overflow: hidden;">
             <div class="modal-content">
                 <div class="animationModel">
-                    <div class="modal-header">
+                    <div class="modal-header" style="border-bottom-width: 0 !important;">
                         <div class="model-LoginOption" style="position: relative;">
                             <div id="errorBoxLogin" class="hidden">
                                 <span style="display: flex; align-items: center; gap: 10px;">
@@ -175,7 +175,8 @@
                                 <input type="password" class="form-control" id="loginPassword"
                                     aria-describedby="validationServer03Feedback"
                                     placeholder="Please enter your Password" style="position: relative;">
-                                <i class="fa-regular fa-eye" id="showPass" style="position: absolute; right: 60px;"></i>
+                                <img src="assets/eyebrow.png" id="showPass" 
+     style="position: absolute; right: 60px; width: 20px; height: 20px; cursor: pointer; filter: grayscale(100%);">
 
                             </div>
                             <div id="passwordFeedback" class="invalid-feedback" style="display: none;">
@@ -188,9 +189,9 @@
                         </div>
                     </form>
                     <form id="loginwithPhone" action="" class="modal-body"
-                        style="display: none; gap: 60px; flex-direction: column; margin-top: 50px;">
+                        style="display: none; gap: 60px; flex-direction: column; margin-top: 40px;">
                         <div class="phoneSectionLogin">
-                            <div style="display: flex; gap: 4px;">
+                            <div style="display: flex; gap: 4px; height: 48px;">
                                 <span style="font-size: 10px; position: relative; top: 3px;">PK</span>
                                 <span>+92</span>
                             </div>
@@ -208,7 +209,7 @@
 
                     </form>
                     <div style="text-align: center;">
-                        <span style="color: #858b9c; font-weight: 300;">Don't have an account?</span>
+                        <span style="color: #858b9c; font-weight: 300; font-weight: 10px;">Don't have an account?</span>
                         <span><a href="#" data-bs-toggle="modal" data-bs-target="#signupModel" data-bs-dismiss="modal"
                                 aria-label="Close" style="text-decoration: none;">Sign up</a></span>
                     </div>
@@ -253,7 +254,7 @@
                     <form id="signUpPhone" action="" class="modal-body" style="gap: 10px; flex-direction: column;">
                         <div class="phoneSectionLogin">
                             <div>
-                                <span>PK</span>
+                                <span style="font-size: 10px; position: relative; top: 3px;">PK</span>
                                 <span>+92</span>
                             </div>
                             <div style="flex-grow: 2; ">
