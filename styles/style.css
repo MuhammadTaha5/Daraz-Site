@@ -805,6 +805,7 @@ a#loadProductsButton {
     display: flex;
     justify-content: start;
     gap: 20px;
+    max-width: 1188px; margin: auto;
 }
 
 .customerCare {
@@ -903,6 +904,14 @@ a#loadProductsButton {
 .footerThird {
     display: flex;
     margin: 60px 50px;
+    max-width: 1188px;
+}
+.footerThird .col1{
+    column-count: 2; width: 50%;
+
+}
+.footerThird .col1 .footer3sections{
+    padding-right: 25%;
 }
 
 .footerThird div {
