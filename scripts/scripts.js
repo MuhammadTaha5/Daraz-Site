@@ -226,7 +226,9 @@ new bootstrap.Popover(btnlanguage, {
 
 let loadProductsButton = document.getElementById("loadProductsButton");
 if (loadProductsButton) {
-    loadProductsButton.addEventListener("click", () => {
+    loadProductsButton.addEventListener("click", (e) => {
+        e.preventDefault()
+        
         fetch("assets/products.json")
             .then((data) => data.json())
             .then((addProducts) => {
