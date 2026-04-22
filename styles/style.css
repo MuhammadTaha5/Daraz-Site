@@ -402,6 +402,21 @@ section.categories {
     font-weight: 400;
 
 }
+div#loadingProducts{
+    margin: 30px 0;
+}
+div#loadingProducts .col{
+    display: flex; justify-content: center;
+}
+
+a#loadProductsButton{
+    color: #1a9cb8; 
+    border: 1px solid #1a9cb8; 
+    width: 387px; 
+    text-align: center; 
+    padding: 10px 20px; font-size: 14px; 
+    text-decoration: none;
+}
 
 
 .container {

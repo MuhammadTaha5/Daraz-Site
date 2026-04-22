@@ -63,6 +63,7 @@ try {
 } catch (error) {
     console.log(error)
 }
+
 let messageNowButton = document.getElementsByClassName("messageNow")[0];
 let closeMessage = document.getElementById("closeMessage");
 let messageBoxToggle = document.getElementById("messageBoxToggle");
