@@ -19,7 +19,12 @@ header {
     height: 75px;
     /* padding: 20px 0; */
 }
-
+header#mainHeader{
+    position: sticky; top: 0; z-index: 4; height: max-content; padding-top: 11px ; padding-bottom: 11px;  align-items: center; z-index: 100;
+}
+header#mainHeader nav{
+    max-width: 1188px; margin: auto; display: flex; align-items: center;
+}
 * {
     font-family: "Roboto", sans-serif;
 }
@@ -35,6 +40,8 @@ header {
 }
 
 .headerOptions {
+    background-color: #f85606; margin-bottom: 0%; 
+    font-family: 'Roboto', 'Helvetica Neue', Helvetica, Tahoma, Arial, sans-serif !important;
     font-family: "Roboto-Regular";
   src: url(https://g.lazcdn.com/g/lzdfe/static/0.0.29/Roboto/cyrillic-ext.woff2)
     format("woff2");
@@ -49,8 +56,14 @@ header {
     margin: auto;
     height: 25px;
 }
+#topHeader{
+    background-color: #f85606;
+}
 .headerOptions span{
     padding: 0 14px;
+}
+.SavePopover{
+    display: none;
 }
 .SavePopover img{
     width: 100px;
@@ -65,7 +78,9 @@ header {
     margin-top: 10px;
     gap: 10px;
 }
-
+span.sellondaraz{
+    padding-top: 1px; display: flex; align-items: start;
+}
 .headerOptions span a,
 .loginButton,
 .signUpButtonNav,
@@ -89,6 +104,13 @@ header {
 
 
 }
+button.signUpButtonNav, button.loginButton{
+    padding: 6px 0; height: fit-content;
+}
+button.loginButton{
+    padding: 6px 0; height: fit-content; display: flex; align-items: start;    
+}
+
 button:focus{
     box-shadow: none !important;
 }
@@ -101,9 +123,18 @@ button:focus{
     height: 20px;
     border-radius: 50%;
 }
+#popoverContentLanguage{
+    display: none;
+}
+span.languageChangeSpan{
+    padding-right: 0px !important;
+}
+button.languageChange{
+    padding-right: 0px !important;
+}
 
 .helpCenterPopover {
-
+    display: none;
     flex-direction: column;
     gap: 12px;
     height: max-content !important;
@@ -139,6 +170,7 @@ button:focus{
     gap: 30px;
     /* margin-left: 120px; */
     width: max-content;
+    position: sticky; top: 0;
 }
 
 .logoSide .logoImg {
@@ -165,7 +197,9 @@ button:focus{
     align-items: center;
     gap: 30px;
 }
-
+.logoSide .searchInput input{
+    border-radius: 2px; font-size: 14px; color: rgb(233, 233, 233);
+}
 .search div,
 .search div input {
     height: 100%;
@@ -688,6 +722,7 @@ a#loadProductsButton{
 }
 
 .model-LoginOption {
+    position: relative !important;
     display: flex;
     justify-content: space-evenly;
     width: 100%;
@@ -714,6 +749,7 @@ a#loadProductsButton{
     font-weight: 500;
     text-align: center;
     color: black;
+    cursor: pointer;
 
 }
 
@@ -797,6 +833,12 @@ a#loadProductsButton{
 #loginModel .modal-dialog, #signupModel .modal-dialog {
     margin-top: 55px; /* adjust as needed */
 }
+.modal-header{
+    border-bottom-width: 0 !important;
+}
+.modal-dialog{
+    width: 444px !important; height: 447px !important; overflow: hidden !important;
+}
 
 .modal-content {
     
@@ -830,7 +872,12 @@ a#loadProductsButton{
     border: 0px;
     padding: 2px 5px;
 }
-
+div#dontHaveAccount{
+    text-align: center;
+}
+#dontHaveAccountSpan{
+    color: #858b9c; font-weight: 300; font-weight: 10px;
+}
 .phoneSectionLogin div:nth-child(2) input:focus {
     outline: none;
 }
@@ -847,7 +894,26 @@ a#loadProductsButton{
     align-items: center;
     border-radius: 6px;
 }
+#countryCodeInput{
+    display: flex; gap: 4px; height: 48px;
 
+}
+#countryCodeInput span:nth-child(1){
+    font-size: 10px; position: relative; top: 3px;
+}
+#phoneNumber{
+    width: 100%;
+}
+.phoneInput{
+    flex-grow: 2;
+}
+.submitLoginPhone img {
+    width: 24px; height: 24px; position: absolute; left: 10px;
+}
+
+form#loginwithPhone{
+    display: none; gap: 60px; flex-direction: column; margin-top: 40px;
+}
 @keyframes appear {
     0% {
         transform: translateY(100px);
@@ -896,6 +962,41 @@ a#loadProductsButton{
     z-index: 5;
     padding: 10px 20px;
     border-radius: 6px;
+}
+#errorBoxLogin span{
+    display: flex; align-items: center; gap: 10px;
+}
+#errorBoxLogin #msg{
+    margin: 0%;
+}
+.fa-circle-xmark{
+    color: red; font-size: 24px;
+}
+#emailLoginButton, #phoneLoginButton{
+    cursor: pointer;
+}
+form#loginWithEmailSection{
+    gap: 10px;
+
+}
+.passwordInputFieldModel{
+    display: flex; align-items: center;
+
+}
+#loginPassword{
+    position: relative;
+}
+#showPass{
+    position: absolute; right: 60px; width: 20px; height: 20px; cursor: pointer; filter: grayscale(100%);
+}
+#passwordFeedback{
+    display: none;
+}
+.loginFormButtonSubmit{
+    padding-top: 4px;
+}
+.btn-close{
+    position: absolute; right: 30px;
 }
 
 /* Class to hide the element */
@@ -1219,6 +1320,7 @@ a#loadProductsButton{
 }
 
 #spacer {
+    height: 25px;
     transition: all 0.3s ease;
 }
 

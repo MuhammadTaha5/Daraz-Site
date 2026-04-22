@@ -24,16 +24,15 @@
 
 <body>
 
-    <div style="background-color: #f85606; ">
-        <div onscroll="getPosition('headerOptions')" class="headerOptions" id="headerOptions" style="background-color: #f85606; margin-bottom: 0%; 
-    font-family: 'Roboto', 'Helvetica Neue', Helvetica, Tahoma, Arial, sans-serif !important">
+    <div id="topHeader">
+        <div onscroll="getPosition('headerOptions')" class="headerOptions" id="headerOptions">
             <span>
                 <button type="button" class="btn btn-secondary" data-bs-toggle="popover" data-bs-html="true"
                     data-bs-content="" id="popoverBtnSave" data-bs-custom-class="SavePopover">
                     Save More ON APP
                 </button>
             </span>
-            <div id="popoverContentSave" class="SavePopover" style="display:none;">
+            <div id="popoverContentSave" class="SavePopover">
                 <div>
                     Download the App
                 </div>
@@ -45,7 +44,7 @@
                     <img src="assets/googleFooterLogo.png" alt="">
                 </div>
             </div>
-            <span style="padding-top: 1px; display: flex; align-items: start;" class="sellondaraz"><a href="#">SELL ON
+            <span class="sellondaraz"><a href="#">SELL ON
                     DARAZ</a></span>
 
             <span>
@@ -55,9 +54,9 @@
                 </button>
             </span>
 
-            <div id="popoverContentHelp" class="helpCenterPopover" style="display:none;">
+            <div id="popoverContentHelp" class="helpCenterPopover">
                 <div>
-                    <img style="width: 10px; height: 10px;" src="assets/support.png" alt="">
+                    <img src="assets/support.png" alt="">
                     <span>Help Center</span>
                 </div>
                 <div>
@@ -83,24 +82,23 @@
 
             </div>
             <span>
-                <button type="button" class="btn loginButton" data-bs-toggle="modal" data-bs-target="#loginModel"
-                    style="padding: 6px 0; height: fit-content; display: flex; align-items: start;">
+                <button type="button" class="btn loginButton" data-bs-toggle="modal" data-bs-target="#loginModel">
                     Login
                 </button>
             </span>
             <span><button type="button" class="btn signUpButtonNav" data-bs-toggle="modal"
-                    style="padding: 6px 0; height: fit-content;" data-bs-target="#signupModel">
+                     data-bs-target="#signupModel">
                     Sign Up
                 </button></span>
-            <span style="padding-right: 0px !important;">
-                <button type="button" class="btn btn-secondary" data-bs-toggle="popover" data-bs-html="true"
+            <span class="languageChangeSpan">
+                <button type="button" class="btn btn-secondary languageChange" data-bs-toggle="popover" data-bs-html="true"
                     data-bs-content="" id="popoverBtnLanguage" data-bs-custom-class="languagePopover"
-                    style="padding-right: 0px !important;">
+                    >
                     زبان تبدیل کریں
                 </button>
             </span>
 
-            <div id="popoverContentLanguage" class="languagePopover" style="display:none;">
+            <div id="popoverContentLanguage" class="languagePopover">
                 <div>
                     <img src="assets/pakFlag.png" alt=""><span>Ur / Urdu</span>
                     <img src="assets/englandFlag.png" alt=""><span>EN | English</span>
@@ -110,11 +108,10 @@
             </div>
         </div>
     </div>
-    <header
-        style="position: sticky; top: 0; z-index: 4; height: max-content; padding-top: 11px ; padding-bottom: 11px;  align-items: center; z-index: 100;">
-        <nav style="max-width: 1188px; margin: auto; display: flex; align-items: center;">
+    <header id="mainHeader">
+        <nav>
 
-            <div class="logoSide" style="position: sticky; top: 0;">
+            <div class="logoSide">
                 <div class="logoImg">
                     <a href="index.html">
                         <img src="assets/darazLogo.png" alt="">
@@ -122,8 +119,7 @@
                 </div>
                 <div class="search">
                     <div class="searchInput">
-                        <input type="text" name="" id="" placeholder="Search in Daraz"
-                            style="border-radius: 2px; font-size: 14px; color: rgb(233, 233, 233);">
+                        <input type="text" name="" id="" placeholder="Search in Daraz">
                         <span><i class="fa-solid fa-magnifying-glass"></i></span>
                     </div>
                     <div class="cart-icon">
@@ -134,7 +130,7 @@
 
 
         </nav>
-        <div id="spacer" style="height: 25px;">
+        <div id="spacer">
 
 
         </div>
@@ -143,76 +139,72 @@
     <!-- Modal -->
     <div class="modal" id="loginModel" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
         aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog" style="width: 444px; height: 447px ; overflow: hidden;">
+        <div class="modal-dialog">
             <div class="modal-content">
                 <div class="animationModel">
-                    <div class="modal-header" style="border-bottom-width: 0 !important;">
-                        <div class="model-LoginOption" style="position: relative;">
+                    <div class="modal-header">
+                        <div class="model-LoginOption">
                             <div id="errorBoxLogin" class="hidden">
-                                <span style="display: flex; align-items: center; gap: 10px;">
-                                    <i class="fa-solid fa-circle-xmark" style="color: red; font-size: 24px;"></i>
-                                    <p style="margin: 0%;" id="msg">Enter a Valid Login Password</p>
+                                <span>
+                                    <i class="fa-solid fa-circle-xmark"></i>
+                                    <p id="msg">Enter a Valid Login Password</p>
                                 </span>
                             </div>
-                            <div style="cursor: pointer;" class="active" id="emailLoginButton">
+                            <div  class="active" id="emailLoginButton">
                                 Password
                             </div>
                             <div class="inactive">|</div>
-                            <div class="inactive" style="cursor: pointer;" id="phoneLoginButton">
+                            <div class="inactive" id="phoneLoginButton">
                                 Phone Number
                             </div>
                         </div>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
-                            style="position: absolute; right: 30px;"></button>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
 
-                    <form id="loginWithEmailSection" action="" class="modal-body" style="gap: 10px;">
+                    <form id="loginWithEmailSection" action="" class="modal-body">
                         <div>
                             <input type="email" class="form-control" id="loginEmail"
                                 placeholder="Please enter your Phone or Email">
                         </div>
                         <div>
-                            <div style="display: flex; align-items: center;">
+                            <div class="passwordInputFieldModel">
                                 <input type="password" class="form-control" id="loginPassword"
                                     aria-describedby="validationServer03Feedback"
-                                    placeholder="Please enter your Password" style="position: relative;">
-                                <img src="assets/eyebrow.png" id="showPass"
-                                    style="position: absolute; right: 60px; width: 20px; height: 20px; cursor: pointer; filter: grayscale(100%);">
+                                    placeholder="Please enter your Password">
+                                <img src="assets/eyebrow.png" id="showPass">
 
                             </div>
-                            <div id="passwordFeedback" class="invalid-feedback" style="display: none;">
+                            <div id="passwordFeedback" class="invalid-feedback">
                                 You can't leave this empty.
                             </div>
                         </div>
                         <div class="forgotDiv"><a href="#" class="forgotPassword">Forgot password?</a></div>
-                        <div style="padding-top: 4px;">
+                        <div class="loginFormButtonSubmit">
                             <input type="submit" name="" id="loginButton" value="LOGIN">
                         </div>
                     </form>
-                    <form id="loginwithPhone" action="" class="modal-body"
-                        style="display: none; gap: 60px; flex-direction: column; margin-top: 40px;">
+                    <form id="loginwithPhone" action="" class="modal-body">
                         <div class="phoneSectionLogin">
-                            <div style="display: flex; gap: 4px; height: 48px;">
-                                <span style="font-size: 10px; position: relative; top: 3px;">PK</span>
+                            <div id="countryCodeInput">
+                                <span>PK</span>
                                 <span>+92</span>
                             </div>
-                            <div style="flex-grow: 2; ">
+                            <div class="phoneInput">
                                 <input type="number" name="" id="phoneNumber"
-                                    placeholder="Please enter your phone number" style="width: 100%;">
+                                    placeholder="Please enter your phone number">
                             </div>
                         </div>
 
 
-                        <button type="submit" class="submitLoginPhone"><img src="assets/whatsappIcon.png" alt=""
-                                style="width: 24px; height: 24px; position: absolute; left: 10px;">Send code
-                            via Whatsapp</button>
+                        <button type="submit" class="submitLoginPhone"><img src="assets/whatsappIcon.png" alt="">Send
+                            code via Whatsapp</button>
 
 
                     </form>
-                    <div style="text-align: center;">
-                        <span style="color: #858b9c; font-weight: 300; font-weight: 10px;">Don't have an account?</span>
+                    <div id="dontHaveAccount">
+                        <span id="dontHaveAccountSpan">Don't have an account?</span>
                         <span><a href="#" data-bs-toggle="modal" data-bs-target="#signupModel" data-bs-dismiss="modal"
-                                aria-label="Close" style="text-decoration: none;">Sign up</a></span>
+                                aria-label="Close">Sign up</a></span>
                     </div>
                     <div class="noAccount">
 
@@ -233,7 +225,7 @@
     </div>
     <div class="modal" id="signupModel" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
         aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog" style="width: 444px; height: 447px ; overflow: hidden;">
+        <div class="modal-dialog">
             <div class="modal-content">
                 <div class="animationModel">
                     <div class="modal-header" style="position: relative;">
@@ -244,7 +236,7 @@
                                     <p style="margin: 0%;" id="msg">Enter a Valid Login Password</p>
                                 </span>
                             </div>
-                            <div style="cursor: pointer;" class="active">
+                            <div  class="active">
                                 Sign Up
                             </div>
                         </div>
@@ -744,7 +736,7 @@
             </div>
             <!-- load Products Button  -->
             <div class="row" id="loadingProducts">
-                <div class="col" >
+                <div class="col">
                     <a href="#" id="loadProductsButton">
                         Load More
                     </a>
