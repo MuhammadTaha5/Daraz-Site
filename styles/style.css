@@ -35,10 +35,13 @@ header#mainHeader nav{
     margin: auto;
     display: flex;
     justify-content: center;
+    display: flex; justify-content: center; margin-top: 24px; height: 140px;
 
 
 }
-
+.banner img{
+    height: 100%; max-width: 1188px;
+}
 .headerOptions {
     background-color: #f85606; margin-bottom: 0%; 
     font-family: 'Roboto', 'Helvetica Neue', Helvetica, Tahoma, Arial, sans-serif !important;
@@ -253,6 +256,16 @@ button.languageChange{
     background-color: white;
     
 }
+.cardFsContent .cards{
+    padding: 4px 4px;
+}
+.cardFsContent .cards .card-inner{
+    color: inherit; text-decoration: none;
+}
+
+.cardFsContent hr{
+    margin: 2px 0;
+}
 
 .fs-banner {
     font-weight: 400;
@@ -326,6 +339,7 @@ button.languageChange{
 .flashSale {
     margin: 0 40px;
     padding-top: 24px;
+    max-width: 1188px; margin: auto;
 }
 
 .cardDetail {
@@ -476,6 +490,15 @@ a#loadProductsButton{
     scroll-snap-align: start;
     object-fit: cover;
 }
+.carousel-section{
+    display: flex; justify-content: center; height: 344px;
+}
+.carousel-inner{
+    height: 100%; max-width:  1188px;
+}
+.carousel-slide-indicators{
+    height: 100%; width: 1000px; position: relative !important;
+}
 
 .carousel-indicators [data-bs-target] {
     position: relative;
@@ -490,6 +513,14 @@ a#loadProductsButton{
 .carousel-control-prev-icon {
     height: 30px !important;
     width: 50px !important;
+}
+
+.pc-download-module{
+    width: 200px; height: 100%;
+}
+.pc-download-module img{
+    width: 100%; height: 100%;
+
 }
 
 .downloadSection a img {
@@ -781,7 +812,7 @@ a#loadProductsButton{
 
 .modal-body {
     padding: 30px 30px 10px 30px !important;
-
+    gap: 10px; flex-direction: column;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -825,7 +856,13 @@ a#loadProductsButton{
     display: flex;
     gap: 20px;
 }
+.privacyPolicyLog{
+    display: flex; gap: 5px; font-size: 14px; font-weight: 400; color: rgb(133, 139, 156);
+}
 
+.form-check-input{
+    width: 20px;
+}
 .loginThirdParty div:nth-child(2) a span {
     margin-left: 10px;
 
@@ -835,6 +872,7 @@ a#loadProductsButton{
 }
 .modal-header{
     border-bottom-width: 0 !important;
+    position: relative !important;
 }
 .modal-dialog{
     width: 444px !important; height: 447px !important; overflow: hidden !important;
@@ -963,10 +1001,10 @@ form#loginwithPhone{
     padding: 10px 20px;
     border-radius: 6px;
 }
-#errorBoxLogin span{
+#errorBoxLogin span, #errorBoxSignUp span{
     display: flex; align-items: center; gap: 10px;
 }
-#errorBoxLogin #msg{
+#errorBoxLogin #msg, #errorBoxSignUp #msg {
     margin: 0%;
 }
 .fa-circle-xmark{

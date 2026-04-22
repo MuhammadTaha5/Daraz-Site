@@ -87,13 +87,13 @@
                 </button>
             </span>
             <span><button type="button" class="btn signUpButtonNav" data-bs-toggle="modal"
-                     data-bs-target="#signupModel">
+                    data-bs-target="#signupModel">
                     Sign Up
                 </button></span>
             <span class="languageChangeSpan">
-                <button type="button" class="btn btn-secondary languageChange" data-bs-toggle="popover" data-bs-html="true"
-                    data-bs-content="" id="popoverBtnLanguage" data-bs-custom-class="languagePopover"
-                    >
+                <button type="button" class="btn btn-secondary languageChange" data-bs-toggle="popover"
+                    data-bs-html="true" data-bs-content="" id="popoverBtnLanguage"
+                    data-bs-custom-class="languagePopover">
                     زبان تبدیل کریں
                 </button>
             </span>
@@ -150,7 +150,7 @@
                                     <p id="msg">Enter a Valid Login Password</p>
                                 </span>
                             </div>
-                            <div  class="active" id="emailLoginButton">
+                            <div class="active" id="emailLoginButton">
                                 Password
                             </div>
                             <div class="inactive">|</div>
@@ -228,50 +228,47 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="animationModel">
-                    <div class="modal-header" style="position: relative;">
-                        <div class="model-LoginOption" style="position: relative;">
+                    <div class="modal-header">
+                        <div class="model-LoginOption">
                             <div id="errorBoxSignUp" class="hidden">
-                                <span style="display: flex; align-items: center; gap: 10px;">
-                                    <i class="fa-solid fa-circle-xmark" style="color: red; font-size: 24px;"></i>
-                                    <p style="margin: 0%;" id="msg">Enter a Valid Login Password</p>
+                                <span>
+                                    <i class="fa-solid fa-circle-xmark"></i>
+                                    <p id="msg">Enter a Valid Login Password</p>
                                 </span>
                             </div>
-                            <div  class="active">
+                            <div class="active">
                                 Sign Up
                             </div>
                         </div>
 
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
-                            style="position: absolute; right: 30px;"></button>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <form id="signUpPhone" action="" class="modal-body" style="gap: 10px; flex-direction: column;">
+                    <form id="signUpPhone" action="" class="modal-body">
                         <div class="phoneSectionLogin">
-                            <div>
-                                <span style="font-size: 10px; position: relative; top: 3px;">PK</span>
+                            <div id="countryCodeInput">
+                                <span>PK</span>
                                 <span>+92</span>
                             </div>
-                            <div style="flex-grow: 2; ">
+                            <div class="phoneInput">
                                 <input type="number" name="signUpPhoneInput" id="signUpPhoneInput"
-                                    placeholder="Please enter your phone number" style="width: 100%;">
+                                    placeholder="Please enter your phone number">
                             </div>
                         </div>
-                        <div
-                            style="display: flex; gap: 5px; font-size: 14px; font-weight: 400; color: rgb(133, 139, 156)">
+                        <div class="privacyPolicyLog">
                             <input class="form-check-input" type="checkbox" id="checkboxPrivacyPolicy" value=""
-                                aria-label="..." style="width: 20px;">
+                                aria-label="...">
                             <label for="privacyPolicyCheck">By creating and/or using your account, you agree to our <a
                                     href="#">Terms of Use</a> and <a href="#">Privacy Policy.</a></label>
                         </div>
 
 
                         <button type="submit" class="submitLoginPhone" id="signUpButton"><img
-                                src="assets/whatsappIcon.png" alt=""
-                                style="width: 30px; height: 30px; position: absolute; left: 10px;">Send code
+                                src="assets/whatsappIcon.png" alt="">Send code
                             via Whatsapp</button>
 
 
                     </form>
-                    <div style="text-align: center;">
+                    <div id="dontHaveAccount">
                         <span>Already have an account?</span>
                         <span><a href="#" data-bs-toggle="modal" data-bs-target="#loginModel" data-bs-dismiss="modal"
                                 aria-label="Close"> Log in Now</a></span>
@@ -293,9 +290,9 @@
             </div>
         </div>
     </div>
-    <div style="display: flex; justify-content: center; height: 344px;">
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval='2000'
-            data-bs-wrap="true" style="height: 100%; width: 1000px; position: relative !important;">
+    <div class="carousel-section">
+        <div id="carouselExampleIndicators" class="carousel slide carousel-slide-indicators" data-bs-ride="carousel"
+            data-bs-interval='2000' data-bs-wrap="true">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
                     aria-current="true" aria-label="Slide 1"></button>
@@ -325,7 +322,7 @@
                     aria-label="Slide 11"></button>
 
             </div>
-            <div class="carousel-inner" style="height: 100%; max-width:  1188px;">
+            <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img src="assets/carouselC1.avif" class="d-block w-100" alt="...">
                 </div>
@@ -378,16 +375,16 @@
                 <span class="arrow-icon">&#10095;</span>
             </button>
         </div>
-        <div class="pc-download-module" style="width: 200px; height: 100%;">
+        <div class="pc-download-module">
 
-            <img src="assets/darazFlashCard.png" alt="" srcset="" style="width: 100%; height: 100%;">
+            <img src="assets/darazFlashCard.png" alt="" srcset="">
         </div>
     </div>
-    <section class="banner" style="display: flex; justify-content: center; margin-top: 24px; height: 140px;">
-        <img src="assets/gif.webp" alt="" style="height: 100%; max-width: 1188px;">
+    <section class="banner">
+        <img src="assets/gif.webp" alt="">
     </section>
     <main>
-        <section class="flashSale" id="flashSale" style="max-width: 1188px; margin: auto;">
+        <section class="flashSale" id="flashSale">
             <p class="fs-banner">
                 Flash Sale
             </p>
@@ -396,131 +393,8 @@
                     <p>On Sale Now</p>
                     <a href="#">Shop All Products</a>
                 </div>
-                <hr style="margin: 2px 0;">
-                <div class="cards" style="padding: 4px 4px;">
-                    <div class="card">
-                        <a href="" style="color: inherit; text-decoration: none;">
-                            <div class="img">
-                                <img src="assets/shopImg1.avif" alt="" id="fsProductImgLink">
-                            </div>
-                            <div class="cardDetail">
-                                <p id="fsProductTitle">Home Fabric Folding Storage Storage Box With Lid Dustproof
-                                    Portable Box Clothing Sundries Multifunctional Storage Box</p>
-                                <div class="itemPrice">
-                                    <p>Rs. <span id="fsProductPrice">205</span></p>
-                                </div>
-                                <div class="itemPriceDetail">
-                                    <span style="text-decoration: line-through;">
-                                        <span class="currency">RS</span>
-                                        <span class="actualPrice">499</span>
-                                    </span>
-                                    <span class="itemDiscount" id="fsProductDiscount">-59%</span>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="card">
-                        <a href="" style="color: inherit; text-decoration: none;">
-                            <div class="img">
-                                <img src="assets/shopImg2.avif" alt="" id="fsProductImgLink">
-                            </div>
-                            <div class="cardDetail">
-                                <p id="fsProductTitle">Daachi Posture belt, posture corrector belt, Back support belt,
-                                    Back Pain Relief Shoulder Back Support Belt</p>
-                                <div class="itemPrice">
-                                    <p>Rs. <span id="fsProductPrice">666</span></p>
-                                </div>
-                                <div class="itemPriceDetail">
-                                    <span>
-                                        <span class="currency">RS</span>
-                                        <span class="actualPrice">859</span>
-                                    </span>
-                                    <span class="itemDiscount">-22%</span>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="card">
-                        <a href="" style="color: inherit; text-decoration: none;">
-                            <div class="img">
-                                <img src="assets/shopImg3.avif" alt="" id="fsProductImgLink">
-                            </div>
-                            <div class="cardDetail">
-                                <p id="fsProductTitle">Laptop bag, Backpacks Travel bag</p>
-                                <div class="itemPrice">
-                                    <p>Rs. <span id="fsProductPrice">492</span></p>
-                                </div>
-                                <div class="itemPriceDetail">
-                                    <span>
-                                        <span class="currency">RS</span>
-                                        <span class="actualPrice">3899</span>
-                                    </span>
-                                    <span class="itemDiscount">-87%</span>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="card">
-                        <a href="" style="color: inherit; text-decoration: none;">
-                            <div class="img">
-                                <img src="assets/shopImg1.avif" alt="" id="fsProductImgLink">
-                            </div>
-                            <div class="cardDetail">
-                                <p id="fsProductTitle">pack of 3-Improved Quality LARGE Storage Bags FOR SHIRTS CLOTHS
-                                    AND BLANCKETS DOUBLE ZIPPER Organizer</p>
-                                <div class="itemPrice">
-                                    <p>Rs. <span id="fsProductPrice">404</span></p>
-                                </div>
-                                <div class="itemPriceDetail">
-                                    <span>
-                                        <span class="currency">RS</span>
-                                        <span class="actualPrice">999</span>
-                                    </span>
-                                    <span class="itemDiscount">-60%</span>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="card">
-                        <a href="" style="color: inherit; text-decoration: none;">
-                            <div class="img">
-                                <img src="assets/shopImg5.avif" alt="" id="fsProductImgLink">
-                            </div>
-                            <div class="cardDetail">
-                                <p id="fsProductTitle">Samsung Galaxy S26 Ultra - 512 GB - Get Free Galaxy Tab A11</p>
-                                <div class="itemPrice">
-                                    <p>Rs. <span id="fsProductPrice">489,996</span></p>
-                                </div>
-                                <div class="itemPriceDetail">
-                                    <span>
-                                        <span class="currency">RS</span>
-                                        <span class="actualPrice">489,999</span>
-                                    </span>
-                                    <span class="itemDiscount">-1%</span>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="card">
-                        <a href="" style="color: inherit; text-decoration: none;">
-                            <div class="img">
-                                <img src="assets/shopImg6.avif" alt="" id="fsProductImgLink">
-                            </div>
-                            <div class="cardDetail">
-                                <p id="fsProductTitle">Knorr Blazing Noodles 110G</p>
-                                <div class="itemPrice">
-                                    <p>Rs. <span id="fsProductPrice">196</span></p>
-                                </div>
-                                <div class="itemPriceDetail">
-                                    <span>
-                                        <span class="currency">RS</span>
-                                        <span class="actualPrice">150</span>
-                                    </span>
-                                    <span class="itemDiscount">-16%</span>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
+                <hr>
+                <div class="cards" id="product-container">
                 </div>
             </div>
         </section>
