@@ -173,7 +173,6 @@
                             <div class="active" id="emailLoginButton">
                                 Password
                             </div>
-                            <div class="inactive">|</div>
                             <div class="inactive" id="phoneLoginButton">
                                 Phone Number
                             </div>
@@ -182,15 +181,15 @@
                     </div>
 
                     <form id="loginWithEmailSection" action="" class="modal-body">
-                        <div>
+                        <div class="emailPassSection">
                             <input type="email" class="form-control" id="loginEmail"
                                 placeholder="Please enter your Phone or Email">
                         </div>
-                        <div>
+                        <div class="emailPassSection" id="passwordField">
                             <div class="passwordInputFieldModel">
                                 <input type="password" class="form-control" id="loginPassword"
                                     aria-describedby="validationServer03Feedback"
-                                    placeholder="Please enter your Password">
+                                    placeholder="Please enter your password">
                                 <img src="assets/eyebrow.png" id="showPass">
 
                             </div>
@@ -223,7 +222,7 @@
                     </form>
                     <div id="dontHaveAccount">
                         <span id="dontHaveAccountSpan">Don't have an account?</span>
-                        <span><a href="#" data-bs-toggle="modal" data-bs-target="#signupModel" data-bs-dismiss="modal"
+                        <span ><a id="signupLinkSide" href="#" data-bs-toggle="modal" data-bs-target="#signupModel" data-bs-dismiss="modal"
                                 aria-label="Close">Sign up</a></span>
                     </div>
                     <div class="noAccount">
@@ -232,9 +231,9 @@
                             <div>
                                 Or, login with
                             </div>
-                            <div>
-                                <a><img src="assets/googleIcon.png" alt=""><span>Google</span></a>
-                                <a><img src="assets/facebookIcon - Copy.png" alt=""><span>Facebook</span></a>
+                            <div id="thirdPartyLoginOptions">
+                                <a><img src="assets/googleIcon.png" alt="" id="googleIcon"><span>Google</span></a>
+                                <a><img src="assets/icons/facebookIcon.png" alt="" id="fbIcon" ><span>Facebook</span></a>
                             </div>
                         </div>
 

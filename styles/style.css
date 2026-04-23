@@ -13,6 +13,7 @@ input::-webkit-inner-spin-button {
     font-family: "euclid-Circular-A";
     src: url(/assets/fonts/Euclid\ Circular\ A\ Regular.ttf);
 }
+
 @font-face {
     font-family: "notoSans-Regular";
     src: url(/assets/fonts/NotoSans-Regular.ttf);
@@ -27,6 +28,7 @@ input::-webkit-inner-spin-button {
     font-family: "roboto-regular";
     src: url(/assets/fonts/Roboto-Regular.ttf);
 }
+
 body,
 html {
     background-color: rgb(241, 241, 244) !important;
@@ -105,6 +107,8 @@ header#mainHeader nav {
 
 .headerOptions span {
     padding: 0 18.4px;
+    position: relative;
+    top: -1px;
 }
 
 .SavePopover {
@@ -127,11 +131,12 @@ header#mainHeader nav {
 }
 
 span.sellondaraz {
-    
+
     display: flex;
     align-items: start;
 }
-.btn{
+
+.btn {
     border-width: 0px !important;
 }
 
@@ -265,7 +270,7 @@ button.languageChange {
     gap: 30px;
     margin-left: 2px;
     margin-top: -2px;
-    
+
 }
 
 .logoSide .searchInput input {
@@ -274,7 +279,8 @@ button.languageChange {
     color: #212121;
     font-family: "roboto-regular";
 }
-.logoSide .searchInput input::placeholder{
+
+.logoSide .searchInput input::placeholder {
     color: #a6a6a6;
 }
 
@@ -310,7 +316,8 @@ button.languageChange {
     color: #f85606;
     font-size: 16px;
 }
-.searchInput span{
+
+.searchInput span {
     font-size: 15px;
 }
 
@@ -353,7 +360,7 @@ button.languageChange {
 .fs-banner {
     font-weight: 400;
     font-size: 22px;
-    
+
     list-style: 38px;
     color: #424242;
     margin-bottom: 4px;
@@ -382,8 +389,8 @@ button.languageChange {
     margin-bottom: 0;
     color: #f57224;
     font-family: 'euclid-Circular-A';
-    
-    
+
+
 
 }
 
@@ -439,7 +446,7 @@ button.languageChange {
     font-size: 14px;
     line-height: normal;
     margin: 4px 8px 0 4px;
-font-family: 'euclid-Circular-A';
+    font-family: 'euclid-Circular-A';
 
 
 }
@@ -468,7 +475,9 @@ font-family: 'euclid-Circular-A';
     font-family: "notoSans-Regular";
     font-weight: 600;
 }
-.cardDetail .itemPrice p, .cardDetail .itemPrice span{
+
+.cardDetail .itemPrice p,
+.cardDetail .itemPrice span {
     font-size: 18px;
     font-family: "notoSans-Regular";
 }
@@ -499,7 +508,7 @@ section.categories {
 
 }
 
-#storeProducts .itemDiscount{
+#storeProducts .itemDiscount {
     font-size: 12px;
     line-height: 22px;
     color: #212121;
@@ -688,7 +697,8 @@ a#loadProductsButton {
     width: 100%;
     height: 42px;
 }
-.pc-download-module .topHead .logo img{
+
+.pc-download-module .topHead .logo img {
     height: 100%;
 }
 
@@ -873,7 +883,8 @@ a#loadProductsButton {
     display: flex;
     justify-content: start;
     gap: 20px;
-    max-width: 1188px; margin: auto;
+    max-width: 1188px;
+    margin: auto;
     font-family: "euclid-Circular-A";
 }
 
@@ -927,11 +938,12 @@ a#loadProductsButton {
     gap: 10px;
 }
 
-.darazImgFooter img{
+.darazImgFooter img {
     width: 42px;
     height: 42px;
 }
-.happyshoppingsection{
+
+.happyshoppingsection {
     flex: 0 0 220px;
     align-items: center;
     font-family: "euclid-Circular-A";
@@ -944,27 +956,41 @@ a#loadProductsButton {
     font-family: "euclid-Circular-A";
 }
 
-#happyShoppingHeading{
-    color: #f36f36; font-size: 16px;font-weight: 400;
+#happyShoppingHeading {
+    color: #f36f36;
+    font-size: 16px;
+    font-weight: 400;
     font-family: "euclid-Circular-A";
 }
-#happyShoppingDownload{
-    color: #0f136d; font-size: 14px; font-weight: 400; padding-top: 2px;
+
+#happyShoppingDownload {
+    color: #0f136d;
+    font-size: 14px;
+    font-weight: 400;
+    padding-top: 2px;
     font-family: "euclid-Circular-A";
 }
+
 .footer-second {
     display: flex;
     background-color: white;
     width: 100% !important;
 
 }
-.footer2{
+
+.footer2 {
     gap: 10px;
 }
-.footer2PaymentHeader{
-    color: #183544; font-size: 16px; font-weight: 400; line-height: 2.2em; margin-bottom: 15px;
+
+.footer2PaymentHeader {
+    color: #183544;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 2.2em;
+    margin-bottom: 15px;
     font-family: "euclid-Circular-A";
 }
+
 .footer-second .payment-methods-type {
     display: flex;
     flex-wrap: wrap;
@@ -997,7 +1023,8 @@ a#loadProductsButton {
     margin: 0 0 5px;
 
 }
-h1.footer-title{
+
+h1.footer-title {
     margin-top: 3px;
     font-weight: 300;
 }
@@ -1009,14 +1036,17 @@ h1.footer-title{
     line-height: 13.8px;
     font-family: "euclid-Circular-A" !important;
 }
-.footerThird .col1{
-    column-count: 2; width: 50%;
+
+.footerThird .col1 {
+    column-count: 2;
+    width: 50%;
     font-family: "euclid-Circular-A" !important;
 
 }
-.footerThird .col1 .footer3sections{
+
+.footerThird .col1 .footer3sections {
     padding-right: 25%;
-    
+
 }
 
 .footerThird div {
@@ -1033,7 +1063,8 @@ h1.footer-title{
     font-family: "euclid-Circular-A" !important;
 
 }
-.footerThird b{
+
+.footerThird b {
     font-weight: 600;
     font-family: "euclid-Circular-A" !important;
 }
@@ -1103,30 +1134,37 @@ h1.footer-title{
 .forth-footer .darazStores a:hover {
     text-decoration: underline;
 }
-.footer4inner .footer-title{
+
+.footer4inner .footer-title {
     font-weight: 300;
 }
-.daraz-international-store{
+
+.daraz-international-store {
     margin-left: -4px;
 }
+
 .forth-footer .darazStores a img,
 .forth-footer .darazFollowLinks a img {
     width: 28px;
     height: 28px;
     margin-right: 8px;
 }
-.darazFollowLinks a{
+
+.darazFollowLinks a {
     margin-right: 6px;
 }
+
 .forth-footer .footer-title {
     color: black;
 }
 
 .model-LoginOption {
+    font-family: "euclid-Circular-A" !important;
     position: relative !important;
     display: flex;
     justify-content: space-evenly;
     width: 100%;
+
 }
 
 .model-LoginOption div {
@@ -1135,37 +1173,22 @@ h1.footer-title{
     text-align: center;
 }
 
-.inactive {
-    font-size: 16px;
-    font-weight: 500;
-    text-align: center;
-    color: #858b9c;
-
-
-
-}
-
-.active {
-    font-size: 16px;
-    font-weight: 500;
-    text-align: center;
-    color: black;
-    cursor: pointer;
-
-}
-
 .forgotDiv {
     display: flex;
     justify-content: end;
 }
 
 .forgotPassword {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 400;
+    line-height: 16.8px;
     text-align: end;
     color: #858b9c;
-    ;
+    font-family: "euclid-Circular-A";
     text-decoration: none;
+    cursor: pointer;
+    margin-top: 6px;
+    
 }
 
 #loginButton,
@@ -1178,25 +1201,50 @@ h1.footer-title{
     color: white;
     height: 40px;
     border-radius: 6px;
+    
 }
 
+#loginButton{
+    margin-top: 20px;
+    font-family: "euclid-Circular-A" !important;
+    font-weight: 500;
+    font-size: 16px;
+
+}
 .modal-body {
-    padding: 30px 30px 10px 30px !important;
-    gap: 10px;
+    margin-top: 36px !important;
+    padding: 0px 36px !important;
     flex-direction: column;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+
+}
+
+.emailPassSection {
+    width: 372px;
+    height: 48px;
+}
+
+#loginWithEmailSection #passwordField {
+    margin-top: 18px;
 }
 
 .form-control {
-    height: 50px !important;
+    width: 100% !important;
+    height: 48px !important;
     font-size: 14px !important;
     font-weight: 400 !important;
-
-    color: #858b9c !important;
+    line-height: 18px !important;
+    font-family: "roboto-regular" !important;
+    color: #1f1f1f !important;
     border-radius: 6px !important;
-    border: 1px solid #858b9c !important;
+    border: 1px solid #b9bccf !important;
+    padding: 0 18px !important;
+}
+.form-control::placeholder{
+    font-family: "roboto-regular" !important;
+    color: #999999 !important;
+
 }
 
 .noAccount {
@@ -1208,19 +1256,33 @@ h1.footer-title{
     font-weight: 400;
     gap: 10px;
     color: #858b9c;
-    margin-top: 50px;
+    margin-top: 42px;
+    font-family: "roboto-regular";
 }
 
-.noAccount img {
-    width: 25px;
-    height: 25px;
+.noAccount #googleIcon{
+    width: 18px;
+    height: 18px;
 }
 
+.noAccount #fbIcon {
+    width: 22px;
+    height: 22px;
+}
 .loginThirdParty {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
+}
+#thirdPartyLoginOptions{
+    display: flex;
+    gap: 30px;
+    
+}
+#thirdPartyLoginOptions span{
+    font-family: "euclid-Circular-A" !important;
+
 }
 
 .loginThirdParty div:nth-child(2) {
@@ -1247,13 +1309,17 @@ h1.footer-title{
 
 #loginModel .modal-dialog,
 #signupModel .modal-dialog {
-    margin-top: 55px;
+    margin-top: 60px;
     /* adjust as needed */
 }
 
 .modal-header {
     border-bottom-width: 0 !important;
     position: relative !important;
+    margin-top: 26px;
+    padding: 0 36px !important;
+    font-family: "euclid-Circular-A" !important;
+    height: 19.2px;
 }
 
 .modal-dialog {
@@ -1269,16 +1335,17 @@ h1.footer-title{
 }
 
 .phoneSectionLogin {
+    margin-top: 36px !important;
     display: flex;
     width: 100%;
-    gap: 10px;
+    gap: 6px;
 }
 
 .phoneSectionLogin div:nth-child(1),
 .phoneSectionLogin div:nth-child(2) {
-    flex-grow: 1;
+    
     padding: 5px 5px;
-    border: 1px solid #898989 !important;
+    border: 1px solid #cbcedf !important;
     color: #606060 !important;
     height: 48px !important;
     font-size: 14px !important;
@@ -1295,14 +1362,44 @@ h1.footer-title{
     padding: 2px 5px;
 }
 
-div#dontHaveAccount {
+
+.inactive {
+    font-size: 16px;
+    font-weight: 500;
     text-align: center;
+    color: #858b9c;
+
+
+
+}
+
+.active {
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    color: black;
+    cursor: pointer;
+
+}
+
+div#dontHaveAccount {
+    font-family: "euclid-Circular-A";
+    text-align: center;
+    margin-top: 8px;
 }
 
 #dontHaveAccountSpan {
+    font-family: "euclid-Circular-A";
     color: #858b9c;
     font-weight: 300;
     font-weight: 10px;
+    font-size: 14px;
+    line-height: 16.8px;
+}
+#signupLinkSide{
+    color: #1e71ff;
+    font-size: 14px;
+    text-decoration: none;
 }
 
 .phoneSectionLogin div:nth-child(2) input:focus {
@@ -1326,6 +1423,7 @@ div#dontHaveAccount {
     display: flex;
     gap: 4px;
     height: 48px;
+    width: 82px;
 
 }
 
@@ -1333,6 +1431,9 @@ div#dontHaveAccount {
     font-size: 10px;
     position: relative;
     top: 3px;
+    font-family: "euclid-Circular-A";
+    color: #1f1f1f;
+
 }
 
 #phoneNumber {
@@ -1352,16 +1453,19 @@ div#dontHaveAccount {
 
 form#loginwithPhone {
     display: none;
-    gap: 60px;
     flex-direction: column;
-    margin-top: 40px;
+    padding: 0 24px !important;
+
+    
 }
-.daraz-copyright{
+
+.daraz-copyright {
     color: #606060;
     font-size: 14px;
     font-weight: 30px;
     font-family: "euclid-Circular-A" !important;
 }
+
 @keyframes appear {
     0% {
         transform: translateY(100px);
@@ -1432,14 +1536,20 @@ form#loginwithPhone {
 #emailLoginButton,
 #phoneLoginButton {
     cursor: pointer;
+    width: 185px;
+    text-align: center;
+    font-family: "euclid-Circular-A";
+    font-weight: 400;
 }
 
-form#loginWithEmailSection {
-    gap: 10px;
-
+#phoneLoginButton {
+    border-left: 1px solid #c9c9c9;
 }
+
+
 
 .passwordInputFieldModel {
+    width: 100%;
     display: flex;
     align-items: center;
 
@@ -1455,11 +1565,15 @@ form#loginWithEmailSection {
     width: 20px;
     height: 20px;
     cursor: pointer;
-    filter: grayscale(100%);
+    
+    filter: grayscale(80%) brightness(100%);
+    
 }
 
 #passwordFeedback {
     display: none;
+    position: absolute;
+    
 }
 
 .loginFormButtonSubmit {
@@ -1469,6 +1583,8 @@ form#loginWithEmailSection {
 .btn-close {
     position: absolute;
     right: 30px;
+    top: 0px;
+    font-size: 14px;
 }
 
 /* Class to hide the element */
@@ -1712,7 +1828,8 @@ form#loginWithEmailSection {
     margin: auto;
 
 }
-.footerThird{
+
+.footerThird {
     padding: 60px 0 40px;
 }
 
@@ -1728,7 +1845,8 @@ form#loginWithEmailSection {
 .forth-footer {
     padding: 20px 0 25px 42px;
 }
-.footer-second{
+
+.footer-second {
     padding: 20px 0 25px 0px;
 }
 
@@ -2012,7 +2130,8 @@ body {
     #topHeader {
         display: none;
     }
-    p.fs-banner{
+
+    p.fs-banner {
         margin-left: 10px;
     }
 
