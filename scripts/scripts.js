@@ -5,7 +5,7 @@ let products = [];
 // convert into json object
 async function loadProducts() //method to load the products
 {
-    const res = await fetch("assets/products.json");
+    const res = await fetch("assets/data/products.json");
     const data = await res.json();
     return data;
 }
@@ -39,7 +39,7 @@ async function init() {
                                 <p>${product["title"]}</p>
                                 <div class="itemPrice" style="display: flex; gap: 4px;">
                                     <p>RS.${product["price"]}</p>
-                                    <span class="itemDiscount" style="color: grey !important; position: relative; top: 4px;">${product["discount"]}</span>
+                                    <span class="itemDiscount" style="color: grey !important; position: relative; top: 2px;">${product["discount"]}</span>
                                 </div>
                                 <div class="productRating">
                                     <span>

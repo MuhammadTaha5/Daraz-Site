@@ -1,6 +1,6 @@
 async function loadCategories() {
     try {
-        const response = await fetch('assets/categories.json');
+        const response = await fetch('assets/data/categories.json');
         const categories = await response.json();
         
         const categoryList = document.getElementById('category-list');

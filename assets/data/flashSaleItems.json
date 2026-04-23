@@ -2,7 +2,7 @@
   {
     "id": 1,
     "title": "Home Fabric Folding Storage Box With Lid Dustproof Portable Box Clothing Sundries Multifunctional Storage Box",
-    "img": "assets/shopImg1.avif",
+    "img": "assets/products/shopImg1.avif",
     "price": 205,
     "actualPrice": 499,
     "discount": "-59%"
@@ -10,7 +10,7 @@
   {
     "id": 2,
     "title": "Daachi Posture belt, posture corrector belt, Back support belt, Back Pain Relief Shoulder Back Support Belt",
-    "img": "assets/shopImg2.avif",
+    "img": "assets/products/shopImg2.avif",
     "price": 666,
     "actualPrice": 859,
     "discount": "-22%"
@@ -18,7 +18,7 @@
   {
     "id": 3,
     "title": "Laptop bag, Backpacks Travel bag",
-    "img": "assets/shopImg3.avif",
+    "img": "assets/products/shopImg3.avif",
     "price": 492,
     "actualPrice": 3899,
     "discount": "-87%"
@@ -26,7 +26,7 @@
   {
     "id": 4,
     "title": "pack of 3-Improved Quality LARGE Storage Bags FOR SHIRTS CLOTHS AND BLANCKETS DOUBLE ZIPPER Organizer",
-    "img": "assets/shopImg1.avif",
+    "img": "assets/products/shopImg1.avif",
     "price": 404,
     "actualPrice": 999,
     "discount": "-60%"
@@ -34,7 +34,7 @@
   {
     "id": 5,
     "title": "Samsung Galaxy S26 Ultra - 512 GB - Get Free Galaxy Tab A11",
-    "img": "assets/shopImg5.avif",
+    "img": "assets/products/shopImg5.avif",
     "price": 489996,
     "actualPrice": 489999,
     "discount": "-1%"
@@ -42,7 +42,7 @@
   {
     "id": 6,
     "title": "Knorr Blazing Noodles 110G",
-    "img": "assets/shopImg6.avif",
+    "img": "assets/products/shopImg6.avif",
     "price": 126,
     "actualPrice": 150,
     "discount": "-16%"

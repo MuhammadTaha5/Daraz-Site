@@ -18,7 +18,7 @@ cards[i].style.textDecoration = "none";
 async function loadProducts() {
     try {
         // 1. Fetch the data from your JSON file
-        const response = await fetch('assets/flashSaleItems.json');
+        const response = await fetch('assets/data/flashSaleItems.json');
         const products = await response.json();
 
         const container = document.getElementById('product-container');

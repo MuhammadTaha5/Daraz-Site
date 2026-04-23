@@ -8,11 +8,25 @@ input::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
-/* Define the class */
-:root {
-  --main-font: NotoSans-Regular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", Helvetica, Tahoma, Arial, sans-serif;
+
+@font-face {
+    font-family: "euclid-Circular-A";
+    src: url(/assets/fonts/Euclid\ Circular\ A\ Regular.ttf);
+}
+@font-face {
+    font-family: "notoSans-Regular";
+    src: url(/assets/fonts/NotoSans-Regular.ttf);
 }
 
+@font-face {
+    font-family: "notoSans-Medium";
+    src: url(/assets/fonts/Roboto-Medium.ttf);
+}
+
+@font-face {
+    font-family: "roboto-regular";
+    src: url(/assets/fonts/Roboto-Regular.ttf);
+}
 body,
 html {
     background-color: rgb(241, 241, 244) !important;
@@ -40,11 +54,12 @@ header#mainHeader nav {
     margin: auto;
     display: flex;
     align-items: center;
+    padding-top: 2px;
+    padding-bottom: 2px;
 }
 
 * {
-    font-family: NotoSans-Regular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", Helvetica, Tahoma, Arial, "PingFang SC", "Microsoft YaHei", sans-serif;
-    font-family: NotoSans-Regular, sans-serif;
+    font-family: "notoSans-Regular";
 }
 
 
@@ -327,8 +342,7 @@ button.languageChange {
     list-style: 38px;
     color: #424242;
     margin-bottom: 4px;
-    font-family: 'Noto Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    -webkit-font-smoothing: antialiased; /* Makes it look crisp like the image */
+    font-family: 'euclid-Circular-A';
 
 }
 
@@ -336,7 +350,7 @@ button.languageChange {
     font-size: 14px;
     font-weight: 500;
     height: 60px;
-    /* font-family: "Noto Sans", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", Helvetica, Tahoma, Arial, "PingFang SC", "Microsoft YaHei", sans-serif !important; */
+    font-family: 'euclid-Circular-A';
     color: rgb(245, 114, 36);
     margin-left: 20px;
     display: flex;
@@ -352,6 +366,7 @@ button.languageChange {
     align-items: center;
     margin-bottom: 0;
     color: #f57224;
+    font-family: 'euclid-Circular-A';
     
     
 
@@ -409,8 +424,7 @@ button.languageChange {
     font-size: 14px;
     line-height: normal;
     margin: 4px 8px 0 4px;
-font-family: 'Noto Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
-    -webkit-font-smoothing: antialiased !important;
+font-family: 'euclid-Circular-A';
 
 
 }
@@ -426,6 +440,7 @@ font-family: 'Noto Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
     font-weight: 500;
     font-size: 14px;
     line-height: 18px;
+    font-family: 'euclid-Circular-A';
 }
 
 .cardDetail .itemPrice {
@@ -435,11 +450,12 @@ font-family: 'Noto Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
     letter-spacing: -.56px;
     line-height: 22px;
     margin-bottom: 4px;
-    font-family: "Roboto", sans-serif;
+    font-family: "notoSans-Regular";
     font-weight: 600;
 }
 .cardDetail .itemPrice p, .cardDetail .itemPrice span{
     font-size: 18px;
+    font-family: "notoSans-Regular";
 }
 
 
@@ -466,6 +482,13 @@ section.categories {
     padding-top: 24px;
 
 
+}
+
+#storeProducts .itemDiscount{
+    font-size: 12px;
+    line-height: 22px;
+    color: #212121;
+    font-weight: 300;
 }
 
 .cards-categories .categories {
@@ -815,6 +838,10 @@ a#loadProductsButton {
 
 .productRating .comments {
     color: grey;
+    font-size: 12px;
+    position: relative;
+    left: 2px;
+    top: 1px;
 }
 
 #just-for-you {
@@ -827,10 +854,12 @@ a#loadProductsButton {
     justify-content: start;
     gap: 20px;
     max-width: 1188px; margin: auto;
+    font-family: "euclid-Circular-A";
 }
 
 .customerCare {
     color: rgb(15, 19, 109);
+    font-family: "euclid-Circular-A";
 
 }
 
@@ -838,8 +867,8 @@ a#loadProductsButton {
     font-size: 16px;
     font-weight: 500;
     line-height: 35px;
-    font-family: NotoSans-Regular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", Helvetica, Tahoma, Arial, "PingFang SC", "Microsoft YaHei", sans-serif;
-    font-family: NotoSans-Regular, sans-serif;
+    font-family: "euclid-Circular-A";
+    color: rgb(15, 19, 109);
 }
 
 .customerCare ul,
@@ -847,8 +876,7 @@ a#loadProductsButton {
     list-style: none;
     padding-left: 0%;
     line-height: 0.9rem;
-    font-family: NotoSans-Regular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", Helvetica, Tahoma, Arial, "PingFang SC", "Microsoft YaHei", sans-serif;
-    font-family: NotoSans-Regular, sans-serif;
+    font-family: "euclid-Circular-A";
 
 }
 
@@ -858,6 +886,7 @@ a#loadProductsButton {
     font-size: 12px;
     font-weight: 400;
     text-decoration: none;
+    font-family: "euclid-Circular-A";
 }
 
 .customerCare ul li a:hover,
@@ -866,7 +895,9 @@ a#loadProductsButton {
 }
 
 .footerLogoLink {
+    padding-top: 20px;
     display: flex;
+    font-family: "euclid-Circular-A" !important;
 
 }
 
@@ -876,24 +907,44 @@ a#loadProductsButton {
     gap: 10px;
 }
 
-.darazImgFooter {
-    width: 60px;
-    height: 60px;
+.darazImgFooter img{
+    width: 42px;
+    height: 42px;
+}
+.happyshoppingsection{
+    flex: 0 0 220px;
+    align-items: center;
+    font-family: "euclid-Circular-A";
 }
 
 .downloadCom {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    font-family: "euclid-Circular-A";
 }
 
+#happyShoppingHeading{
+    color: #f36f36; font-size: 16px;font-weight: 400;
+    font-family: "euclid-Circular-A";
+}
+#happyShoppingDownload{
+    color: #0f136d; font-size: 14px; font-weight: 400; padding-top: 2px;
+    font-family: "euclid-Circular-A";
+}
 .footer-second {
     display: flex;
     background-color: white;
     width: 100% !important;
 
 }
-
+.footer2{
+    gap: 10px;
+}
+.footer2PaymentHeader{
+    color: #183544; font-size: 16px; font-weight: 400; line-height: 2.2em; margin-bottom: 15px;
+    font-family: "euclid-Circular-A";
+}
 .footer-second .payment-methods-type {
     display: flex;
     flex-wrap: wrap;
@@ -926,31 +977,45 @@ a#loadProductsButton {
     margin: 0 0 5px;
 
 }
+h1.footer-title{
+    margin-top: 3px;
+    font-weight: 300;
+}
 
 .footerThird {
     display: flex;
     margin: 60px 50px;
     max-width: 1188px;
+    line-height: 14px;
+    font-family: "euclid-Circular-A" !important;
 }
 .footerThird .col1{
     column-count: 2; width: 50%;
+    font-family: "euclid-Circular-A" !important;
 
 }
 .footerThird .col1 .footer3sections{
     padding-right: 25%;
+    
 }
 
 .footerThird div {
     font-size: 12px;
     font-weight: 500;
     color: #888;
+    font-family: "euclid-Circular-A" !important;
 }
 
 .footerThird p {
     font-size: 12px;
     font-weight: 500;
     color: #888;
+    font-family: "euclid-Circular-A" !important;
 
+}
+.footerThird b{
+    font-weight: 600;
+    font-family: "euclid-Circular-A" !important;
 }
 
 .footerThird p a {
@@ -960,6 +1025,7 @@ a#loadProductsButton {
     font-size: 11px;
     height: 15px;
     line-height: 15px;
+    font-family: "euclid-Circular-A" !important;
 }
 
 .footerThird p a:hover {
@@ -973,6 +1039,7 @@ a#loadProductsButton {
     font-weight: 400;
     line-height: 20px;
     margin: 0 0 5px;
+    font-family: "euclid-Circular-A" !important;
 }
 
 .footerThird span {
@@ -1008,20 +1075,29 @@ a#loadProductsButton {
 .darazStores span {
     font-weight: 400;
     font-size: 14px;
-    color: #606060;
+    color: #888888;
+    position: relative;
+    top: 2px;
 }
 
 .forth-footer .darazStores a:hover {
     text-decoration: underline;
 }
-
+.footer4inner .footer-title{
+    font-weight: 300;
+}
+.daraz-international-store{
+    margin-left: -4px;
+}
 .forth-footer .darazStores a img,
 .forth-footer .darazFollowLinks a img {
     width: 28px;
     height: 28px;
-    margin-right: 10px;
+    margin-right: 8px;
 }
-
+.darazFollowLinks a{
+    margin-right: 6px;
+}
 .forth-footer .footer-title {
     color: black;
 }
@@ -1260,7 +1336,12 @@ form#loginwithPhone {
     flex-direction: column;
     margin-top: 40px;
 }
-
+.daraz-copyright{
+    color: #606060;
+    font-size: 14px;
+    font-weight: 30px;
+    font-family: "euclid-Circular-A" !important;
+}
 @keyframes appear {
     0% {
         transform: translateY(100px);
@@ -1650,7 +1731,7 @@ form#loginWithEmailSection {
 }
 
 .forth-footer {
-    padding-top: 30px;
+    padding-top: 44px;
 }
 
 .footer4 .footer4inner {
