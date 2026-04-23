@@ -8,6 +8,10 @@ input::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
+/* Define the class */
+:root {
+  --main-font: NotoSans-Regular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", Helvetica, Tahoma, Arial, sans-serif;
+}
 
 body,
 html {
@@ -39,7 +43,8 @@ header#mainHeader nav {
 }
 
 * {
-    font-family: "Roboto", sans-serif;
+    font-family: NotoSans-Regular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", Helvetica, Tahoma, Arial, "PingFang SC", "Microsoft YaHei", sans-serif;
+    font-family: NotoSans-Regular, sans-serif;
 }
 
 
@@ -84,7 +89,7 @@ header#mainHeader nav {
 }
 
 .headerOptions span {
-    padding: 0 14px;
+    padding: 0 13.5px;
 }
 
 .SavePopover {
@@ -318,16 +323,20 @@ button.languageChange {
 .fs-banner {
     font-weight: 400;
     font-size: 22px;
-    font-family: "Roboto", sans-serif;
+    
+    list-style: 38px;
     color: #424242;
     margin-bottom: 4px;
+    font-family: 'Noto Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased; /* Makes it look crisp like the image */
+
 }
 
 .fsStatus {
     font-size: 14px;
     font-weight: 500;
     height: 60px;
-    font-family: "Roboto", sans-serif;
+    /* font-family: "Noto Sans", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", Helvetica, Tahoma, Arial, "PingFang SC", "Microsoft YaHei", sans-serif !important; */
     color: rgb(245, 114, 36);
     margin-left: 20px;
     display: flex;
@@ -338,11 +347,13 @@ button.languageChange {
 
 .fsStatus p {
     font-size: 14px;
-    font-weight: 500;
+    font-weight: 600;
     display: flex;
     align-items: center;
     margin-bottom: 0;
     color: #f57224;
+    
+    
 
 }
 
@@ -392,11 +403,14 @@ button.languageChange {
     margin: auto;
 }
 
+
+
 .cardDetail {
     font-size: 14px;
     line-height: normal;
     margin: 4px 8px 0 4px;
-    font-family: "Roboto", sans-serif;
+font-family: 'Noto Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
+    -webkit-font-smoothing: antialiased !important;
 
 
 }
@@ -409,6 +423,9 @@ button.languageChange {
     line-clamp: 2;
     -webkit-box-orient: vertical;
     margin-bottom: 4px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
 }
 
 .cardDetail .itemPrice {
@@ -419,6 +436,10 @@ button.languageChange {
     line-height: 22px;
     margin-bottom: 4px;
     font-family: "Roboto", sans-serif;
+    font-weight: 600;
+}
+.cardDetail .itemPrice p, .cardDetail .itemPrice span{
+    font-size: 18px;
 }
 
 
@@ -814,8 +835,11 @@ a#loadProductsButton {
 }
 
 .footer-first-title {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 500;
+    line-height: 35px;
+    font-family: NotoSans-Regular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", Helvetica, Tahoma, Arial, "PingFang SC", "Microsoft YaHei", sans-serif;
+    font-family: NotoSans-Regular, sans-serif;
 }
 
 .customerCare ul,
@@ -823,6 +847,8 @@ a#loadProductsButton {
     list-style: none;
     padding-left: 0%;
     line-height: 0.9rem;
+    font-family: NotoSans-Regular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", Helvetica, Tahoma, Arial, "PingFang SC", "Microsoft YaHei", sans-serif;
+    font-family: NotoSans-Regular, sans-serif;
 
 }
 
@@ -1597,6 +1623,9 @@ form#loginWithEmailSection {
 .footer-second,
 .forth-footer {
     padding: 20px 0 25px 42px;
+}
+.footer-second{
+    padding: 20px 0 25px 0px;
 }
 
 .forth-footer {

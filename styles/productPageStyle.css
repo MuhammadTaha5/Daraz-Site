@@ -657,6 +657,8 @@ h1#productName{
     background-color: rgb(243, 247, 255) !important;
     max-width: 100% !important;
     margin: 0;
+    font-family: NotoSans-Regular, sans-serif !important;
+
 }
 .foorter1{
     width: 1188px;

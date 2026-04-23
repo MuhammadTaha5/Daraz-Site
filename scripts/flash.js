@@ -33,7 +33,7 @@ async function loadProducts() {
                     <div class="cardDetail">
                         <p class="product-title">${product.title}</p>
                         <div class="itemPrice">
-                            <p>Rs. <span>${product.price.toLocaleString()}</span></p>
+                            <p>Rs.<span>${product.price.toLocaleString()}</span></p>
                         </div>
                         <div class="itemPriceDetail">
                             <span style="text-decoration: line-through;">
