@@ -1901,6 +1901,22 @@ form#loginwithPhone {
     font-weight: 400;
 }
 
+.messageLoginSignup{
+    color: rgb(76, 130, 150); display: flex; align-items: center;
+}
+.messageLoginSignup button.loginButton{
+    padding: 6px 0; height: fit-content; display: flex; align-items: start; font-size: 16px !important;
+}
+
+.messageLoginSignup button.signUpButtonNav{
+    padding: 6px 0; height: fit-content; font-size: 16px !important;
+}
+.messagePromotion #closeMessage{
+    position: absolute; right: 20px; font-size: 25px; cursor: pointer;
+}
+#openMessageCom{
+    margin-left: 6px;
+}
 .itemPriceDetail span:nth-child(1) {
     text-decoration: line-through;
 }
@@ -1974,6 +1990,12 @@ form#loginwithPhone {
 
 #storeProducts .card {
     margin-right: 2px;
+}
+.topBrandSection{
+    width: 25%; padding-right: 7%
+}
+.footerFashionSection{
+    width: 25%; padding-right: 7%
 }
 
 .carousel {
