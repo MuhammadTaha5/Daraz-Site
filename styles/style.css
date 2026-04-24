@@ -1211,6 +1211,7 @@ h1.footer-title {
     font-size: 16px;
 
 }
+
 .modal-body {
     margin-top: 36px !important;
     padding: 0px 36px !important;
@@ -1249,7 +1250,8 @@ h1.footer-title {
 }
 
 
-#loginModel .noAccount {
+#loginModel .noAccount, #signupModel .noAccount{
+
     position: absolute;
     left: 27%;
     bottom: 22px;
@@ -1266,7 +1268,7 @@ h1.footer-title {
     
 }
 
-.noAccount #googleIcon{
+.noAccount #googleIcon, #signupModel .noAccount #googleIcon{
     width: 18px;
     height: 18px;
 }
@@ -1298,15 +1300,34 @@ h1.footer-title {
 }
 
 .privacyPolicyLog {
-    display: flex;
-    gap: 5px;
-    font-size: 14px;
+
     font-weight: 400;
-    color: rgb(133, 139, 156);
+    color: #858b9c;
+    display: flex;
+    flex-direction: row;
+    font-size: 14px;
+    margin-top: 12px;
+    
+}
+label[for="privacyPolicyCheck"]{
+    font-family: "euclid-Circular-A" !important;
+    position: relative;
+    top: -1px;
+    padding-left: 6px;
+    line-height: 16.8px;
+
+}
+label[for="privacyPolicyCheck"] a{
+    text-decoration: none;
+    font-family: "euclid-Circular-A" !important;
+
 }
 
 .form-check-input {
-    width: 20px;
+    width: 18px !important;
+    height: 18px !important;
+    flex-shrink: 0;
+    margin-top: 0 !important;
 }
 
 .loginThirdParty div:nth-child(2) a span {
@@ -1341,7 +1362,7 @@ h1.footer-title {
     height: 447px;
 }
 
-.phoneSectionLogin {
+.phoneSectionLogin, .phoneSectionSignup {
     margin-top: 36px !important;
     display: flex;
     width: 100%;
@@ -1349,7 +1370,9 @@ h1.footer-title {
 }
 
 .phoneSectionLogin div:nth-child(1),
-.phoneSectionLogin div:nth-child(2) {
+.phoneSectionLogin div:nth-child(2),
+.phoneSectionSignup div:nth-child(1),
+.phoneSectionSignup div:nth-child(2) {
     
     
     border: 1px solid #cbcedf !important;
@@ -1363,13 +1386,19 @@ h1.footer-title {
     border-radius: 6px;
 
 }
+.phoneSectionSignup{
+    margin-top: 0px !important;
+}
 
-.phoneSectionLogin div:nth-child(2) input {
+.phoneSectionLogin div:nth-child(2) input, .phoneSectionSignup div:nth-child(2) input {
     border: 0px;
     padding: 2px 5px;
 }
 
-
+#signUpPhone{
+    margin-top: 49px !important;
+    padding: 0 24px !important;
+}
 .inactive {
     font-size: 16px;
     font-weight: 500;
@@ -1389,13 +1418,13 @@ h1.footer-title {
 
 }
 
-div#dontHaveAccount {
+div#dontHaveAccount, #signupModel div#dontHaveAccount {
     font-family: "euclid-Circular-A";
     text-align: center;
     margin-top: 8px;
 }
 
-#dontHaveAccountSpan {
+#dontHaveAccountSpan, #signupModel div#dontHaveAccount {
     font-family: "euclid-Circular-A";
     color: #858b9c;
     font-weight: 300;
@@ -1403,7 +1432,7 @@ div#dontHaveAccount {
     font-size: 14px;
     line-height: 16.8px;
 }
-#signupLinkSide{
+#signupLinkSide, #loginLink{
     color: #1e71ff;
     font-size: 14px;
     text-decoration: none;
@@ -1432,19 +1461,22 @@ div#dontHaveAccount {
     gap: 4px;
     height: 48px;
     width: 82px;
+    font-family: "notoSans-Medium" !important;
+    color: rgb(46, 51, 70);
+
 
 }
 
 #countryCodeInput span:nth-child(1) {
     font-size: 10px;
     position: relative;
-    top: 3px;
-    font-family: "euclid-Circular-A";
-    color: #1f1f1f;
+    top: 1px;
+    left: 3px;
+    color: rgb(46, 51, 70);
 
 }
 
-#phoneNumber {
+#phoneNumber, #signUpPhoneInput {
     width: 100%;
 }
 
@@ -1487,10 +1519,39 @@ form#loginwithPhone {
 }
 .signupHeader{
     font-size: 16px;
-    font-weight: 500;
-    font-family: "roboto-regular";
+    font-weight: 400;
+    font-family: "notoSans-Medium" !important;
+    line-height: 19.2px;
     
 
+}
+#signUpButton{
+    margin-top: 24px !important;
+    font-family: "euclid-Circular-A" !important;
+    height: 40px;
+    padding: 0 20px;
+    flex-grow: 1;
+
+}
+#signUpButton img{
+    position: relative;
+    top: 0;
+    left: -75px;
+    height: 22px;
+    width: 22px;
+
+}
+#loginModel .noAccount,
+#signupModel .noAccount {
+    opacity: 0;
+    animation: showAfterDelay 0s linear forwards;
+    animation-delay: 1s; /* 2 second delay */
+}
+
+@keyframes showAfterDelay {
+    to {
+        opacity: 1;
+    }
 }
 
 @keyframes appear {
@@ -1508,7 +1569,7 @@ form#loginwithPhone {
 
 @keyframes show {
     0% {
-        transform: translate(-10px);
+        transform: translate(0px);
 
     }
 
