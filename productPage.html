@@ -23,16 +23,15 @@
 </head>
 
 <body>
-    <div style="background-color: #f85606; ">
-        <div onscroll="getPosition('headerOptions')" class="headerOptions" id="headerOptions" style="background-color: #f85606; margin-bottom: 0%; 
-    font-family: 'Roboto', 'Helvetica Neue', Helvetica, Tahoma, Arial, sans-serif !important">
+    <div id="topHeader">
+        <div onscroll="getPosition('headerOptions')" class="headerOptions" id="headerOptions">
             <span>
-                <button type="button" class="btn btn-secondary" data-bs-toggle="popover" data-bs-html="true"
+                <button type="button" class="btn btn-secondary p-0" data-bs-toggle="popover" data-bs-html="true"
                     data-bs-content="" id="popoverBtnSave" data-bs-custom-class="SavePopover">
                     Save More ON APP
                 </button>
             </span>
-            <div id="popoverContentSave" class="SavePopover" style="display:none;">
+            <div id="popoverContentSave" class="SavePopover">
                 <div>
                     Download the App
                 </div>
@@ -44,19 +43,19 @@
                     <img src="assets/googleFooterLogo.png" alt="">
                 </div>
             </div>
-            <span style="padding-top: 1px; display: flex; align-items: start;" class="sellondaraz"><a href="#">SELL ON
+            <span class="sellondaraz"><a href="#">SELL ON
                     DARAZ</a></span>
 
             <span>
-                <button type="button" class="btn btn-secondary" data-bs-toggle="popover" data-bs-html="true"
+                <button type="button" class="btn btn-secondary p-0" data-bs-toggle="popover" data-bs-html="true"
                     data-bs-content="" id="popoverBtnHelp" data-bs-custom-class="helpCenterPopover">
                     Help & Support
                 </button>
             </span>
 
-            <div id="popoverContentHelp" class="helpCenterPopover" style="display:none;">
+            <div id="popoverContentHelp" class="helpCenterPopover">
                 <div>
-                    <img style="width: 10px; height: 10px;" src="assets/support.png" alt="">
+                    <img src="assets/support.png" alt="">
                     <span>Help Center</span>
                 </div>
                 <div>
@@ -82,24 +81,23 @@
 
             </div>
             <span>
-                <button type="button" class="btn loginButton" data-bs-toggle="modal" data-bs-target="#loginModel"
-                    style="padding: 7px 1px; height: fit-content; display: flex; align-items: start;">
+                <button type="button" class="btn loginButton p-0" data-bs-toggle="modal" data-bs-target="#loginModel">
                     Login
                 </button>
             </span>
-            <span><button type="button" class="btn signUpButtonNav" data-bs-toggle="modal"
-                    style="padding: 7px 1px; height: fit-content;" data-bs-target="#signupModel">
+            <span><button type="button" class="btn signUpButtonNav p-0" data-bs-toggle="modal"
+                    data-bs-target="#signupModel">
                     Sign Up
                 </button></span>
-            <span style="padding-right: 0px !important;">
-                <button type="button" class="btn btn-secondary" data-bs-toggle="popover" data-bs-html="true"
-                    data-bs-content="" id="popoverBtnLanguage" data-bs-custom-class="languagePopover"
-                    style="padding-right: 0px !important;">
+            <span class="languageChangeSpan">
+                <button type="button" class="btn btn-secondary languageChange p-0" data-bs-toggle="popover"
+                    data-bs-html="true" data-bs-content="" id="popoverBtnLanguage"
+                    data-bs-custom-class="languagePopover">
                     زبان تبدیل کریں
                 </button>
             </span>
 
-            <div id="popoverContentLanguage" class="languagePopover" style="display:none;">
+            <div id="popoverContentLanguage" class="languagePopover">
                 <div>
                     <img src="assets/pakFlag.png" alt=""><span>Ur / Urdu</span>
                     <img src="assets/englandFlag.png" alt=""><span>EN | English</span>
@@ -109,11 +107,10 @@
             </div>
         </div>
     </div>
-    <header
-        style="position: sticky; top: 0; z-index: 4; height: max-content; padding-top: 11px ; padding-bottom: 11px;  align-items: center; z-index: 100;">
-        <nav style="max-width: 1188px; margin: auto; display: flex; align-items: center;">
+    <header id="mainHeader" class="productPageHeader">
+        <nav>
 
-            <div class="logoSide" style="position: sticky; top: 0;">
+            <div class="logoSide">
                 <div class="logoImg">
                     <a href="index.html">
                         <img src="assets/darazLogo.png" alt="">
@@ -122,15 +119,25 @@
                 <div>
                     <div class="search">
                         <div class="searchInput">
-                            <input type="text" name="" id="" placeholder="Search in Daraz" style="border-radius: 2px; font-size: 14px; color: rgb(233, 233, 233);">
+                            <input type="text" name="" id="" placeholder="Search in Daraz">
                             <span><i class="fa-solid fa-magnifying-glass"></i></span>
-
                         </div>
+
                         <div class="cart-icon">
-                            <img src="assets/trolley.png" alt="">
+                            <svg width="30" height="30" viewBox="0 0 32 32" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M4.51345 5H1.33325V3H6.15306L7.21972 8.33333H30.5315L27.5012 25H8.51345L4.51345 5ZM7.61972 10.3333L10.1531 23H25.832L28.135 10.3333H7.61972Z"
+                                    fill="white"></path>
+                                <path
+                                    d="M11.9999 28C11.9999 28.7364 11.403 29.3333 10.6666 29.3333C9.93021 29.3333 9.33325 28.7364 9.33325 28C9.33325 27.2636 9.93021 26.6667 10.6666 26.6667C11.403 26.6667 11.9999 27.2636 11.9999 28Z"
+                                    fill="white"></path>
+                                <path
+                                    d="M25.3333 29.3333C26.0696 29.3333 26.6666 28.7364 26.6666 28C26.6666 27.2636 26.0696 26.6667 25.3333 26.6667C24.5969 26.6667 23.9999 27.2636 23.9999 28C23.9999 28.7364 24.5969 29.3333 25.3333 29.3333Z"
+                                    fill="white"></path>
+                            </svg>
                         </div>
                     </div>
-                    <div id="spacer" style="height: 12px; font-size: 12px; color: white;">
+                    <div id="spacer">
                         <span>makeup</span>
                         <span>|</span>
                         <span>watch for boys</span>
@@ -150,78 +157,74 @@
 
 
     </header> <!-- Modal -->
+    <!-- Modal -->
     <div class="modal" id="loginModel" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
         aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog" style="width: 444px; height: 447px ; overflow: hidden;">
+        <div class="modal-dialog">
             <div class="modal-content">
                 <div class="animationModel">
-                    <div class="modal-header" style="border-bottom-width: 0 !important;">
-                        <div class="model-LoginOption" style="position: relative;">
+                    <div class="modal-header">
+                        <div class="model-LoginOption">
                             <div id="errorBoxLogin" class="hidden">
-                                <span style="display: flex; align-items: center; gap: 10px;">
-                                    <i class="fa-solid fa-circle-xmark" style="color: red; font-size: 24px;"></i>
-                                    <p style="margin: 0%;" id="msg">Enter a Valid Login Password</p>
+                                <span>
+                                    <i class="fa-solid fa-circle-xmark"></i>
+                                    <p id="msg">Enter a Valid Login Password</p>
                                 </span>
                             </div>
-                            <div style="cursor: pointer;" class="active" id="emailLoginButton">
+                            <div class="active" id="emailLoginButton">
                                 Password
                             </div>
-                            <div class="inactive">|</div>
-                            <div class="inactive" style="cursor: pointer;" id="phoneLoginButton">
+                            <div class="inactive" id="phoneLoginButton">
                                 Phone Number
                             </div>
                         </div>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
-                            style="position: absolute; right: 30px;"></button>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
 
-                    <form id="loginWithEmailSection" action="" class="modal-body" style="gap: 10px;">
-                        <div>
+                    <form id="loginWithEmailSection" action="" class="modal-body">
+                        <div class="emailPassSection">
                             <input type="email" class="form-control" id="loginEmail"
                                 placeholder="Please enter your Phone or Email">
                         </div>
-                        <div>
-                            <div style="display: flex; align-items: center;">
+                        <div class="emailPassSection" id="passwordField">
+                            <div class="passwordInputFieldModel">
                                 <input type="password" class="form-control" id="loginPassword"
                                     aria-describedby="validationServer03Feedback"
-                                    placeholder="Please enter your Password" style="position: relative;">
-                                <img src="assets/eyebrow.png" id="showPass" 
-     style="position: absolute; right: 60px; width: 20px; height: 20px; cursor: pointer; filter: grayscale(100%);">
+                                    placeholder="Please enter your password">
+                                <img src="assets/eyebrow.png" id="showPass">
 
                             </div>
-                            <div id="passwordFeedback" class="invalid-feedback" style="display: none;">
+                            <div id="passwordFeedback" class="invalid-feedback">
                                 You can't leave this empty.
                             </div>
                         </div>
                         <div class="forgotDiv"><a href="#" class="forgotPassword">Forgot password?</a></div>
-                        <div style="padding-top: 4px;">
+                        <div class="loginFormButtonSubmit">
                             <input type="submit" name="" id="loginButton" value="LOGIN">
                         </div>
                     </form>
-                    <form id="loginwithPhone" action="" class="modal-body"
-                        style="display: none; gap: 60px; flex-direction: column; margin-top: 40px;">
+                    <form id="loginwithPhone" action="" class="modal-body">
                         <div class="phoneSectionLogin">
-                            <div style="display: flex; gap: 4px; height: 48px;">
-                                <span style="font-size: 10px; position: relative; top: 3px;">PK</span>
+                            <div id="countryCodeInput">
+                                <span>PK</span>
                                 <span>+92</span>
                             </div>
-                            <div style="flex-grow: 2; ">
+                            <div class="phoneInput">
                                 <input type="number" name="" id="phoneNumber"
-                                    placeholder="Please enter your phone number" style="width: 100%;">
+                                    placeholder="Please enter your phone number">
                             </div>
                         </div>
 
 
-                        <button type="submit" class="submitLoginPhone"><img src="assets/whatsappIcon.png" alt=""
-                                style="width: 24px; height: 24px; position: absolute; left: 10px;">Send code
-                            via Whatsapp</button>
+                        <button type="submit" class="submitLoginPhone"><img src="assets/whatsappIcon.png" alt="">Send
+                            code via Whatsapp</button>
 
 
                     </form>
-                    <div style="text-align: center;">
-                        <span style="color: #858b9c; font-weight: 300;">Don't have an account?</span>
-                        <span><a href="#" data-bs-toggle="modal" data-bs-target="#signupModel" data-bs-dismiss="modal"
-                                aria-label="Close" style="text-decoration: none;">Sign up</a></span>
+                    <div id="dontHaveAccount">
+                        <span id="dontHaveAccountSpan">Don't have an account?</span>
+                        <span><a id="signupLinkSide" href="#" data-bs-toggle="modal" data-bs-target="#signupModel"
+                                data-bs-dismiss="modal" aria-label="Close">Sign up</a></span>
                     </div>
                     <div class="noAccount">
 
@@ -229,9 +232,9 @@
                             <div>
                                 Or, login with
                             </div>
-                            <div>
-                                <a><img src="assets/googleIcon.png" alt=""><span>Google</span></a>
-                                <a><img src="assets/facebookIcon - Copy.png" alt=""><span>Facebook</span></a>
+                            <div id="thirdPartyLoginOptions">
+                                <a><img src="assets/googleIcon.png" alt="" id="googleIcon"><span>Google</span></a>
+                                <a><img src="assets/icons/facebookIcon.png" alt="" id="fbIcon"><span>Facebook</span></a>
                             </div>
                         </div>
 
@@ -242,56 +245,53 @@
     </div>
     <div class="modal" id="signupModel" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
         aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog" style="width: 444px; height: 447px ; overflow: hidden;">
+        <div class="modal-dialog">
             <div class="modal-content">
                 <div class="animationModel">
-                    <div class="modal-header" style="position: relative;">
-                        <div class="model-LoginOption" style="position: relative;">
+                    <div class="modal-header">
+                        <div class="model-SignupOption">
                             <div id="errorBoxSignUp" class="hidden">
-                                <span style="display: flex; align-items: center; gap: 10px;">
-                                    <i class="fa-solid fa-circle-xmark" style="color: red; font-size: 24px;"></i>
-                                    <p style="margin: 0%;" id="msg">Enter a Valid Login Password</p>
+                                <span>
+                                    <i class="fa-solid fa-circle-xmark"></i>
+                                    <p id="msg">Enter a Valid Login Password</p>
                                 </span>
                             </div>
-                            <div style="cursor: pointer;" class="active">
-                                Sign Up
+                            <div class="active signupHeader">
+                                Sign up
                             </div>
                         </div>
 
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
-                            style="position: absolute; right: 30px;"></button>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <form id="signUpPhone" action="" class="modal-body" style="gap: 10px; flex-direction: column;">
-                        <div class="phoneSectionLogin">
-                            <div>
-                                <span style="font-size: 10px; position: relative; top: 3px;">PK</span>
+                    <form id="signUpPhone" action="" class="modal-body">
+                        <div class="phoneSectionSignup">
+                            <div id="countryCodeInput">
+                                <span>PK</span>
                                 <span>+92</span>
                             </div>
-                            <div style="flex-grow: 2; ">
+                            <div class="phoneInput">
                                 <input type="number" name="signUpPhoneInput" id="signUpPhoneInput"
-                                    placeholder="Please enter your phone number" style="width: 100%;">
+                                    placeholder="Please enter your phone number">
                             </div>
                         </div>
-                        <div
-                            style="display: flex; gap: 5px; font-size: 14px; font-weight: 400; color: rgb(133, 139, 156)">
+                        <div class="privacyPolicyLog">
                             <input class="form-check-input" type="checkbox" id="checkboxPrivacyPolicy" value=""
-                                aria-label="..." style="width: 20px;">
+                                aria-label="...">
                             <label for="privacyPolicyCheck">By creating and/or using your account, you agree to our <a
                                     href="#">Terms of Use</a> and <a href="#">Privacy Policy.</a></label>
                         </div>
 
 
                         <button type="submit" class="submitLoginPhone" id="signUpButton"><img
-                                src="assets/whatsappIcon.png" alt=""
-                                style="width: 30px; height: 30px; position: absolute; left: 10px;">Send code
+                                src="assets/whatsappIcon.png" alt="">Send code
                             via Whatsapp</button>
 
 
                     </form>
-                    <div style="text-align: center;">
+                    <div id="dontHaveAccount">
                         <span>Already have an account?</span>
-                        <span><a href="#" data-bs-toggle="modal" data-bs-target="#loginModel" data-bs-dismiss="modal"
-                                aria-label="Close"> Log in Now</a></span>
+                        <span><a id="loginLink" href="#" data-bs-toggle="modal" data-bs-target="#loginModel"
+                                data-bs-dismiss="modal" aria-label="Close"> Log in Now</a></span>
                     </div>
                     <div class="noAccount">
 
@@ -299,9 +299,9 @@
                             <div>
                                 Or, login with
                             </div>
-                            <div>
-                                <a><img src="assets/googleIcon.png" alt=""><span>Google</span></a>
-                                <a><img src="assets/facebookIcon - Copy.png" alt=""><span>Facebook</span></a>
+                            <div id="thirdPartyLoginOptions">
+                                <a><img src="assets/googleIcon.png" alt="" id="googleIcon"><span>Google</span></a>
+                                <a><img src="assets/icons/facebookIcon.png" alt="" id="fbIcon"><span>Facebook</span></a>
                             </div>
                         </div>
 
@@ -310,12 +310,12 @@
             </div>
         </div>
     </div>
-    <section class="CategoriesHeader" style="position: sticky; top: 65px; background-color: white; z-index: 10; ">
+    <section class="CategoriesHeader">
         <div style="max-width: 1188px; margin: auto;">
 
 
-            <div class="categoriesWrapper" id="dropCategory" style="z-index: 9; width: 200px;">
-                <span class="categories" style="font-weight: 500;">Categories <i
+            <div class="categoriesWrapper" id="dropCategory">
+                <span class="categories">Categories <i
                         class="fa-solid fa-angle-down"></i></span>
                 <ul class="categoriesOptions">
                     <li><a href="#">Electronics Accessories</a></li>
@@ -888,8 +888,8 @@ Speed:10/10 very good color interior light and sound
 
         </div>
     </div>
-    <section class="footer-first" >
-        <div class="foorter1" >
+    <section class="footer-first">
+        <div class="foorter1">
             <!-- First Footer Customer Section -->
             <div class="customerCare">
                 <h3 class="footer-first-title">
@@ -965,73 +965,71 @@ Speed:10/10 very good color interior light and sound
         </div>
     </section>
     <section class="footer-second">
-            <div class="footer2">
-                <div class="payment-method">
-                    <h3
-                        style="color: #183544; font-size: 16px; font-weight: 400; line-height: 2.2em; margin-bottom: 15px;">
-                        Payment Method</h3>
-                    <div class="payment-methods-type">
-                        <span><img src="assets/paymentCash.png" alt=""></span>
-                        <span><img src="assets/paymentVisa.png" alt=""></span>
-                        <span><img src="assets/paymentMasterCard.png" alt=""></span>
-                        <span><img src="assets/paymentEasypaisa.png" alt=""></span>
-                        <span><img src="assets/paymentDaraz.png" alt=""></span>
-                        <span><img src="assets/paymentJazzCash.png" alt=""></span>
-                        <span><img src="assets/paymentUnion.png" alt=""></span>
-                        <span><img src="assets/paymentHBL.png" alt=""></span>
-                        <span><img src="assets/paymentEasyInstallment.png" alt=""></span>
-                    </div>
-                </div>
-                <div class="verify-method">
-                    <h3
-                        style="color: #183544; font-size: 16px; font-weight: 400; line-height: 2.2em; margin-bottom: 15px;">
-                        Verified by</h3>
-                    <div class="verify-methods-type">
-                        <span><img src="assets/pciDSS.png" alt=""></span>
-
-                    </div>
+        <div class="footer2">
+            <div class="payment-method">
+                <h3 style="color: #183544; font-size: 16px; font-weight: 400; line-height: 2.2em; margin-bottom: 15px;">
+                    Payment Method</h3>
+                <div class="payment-methods-type">
+                    <span><img src="assets/paymentCash.png" alt=""></span>
+                    <span><img src="assets/paymentVisa.png" alt=""></span>
+                    <span><img src="assets/paymentMasterCard.png" alt=""></span>
+                    <span><img src="assets/paymentEasypaisa.png" alt=""></span>
+                    <span><img src="assets/paymentDaraz.png" alt=""></span>
+                    <span><img src="assets/paymentJazzCash.png" alt=""></span>
+                    <span><img src="assets/paymentUnion.png" alt=""></span>
+                    <span><img src="assets/paymentHBL.png" alt=""></span>
+                    <span><img src="assets/paymentEasyInstallment.png" alt=""></span>
                 </div>
             </div>
+            <div class="verify-method">
+                <h3 style="color: #183544; font-size: 16px; font-weight: 400; line-height: 2.2em; margin-bottom: 15px;">
+                    Verified by</h3>
+                <div class="verify-methods-type">
+                    <span><img src="assets/pciDSS.png" alt=""></span>
+
+                </div>
+            </div>
+        </div>
 
 
-        </section>
+    </section>
     <!-- 2 columns daraz bio -->
 
     <section class="forth-footer">
-            <div class="footer4">
-                <div style="display: flex; gap: 70px;">
-                    <div>
-                        <h3 class="footer-title">
-                            Daraz International
-                        </h3>
-                        <div class="darazStores">
-                            <a href="#"><img src="assets/pakFlag.png" alt=""><span>Pakistan</span></a>
-                            <a href="#"><img src="assets/banFlag.png" alt=""><span>Bangladesh</span></a>
-                            <a href="#"><img src="assets/sriFlag.png" alt=""><span>Srilanka</span></a>
-                            <a href="#"><img src="assets/myanFlag.png" alt=""><span>Myanmar</span></a>
-                            <a href="#"><img src="assets/nepFlag.png" alt=""><span>Nepal</span></a>
-                        </div>
+        <div class="footer4">
+            <div style="display: flex; gap: 70px;">
+                <div>
+                    <h3 class="footer-title">
+                        Daraz International
+                    </h3>
+                    <div class="darazStores">
+                        <a href="#"><img src="assets/pakFlag.png" alt=""><span>Pakistan</span></a>
+                        <a href="#"><img src="assets/banFlag.png" alt=""><span>Bangladesh</span></a>
+                        <a href="#"><img src="assets/sriFlag.png" alt=""><span>Srilanka</span></a>
+                        <a href="#"><img src="assets/myanFlag.png" alt=""><span>Myanmar</span></a>
+                        <a href="#"><img src="assets/nepFlag.png" alt=""><span>Nepal</span></a>
+                    </div>
 
 
-                    </div>
-                    <div>
-                        <h3 class="footer-title">
-                            Follow Us
-                        </h3>
-                        <div class="darazFollowLinks">
-                            <a href="#"><img src="assets/facebookIcon.png" alt=""></a>
-                            <a href="#"><img src="assets/vicon.png" alt=""></a>
-                            <a href="#"><img src="assets/instaIcon.png" alt=""></a>
-                            <a href="#"><img src="assets/youtubeIcon.png" alt=""></a>
-                        </div>
-                    </div>
                 </div>
                 <div>
-                    © Daraz 2026
+                    <h3 class="footer-title">
+                        Follow Us
+                    </h3>
+                    <div class="darazFollowLinks">
+                        <a href="#"><img src="assets/facebookIcon.png" alt=""></a>
+                        <a href="#"><img src="assets/vicon.png" alt=""></a>
+                        <a href="#"><img src="assets/instaIcon.png" alt=""></a>
+                        <a href="#"><img src="assets/youtubeIcon.png" alt=""></a>
+                    </div>
                 </div>
             </div>
-        </section>
-        <div class="messageNow">
+            <div>
+                © Daraz 2026
+            </div>
+        </div>
+    </section>
+    <div class="messageNow">
         <i class="fa-solid fa-comment"></i>
         <span>Messages</span>
     </div>
