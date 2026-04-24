@@ -161,8 +161,18 @@ h1#productName{
     
 }
 .productRatingAndShare{
+    height: 40px;
     display: flex;
     justify-content: space-between;
+}
+.productRatingAndShare .productStars{
+    align-self: flex-end;
+}
+.productRatingAndShare .productStars #ratingNum{
+    text-decoration: none;
+    font-family: "roboto-regular";
+    font-size: 12px;
+    font-weight: 200;
 }
 .productRatingAndShare div:nth-child(1) span{
     font-size: 10px !important;
