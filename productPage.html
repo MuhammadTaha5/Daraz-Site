@@ -316,8 +316,7 @@
 
 
             <div class="categoriesWrapper" id="dropCategory">
-                <span class="categories">Categories <i
-                        class="fa-solid fa-angle-down"></i></span>
+                <span class="categories">Categories <i class="fa-solid fa-angle-down"></i></span>
                 <ul class="categoriesOptions">
                     <li><a href="#">Electronics Accessories</a></li>
                     <li><a href="#">TV & Home Appliances</a></li>
@@ -376,7 +375,7 @@
             </div>
             <div class="mainProductDetail">
                 <div id="myresult" class="img-zoom-result"></div>
-                <h1 id="productName" >Mini Diecast KIA SPORTAGE Motor Car -
+                <h1 id="productName">Mini Diecast KIA SPORTAGE Motor Car -
                     Toynix</h1>
                 <div class="productRatingAndShare">
                     <div class="productStars">
@@ -398,16 +397,16 @@
                 </div>
                 <div class="brandInfo">
                     <div>
-                        <span>Brand:</span>
+                        <span id="brandHeading">Brand:</span>
                         <span><a href="#">Toynix</a></span>
                     </div>
-                    <span>|</span>
+                    <span id="divider">|</span>
                     <div>
                         <a href="#">More Remote Control & play Vehicles from Toynix</a>
                     </div>
 
                 </div>
-                <hr>
+                <hr class="productDetailSeparater">
                 <div class="productPrice">
                     <span class="discountedPrice" id="discPrice">Rs. 899</span>
                     <div>
@@ -415,7 +414,7 @@
                         <span class="discountRatio">-55%</span>
                     </div>
                 </div>
-                <hr>
+                <hr class="productDetailSeparater">
                 <div class="productSubImage">
                     <div>
                         <h6>Color Family</h6>
@@ -464,7 +463,7 @@
                 <div class="list">
                     <div>
                         <div class="icon"><i class="fa-solid fa-box-archive"></i></div>
-                        <div class="mainText">
+                        <div class="mainText mainTextOptions">
                             <span>Standard Delivery</span>
                             <span>Guaranteed by 11-13 Mar</span>
                         </div>
@@ -474,7 +473,7 @@
                 <div class="list">
                     <div>
                         <div class="icon"><i class="fa-solid fa-van-shuttle"></i></div>
-                        <div class="mainText">
+                        <div class="mainText mainTextOptions">
                             <span>Standard Collection Point</span>
                             <span>Guaranteed by 11-13 Mar</span>
                         </div>
@@ -484,50 +483,45 @@
                 <div class="list">
                     <div>
                         <div class="icon"><i class="fa-solid fa-money-bill"></i></div>
-                        <div class="mainText">
+                        <div class="mainText mainTextOptions">
                             <span>Cash on Delivery Available</span>
 
                         </div>
                     </div>
 
                 </div>
-                <hr>
+                <hr class="deliverySectionDivider">
                 <div class="retAndWarr">
                     <span>Return & Warranty </span>
                     <span class="icon"><i class="fa-solid fa-circle-info"></i></span>
                 </div>
 
-                <div class="list" style="display: flex; gap: 10px; justify-content: left;">
-                    <div><img src="assets/changeMind.png" alt="" style="width: 24px; height: 24px;"></div>
-                    <div class="mainText">
-                        <span>Change of Mind</span>
-                    </div>
+                <div class="list returnOptions">
+                    <img src="assets/changeMind.png" alt="">
+                    <span class="mainText mainTextOptions">Change of Mind</span>
+
                 </div>
-                <div class="list" style="display: flex; gap: 10px; justify-content: left;">
-                    <div class="icon" style="width: 24px; height: 24px; text-align: center;"><i
-                            class="fa-solid fa-recycle"></i></div>
-                    <div class="mainText">
-                        <span>14 days easy return</span>
-                    </div>
+                <div class="list returnOptions">
+                    <div class="icon"><i class="fa-solid fa-recycle"></i></div>
+
+                    <span class="mainText mainTextOptions">14 days easy return</span>
+
                 </div>
 
-                <div class="list" style="display: flex; gap: 10px;  justify-content: left;">
+                <div class="list returnOptions">
                     <div class="icon"><i class="fa-solid fa-shield"></i></div>
-                    <div class="mainText">
-                        <span>Warranty not available</span>
-                    </div>
+
+                    <span class="mainText mainTextOptions">Warranty not available</span>
+
                 </div>
                 <hr>
-                <div style="display: flex; gap: 10px;">
-                    <div style="display: flex; flex-direction: column; gap: 2px;">
-                        <img src="assets/qr.png" alt="" style="width: 111px; height: 111px;">
-                        <span
-                            style="font-size: 12px; display: flex; justify-content: space-between; align-items: center; gap: 2px;"><i
-                                class="fa-solid fa-mobile"></i> Scan with mobile</span>
+                <div class="qr-section">
+                    <div class="qrMain">
+                        <img src="assets/qr.png" alt="qr">
+                        <span> <img src="assets/icons/iphone.png" alt="" id="phoneIcon"> Scan with mobile</span>
                     </div>
-                    <div
-                        style="background-color: white; padding: 10px 16px; box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; height: fit-content;">
-                        <img src="assets/darazIcon.png" alt="" srcset="" style="width: 43px; height: 43px;">
+                    <div class="downloadGuide">
+                        <img src="assets/darazIcon.png" alt="" srcset="">
                         <p style="color: #9e9e9e; font-size: 12px; margin-top: 4px;">
                             Download app to enjoy exclusive discounts!
                         </p>
@@ -891,85 +885,84 @@ Speed:10/10 very good color interior light and sound
         </div>
     </div>
     <section class="footer-first">
-        <div class="foorter1">
-            <!-- First Footer Customer Section -->
-            <div class="customerCare">
-                <h3 class="footer-first-title">
-                    Customer Care
-                </h3>
-                <ul>
-                    <li><a href="#">Help Center</a></li>
-                    <li><a href="#">How to Buy</a></li>
-                    <li><a href="#">Corporate & Bulk Purchasing</a></li>
-                    <li><a href="#">Returns and Refunds</a></li>
-                    <li><a href="#">Daraz Shop</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                    <li><a href="#">Purchase Protection</a></li>
-                    <li><a href="#">Daraz Pick up Points</a></li>
-                </ul>
-            </div>
-            <!-- Daraz Care Section -->
-            <div class="darazCare">
-                <h3 class="footer-first-title">
-                    Daraz
-                </h3>
-                <ul>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Digital Payments</a></li>
-                    <li><a href="#">Daraz Donates</a></li>
-                    <li><a href="#">Daraz Blog</a></li>
-                    <li><a href="#">Terms & Conditions</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">NTN Number: 4012118-6</a></li>
-                    <li><a href="#">STRN Number: 1700401211818</a></li>
-                    <li><a href="#">Online Shopping App</a></li>
-                    <li><a href="#">Online Grocery Shooping</a></li>
-                    <li><a href="#">Daraz Exclusive</a></li>
-                    <li><a href="#">Daraz University</a></li>
-                    <li><a href="#">Sell on Daraz</a></li>
-                    <li><a href="#">Join Daraz Affiliate Program</a></li>
-                </ul>
-            </div>
-            <div class="footerLogoLink">
-                <div style="flex: 1 1 300px;">
-                    <div class="darazImgFooter">
-                        <img src="assets/darazFooterLogo.png" alt="">
-                    </div>
-                    <div class="downloadCom">
-                        <span style="color: #f36f36; font-size: 16px;font-weight: 400;">Happy Shopping</span>
-                        <span style="color: #0f136d; font-size: 14px; font-weight: 400; padding-top: 2px;">Download
-                            App</span>
-                    </div>
+
+        <!-- First Footer Customer Section -->
+        <div class="customerCare">
+            <h3 class="footer-first-title">
+                Customer Care
+            </h3>
+            <ul>
+                <li><a href="#">Help Center</a></li>
+                <li><a href="#">How to Buy</a></li>
+                <li><a href="#">Corporate & Bulk Purchasing</a></li>
+                <li><a href="#">Returns and Refunds</a></li>
+                <li><a href="#">Daraz Shop</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Purchase Protection</a></li>
+                <li><a href="#">Daraz Pick up Points</a></li>
+            </ul>
+        </div>
+        <!-- Daraz Care Section -->
+        <div class="darazCare">
+            <h3 class="footer-first-title">
+                Daraz
+            </h3>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Digital Payments</a></li>
+                <li><a href="#">Daraz Donates</a></li>
+                <li><a href="#">Daraz Blog</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">NTN Number: 4012118-6</a></li>
+                <li><a href="#">STRN Number: 1700401211818</a></li>
+                <li><a href="#">Online Shopping App</a></li>
+                <li><a href="#">Online Grocery Shooping</a></li>
+                <li><a href="#">Daraz Exclusive</a></li>
+                <li><a href="#">Daraz University</a></li>
+                <li><a href="#">Sell on Daraz</a></li>
+                <li><a href="#">Join Daraz Affiliate Program</a></li>
+            </ul>
+        </div>
+
+        <div class="footerLogoLink">
+            <div class="happyshoppingsection">
+                <div class="darazImgFooter">
+                    <img src="assets/darazFooterLogo.png" alt="">
                 </div>
-                <div class="container" style="padding: 0; flex: 1 1 300px;">
-                    <div class="row row-cols-2">
-                        <div class="col" style="padding: 0; width: 130px;">
+                <div class="downloadCom">
+                    <span id="happyShoppingHeading">Happy Shopping</span>
+                    <span id="happyShoppingDownload">Download
+                        App</span>
+                </div>
+            </div>
+            <div class="container shoppingAppLinks">
+                <div class="row row-cols-2">
+                    <div class="col downloadApp">
 
-                            <span><img src="assets/appStoreFooterLogo.png" alt=""></span>
+                        <span><img src="assets/appStoreFooterLogo.png" alt=""></span>
 
-                        </div>
-                        <div class="col" style="padding: 0; width: 130px;">
+                    </div>
+                    <div class="col downloadApp">
 
-                            <span><img src="assets/googleFooterLogo.png" alt=""></span>
+                        <span><img src="assets/googleFooterLogo.png" alt=""></span>
 
-                        </div>
-                        <div class="col" style="padding: 0; width: 130px;">
-
-                            <span><img src="assets/appGalleryFooter.png" alt=""></span>
-
-
-                        </div>
+                    </div>
+                    <div class="col downloadApp">
+                        <span><img src="assets/appGalleryFooter.png" alt=""></span>
 
                     </div>
 
                 </div>
+
             </div>
         </div>
+
     </section>
     <section class="footer-second">
         <div class="footer2">
             <div class="payment-method">
-                <h3 style="color: #183544; font-size: 16px; font-weight: 400; line-height: 2.2em; margin-bottom: 15px;">
+                <h3 class="footer2PaymentHeader">
                     Payment Method</h3>
                 <div class="payment-methods-type">
                     <span><img src="assets/paymentCash.png" alt=""></span>
@@ -984,7 +977,7 @@ Speed:10/10 very good color interior light and sound
                 </div>
             </div>
             <div class="verify-method">
-                <h3 style="color: #183544; font-size: 16px; font-weight: 400; line-height: 2.2em; margin-bottom: 15px;">
+                <h3 class="footer2PaymentHeader">
                     Verified by</h3>
                 <div class="verify-methods-type">
                     <span><img src="assets/pciDSS.png" alt=""></span>
@@ -999,8 +992,8 @@ Speed:10/10 very good color interior light and sound
 
     <section class="forth-footer">
         <div class="footer4">
-            <div style="display: flex; gap: 70px;">
-                <div>
+            <div class="footer4inner">
+                <div class="daraz-international-store">
                     <h3 class="footer-title">
                         Daraz International
                     </h3>
@@ -1026,7 +1019,7 @@ Speed:10/10 very good color interior light and sound
                     </div>
                 </div>
             </div>
-            <div>
+            <div class="daraz-copyright">
                 © Daraz 2026
             </div>
         </div>
@@ -1039,7 +1032,7 @@ Speed:10/10 very good color interior light and sound
         <div class="messages">
             <div>
                 <i class="fa-solid fa-comment"></i>
-                <span style="margin-left: 6px;">Messages</span>
+                <span id="openMessageCom">Messages</span>
             </div>
             <div>
 
@@ -1048,21 +1041,18 @@ Speed:10/10 very good color interior light and sound
         <div class="messagePromotion">
             <div>
                 <span>Daraz</span>
-                <i class="fa-solid fa-xmark" style="position: absolute; right: 20px; font-size: 25px; cursor: pointer;"
-                    id="closeMessage"></i>
+                <i class="fa-solid fa-xmark" id="closeMessage"></i>
             </div>
             <div>
                 <i class="fa-solid fa-envelope"></i>
                 <a href="#">Use the App for exclusive offers</a>
                 <p>Once you start a new conversation, you’ll see it listed here.</p>
-                <div style="color: rgb(76, 130, 150); display: flex; align-items: center;">
-                    <button type="button" class="btn loginButton" data-bs-toggle="modal" data-bs-target="#loginModel"
-                        style="padding: 6px 0; height: fit-content; display: flex; align-items: start; font-size: 16px !important">
+                <div class="messageLoginSignup">
+                    <button type="button" class="btn loginButton" data-bs-toggle="modal" data-bs-target="#loginModel">
                         Login
                     </button>
                     /
                     <button type="button" class="btn signUpButtonNav" data-bs-toggle="modal"
-                        style="padding: 6px 0; height: fit-content; font-size: 16px !important"
                         data-bs-target="#signupModel">
                         SignUp
                     </button>

@@ -568,7 +568,9 @@ section.categories {
     font-weight: 400;
 
 }
-
+.sectionCategories{
+    max-width: 1188px; margin: auto;
+}
 div#loadingProducts {
     margin: 30px 0;
 }
@@ -1142,7 +1144,12 @@ h1.footer-title {
 .daraz-international-store {
     margin-left: -4px;
 }
-
+.shoppingAppLinks{
+    padding: 0; flex: 1 1 300px;
+}
+.shoppingAppLinks .downloadApp{
+    padding: 0; width: 130px;
+}
 .forth-footer .darazStores a img,
 .forth-footer .darazFollowLinks a img {
     width: 28px;
