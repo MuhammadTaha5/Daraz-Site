@@ -312,9 +312,7 @@
         </div>
     </div>
     <section class="CategoriesHeader">
-        <div style="max-width: 1188px; margin: auto;">
-
-
+        <div class="categoryBox">
             <div class="categoriesWrapper" id="dropCategory">
                 <span class="categories">Categories <i class="fa-solid fa-angle-down"></i></span>
                 <ul class="categoriesOptions">
@@ -344,12 +342,11 @@
         </span>
 
     </section>
-    <main
-        style="display: flex; justify-content: center; flex-direction: column; margin: 0 30px; max-width: 1188px; margin: auto;">
+    <main>
         <section class="productDetails">
             <div class="productImages">
                 <div class="mainImg">
-                    <img src="assets/carToy.avif" alt="" id="mainProductImg" style="z-index: 2;">
+                    <img src="assets/products/carToy.avif" alt="" id="mainProductImg">
                 </div>
                 <div class="product-slider">
 
@@ -358,12 +355,12 @@
                         <button class="arrow left" id="arrowLeft"><i class="fa-solid fa-angle-left"></i></button>
 
                         <div class="thumbnails" id="thumbContainer">
-                            <img src="assets/cat2.avif" onmouseover="changeImage(this)">
-                            <img src="assets/cat1.avif" onmouseover="changeImage(this)">
-                            <img src="assets/cat9.avif" onmouseover="changeImage(this)">
-                            <img src="assets/cat10.avif" onmouseover="changeImage(this)">
-                            <img src="assets/cat11.avif" onmouseover="changeImage(this)">
-                            <img src="assets/cat14.avif" onmouseover="changeImage(this)">
+                            <img src="assets/products/cat1.avif" onmouseover="changeImage(this)">
+                            <img src="assets/products/cat2.avif" onmouseover="changeImage(this)">
+                            <img src="assets/products/cat3.avif" onmouseover="changeImage(this)">
+                            <img src="assets/products/cat4.avif" onmouseover="changeImage(this)">
+                            <img src="assets/products/cat5.avif" onmouseover="changeImage(this)">
+                            <img src="assets/products/cat6.avif" onmouseover="changeImage(this)">
                         </div>
 
                         <button class="arrow right" id="arrowRight"><i class="fa-solid fa-angle-right"></i></button>
@@ -421,10 +418,10 @@
                         <span id="imageColor">Blue</span>
                     </div>
                     <div id="optionImagesVartants">
-                        <img src="assets/cat16.avif" alt="">
-                        <img src="assets/cat14.avif" alt="">
-                        <img src="assets/cat11.avif" alt="">
-                        <img src="assets/cat18.avif" alt="">
+                        <img src="assets/products/cat1.avif" alt="">
+                        <img src="assets/products/cat14.avif" alt="">
+                        <img src="assets/products/cat11.avif" alt="">
+                        <img src="assets/products/cat18.avif" alt="">
                     </div>
 
 
@@ -600,7 +597,7 @@
                 <li>Double-sided adhesive tape included for installation</li>
             </ul>
             <!-- <img src="assets/hookImgCar.webp" alt="" srcset="" id="hookImg"> -->
-            <!-- <a href="#" style="margin-bottom:20px ;">View More</a> -->
+
 
         </section>
         <section class="productRatingSection">
@@ -642,7 +639,8 @@
                     <div class="starRowsRating">
                         <div>
                             <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i>
                         </div>
                         <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25"
                             aria-valuemin="0" aria-valuemax="100">
@@ -654,40 +652,36 @@
                     </div>
                     <div class="starRowsRating">
                         <div><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                                class="fa-solid fa-star"></i><i class="fa-solid fa-star grayStar"
-                                ></i><i class="fa-solid fa-star grayStar"
-                                ></i>
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star grayStar"></i><i
+                                class="fa-solid fa-star grayStar"></i>
                         </div>
                         <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25"
                             aria-valuemin="0" aria-valuemax="100">
-                            <div class="progress-bar" style="width: 3%"></div>
+                            <div class="progress-bar" id="progressBar3"></div>
                         </div>
                         <div>
                             3
                         </div>
                     </div>
                     <div class="starRowsRating">
-                        <div><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star grayStar"
-                                ></i><i class="fa-solid fa-star grayStar"
-                                ></i><i class="fa-solid fa-star grayStar"
-                                ></i></div>
+                        <div><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star grayStar"></i><i class="fa-solid fa-star grayStar"></i><i
+                                class="fa-solid fa-star grayStar"></i></div>
                         <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25"
                             aria-valuemin="0" aria-valuemax="100">
-                            <div class="progress-bar" style="width: 15%"></div>
+                            <div class="progress-bar" class="progressBar15"></div>
                         </div>
                         <div>
                             10
                         </div>
                     </div>
                     <div class="starRowsRating">
-                        <div><i class="fa-solid fa-star"></i><i class="fa-solid fa-star grayStar"
-                                ></i><i class="fa-solid fa-star grayStar"
-                                ></i><i class="fa-solid fa-star grayStar"
-                                ></i><i class="fa-solid fa-star grayStar"
-                                ></i></div>
+                        <div><i class="fa-solid fa-star"></i><i class="fa-solid fa-star grayStar"></i><i
+                                class="fa-solid fa-star grayStar"></i><i class="fa-solid fa-star grayStar"></i><i
+                                class="fa-solid fa-star grayStar"></i></div>
                         <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25"
                             aria-valuemin="0" aria-valuemax="100">
-                            <div class="progress-bar" style="width: 0%"></div>
+                            <div class="progress-bar" class="progressBar0"></div>
                         </div>
                         <div>
                             0
@@ -701,18 +695,17 @@
 
 
         </section>
-        <section class="productsReviews" style="margin-top: 0;">
+        <section class="productsReviews">
             <div class="productReviewHeader">
-                <div style="padding-left: 24px;">
+                <div class="productReviewHeaderText">
                     Product Reviews
                 </div>
-                <div class="sortAndFilter" style="height: 100%;">
+                <div class="sortAndFilter">
                     <div class="sort-section">
-                        <span>
-                            <i class="fa-solid fa-arrow-up" style="position: relative; bottom: 2px;"></i><i
-                                class="fa-solid fa-arrow-down" style="position: relative; right: 2px;"></i>
+                        <span class="arrowBox">
+                            <i class="fa-solid fa-arrow-up"></i><i class="fa-solid fa-arrow-down"></i>
                         </span>
-                        <span style="margin-right: 6px;">
+                        <span class="title">
                             Sort:
                         </span>
                         <span>
@@ -720,10 +713,10 @@
                         </span>
                     </div>
                     <div class="filter-section">
-                        <span>
+                        <span class="filterBox">
                             <i class="fa-solid fa-filter"></i>
                         </span>
-                        <span style="margin-right: 6px;">
+                        <span class="title">
                             Filter:
                         </span>
                         <span>
@@ -746,7 +739,7 @@
                             <span>muhammadhuzaifa716336</span>
                             <span>
                                 <i class="fa-solid fa-shield"></i>
-                                <p style="margin: 0;">Verified Purchase</p>
+                                <p>Verified Purchase</p>
                             </span>
 
                         </div>
@@ -760,9 +753,18 @@
 Durability:10/10
 Speed:10/10 very good color interior light and sound
                     </pre>
-                    <div class="reviewImgs">
-                        <img src="assets/reviewImage.jpg" alt="">
-                        <img src="assets/reviewImage.jpg" alt="" srcset="">
+                    <div class="zoom-imgs">
+                        <div class="zoom-thumb">
+                            <img src="assets/products/reviewImage.jpg" alt="">
+                            <span class="zoom-arrow"></span>
+                        </div>
+                        <div class="zoom-thumb">
+                            <img src="assets/products/reviewImage.jpg" alt="" srcset="">
+                            <span class="zoom-arrow"></span>
+                        </div>
+                    </div>
+                    <div class="zoom-full">
+                        <img src="" alt="">
                     </div>
                     <div class="likesAndColor">
                         <div>
@@ -792,7 +794,7 @@ Speed:10/10 very good color interior light and sound
                             <span>muhammadhuzaifa716336</span>
                             <span>
                                 <i class="fa-solid fa-shield"></i>
-                                <p style="margin: 0;">Verified Purchase</p>
+                                <p>Verified Purchase</p>
                             </span>
 
                         </div>
@@ -807,8 +809,8 @@ Durability:10/10
 Speed:10/10 very good color interior light and sound
                     </pre>
                     <div class="reviewImgs">
-                        <img src="assets/reviewImage.jpg" alt="">
-                        <img src="assets/reviewImage.jpg" alt="" srcset="">
+                        <img src="assets/products/reviewImage.jpg" alt="">
+                        <img src="assets/products/reviewImage.jpg" alt="" srcset="">
                     </div>
                     <div class="likesAndColor">
                         <div>
@@ -833,9 +835,9 @@ Speed:10/10 very good color interior light and sound
         </h6>
         <div class="alsoLikeCategory">
             <div class="card">
-                <a href="" style="color: inherit; text-decoration: none;">
+                <a href="" class="linkCard">
                     <div class="img">
-                        <img src="assets/shopImg3.avif" alt="" id="fsProductImgLink">
+                        <img src="assets/products/shopImg3.avif" alt="" id="fsProductImgLink">
                     </div>
                     <div class="cardDetail">
                         <p id="fsProductTitle">Laptop bag, Backpacks Travel bag</p>
@@ -856,9 +858,9 @@ Speed:10/10 very good color interior light and sound
                 </a>
             </div>
             <div class="card">
-                <a href="" style="color: inherit; text-decoration: none;">
+                <a href="" class="linkCard">
                     <div class="img">
-                        <img src="assets/shopImg1.avif" alt="" id="fsProductImgLink">
+                        <img src="assets/products/shopImg1.avif" alt="" id="fsProductImgLink">
                     </div>
                     <div class="cardDetail">
                         <p id="fsProductTitle">pack of 3-Improved Quality LARGE Storage Bags FOR SHIRTS CLOTHS
@@ -1074,7 +1076,8 @@ Speed:10/10 very good color interior light and sound
             });
         }
     </script>
-    <script src="scripts/scripts.js"></script>
+    <script src="scripts/loginSignup.js"></script>
+    <script src="scripts/messageDaraz.js"></script>
     <script src="scripts/productPageScript.js"></script>
 </body>
 

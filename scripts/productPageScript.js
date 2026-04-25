@@ -5,7 +5,7 @@ const price = params.get("price")
 const img = params.get("img")
 
 document.querySelector("h1#productName").textContent = title
-document.getElementById("mainProductImg").src = "assets/" + img
+document.getElementById("mainProductImg").src = "assets/products/" + img
 document.getElementById("discPrice").textContent = "Rs. " +price
 //document.getElementById("hookImg").src = "assets/" + img
 
@@ -122,3 +122,26 @@ function imageZoom(imgID, resultID) {
   
 }
 
+
+
+const zoomThumbs = document.querySelectorAll('.productReview .zoom-thumb');
+const zoomFull = document.querySelector('.productReview .zoom-full');
+const zoomFullImg = document.querySelector('.productReview .zoom-full img');
+
+zoomThumbs.forEach(thumb => {
+    thumb.addEventListener('click', function () {
+        const img = this.querySelector('img');
+        const isSame = zoomFullImg.src === img.src && zoomFull.classList.contains('active');
+
+        zoomThumbs.forEach(t => t.classList.remove('active'));
+
+        if (isSame) {
+            zoomFull.classList.remove('active');
+            zoomFullImg.src = '';
+        } else {
+            this.classList.add('active');
+            zoomFullImg.src = img.src;
+            zoomFull.classList.add('active');
+        }
+    });
+});
