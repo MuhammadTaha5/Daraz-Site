@@ -1,15 +1,28 @@
-const params = new URLSearchParams(window.location.search)
+// Get ID from URL
+const params = new URLSearchParams(window.location.search);
+const productId = params.get("id");
 
-const title = params.get("title")
-const price = params.get("price")
-const img = params.get("img")
+// Fetch JSON file
+fetch("assets/data/products.json")
+  .then(res => res.json())
+  .then(data => {
 
-document.querySelector("h1#productName").textContent = title
-document.getElementById("mainProductImg").src = "assets/products/" + img
-document.getElementById("discPrice").textContent = "Rs. " +price
-//document.getElementById("hookImg").src = "assets/" + img
+    // Find product by ID
+    const product = data.find(item => item.id == productId);
 
+    if (!product) {
+      console.error("Product not found");
+      return;
+    }
 
+    // Update UI
+    document.querySelector("#productName").textContent = product.title;
+    document.querySelector("h1#productName").textContent = product.title;
+    document.getElementById("mainProductImg").src = "assets/products/" + product.link;
+    document.getElementById("discPrice").textContent = "Rs. " + product.price;
+
+  })
+  .catch(err => console.error("Error loading products:", err));
 
 document.getElementById("arrowLeft").addEventListener("click", ()=>{
     console.log("hello")

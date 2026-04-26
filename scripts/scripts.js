@@ -31,7 +31,7 @@ async function init() {
         //changing the inner html
         displayProducts.innerHTML += `<div class="col">
                     <div class="card">
-                         <a href="productPage.html?title=${encodeURIComponent(product["title"])}&price=${product["price"]}&img=${product["link"]}" style="color: inherit; text-decoration: none;">
+                         <a href="productPage.html?id=${product["id"]}" style="color: inherit; text-decoration: none;">
                             <div class="img">
                                 <img src="assets/products/${product["link"]}" alt="">
                             </div>

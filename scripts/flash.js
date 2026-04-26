@@ -26,7 +26,7 @@ async function loadProducts() {
         // 2. Map through the data and create HTML strings
         container.innerHTML = products.map(product => `
             <div class="card">
-                <a href="product-detail.html?id=${product.id}" class="card-inner">
+                <a href="productPage.html?id=${product.id}" class="card-inner">
                     <div class="img">
                         <img src="${product.img}" alt="${product.title}">
                     </div>

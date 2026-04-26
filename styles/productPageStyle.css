@@ -12,6 +12,7 @@ main{
 }
 .productPageHeader{
     padding-bottom: 0px !important;
+    position: sticky;
 }
 .productPageHeader .logoImg img{
     position: relative;

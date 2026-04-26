@@ -73,7 +73,8 @@ header#mainHeader nav {
     display: flex;
     justify-content: center;
     margin-top: 24px;
-    height: 140px;
+    max-height: 200px;
+    height: 90px;
 
 
 }
@@ -81,6 +82,7 @@ header#mainHeader nav {
 .banner img {
     height: 100%;
     max-width: 1188px;
+    width: 100%;
 }
 
 .headerOptions {
@@ -248,7 +250,8 @@ button.languageChange {
 .logoSide .logoImg {
     padding-top: 3px;
     height: 40px;
-    width: 200px;
+    max-width: 200px;
+    width: 100%;
     display: inline-block;
 }
 
@@ -258,7 +261,9 @@ button.languageChange {
     height: 39px;
     display: inline-block;
 }
-
+#logoSearchSection{
+    margin-left: 28px;
+}
 .search {
     height: 45px;
     font-family: "roboto-regular";
@@ -288,6 +293,7 @@ button.languageChange {
 .search div,
 .search div input {
     height: 100%;
+    
 }
 
 .searchInput input {
@@ -339,6 +345,7 @@ button.languageChange {
     color: white;
     position: relative;
     top: 4px;
+    margin: 0 0 0 26px;
 }
 
 .cardFsContent {
@@ -890,6 +897,7 @@ a#loadProductsButton {
     max-width: 1188px;
     margin: auto;
     font-family: "euclid-Circular-A";
+    flex-wrap: wrap;
 }
 
 .customerCare {
@@ -933,6 +941,7 @@ a#loadProductsButton {
     padding-top: 20px;
     display: flex;
     font-family: "euclid-Circular-A" !important;
+    flex-wrap: wrap;
 
 }
 
@@ -2103,50 +2112,12 @@ body {
 
 /* Medium devices (768px and up) */
 @media (max-width: 768px) {
-    body {
-        font-size: 16px;
-    }
 
-    .upperNavbar {
-        display: none;
-    }
-
-    header {
-        width: 100%;
-    }
-
-    .search {
-        width: 100%;
-        gap: 5px;
-    }
-
-    .logoSide {
-        width: 100%;
-        gap: 0px;
-
-        align-items: center;
-    }
-
-    .searchInput {
-        width: 200px;
-    }
-
-    .searchInput input {
-        width: 100%;
-
-
-    }
 
     .pc-download-module {
         display: none;
     }
 
-    .banner,
-    .banner img {
-        width: 100%;
-        height: 80px;
-
-    }
 
     .carousel {
         height: 135px;
@@ -2179,13 +2150,6 @@ body {
         flex-direction: column;
     }
 
-    .footerThird {
-        display: none;
-    }
-
-    .footerLogoLink {
-        display: none;
-    }
 
     .forth-footer {
         width: 100%;
@@ -2229,10 +2193,6 @@ body {
         flex-direction: column;
     }
 
-    .footer4 {
-        width: 100%;
-
-    }
 
     .daraz-copyright {
         display: none;
@@ -2253,6 +2213,9 @@ body {
 
     p.fs-banner {
         margin-left: 10px;
+    }
+    .logoSide .searchInput input{
+        display: none;
     }
 
 }
