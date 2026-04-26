@@ -120,28 +120,153 @@ function imageZoom(imgID, resultID) {
     return {x : x, y : y};
   }
   
+
 }
 
 
+function applyZoomFunctionality() {
+  document.querySelectorAll('.review-block').forEach(block => {
+    const zoomThumbs = block.querySelectorAll('.zoom-thumb');
+    const zoomFull = block.querySelector('.zoom-full');
+    const zoomFullImg = block.querySelector('.zoom-full img');
 
-const zoomThumbs = document.querySelectorAll('.productReview .zoom-thumb');
-const zoomFull = document.querySelector('.productReview .zoom-full');
-const zoomFullImg = document.querySelector('.productReview .zoom-full img');
-
-zoomThumbs.forEach(thumb => {
-    thumb.addEventListener('click', function () {
+    zoomThumbs.forEach(thumb => {
+      thumb.addEventListener('click', function () {
         const img = this.querySelector('img');
-        const isSame = zoomFullImg.src === img.src && zoomFull.classList.contains('active');
+        const isSame =
+          zoomFullImg.src === img.src && zoomFull.classList.contains('active');
 
         zoomThumbs.forEach(t => t.classList.remove('active'));
 
         if (isSame) {
-            zoomFull.classList.remove('active');
-            zoomFullImg.src = '';
+          zoomFull.classList.remove('active');
+          zoomFullImg.src = '';
         } else {
-            this.classList.add('active');
-            zoomFullImg.src = img.src;
-            zoomFull.classList.add('active');
+          this.classList.add('active');
+          zoomFullImg.src = img.src;
+          zoomFull.classList.add('active');
         }
+      });
     });
-});
+  });
+}
+
+
+const reviewsPerPage = 3;
+let currentPage = 1;
+let reviewsData = [];
+
+// Fetch JSON
+fetch('assets/data/reviews.json')
+  .then(res => res.json())
+  .then(data => {
+    reviewsData = data;
+    renderReviews();
+    renderPagination();
+  });
+
+// Render Reviews
+function renderReviews() {
+  const container = document.getElementById("reviewsContainer");
+  container.innerHTML = "";
+
+  const start = (currentPage - 1) * reviewsPerPage;
+  const end = start + reviewsPerPage;
+  const currentReviews = reviewsData.slice(start, end);
+
+  currentReviews.forEach(review => {
+    const stars = generateStars(review.rating);
+
+    let imagesHTML = '';
+    if (review.images && review.images.length > 0) {
+      imagesHTML = `
+        <div class="zoom-imgs">
+          ${review.images.map(img => `
+            <div class="zoom-thumb">
+              <img src="${img}" alt="">
+              <span class="zoom-arrow"></span>
+            </div>
+          `).join('')}
+        </div>
+        <div class="zoom-full">
+          <img src="" alt="">
+        </div>
+      `;
+    }
+
+    const reviewHTML = `
+      <div class="productReview review-block">
+        <div class="eachReviewHead">
+          <div>
+            <div class="ratingStar">
+              ${stars}
+            </div>
+            <div class="reviewerName">
+              <span>${review.username}</span>
+              ${review.verified ? `
+                <span>
+                  <i class="fa-solid fa-shield"></i>
+                  <p>Verified Purchase</p>
+                </span>` : ''}
+            </div>
+          </div>
+          <div class="reviewDate">${review.date}</div>
+        </div>
+
+        <div class="reviewMaterial">
+          <pre>${review.comment}</pre>
+
+          ${imagesHTML}
+
+          <div class="likesAndColor">
+            <div>
+              <span>Color Family:</span>
+              <span>${review.colorFamily}</span>
+            </div>
+            <div>
+              <i class="fa-regular fa-thumbs-up"></i>
+              <span class="likes">${review.likes}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr class="reviewDivider">
+    `;
+
+    container.innerHTML += reviewHTML;
+  });
+
+  // ✅ THIS LINE FIXES EVERYTHING
+  applyZoomFunctionality();
+}// Generate Stars
+function generateStars(rating) {
+  let stars = '';
+  for (let i = 0; i < 5; i++) {
+    stars += `<i class="fa-solid fa-star ${i < rating ? '' : 'inactive'}"></i>`;
+  }
+  return stars;
+}
+
+// Pagination
+function renderPagination() {
+  const totalPages = Math.ceil(reviewsData.length / reviewsPerPage);
+  const pagination = document.getElementById("pagination");
+
+  pagination.innerHTML = "";
+
+  for (let i = 1; i <= totalPages; i++) {
+    pagination.innerHTML += `
+      <button class="page-btn ${i === currentPage ? 'active' : ''}" 
+        onclick="changePage(${i})">${i}</button>
+    `;
+  }
+}
+
+function changePage(page) {
+  currentPage = page;
+  renderReviews();
+  renderPagination();
+}
+
+

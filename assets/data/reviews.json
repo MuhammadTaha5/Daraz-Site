@@ -1,0 +1,112 @@
+[
+    {
+        "id": 1,
+        "username": "muhammadhuzaifa716336",
+        "verified": true,
+        "rating": 5,
+        "date": "07 Oct 2025",
+        "comment": "Design: very good and stylish 10/10\nDurability: 10/10\nSpeed: 10/10 very good color interior light and sound",
+        "colorFamily": "Green",
+        "likes": 12,
+        "images": [
+            "assets/products/reviewImage.jpg",
+            "assets/products/reviewImage.jpg"
+        ]
+    },
+    {
+        "id": 2,
+        "username": "ahmedkhan_pk92",
+        "verified": true,
+        "rating": 4,
+        "date": "15 Oct 2025",
+        "comment": "Overall great product. Build quality is solid and the finish looks premium. Delivery was fast too. Deducting one star because the manual could be clearer.",
+        "colorFamily": "Red",
+        "likes": 7,
+        "images": [
+            "assets/products/reviewImage.jpg"
+        ]
+    },
+    {
+        "id": 3,
+        "username": "sara.malik_official",
+        "verified": true,
+        "rating": 5,
+        "date": "22 Oct 2025",
+        "comment": "Absolutely love it! Way better than I expected. The color matches the pictures exactly and the performance is top notch. Highly recommended!",
+        "colorFamily": "Blue",
+        "likes": 24,
+        "images": [
+            "assets/products/reviewImage.jpg"
+        ]
+    },
+    {
+        "id": 4,
+        "username": "usman_butt_lahore",
+        "verified": false,
+        "rating": 3,
+        "date": "01 Nov 2025",
+        "comment": "Decent product for the price. Nothing extraordinary but gets the job done. Packaging could be improved, mine arrived with a small dent on the box.",
+        "colorFamily": "White",
+        "likes": 3
+    },
+    {
+        "id": 5,
+        "username": "zainab.reviews",
+        "verified": true,
+        "rating": 5,
+        "date": "10 Nov 2025",
+        "comment": "Excellent quality! I've bought from this brand before and they never disappoint. The sound quality is amazing and the lights look stunning in the dark.",
+        "colorFamily": "Black",
+        "likes": 31
+    },
+    {
+        "id": 6,
+        "username": "bilal_tech_pk",
+        "verified": true,
+        "rating": 4,
+        "date": "18 Nov 2025",
+        "comment": "Good product overall. Setup was straightforward. The remote control is a nice touch. Battery life could be better but still worth the price.",
+        "colorFamily": "Yellow",
+        "likes": 9
+    },
+    {
+        "id": 7,
+        "username": "fatima_ch_2025",
+        "verified": true,
+        "rating": 2,
+        "date": "25 Nov 2025",
+        "comment": "Disappointed with this purchase. The product stopped working after 2 weeks. Customer support was helpful but the product quality needs improvement.",
+        "colorFamily": "Red",
+        "likes": 1
+    },
+    {
+        "id": 8,
+        "username": "omar.purchases",
+        "verified": false,
+        "rating": 5,
+        "date": "03 Dec 2025",
+        "comment": "Perfect in every way. I gifted this to my brother and he absolutely loves it. The design is sleek and modern. Will definitely buy again!",
+        "colorFamily": "Green",
+        "likes": 18
+    },
+    {
+        "id": 9,
+        "username": "nadia_shopaholic",
+        "verified": true,
+        "rating": 4,
+        "date": "11 Dec 2025",
+        "comment": "Very nice product. The build feels premium and durable. Colors are vibrant. Only minor complaint is the charging time is a bit long.",
+        "colorFamily": "Pink",
+        "likes": 6
+    },
+    {
+        "id": 10,
+        "username": "hamza_karachi_pk",
+        "verified": true,
+        "rating": 5,
+        "date": "20 Dec 2025",
+        "comment": "Hands down one of the best purchases I've made this year. Speed is incredible, lights are gorgeous, and the sound is crystal clear. 10/10 no doubt!",
+        "colorFamily": "Blue",
+        "likes": 45
+    }
+]
