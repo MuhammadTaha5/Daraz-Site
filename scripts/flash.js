@@ -36,7 +36,7 @@ async function loadProducts() {
                             <p>Rs.<span>${product.price.toLocaleString()}</span></p>
                         </div>
                         <div class="itemPriceDetail">
-                            <span style="text-decoration: line-through;">
+                            <span>
                                 <span class="currency">RS</span>
                                 <span class="actualPrice">${product.actualPrice.toLocaleString()}</span>
                             </span>

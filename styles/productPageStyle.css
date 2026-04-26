@@ -36,7 +36,7 @@ main{
 }
 .CategoriesHeader{
     margin-left: 30px;
-    position: sticky; top: 75px;
+    position: sticky; top: 65px;
     background-color: white; z-index: 10;
 }
 .categoriesOptions{

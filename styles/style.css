@@ -411,7 +411,7 @@ button.languageChange {
     border-radius: 2px;
     text-transform: uppercase;
     padding: 0 10px;
-    margin: 13px 11px 0 0;
+    margin: 0px 11px 0 0;
     height: 35px;
     font-size: 14px;
     font-weight: 600;
@@ -541,6 +541,7 @@ section.categories {
     justify-content: center;
     flex-wrap: wrap;
     padding: 0px !important;
+    flex-wrap: wrap;
 }
 
 .cards-categories ul li {
@@ -627,7 +628,7 @@ a#loadProductsButton {
 .carousel-section {
     display: flex;
     justify-content: center;
-    height: 344px;
+    max-height: 344px;
 
 }
 
@@ -2113,12 +2114,6 @@ body {
 /* Medium devices (768px and up) */
 @media (max-width: 768px) {
 
-
-    .pc-download-module {
-        display: none;
-    }
-
-
     .carousel {
         height: 135px;
     }
@@ -2129,16 +2124,6 @@ body {
 
     .carouselExampleIndicators {
         width: 100% !important;
-    }
-
-    .categories {
-        width: 100%;
-    }
-
-    .cards-categories ul {
-        flex-wrap: wrap;
-
-
     }
 
     .cards-categories ul li {
@@ -2207,10 +2192,6 @@ body {
         height: max-content;
     }
 
-    #topHeader {
-        display: none;
-    }
-
     p.fs-banner {
         margin-left: 10px;
     }
@@ -2218,11 +2199,4 @@ body {
         display: none;
     }
 
-}
-
-/* Large devices (992px and up) */
-@media (min-width: 992px) {
-    body {
-        font-size: 17px;
-    }
 }
