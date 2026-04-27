@@ -545,6 +545,12 @@ h1#productName {
     font-size: 16px;
     font-family: "notoSans-Medium";
 }
+.productTextDetail h2 {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+}
 .productTextDetail p{
     font-size: 12px;
     

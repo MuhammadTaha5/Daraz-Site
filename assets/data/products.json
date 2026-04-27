@@ -1,320 +1,416 @@
 [
-    {
-        "id": 1,
-        "title": "Moon Touch Lip & Cheek Tint – 20ml – Natural Finish – Hydrating & Long-Lasting – 7 Shades",
-        "price": "507",
-        "discount": "-49%",
-        "comments": "(355)",
-        "link": "moonTouchLip.avif",
-        "relatedImage": [
-            "moonTouchLip.avif",
-            "handGrip.avif",
-            "moonTouchLip.avif"
-        ]
-    },
-    {
-        "id": 2,
-        "title": "Automatic Counting Hand Gripper Adjustable Resistance Automatic Counting Non-Slip Hand Grip",
-        "price": "299",
-        "discount": "-40%",
-        "comments": "(396)",
-        "link": "handGrip.avif",
-        "relatedImage": [
-            "moonTouchLip.avif",
-            "handGrip.avif",
-            "moonTouchLip.avif"
-        ]
-    },
-    {
-        "id": 3,
-        "title": "AirPods Pro & Pro 2 Case – Soft Silicone Protective Cover with Keychain, Shockproof, Dustproof, Anti-Slip, Wireless Charging Compatible – Fits Apple AirPods Pro 1st & 2nd Generation",
-        "price": "186",
-        "discount": "-69%",
-        "comments": "(387)",
-        "link": "airpods-case.avif",
-        "relatedImage": [
-            "airpods-case.avif",
-            "handGrip.avif",
-            "airpods-case.avif"
-        ]
-    },
-    {
-        "id": 4,
-        "title": "T9 Vintage Hair Trimmer For Men | T9 Rechargeable Shaver Machine For Men| Professional Hair Trimming Machine | Hair Trimmer and Shaver For Boys",
-        "price": "799",
-        "discount": "-50%",
-        "comments": "(4309)",
-        "link": "trimmer.avif",
-        "relatedImage": [
-            "trimmer.avif",
-            "handGrip.avif",
-            "trimmer.avif"
-        ]
-    },
-    {
-        "id": 5,
-        "title": "Girls (7–14) & Women (S–XL) Soft Cotton Jersey Pajama Set – Black “love” Tee & Printed Trousers | Cozy Sleep & Loungewear",
-        "price": "737",
-        "discount": "-63%",
-        "comments": "(126)",
-        "link": "cotton-jersey.avif",
-        "relatedImage": [
-            "cotton-jersey.avif",
-            "handGrip.avif",
-            "cotton-jersey.avif"
-        ]
-    },
-    {
-        "id": 6,
-        "title": "Sandals For Men || New Stylish and Tranding Sandals For Boys House slippers for men",
-        "price": "319",
-        "discount": "-79%",
-        "comments": "(2333)",
-        "link": "mens-sandals.avif",
-        "relatedImage": [
-            "cotton-jersey.avif",
-            "handGrip.avif",
-            "cotton-jersey.avif"
-        ]
-    },
-    {
-        "id": 7,
-        "title": "Sandals for men / New stylish sandals for men / Sandals for boys / Sandals for men",
-        "price": "299",
-        "discount": "-85%",
-        "comments": "(29)",
-        "link": "mens-sandals2.avif",
-        "relatedImage": [
-            "mens-sandals2.avif",
-            "handGrip.avif",
-            "cotton-jersey.avif"
-        ]
-    },
-    {
-        "id": 8,
-        "title": "SA Trader Premium Tracksuit - Multicolor Winter Cotton Jersey - Full Sleeve T-Shirt & Trousers for men",
-        "price": "892",
-        "discount": "-36%",
-        "comments": "(4693)",
-        "link": "traderPremium.avif",
-        "relatedImage": [
-            "traderPremium.avif",
-            "handGrip.avif",
-            "traderPremium.avif"
-        ]
-    },
-    {
-        "id": 9,
-        "title": "Real Boss By Rich ManBatman Printed T-Shirt and Trouser For Kids Baby Boys And Baby Girls Comfy Summer Tops Clothes Sets Dresses - Tshirts For Boys / Tshirts For Girls",
-        "price": "699",
-        "discount": "-63%",
-        "comments": "(0)",
-        "link": "realBoss.avif",
-        "relatedImage": [
-            "realBoss.avif",
-            "handGrip.avif",
-            "realBoss.avif"
-        ]
-    },
-    {
-        "id": 10,
-        "title": "16 in 1 Multi-functional vegetable chopper slicer shredder with Basket Cheese Slicer Food Chopper , Veggie Chopper , Onion Chopper , salad chopper Mandoline slicer & Cheese Grater , 16 in 1 Vegetable Chopper with Container",
-        "price": "1,808",
-        "discount": "-60%",
-        "comments": "(80)",
-        "link": "chopper.avif",
-        "relatedImage": [
-            "chopper.avif",
-            "handGrip.avif",
-            "chopper.avif"
-        ]
-    },
-    {
-        "id": 11,
-        "title": "2 in 1 Electric Hair Straightener Curler Heating Styling Comb Straightening Brush - Multicolors 909",
-        "price": "942",
-        "discount": "-33%",
-        "comments": "(1781)",
-        "link": "hairStraightner.avif",
-        "relatedImage": [
-            "hairStraightner.avif",
-            "handGrip.avif",
-            "hairStraightner.avif"
-        ]
-    },
-    {
-        "id": 12,
-        "title": "Premium Laptop bag, Travel bag",
-        "price": "482",
-        "discount": "-52%",
-        "comments": "(812)",
-        "link": "laptopBag.avif",
-        "relatedImage": [
-            "laptopBag.avif",
-            "handGrip.avif",
-            "laptopBag.avif"
-        ]
-    },
-    {
-        "id": 13,
-        "title": "Dell pro Sleeve 13\" Laptop Case Original",
-        "price": "2,999",
-        "discount": "-45%",
-        "comments": "(19)",
-        "link": "dellproLaptop.avif",
-        "relatedImage": [
-            "dellproLaptop.avif",
-            "handGrip.avif",
-            "dellproLaptop.avif"
-        ]
-    },
-    {
-        "id": 14,
-        "title": "Improved Quality LARGE Storage Bags FOR SHIRTS CLOTHS AND BLANCKETS DOUBLE ZIPPER Organizer",
-        "price": "117",
-        "discount": "-8%",
-        "comments": "(851)",
-        "link": "storagebox.avif",
-        "relatedImage": [
-            "storagebox.avif",
-            "handGrip.avif",
-            "storagebox.avif"
-        ]
-    },
-    {
-        "id": 15,
-        "title": "Airpods_pro protective Silicon case/cover - 360 protection for your airpods_pro Anti Fall Protective Cover  With Hook ( Case Only )",
-        "price": "177",
-        "discount": "-70%",
-        "comments": "(182)",
-        "link": "airpods.avif",
-        "relatedImage": [
-            "airpods.avif",
-            "handGrip.avif",
-            "airpods.avif"
-        ]
-    },
-    {
-        "id": 16,
-        "title": "Original men ring matt black titanium stainless steel ring for men superior quality gents ring outclass neat finishing",
-        "price": "80",
-        "discount": "-46%",
-        "comments": "(207)",
-        "link": "male-ring.avif",
-        "relatedImage": [
-            "male-ring.avif",
-            "handGrip.avif",
-            "male-ring.avif"
-        ]
-    },
-    {
-        "id": 17,
-        "title": "Cat Neck Rainbow Ribbon Adjustable Collar",
-        "price": "218",
-        "discount": "-71%",
-        "comments": "(71)",
-        "link": "cat-neck.avif",
-        "relatedImage": [
-            "cat-neck.avif",
-            "handGrip.avif",
-            "cat-neck.avif"
-        ]
-    },
-    {
-        "id": 18,
-        "title": "Mini Diecast KIA SPORTAGE Motor Car - Toynix",
-        "price": "899",
-        "discount": "-55%",
-        "comments": "(39)",
-        "link": "carToy.avif",
-        "relatedImage": [
-            "carToy.avif",
-            "handGrip.avif",
-            "carToy.avif"
-        ]
-    },
-    {
-        "id": 19,
-        "title": "Home Fabric Folding Storage Box With Lid Dustproof Portable Box Clothing Sundries Multifunctional Storage Box",
-        "link": "shopImg1.avif",
-        "price": 205,
-        "actualPrice": 499,
-        "discount": "-59%",
-        "comments": "(39)",
-        "relatedImage": [
-            "shopImg1.avif",
-            "handGrip.avif",
-            "shopImg1.avif"
-        ]
-    },
-    {
-        "id": 20,
-        "title": "Daachi Posture belt, posture corrector belt, Back support belt, Back Pain Relief Shoulder Back Support Belt",
-        "link": "shopImg2.avif",
-        "price": 666,
-        "actualPrice": 859,
-        "comments": "(39)",
-        "discount": "-22%",
-        "relatedImage": [
-            "shopImg2.avif",
-            "handGrip.avif",
-            "shopImg2.avif"
-        ]
-    },
-    {
-        "id": 21,
-        "title": "Laptop bag, Backpacks Travel bag",
-        "link": "shopImg3.avif",
-        "price": 492,
-        "actualPrice": 3899,
-        "comments": "(39)",
-        "discount": "-87%",
-        "relatedImage": [
-            "shopImg3.avif",
-            "handGrip.avif",
-            "shopImg3.avif"
-        ]
-    },
-    {
-        "id": 22,
-        "title": "pack of 3-Improved Quality LARGE Storage Bags FOR SHIRTS CLOTHS AND BLANCKETS DOUBLE ZIPPER Organizer",
-        "link": "shopImg1.avif",
-        "price": 404,
-        "actualPrice": 999,
-        "comments": "(39)",
-        "discount": "-60%",
-        "relatedImage": [
-            "shopImg1.avif",
-            "handGrip.avif",
-            "shopImg1.avif"
-        ]
-    },
-    {
-        "id": 23,
-        "title": "Samsung Galaxy S26 Ultra - 512 GB - Get Free Galaxy Tab A11",
-        "link": "shopImg5.avif",
-        "price": 489996,
-        "actualPrice": 489999,
-        "comments": "(39)",
-        "discount": "-1%",
-        "relatedImage": [
-            "shopImg5.avif",
-            "handGrip.avif",
-            "shopImg5.avif"
-        ]
-    },
-    {
-        "id": 24,
-        "title": "Knorr Blazing Noodles 110G",
-        "link": "shopImg6.avif",
-        "price": 126,
-        "actualPrice": 150,
-        "comments": "(39)",
-        "discount": "-16%",
-        "relatedImage": [
-            "shopImg6.avif",
-            "handGrip.avif",
-            "shopImg6.avif"
-        ]
-    }
+  {
+    "id": 1,
+    "title": "Moon Touch Lip & Cheek Tint – 20ml – Natural Finish – Hydrating & Long-Lasting – 7 Shades",
+    "price": "507",
+    "discount": "-49%",
+    "comments": "(355)",
+    "link": "moonTouchLip.avif",
+    "relatedImage": ["moonTouchLip.avif", "handGrip.avif", "moonTouchLip.avif"],
+    "productDetails": [
+      "Lightweight tint for lips and cheeks",
+      "Hydrating and smooth formula",
+      "Natural dewy finish",
+      "Long-lasting color effect",
+      "Easy blendable texture",
+      "Suitable for daily makeup use"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Automatic Counting Hand Gripper Adjustable Resistance Automatic Counting Non-Slip Hand Grip",
+    "price": "299",
+    "discount": "-40%",
+    "comments": "(396)",
+    "link": "handGrip.avif",
+    "relatedImage": ["moonTouchLip.avif", "handGrip.avif", "moonTouchLip.avif"],
+    "productDetails": [
+      "Built-in rep counter display",
+      "Adjustable resistance levels",
+      "Non-slip ergonomic grip",
+      "Strengthens hand and forearm",
+      "Compact portable design",
+      "Durable spring mechanism"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "AirPods Pro & Pro 2 Case – Soft Silicone Protective Cover with Keychain, Shockproof, Dustproof, Anti-Slip, Wireless Charging Compatible",
+    "price": "186",
+    "discount": "-69%",
+    "comments": "(387)",
+    "link": "airpods-case.avif",
+    "relatedImage": ["airpods-case.avif", "handGrip.avif", "airpods-case.avif"],
+    "productDetails": [
+      "Soft silicone protective cover",
+      "Shockproof and anti-fall design",
+      "Dust-resistant material",
+      "Wireless charging compatible",
+      "Includes keychain hook",
+      "Perfect fit for AirPods Pro"
+    ]
+  },
+  {
+    "id": 4,
+    "title": "T9 Vintage Hair Trimmer For Men | Rechargeable Professional Hair Trimming Machine",
+    "price": "799",
+    "discount": "-50%",
+    "comments": "(4309)",
+    "link": "trimmer.avif",
+    "relatedImage": ["trimmer.avif", "handGrip.avif", "trimmer.avif"],
+    "productDetails": [
+      "Rechargeable cordless trimmer",
+      "Sharp stainless steel blades",
+      "Low noise motor performance",
+      "Suitable for beard and hair",
+      "Multiple guide combs included",
+      "Ergonomic metal body design"
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Girls & Women Soft Cotton Jersey Pajama Set – Cozy Sleep & Loungewear",
+    "price": "737",
+    "discount": "-63%",
+    "comments": "(126)",
+    "link": "cotton-jersey.avif",
+    "relatedImage": ["cotton-jersey.avif", "handGrip.avif", "cotton-jersey.avif"],
+    "productDetails": [
+      "Soft breathable cotton fabric",
+      "Comfortable relaxed fit",
+      "Stylish printed design",
+      "Ideal for sleepwear",
+      "Skin-friendly material",
+      "Suitable for all seasons"
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Sandals For Men || Stylish House Slippers",
+    "price": "319",
+    "discount": "-79%",
+    "comments": "(2333)",
+    "link": "mens-sandals.avif",
+    "relatedImage": ["cotton-jersey.avif", "handGrip.avif", "cotton-jersey.avif"],
+    "productDetails": [
+      "Comfortable daily wear sandals",
+      "Lightweight construction",
+      "Anti-slip sole grip",
+      "Breathable open design",
+      "Indoor and outdoor use",
+      "Easy slip-on style"
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Stylish Sandals for Men / Boys Trendy Footwear",
+    "price": "299",
+    "discount": "-85%",
+    "comments": "(29)",
+    "link": "mens-sandals2.avif",
+    "relatedImage": ["mens-sandals2.avif", "handGrip.avif", "cotton-jersey.avif"],
+    "productDetails": [
+      "Modern stylish design",
+      "Comfortable soft sole",
+      "Durable material build",
+      "Lightweight wear",
+      "Slip-resistant base",
+      "Daily casual use"
+    ]
+  },
+  {
+    "id": 8,
+    "title": "SA Trader Premium Tracksuit - Winter Cotton Jersey Set",
+    "price": "892",
+    "discount": "-36%",
+    "comments": "(4693)",
+    "link": "traderPremium.avif",
+    "relatedImage": ["traderPremium.avif", "handGrip.avif", "traderPremium.avif"],
+    "productDetails": [
+      "Warm winter cotton fabric",
+      "Two-piece tracksuit set",
+      "Comfortable athletic fit",
+      "Stylish modern design",
+      "Soft inner lining",
+      "Suitable for sports & casual wear"
+    ]
+  },
+  {
+    "id": 9,
+    "title": "Kids Batman Printed T-Shirt and Trouser Set",
+    "price": "699",
+    "discount": "-63%",
+    "comments": "(0)",
+    "link": "realBoss.avif",
+    "relatedImage": ["realBoss.avif", "handGrip.avif", "realBoss.avif"],
+    "productDetails": [
+      "Cartoon printed design",
+      "Soft breathable fabric",
+      "Comfortable kids wear",
+      "Easy wash material",
+      "Summer-friendly outfit",
+      "Stylish matching set"
+    ]
+  },
+  {
+    "id": 10,
+    "title": "16 in 1 Vegetable Chopper Slicer Shredder with Basket",
+    "price": "1808",
+    "discount": "-60%",
+    "comments": "(80)",
+    "link": "chopper.avif",
+    "relatedImage": ["chopper.avif", "handGrip.avif", "chopper.avif"],
+    "productDetails": [
+      "Multi-functional 16-in-1 tool",
+      "Stainless steel blades",
+      "Easy vegetable chopping",
+      "Includes storage container",
+      "Safe hand protection design",
+      "Quick kitchen preparation"
+    ]
+  },
+  {
+    "id": 11,
+    "title": "2 in 1 Electric Hair Straightener Curler Brush",
+    "price": "942",
+    "discount": "-33%",
+    "comments": "(1781)",
+    "link": "hairStraightner.avif",
+    "relatedImage": ["hairStraightner.avif", "handGrip.avif", "hairStraightner.avif"],
+    "productDetails": [
+      "Straightener and curler combo",
+      "Fast heating technology",
+      "Ceramic coating plates",
+      "Smooth hair styling",
+      "Anti-burn safety design",
+      "Portable travel-friendly tool"
+    ]
+  },
+  {
+    "id": 12,
+    "title": "Premium Laptop Bag Travel Backpack",
+    "price": "482",
+    "discount": "-52%",
+    "comments": "(812)",
+    "link": "laptopBag.avif",
+    "relatedImage": ["laptopBag.avif", "handGrip.avif", "laptopBag.avif"],
+    "productDetails": [
+      "Water-resistant material",
+      "Multiple storage compartments",
+      "Comfortable shoulder straps",
+      "Laptop protection padding",
+      "Travel-friendly design",
+      "Lightweight structure"
+    ]
+  },
+  {
+    "id": 13,
+    "title": "Dell Pro Sleeve 13 inch Laptop Case Original",
+    "price": "2999",
+    "discount": "-45%",
+    "comments": "(19)",
+    "link": "dellproLaptop.avif",
+    "relatedImage": ["dellproLaptop.avif", "handGrip.avif", "dellproLaptop.avif"],
+    "productDetails": [
+      "Premium protective sleeve",
+      "Shock-absorbing padding",
+      "Slim lightweight design",
+      "Perfect 13-inch fit",
+      "High-quality material",
+      "Easy carry protection"
+    ]
+  },
+  {
+    "id": 14,
+    "title": "Large Storage Bags for Clothes with Double Zipper",
+    "price": "117",
+    "discount": "-8%",
+    "comments": "(851)",
+    "link": "storagebox.avif",
+    "relatedImage": ["storagebox.avif", "handGrip.avif", "storagebox.avif"],
+    "productDetails": [
+      "Dustproof storage design",
+      "Large capacity space",
+      "Double zipper closure",
+      "Foldable structure",
+      "Strong fabric material",
+      "Home organization solution"
+    ]
+  },
+  {
+    "id": 15,
+    "title": "AirPods Pro Silicone Protective Case 360° Cover",
+    "price": "177",
+    "discount": "-70%",
+    "comments": "(182)",
+    "link": "airpods.avif",
+    "relatedImage": ["airpods.avif", "handGrip.avif", "airpods.avif"],
+    "productDetails": [
+      "Full 360 protection",
+      "Soft silicone material",
+      "Shockproof design",
+      "Anti-scratch surface",
+      "Precise AirPods fit",
+      "Lightweight and durable"
+    ]
+  },
+  {
+    "id": 16,
+    "title": "Men Black Titanium Stainless Steel Ring",
+    "price": "80",
+    "discount": "-46%",
+    "comments": "(207)",
+    "link": "male-ring.avif",
+    "relatedImage": ["male-ring.avif", "handGrip.avif", "male-ring.avif"],
+    "productDetails": [
+      "Premium titanium build",
+      "Scratch-resistant finish",
+      "Elegant matte black design",
+      "Comfortable fit",
+      "Durable daily wear",
+      "Stylish men accessory"
+    ]
+  },
+  {
+    "id": 17,
+    "title": "Cat Neck Rainbow Adjustable Collar",
+    "price": "218",
+    "discount": "-71%",
+    "comments": "(71)",
+    "link": "cat-neck.avif",
+    "relatedImage": ["cat-neck.avif", "handGrip.avif", "cat-neck.avif"],
+    "productDetails": [
+      "Adjustable size strap",
+      "Soft pet-friendly material",
+      "Colorful rainbow design",
+      "Lightweight collar",
+      "Safe quick-release buckle",
+      "Comfortable for pets"
+    ]
+  },
+  {
+    "id": 18,
+    "title": "Mini Diecast KIA Sportage Toy Car",
+    "price": "899",
+    "discount": "-55%",
+    "comments": "(39)",
+    "link": "carToy.avif",
+    "relatedImage": ["carToy.avif", "handGrip.avif", "carToy.avif"],
+    "productDetails": [
+      "Diecast metal body",
+      "Realistic design details",
+      "Durable toy build",
+      "Smooth rolling wheels",
+      "Collectible model car",
+      "Safe for kids play"
+    ]
+  },
+  {
+    "id": 19,
+    "title": "Fabric Folding Storage Box with Lid",
+    "price": 205,
+    "actualPrice": 499,
+    "discount": "-59%",
+    "comments": "(39)",
+    "link": "shopImg1.avif",
+    "relatedImage": ["shopImg1.avif", "handGrip.avif", "shopImg1.avif"],
+    "productDetails": [
+      "Foldable storage design",
+      "Dustproof lid cover",
+      "Strong fabric material",
+      "Lightweight structure",
+      "Space saving organizer",
+      "Multi-use storage box"
+    ]
+  },
+  {
+    "id": 20,
+    "title": "Posture Corrector Back Support Belt",
+    "price": 666,
+    "actualPrice": 859,
+    "discount": "-22%",
+    "comments": "(39)",
+    "link": "shopImg2.avif",
+    "relatedImage": ["shopImg2.avif", "handGrip.avif", "shopImg2.avif"],
+    "productDetails": [
+      "Improves body posture",
+      "Back pain relief support",
+      "Adjustable straps",
+      "Breathable material",
+      "Lightweight wearable design",
+      "Comfortable daily use"
+    ]
+  },
+  {
+    "id": 21,
+    "title": "Laptop Travel Backpack Bag",
+    "price": 492,
+    "actualPrice": 3899,
+    "discount": "-87%",
+    "comments": "(39)",
+    "link": "shopImg3.avif",
+    "relatedImage": ["shopImg3.avif", "handGrip.avif", "shopImg3.avif"],
+    "productDetails": [
+      "Large storage capacity",
+      "Laptop protective compartment",
+      "Water-resistant fabric",
+      "Comfortable straps",
+      "Travel-friendly design",
+      "Durable stitching"
+    ]
+  },
+  {
+    "id": 22,
+    "title": "Pack of 3 Storage Bags for Clothes",
+    "price": 404,
+    "actualPrice": 999,
+    "discount": "-60%",
+    "comments": "(39)",
+    "link": "shopImg1.avif",
+    "relatedImage": ["shopImg1.avif", "handGrip.avif", "shopImg1.avif"],
+    "productDetails": [
+      "Set of 3 storage bags",
+      "Double zipper closure",
+      "Dustproof protection",
+      "Strong fabric material",
+      "Large capacity design",
+      "Foldable storage solution"
+    ]
+  },
+  {
+    "id": 23,
+    "title": "Samsung Galaxy S26 Ultra 512GB with Free Tab A11",
+    "price": 489996,
+    "actualPrice": 489999,
+    "discount": "-1%",
+    "comments": "(39)",
+    "link": "shopImg5.avif",
+    "relatedImage": ["shopImg5.avif", "handGrip.avif", "shopImg5.avif"],
+    "productDetails": [
+      "High-end flagship smartphone",
+      "512GB large storage",
+      "Advanced camera system",
+      "High performance processor",
+      "Free tablet offer included",
+      "Premium build quality"
+    ]
+  },
+  {
+    "id": 24,
+    "title": "Knorr Blazing Noodles 110G",
+    "price": 126,
+    "actualPrice": 150,
+    "discount": "-16%",
+    "comments": "(39)",
+    "link": "shopImg6.avif",
+    "relatedImage": ["shopImg6.avif", "handGrip.avif", "shopImg6.avif"],
+    "productDetails": [
+      "Instant ready noodles",
+      "Spicy flavorful taste",
+      "Easy quick cooking",
+      "110g pack size",
+      "Ideal snack option",
+      "Rich seasoning blend"
+    ]
+  }
 ]

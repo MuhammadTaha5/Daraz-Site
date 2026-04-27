@@ -2,6 +2,7 @@
 const params = new URLSearchParams(window.location.search);
 const productId = params.get("id");
 
+
 // Fetch JSON file
 fetch("assets/data/products.json")
   .then(res => res.json())
@@ -15,63 +16,97 @@ fetch("assets/data/products.json")
       return;
     }
 
-    // Update UI
+    // Update main UI
     document.querySelector("#productName").textContent = product.title;
     document.querySelector("h1#productName").textContent = product.title;
     document.getElementById("mainProductImg").src = "assets/products/" + product.link;
     document.getElementById("discPrice").textContent = "Rs. " + product.price;
 
+
+    // ✅ Dynamic related images (variants)
+    const variantsContainer = document.getElementById("optionImagesVartants");
+    variantsContainer.innerHTML = ""; // clear old static HTML
+
+    product.relatedImage.forEach(img => {
+      const image = document.createElement("img");
+      image.src = "assets/products/" + img;
+      image.alt = product.title;
+
+      // optional: click to change main image
+      image.style.cursor = "pointer";
+      image.addEventListener("click", () => {
+        document.getElementById("mainProductImg").src = image.src;
+      });
+
+      variantsContainer.appendChild(image);
+    });
+    // Product details section (UL)
+    const specsContainer = document.querySelector(".product-specs");
+    const productTitleHeading = document.querySelector(".productTextDetail h2");
+
+    // Optional: update heading
+    productTitleHeading.textContent = "Product details of " + product.title;
+
+    // Clear old static list
+    specsContainer.innerHTML = "";
+
+    // Add dynamic list items
+    product.productDetails.forEach(detail => {
+      const li = document.createElement("li");
+      li.textContent = detail;
+      specsContainer.appendChild(li);
+    });
+
   })
   .catch(err => console.error("Error loading products:", err));
-
-document.getElementById("arrowLeft").addEventListener("click", ()=>{
-    console.log("hello")
-    const container = document.getElementById("thumbContainer");
-    console.log("Scroll clicked");
-    container.scrollLeft += -1 * 150;
+document.getElementById("arrowLeft").addEventListener("click", () => {
+  console.log("hello")
+  const container = document.getElementById("thumbContainer");
+  console.log("Scroll clicked");
+  container.scrollLeft += -1 * 150;
 })
-document.getElementById("arrowRight").addEventListener("click", ()=>{
-    console.log("hello")
-    const container = document.getElementById("thumbContainer");
-    console.log("Scroll clicked");
-    container.scrollLeft += 1 * 150;
+document.getElementById("arrowRight").addEventListener("click", () => {
+  console.log("hello")
+  const container = document.getElementById("thumbContainer");
+  console.log("Scroll clicked");
+  container.scrollLeft += 1 * 150;
 })
 
-window.changeImage = function(img){
-    document.getElementById("mainProductImg").src = img.src;
-    
+window.changeImage = function (img) {
+  document.getElementById("mainProductImg").src = img.src;
+
 }
 let mainProductImg = document.getElementById("mainProductImg");
 
 let optionImagesVartants = document.getElementById("optionImagesVartants");
 let optionimgs = optionImagesVartants.querySelectorAll("img");
 
-for(let i = 0; i<optionimgs.length; i++){
-    optionimgs[i].addEventListener("mouseover", ()=>{
-        mainProductImg.setAttribute("src", optionimgs[i].getAttribute("src"))
-    })
+for (let i = 0; i < optionimgs.length; i++) {
+  optionimgs[i].addEventListener("mouseover", () => {
+    mainProductImg.setAttribute("src", optionimgs[i].getAttribute("src"))
+  })
 }
 
 let productQuantity = document.getElementById("productQuantity")
 let minus = document.getElementById("minus")
 let add = document.getElementById("add")
 
-add.addEventListener("click", ()=>{
-    valueQuantity = parseInt(productQuantity.value) + 1
+add.addEventListener("click", () => {
+  valueQuantity = parseInt(productQuantity.value) + 1
+  productQuantity.value = valueQuantity;
+})
+
+minus.addEventListener("click", () => {
+
+  if (productQuantity.value > 1) {
+    valueQuantity = parseInt(productQuantity.value) - 1
     productQuantity.value = valueQuantity;
+
+  }
 })
 
-minus.addEventListener("click", ()=>{
-    
-    if(productQuantity.value>1){
-        valueQuantity = parseInt(productQuantity.value) - 1
-        productQuantity.value = valueQuantity;
-        
-    }
-})
-
-document.getElementById("mainProductImg").addEventListener("mouseover", ()=>{
-    imageZoom("mainProductImg", "myresult");
+document.getElementById("mainProductImg").addEventListener("mouseover", () => {
+  imageZoom("mainProductImg", "myresult");
 })
 function imageZoom(imgID, resultID) {
 
@@ -95,7 +130,7 @@ function imageZoom(imgID, resultID) {
   /* And also for touch screens: */
   lens.addEventListener("touchmove", moveLens);
   img.addEventListener("touchmove", moveLens);
-  img.addEventListener("mouseleave", ()=>{
+  img.addEventListener("mouseleave", () => {
     document.querySelector(".img-zoom-result").style.visibility = "hidden";
   })
   function moveLens(e) {
@@ -109,10 +144,10 @@ function imageZoom(imgID, resultID) {
     x = pos.x - (lens.offsetWidth / 2);
     y = pos.y - (lens.offsetHeight / 2);
     /* Prevent the lens from being positioned outside the image: */
-    if (x > img.width - lens.offsetWidth) {x = img.width - lens.offsetWidth;}
-    if (x < 0) {x = 0;}
-    if (y > img.height - lens.offsetHeight) {y = img.height - lens.offsetHeight;}
-    if (y < 0) {y = 0;}
+    if (x > img.width - lens.offsetWidth) { x = img.width - lens.offsetWidth; }
+    if (x < 0) { x = 0; }
+    if (y > img.height - lens.offsetHeight) { y = img.height - lens.offsetHeight; }
+    if (y < 0) { y = 0; }
     /* Set the position of the lens: */
     lens.style.left = x + "px";
     lens.style.top = y + "px";
@@ -130,9 +165,9 @@ function imageZoom(imgID, resultID) {
     /* Consider any page scrolling: */
     x = x - window.pageXOffset;
     y = y - window.pageYOffset;
-    return {x : x, y : y};
+    return { x: x, y: y };
   }
-  
+
 
 }
 
@@ -283,13 +318,13 @@ function changePage(page) {
 }
 
 function updateHeaderHeight() {
-    const header = document.getElementById("mainHeader");
-    if (header) {
-        document.documentElement.style.setProperty(
-            "--header-height",
-            header.offsetHeight + "px"
-        );
-    }
+  const header = document.getElementById("mainHeader");
+  if (header) {
+    document.documentElement.style.setProperty(
+      "--header-height",
+      header.offsetHeight + "px"
+    );
+  }
 }
 
 // Run at correct times
