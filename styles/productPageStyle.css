@@ -36,8 +36,10 @@ main{
 }
 .CategoriesHeader{
     margin-left: 30px;
-    position: sticky; top: 65px;
+    position: sticky;
+    top: var(--header-height, 55px);
     background-color: white; z-index: 10;
+    z-index: 1040;
 }
 .categoriesOptions{
     padding: 0%;
@@ -275,6 +277,10 @@ h1#productName{
     height: 32px;
     margin-top: 8px;
     margin-right: 12px;
+
+}
+.productSubImage div:nth-child(2) img:hover{
+    border: 1px solid #f85606;
 }
 .productQuantityManagement{
     display: flex;
@@ -357,7 +363,7 @@ h1#productName{
 }
 .del_war_Options .list .icon{
     width: 30px;
-    color: #757575;
+    color: #9e9e9e;
     padding-right: 4px;
 }
 
@@ -389,7 +395,7 @@ h1#productName{
 }
 .deliveryHeader, .retAndWarr{
     padding: 24px 16px 0px;
-    color: #757575;
+    color: #313030;
 }
 .deliveryHeader span, .retAndWarr span{
     font-size: 12px;
@@ -405,8 +411,23 @@ h1#productName{
     text-transform: uppercase;
 
 }
+.deliveryHeader .infoIcon, .retAndWarr .infoIcon{
+    width: 12px !important;
+    height: 12px !important;
+}
 .mainTextOptions{
     padding-left: 6px;
+}
+.returnWarranty{
+    font-size: 14px !important;
+}
+.locationPin{
+    width: 20px !important;
+    height: 22px !important;
+    fill: #757575;
+}
+#shieldSlash{
+    padding-left: 4px;
 }
 .arrow{
     width: 28px;
@@ -563,6 +584,9 @@ h1#productName{
     width: 24px;
     height: 24px;
     margin-right: 6px;
+}
+.fa-recycle{
+    color: #9e9e9e !important;
 }
 .qr-section{
     display: flex; gap: 10px;
@@ -876,6 +900,9 @@ h1#productName{
     cursor: pointer;
     margin-right: 12px;
 }
+.thumbnails img:hover{
+    border: 1px solid #f85606;
+}
 
 
 .img-zoom-lens {
@@ -937,11 +964,11 @@ h1#productName{
 }
 .productPageHeader .productPageSpacer{
     position: relative !important;
-    left: -30px !important;
-    height: 17px !important ; font-size: 12px; color: white;
+    left: -26px !important;
+    height: 17px !important ; font-size: 11px; color: white;
 }
 .productPageSpacer span{
-    padding: 1px 2px;
+    padding: 1px 1px;
 }
 
 .iconProduct{

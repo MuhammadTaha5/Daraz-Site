@@ -43,10 +43,10 @@ header {
 header#mainHeader {
     position: sticky;
     top: 0;
-    z-index: 4;
+    z-index: 1050;
     height: max-content;
     padding-top: 11px;
-    padding-bottom: 12px;
+    padding-bottom: 10px;
     align-items: center;
     z-index: 100;
 }
@@ -263,6 +263,7 @@ button.languageChange {
 }
 #logoSearchSection{
     margin-left: 28px;
+    padding-left: 4px;
 }
 .search {
     height: 45px;
@@ -344,8 +345,10 @@ button.languageChange {
     font-size: 24px;
     color: white;
     position: relative;
-    top: 4px;
+    top: 5px;
+    left: 5px;
     margin: 0 0 0 26px;
+    
 }
 
 .cardFsContent {

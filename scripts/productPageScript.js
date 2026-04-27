@@ -282,4 +282,19 @@ function changePage(page) {
   renderPagination();
 }
 
+function updateHeaderHeight() {
+    const header = document.getElementById("mainHeader");
+    if (header) {
+        document.documentElement.style.setProperty(
+            "--header-height",
+            header.offsetHeight + "px"
+        );
+    }
+}
 
+// Run at correct times
+window.addEventListener("load", updateHeaderHeight);
+window.addEventListener("resize", updateHeaderHeight);
+
+// Extra safety (Bootstrap/navbar changes after load)
+setTimeout(updateHeaderHeight, 300);
