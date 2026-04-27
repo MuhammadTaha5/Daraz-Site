@@ -156,20 +156,22 @@ span.categories i{
     height: 100%;
     z-index: 2;
 }
-h1#productName{
+h1#productName {
     margin: 14px 0;
     height: max-content;
     max-height: 101px;
     font-size: 22px;
     font-weight: 400;
     color: black;
-    -webkit-line-clamp: 2; 
-    line-clamp: 2;
-    display: -webkit-box;       /* Required for line clamping */
-  
-    line-height: 1.2em;         /* Adjust line spacing if needed */
-    
 
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+
+    overflow: hidden;
+    line-height: 1.2em;
 }
 .productRatingStars i::before{
     color: rgb(250, 202, 81);

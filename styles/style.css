@@ -897,13 +897,14 @@ a#loadProductsButton {
 .footer-first {
     display: flex;
     justify-content: start;
-    gap: 20px;
     max-width: 1188px;
     margin: auto;
     font-family: "euclid-Circular-A";
     flex-wrap: wrap;
 }
-
+.footer-first ul{
+    margin-bottom: 0 !important;
+}
 .customerCare {
     color: rgb(15, 19, 109);
     font-family: "euclid-Circular-A";
@@ -978,6 +979,7 @@ a#loadProductsButton {
     font-size: 16px;
     font-weight: 400;
     font-family: "euclid-Circular-A";
+    line-height: 18.4px;
 }
 
 #happyShoppingDownload {
@@ -986,6 +988,7 @@ a#loadProductsButton {
     font-weight: 400;
     padding-top: 2px;
     font-family: "euclid-Circular-A";
+    line-height: 16.1px;
 }
 
 .footer-second {
@@ -1465,8 +1468,10 @@ div#dontHaveAccount, #signupModel div#dontHaveAccount {
 }
 
 .submitLoginPhone {
+    font-family: "euclid-Circular-A" !important; 
     background-color: #f57224;
     width: 100%;
+    overflow: hidden;
     color: white;
     border: 0px;
     padding: 10px 10px;
@@ -1476,6 +1481,14 @@ div#dontHaveAccount, #signupModel div#dontHaveAccount {
     align-items: center;
     border-radius: 6px;
     margin-top: 49px;
+    height: 40px;
+    font-weight: 500;
+}
+.submitLoginPhone span{
+    position: relative;
+    left: 12px;
+    bottom: 2px;
+
 }
 
 #countryCodeInput {
@@ -1508,12 +1521,24 @@ div#dontHaveAccount, #signupModel div#dontHaveAccount {
 }
 
 .submitLoginPhone img {
-    width: 24px;
-    height: 24px;
+    width: 22px;
+    height: 22px;
     position: absolute;
-    left: 10px;
+    left: 18px;
 }
+#checkboxPrivacyPolicy:focus {
+    box-shadow: none !important;
+    outline: none !important;
+}
+.form-control:focus{
+    box-shadow: none !important;
+    border: 1px solid #1e71ff;
 
+
+}
+#signUpPhoneInput{
+    outline: none !important;
+}
 form#loginwithPhone {
     display: none;
     flex-direction: column;
@@ -1773,6 +1798,17 @@ form#loginwithPhone {
     left: 50px;
 
 
+}
+
+/* Initial state: start from bottom */
+.slide-up-modal .modal-dialog {
+    transform: translateY(10%);
+    transition: transform 0.9s ease-out;
+}
+
+/* When modal is shown */
+.slide-up-modal.show .modal-dialog {
+    transform: translateY(0);
 }
 
 .messageNow {

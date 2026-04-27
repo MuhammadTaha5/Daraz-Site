@@ -5,15 +5,25 @@
         "price": "507",
         "discount": "-49%",
         "comments": "(355)",
-        "link": "moonTouchLip.avif"
+        "link": "moonTouchLip.avif",
+        "relatedImage": [
+            "moonTouchLip.avif",
+            "handGrip.avif",
+            "moonTouchLip.avif"
+        ]
     },
     {
         "id": 2,
-        "title": "Automatic Counting Hand Gripper Adjustable Resistance Automatic Counting Non-Slip Hand Grip Strength Trainer Fingers Wrist Forearm Exerciser Workout Gear Home Gym Exercise Equipment Hand Gripper 5-60KG Automatic Non-Slip hand strengthen",
+        "title": "Automatic Counting Hand Gripper Adjustable Resistance Automatic Counting Non-Slip Hand Grip",
         "price": "299",
         "discount": "-40%",
         "comments": "(396)",
-        "link": "handGrip.avif"
+        "link": "handGrip.avif",
+        "relatedImage": [
+            "moonTouchLip.avif",
+            "handGrip.avif",
+            "moonTouchLip.avif"
+        ]
     },
     {
         "id": 3,
@@ -21,7 +31,12 @@
         "price": "186",
         "discount": "-69%",
         "comments": "(387)",
-        "link": "airpods-case.avif"
+        "link": "airpods-case.avif",
+        "relatedImage": [
+            "airpods-case.avif",
+            "handGrip.avif",
+            "airpods-case.avif"
+        ]
     },
     {
         "id": 4,
@@ -29,7 +44,12 @@
         "price": "799",
         "discount": "-50%",
         "comments": "(4309)",
-        "link": "trimmer.avif"
+        "link": "trimmer.avif",
+        "relatedImage": [
+            "trimmer.avif",
+            "handGrip.avif",
+            "trimmer.avif"
+        ]
     },
     {
         "id": 5,
@@ -37,7 +57,12 @@
         "price": "737",
         "discount": "-63%",
         "comments": "(126)",
-        "link": "cotton-jersey.avif"
+        "link": "cotton-jersey.avif",
+        "relatedImage": [
+            "cotton-jersey.avif",
+            "handGrip.avif",
+            "cotton-jersey.avif"
+        ]
     },
     {
         "id": 6,
@@ -45,7 +70,12 @@
         "price": "319",
         "discount": "-79%",
         "comments": "(2333)",
-        "link": "mens-sandals.avif"
+        "link": "mens-sandals.avif",
+        "relatedImage": [
+            "cotton-jersey.avif",
+            "handGrip.avif",
+            "cotton-jersey.avif"
+        ]
     },
     {
         "id": 7,
@@ -53,7 +83,12 @@
         "price": "299",
         "discount": "-85%",
         "comments": "(29)",
-        "link": "mens-sandals2.avif"
+        "link": "mens-sandals2.avif",
+        "relatedImage": [
+            "mens-sandals2.avif",
+            "handGrip.avif",
+            "cotton-jersey.avif"
+        ]
     },
     {
         "id": 8,
@@ -61,7 +96,12 @@
         "price": "892",
         "discount": "-36%",
         "comments": "(4693)",
-        "link": "traderPremium.avif"
+        "link": "traderPremium.avif",
+        "relatedImage": [
+            "traderPremium.avif",
+            "handGrip.avif",
+            "traderPremium.avif"
+        ]
     },
     {
         "id": 9,
@@ -69,7 +109,12 @@
         "price": "699",
         "discount": "-63%",
         "comments": "(0)",
-        "link": "realBoss.avif"
+        "link": "realBoss.avif",
+        "relatedImage": [
+            "realBoss.avif",
+            "handGrip.avif",
+            "realBoss.avif"
+        ]
     },
     {
         "id": 10,
@@ -77,7 +122,12 @@
         "price": "1,808",
         "discount": "-60%",
         "comments": "(80)",
-        "link": "chopper.avif"
+        "link": "chopper.avif",
+        "relatedImage": [
+            "chopper.avif",
+            "handGrip.avif",
+            "chopper.avif"
+        ]
     },
     {
         "id": 11,
@@ -85,7 +135,12 @@
         "price": "942",
         "discount": "-33%",
         "comments": "(1781)",
-        "link": "hairStraightner.avif"
+        "link": "hairStraightner.avif",
+        "relatedImage": [
+            "hairStraightner.avif",
+            "handGrip.avif",
+            "hairStraightner.avif"
+        ]
     },
     {
         "id": 12,
@@ -93,7 +148,12 @@
         "price": "482",
         "discount": "-52%",
         "comments": "(812)",
-        "link": "laptopBag.avif"
+        "link": "laptopBag.avif",
+        "relatedImage": [
+            "laptopBag.avif",
+            "handGrip.avif",
+            "laptopBag.avif"
+        ]
     },
     {
         "id": 13,
@@ -101,7 +161,12 @@
         "price": "2,999",
         "discount": "-45%",
         "comments": "(19)",
-        "link": "dellproLaptop.avif"
+        "link": "dellproLaptop.avif",
+        "relatedImage": [
+            "dellproLaptop.avif",
+            "handGrip.avif",
+            "dellproLaptop.avif"
+        ]
     },
     {
         "id": 14,
@@ -109,7 +174,12 @@
         "price": "117",
         "discount": "-8%",
         "comments": "(851)",
-        "link": "storagebox.avif"
+        "link": "storagebox.avif",
+        "relatedImage": [
+            "storagebox.avif",
+            "handGrip.avif",
+            "storagebox.avif"
+        ]
     },
     {
         "id": 15,
@@ -117,7 +187,12 @@
         "price": "177",
         "discount": "-70%",
         "comments": "(182)",
-        "link": "airpods.avif"
+        "link": "airpods.avif",
+        "relatedImage": [
+            "airpods.avif",
+            "handGrip.avif",
+            "airpods.avif"
+        ]
     },
     {
         "id": 16,
@@ -125,7 +200,12 @@
         "price": "80",
         "discount": "-46%",
         "comments": "(207)",
-        "link": "male-ring.avif"
+        "link": "male-ring.avif",
+        "relatedImage": [
+            "male-ring.avif",
+            "handGrip.avif",
+            "male-ring.avif"
+        ]
     },
     {
         "id": 17,
@@ -133,7 +213,12 @@
         "price": "218",
         "discount": "-71%",
         "comments": "(71)",
-        "link": "cat-neck.avif"
+        "link": "cat-neck.avif",
+        "relatedImage": [
+            "cat-neck.avif",
+            "handGrip.avif",
+            "cat-neck.avif"
+        ]
     },
     {
         "id": 18,
@@ -141,7 +226,12 @@
         "price": "899",
         "discount": "-55%",
         "comments": "(39)",
-        "link": "carToy.avif"
+        "link": "carToy.avif",
+        "relatedImage": [
+            "carToy.avif",
+            "handGrip.avif",
+            "carToy.avif"
+        ]
     },
     {
         "id": 19,
@@ -149,7 +239,13 @@
         "link": "shopImg1.avif",
         "price": 205,
         "actualPrice": 499,
-        "discount": "-59%"
+        "discount": "-59%",
+        "comments": "(39)",
+        "relatedImage": [
+            "shopImg1.avif",
+            "handGrip.avif",
+            "shopImg1.avif"
+        ]
     },
     {
         "id": 20,
@@ -157,7 +253,13 @@
         "link": "shopImg2.avif",
         "price": 666,
         "actualPrice": 859,
-        "discount": "-22%"
+        "comments": "(39)",
+        "discount": "-22%",
+        "relatedImage": [
+            "shopImg2.avif",
+            "handGrip.avif",
+            "shopImg2.avif"
+        ]
     },
     {
         "id": 21,
@@ -165,7 +267,13 @@
         "link": "shopImg3.avif",
         "price": 492,
         "actualPrice": 3899,
-        "discount": "-87%"
+        "comments": "(39)",
+        "discount": "-87%",
+        "relatedImage": [
+            "shopImg3.avif",
+            "handGrip.avif",
+            "shopImg3.avif"
+        ]
     },
     {
         "id": 22,
@@ -173,7 +281,13 @@
         "link": "shopImg1.avif",
         "price": 404,
         "actualPrice": 999,
-        "discount": "-60%"
+        "comments": "(39)",
+        "discount": "-60%",
+        "relatedImage": [
+            "shopImg1.avif",
+            "handGrip.avif",
+            "shopImg1.avif"
+        ]
     },
     {
         "id": 23,
@@ -181,7 +295,13 @@
         "link": "shopImg5.avif",
         "price": 489996,
         "actualPrice": 489999,
-        "discount": "-1%"
+        "comments": "(39)",
+        "discount": "-1%",
+        "relatedImage": [
+            "shopImg5.avif",
+            "handGrip.avif",
+            "shopImg5.avif"
+        ]
     },
     {
         "id": 24,
@@ -189,6 +309,12 @@
         "link": "shopImg6.avif",
         "price": 126,
         "actualPrice": 150,
-        "discount": "-16%"
+        "comments": "(39)",
+        "discount": "-16%",
+        "relatedImage": [
+            "shopImg6.avif",
+            "handGrip.avif",
+            "shopImg6.avif"
+        ]
     }
 ]
