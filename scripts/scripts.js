@@ -25,6 +25,7 @@ let displayProducts = document.getElementById("storeProducts");
 
 
 async function init() {
+    document.title = 'Online Shopping in Pakistan: Fashion, Electronics & Groceries'
     products = await loadProducts();
 
     products.forEach(product => {

@@ -332,5 +332,5 @@ function updateHeaderHeight() {
 window.addEventListener("load", updateHeaderHeight);
 window.addEventListener("resize", updateHeaderHeight);
 
-// Extra safety (Bootstrap/navbar changes after load)
+
 setTimeout(updateHeaderHeight, 300);

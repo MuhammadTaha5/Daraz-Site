@@ -100,10 +100,10 @@ showPassword.addEventListener("click", () => {
 
     if (password.type === "password") {
         password.type = "text";
-        showPassword.src = "assets/open-eye.png";  
+        showPassword.src = "assets/icons/open-eye.png";  
     } else {
         password.type = "password";
-        showPassword.src = "assets/eyebrow.png";   
+        showPassword.src = "assets/icons/eyebrow.png";   
     }
 });
 

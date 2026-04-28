@@ -2081,6 +2081,7 @@ form#loginwithPhone {
 
 .flashSale .card {
     border-width: 0px;
+    text-align: left !important;
 }
 
 #storeProducts .card {
