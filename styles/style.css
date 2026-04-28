@@ -45,8 +45,8 @@ header#mainHeader {
     top: 0;
     z-index: 1050;
     height: max-content;
-    padding-top: 11px;
-    padding-bottom: 10px;
+    padding-top: 15px;
+    padding-bottom: 14px;
     align-items: center;
     z-index: 100;
 }
@@ -100,7 +100,7 @@ header#mainHeader nav {
     margin-bottom: 20px;
     max-width: 1188px;
     margin: auto;
-    height: 25px;
+    height: 22px;
 }
 
 #topHeader {
@@ -372,7 +372,7 @@ button.languageChange {
 .fs-banner {
     font-weight: 400;
     font-size: 22px;
-
+    text-align: left;
     list-style: 38px;
     color: #424242;
     margin-bottom: 4px;
@@ -408,6 +408,7 @@ button.languageChange {
 
 .fsStatus a,
 .fsStatus a:hover {
+    font-family: 'euclid-Circular-A';
     text-decoration: none;
     color: #f57224;
     border: 1px solid rgb(245, 114, 36);
@@ -422,7 +423,6 @@ button.languageChange {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .cards {
@@ -450,6 +450,7 @@ button.languageChange {
     padding-top: 24px;
     max-width: 1188px;
     margin: auto;
+    text-align: left;
 }
 
 
@@ -519,7 +520,9 @@ section.categories {
 
 
 }
-
+#storeProducts{
+    margin-top: 0 !important;
+}
 #storeProducts .itemDiscount {
     font-size: 12px;
     line-height: 22px;
@@ -1772,24 +1775,22 @@ form#loginwithPhone {
 .navigatorMain {
     align-items: center;
     justify-content: left;
-    gap: 10px;
     display: flex;
     flex-direction: column;
     position: fixed;
     bottom: 40px;
     left: 0px;
-
+    width: 40px;
     color: #999;
     background-color: #f4f4f4;
     padding: 5px 3px;
 }
 
 .navigatorMain div {
-    padding: 3px;
     display: flex;
     align-items: center;
-    height: 100%;
-    width: 100%;
+    height: 40px;
+    width: 40px;
     justify-content: center;
     padding-left: 10px;
 
@@ -2083,7 +2084,11 @@ form#loginwithPhone {
 }
 
 #storeProducts .card {
-    margin-right: 2px;
+    margin-right: 0px;
+    box-shadow: none;
+}
+#storeProducts .col{
+    max-width: 189px !important;
 }
 .topBrandSection{
     width: 25%; padding-right: 7%
@@ -2157,7 +2162,7 @@ form#loginwithPhone {
 }
 
 #spacer {
-    height: 25px;
+    height: 20px;
     transition: all 0.3s ease;
     
 }
@@ -2229,14 +2234,7 @@ body {
         margin: 0;
     }
 
-    #storeProducts {
-        row-gap: 2px !important;
-        width: 100%;
-        row-gap: 14px;
-        max-width: 1188px;
-        margin: auto;
 
-    }
 
     .footer2 {
         flex-direction: column;
@@ -2295,4 +2293,26 @@ body {
     color: white !important;
     font-size: 12px !important;
     
+}
+#headerOptions,
+#flashSale,
+#categories,
+#just-for-you {
+    scroll-margin-top: 20vh;
+}
+.navigatorMain {
+    
+    opacity: 0;
+    transition: all 0.3s ease;
+    z-index: 999;
+}
+
+/* visible state */
+.navigatorMain.show {
+    
+    opacity: 1;
+}
+.navigatorMain div.active a,
+.navigatorMain div.active a i {
+  color: #f36f36;
 }

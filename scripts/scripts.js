@@ -29,7 +29,7 @@ async function init() {
 
     products.forEach(product => {
         //changing the inner html
-        displayProducts.innerHTML += `<div class="col p-1">
+        displayProducts.innerHTML += `<div class="col m-1">
                     <div class="card">
                          <a href="productPage.html?id=${product["id"]}" style="color: inherit; text-decoration: none;">
                             <div class="img">
@@ -74,7 +74,7 @@ if (loadProductsButton) {
             .then((data) => data.json())
             .then((addProducts) => {
                 for (let i = 0; i <= 5; i++) {
-                    displayProducts.innerHTML += `<div class="col">
+                    displayProducts.innerHTML += `<div class="col m-1">
                     <div class="card">
                         <a href="productPage.html?id=${addProducts[i]["id"]}" style="color: inherit; text-decoration: none;">
                             <div class="img">
@@ -109,3 +109,43 @@ if (loadProductsButton) {
 
 }
 
+
+window.addEventListener('scroll', function () {
+    const nav = document.querySelector('.navigatorMain');
+
+    if (window.scrollY > 200) { // adjust this value
+        nav.classList.add('show');
+    } else {
+        nav.classList.remove('show');
+    }
+});
+const sections = [
+  { sectionId: 'flashSale', navId: 'flashSale' },
+  { sectionId: 'categories', navId: 'category' },
+  { sectionId: 'just-for-you', navId: 'justForYou' }
+];
+
+const observerOptions = {
+  root: null,
+  rootMargin: '0px',
+  threshold: 0.3
+};
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    const match = sections.find(s => s.sectionId === entry.target.id);
+    if (!match) return;
+
+    const navEl = document.getElementById(match.navId);
+    if (entry.isIntersecting) {
+      navEl.classList.add('active');
+    } else {
+      navEl.classList.remove('active');
+    }
+  });
+}, observerOptions);
+
+sections.forEach(({ sectionId }) => {
+  const el = document.getElementById(sectionId);
+  if (el) observer.observe(el);
+});
