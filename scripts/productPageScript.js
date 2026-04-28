@@ -17,6 +17,7 @@ fetch("assets/data/products.json")
     }
 
     // Update main UI
+    document.title = product.title;
     document.querySelector("#productName").textContent = product.title;
     document.querySelector("h1#productName").textContent = product.title;
     document.getElementById("mainProductImg").src = "assets/products/" + product.link;
