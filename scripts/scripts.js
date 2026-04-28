@@ -29,7 +29,7 @@ async function init() {
 
     products.forEach(product => {
         //changing the inner html
-        displayProducts.innerHTML += `<div class="col">
+        displayProducts.innerHTML += `<div class="col p-1 text-center">
                     <div class="card">
                          <a href="productPage.html?id=${product["id"]}" style="color: inherit; text-decoration: none;">
                             <div class="img">
