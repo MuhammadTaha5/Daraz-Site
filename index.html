@@ -15,7 +15,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" href="assets/darazFavicon.png">
+    <link rel="icon" type="image/png" href="assets/icons/darazFavicon.png">
     <link href="bootstrap.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
@@ -214,7 +214,7 @@
                 <div id="logoSearchSection" class="ms-0 ms-lg-4 me-2 me-lg-0">
                     <div class="search">
                         <div class="searchInput">
-                            <input type="text" name="" id="" placeholder="Search in Daraz">
+                            <input type="text" name="" id="" placeholder="Search in Daraz"  class="d-none d-md-block">
                             <span><i class="fa-solid fa-magnifying-glass"></i></span>
                         </div>
 
@@ -574,7 +574,7 @@
                 Categories
             </p>
             <div class="cards-categories">
-                <ul id="category-list">
+                <ul id="category-list" class="row row-cols-2 row-cols-md-3 row-cols-xl-8">
                 </ul>
             </div>
         </section>
@@ -673,7 +673,7 @@
 
         </section>
         <section class="footer-second">
-            <div class="footer2">
+            <div class="footer2 d-flex flex-column flex-lg-row">
                 <div class="payment-method">
                     <h3 class="footer2PaymentHeader">
                         Payment Method</h3>
@@ -1031,7 +1031,7 @@
                 </p>
             </div>
         </section>
-        <section class="forth-footer">
+        <section class="forth-footer d-flex flex-column flex-md-row" >
             <div class="footer4">
                 <div class="footer4inner">
                     <div class="daraz-international-store">
@@ -1060,7 +1060,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="daraz-copyright">
+                <div class="daraz-copyright d-none d-lg-block">
                     © Daraz 2026
                 </div>
             </div>

@@ -49,6 +49,7 @@ header#mainHeader {
     padding-bottom: 14px;
     align-items: center;
     z-index: 100;
+    width: 100%;
 }
 
 header#mainHeader nav {
@@ -358,6 +359,8 @@ button.languageChange {
 
 .cardFsContent .cards {
     padding: 4px 4px;
+    flex-wrap: wrap;
+    gap: 4px;
 }
 
 .cardFsContent .cards .card-inner {
@@ -433,7 +436,7 @@ button.languageChange {
 .card {
     height: 290px;
     width: 188px;
-    margin-right: 12px;
+    
 }
 
 .card:hover {
@@ -552,8 +555,8 @@ section.categories {
 
 .cards-categories ul li {
     list-style: none;
-    width: 12.5%;
-    height: 148.5px;
+    width: 148.5px !important;
+    height: 148.5px !important;
     display: flex;
     justify-content: center;
     gap: 1px;
@@ -929,6 +932,7 @@ a#loadProductsButton {
 
 #just-for-you {
     max-width: 1188px;
+    width: 100%;
     padding: 24px 0 0 0 !important;
 }
 
@@ -936,6 +940,7 @@ a#loadProductsButton {
     display: flex;
     justify-content: start;
     max-width: 1188px;
+    width: 100%;
     margin: auto;
     font-family: "euclid-Circular-A";
     flex-wrap: wrap;
@@ -2025,6 +2030,7 @@ form#loginwithPhone {
     padding: 20px 0 25px 0;
     max-width: 1180px;
     margin: auto;
+    width: 100% !important;
 
 }
 
@@ -2180,17 +2186,6 @@ body {
     font-size: 14px;
 }
 
-/* Small devices (576px and up) */
-@media (max-width: 576px) {
-    body {
-        font-size: 15px;
-
-    }
-
-    .cards-categories ul li {
-        width: 50%;
-    }
-}
 
 /* Medium devices (768px and up) */
 @media (max-width: 768px) {
@@ -2207,40 +2202,6 @@ body {
         width: 100% !important;
     }
 
-    .cards-categories ul li {
-        width: 33%;
-    }
-
-    .footer-second {
-        width: 100%;
-        flex-direction: column;
-    }
-
-
-    .forth-footer {
-        width: 100%;
-        flex-direction: column;
-    }
-
-    .forthInner {
-        flex-direction: column;
-    }
-
-    .cardFsContent .cards {
-        flex-wrap: wrap;
-
-    }
-
-    .cardFsContent .cards .card {
-        margin: 0;
-    }
-
-
-
-    .footer2 {
-        flex-direction: column;
-    }
-
     .footer-first,
     .footer-second,
     .footerThird,
@@ -2250,11 +2211,6 @@ body {
 
     .footer4inner {
         flex-direction: column;
-    }
-
-
-    .daraz-copyright {
-        display: none;
     }
 
     .customerCare li,
@@ -2269,10 +2225,6 @@ body {
     p.fs-banner {
         margin-left: 10px;
     }
-    .logoSide .searchInput input{
-        display: none;
-    }
-
 }
 #footer1Wrapper{
     width: 100%;

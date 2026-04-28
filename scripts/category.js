@@ -6,7 +6,7 @@ async function loadCategories() {
         const categoryList = document.getElementById('category-list');
 
         categoryList.innerHTML = categories.map(cat => `
-            <li>
+            <li class="col p-0">
                 <a href="#" class="categories">
                     <div class="categoryImg">
                         <img src="${cat.img}" alt="${cat.name}">
