@@ -1399,6 +1399,7 @@ label[for="privacyPolicyCheck"] a{
 #signupModel .modal-dialog {
     margin-top: 60px;
     /* adjust as needed */
+    
 }
 
 .modal-header {
@@ -2277,4 +2278,21 @@ body {
 #footer1Wrapper{
     width: 100%;
     background-color: #f4f4f6 !important;
+}
+.offcanvas-start{
+    width: 200px !important;
+}
+.offcanvas-header .btn-close{
+    margin-top: 0.5rem !important;
+}
+.menu-section{
+    width: 100% !important;
+    padding: 0 10px !important;
+    margin-bottom: 10px !important;
+}
+.menu-section .btn{
+    background-color: #f36f36 !important;
+    color: white !important;
+    font-size: 12px !important;
+    
 }

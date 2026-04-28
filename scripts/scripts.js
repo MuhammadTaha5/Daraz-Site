@@ -29,7 +29,7 @@ async function init() {
 
     products.forEach(product => {
         //changing the inner html
-        displayProducts.innerHTML += `<div class="col p-1 text-center">
+        displayProducts.innerHTML += `<div class="col p-1">
                     <div class="card">
                          <a href="productPage.html?id=${product["id"]}" style="color: inherit; text-decoration: none;">
                             <div class="img">
@@ -70,15 +70,15 @@ if (loadProductsButton) {
     loadProductsButton.addEventListener("click", (e) => {
         e.preventDefault()
         
-        fetch("assets/products.json")
+        fetch("assets/data/products.json")
             .then((data) => data.json())
             .then((addProducts) => {
                 for (let i = 0; i <= 5; i++) {
                     displayProducts.innerHTML += `<div class="col">
                     <div class="card">
-                        <a href="productPage.html?title=${encodeURIComponent(addProducts[i]["title"])}&price=${addProducts[i]["price"]}&img=${addProducts[i]["link"]}" style="color: inherit; text-decoration: none;">
+                        <a href="productPage.html?id=${addProducts[i]["id"]}" style="color: inherit; text-decoration: none;">
                             <div class="img">
-                                <img src="assets/${addProducts[i]["link"]}" alt="">
+                                <img src="assets/products/${addProducts[i]["link"]}" alt="">
                             </div>
                             <div class="cardDetail">
                                 <p>${addProducts[i]["title"]}</p>
