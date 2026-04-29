@@ -1,3 +1,4 @@
+
 //Empty Products array to store products
 let products = [];
 //async function to load products store in json file.

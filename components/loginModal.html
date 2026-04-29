@@ -1,0 +1,87 @@
+<div class="modal slide-up-modal" id="loginModel" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog ms-0 ms-lg-auto">
+            <div class="modal-content">
+                <div class="animationModel">
+                    <div class="modal-header">
+                        <div class="model-LoginOption">
+                            <div id="errorBoxLogin" class="hidden">
+                                <span>
+                                    <i class="fa-solid fa-circle-xmark"></i>
+                                    <p id="msg">Enter a Valid Login Password</p>
+                                </span>
+                            </div>
+                            <div class="active" id="emailLoginButton">
+                                Password
+                            </div>
+                            <div class="inactive" id="phoneLoginButton">
+                                Phone Number
+                            </div>
+                        </div>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+
+                    <form id="loginWithEmailSection" action="" class="modal-body">
+                        <div class="emailPassSection">
+                            <input type="email" class="form-control" id="loginEmail"
+                                placeholder="Please enter your Phone or Email">
+                        </div>
+                        <div class="emailPassSection" id="passwordField">
+                            <div class="passwordInputFieldModel">
+                                <input type="password" class="form-control" id="loginPassword"
+                                    aria-describedby="validationServer03Feedback"
+                                    placeholder="Please enter your password">
+                                <img src="assets/icons/eyebrow.png" id="showPass">
+
+                            </div>
+                            <div id="passwordFeedback" class="invalid-feedback">
+                                You can't leave this empty.
+                            </div>
+                        </div>
+                        <div class="forgotDiv"><a href="#" class="forgotPassword">Forgot password?</a></div>
+                        <div class="loginFormButtonSubmit">
+                            <input type="submit" name="" id="loginButton" value="LOGIN">
+                        </div>
+                    </form>
+                    <form id="loginwithPhone" action="" class="modal-body">
+                        <div class="phoneSectionLogin">
+                            <div id="countryCodeInput">
+                                <span>PK</span>
+                                <span>+92</span>
+                            </div>
+                            <div class="phoneInput">
+                                <input type="number" name="" id="phoneNumber"
+                                    placeholder="Please enter your phone number">
+                            </div>
+                        </div>
+
+
+                        <button type="submit" class="submitLoginPhone"><img class="index_module_otpLoginIcon__f93aa605"
+                                src="https://lzd-img-global.slatic.net/g/tps/imgextra/i2/O1CN01a3DUz31SqzLbTfmQ2_!!6000000002299-2-tps-54-54.png">
+                            <span>Send code via Whatsapp</span>
+                        </button>
+
+
+                    </form>
+                    <div id="dontHaveAccount">
+                        <span id="dontHaveAccountSpan">Don't have an account?</span>
+                        <span><a id="signupLinkSide" href="#" data-bs-toggle="modal" data-bs-target="#signupModel"
+                                data-bs-dismiss="modal" aria-label="Close">Sign up</a></span>
+                    </div>
+                    <div class="noAccount">
+
+                        <div class="loginThirdParty">
+                            <div>
+                                Or, login with
+                            </div>
+                            <div id="thirdPartyLoginOptions">
+                                <a><img src="assets/icons/googleIcon.png" alt="" id="googleIcon"><span>Google</span></a>
+                                <a><img src="assets/icons/facebookIcon.png" alt="" id="fbIcon"><span>Facebook</span></a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
