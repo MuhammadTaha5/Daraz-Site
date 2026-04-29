@@ -1,0 +1,30 @@
+async function loadCategories() {
+    try {
+        const response = await fetch('assets/data/categories.json');
+        const categories = await response.json();
+        
+        const categoryList = document.getElementById('category-list');
+
+        categoryList.innerHTML = categories.map(cat => `
+            <li class="col p-0">
+                <a href="#" class="categories">
+                    <div class="categoryImg">
+                        <img src="${cat.img}" alt="${cat.name}">
+                    </div>
+                    <div class="categoryDetail">
+                        ${cat.name}
+                    </div>
+                </a>
+            </li>
+        `).join('');
+
+    } catch (error) {
+        console.error("Error loading categories:", error);
+    }
+}
+
+// Ensure this runs alongside your product loader
+window.addEventListener('DOMContentLoaded', () => {
+    loadCategories();
+    
+});

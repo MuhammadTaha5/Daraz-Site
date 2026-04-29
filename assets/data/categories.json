@@ -1,0 +1,18 @@
+[
+  { "name": "3D Printers", "img": "assets/products/cat1.avif" },
+  { "name": "Pasta, Noodles & Pizza Tools", "img": "assets/products/cat2.avif" },
+  { "name": "SIM TOOLS", "img": "assets/products/cat3.avif" },
+  { "name": "Protective Lens", "img": "assets/products/cat4.avif" },
+  { "name": "Screen Protectors", "img": "assets/products/cat5.avif" },
+  { "name": "Shorts", "img": "assets/products/cat6.avif" },
+  { "name": "Casserole Pots", "img": "assets/products/cat7.avif" },
+  { "name": "Hoodies & Sweatshirts", "img": "assets/products/cat8.avif" },
+  { "name": "Coloring & Drawing", "img": "assets/products/cat19.avif" },
+  { "name": "Heatsinks", "img": "assets/products/cat18.avif" },
+  { "name": "Dogs and Cats Electric Clippers", "img": "assets/products/cat11.avif" },
+  { "name": "Dinning Sets", "img": "assets/products/cat12.avif" },
+  { "name": "MicroPhones", "img": "assets/products/cat13.avif" },
+  { "name": "Leashes & Harnesses", "img": "assets/products/cat14.avif" },
+  { "name": "Paints", "img": "assets/products/cat15.avif" },
+  { "name": "Scooters", "img": "assets/products/cat16.avif" }
+]

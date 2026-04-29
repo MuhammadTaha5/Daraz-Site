@@ -4,12 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daraz.Pk</title>
+    <title>Online Shopping in Pakistan</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="icon" type="image/png" href="assets/darazFavicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="assets/icons/darazFavicon.png">
     <link href="bootstrap.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
@@ -19,49 +25,51 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
 
-    <div style="background-color: #f85606; ">
-        <div onscroll="getPosition('headerOptions')" class="headerOptions" id="headerOptions" style="background-color: #f85606; margin-bottom: 0%; 
-    font-family: 'Roboto', 'Helvetica Neue', Helvetica, Tahoma, Arial, sans-serif !important">
+    <div id="topHeader" class="d-none d-lg-block">
+        <div onscroll="getPosition('headerOptions')" class="headerOptions" id="headerOptions">
             <span>
-                <button type="button" class="btn btn-secondary" data-bs-toggle="popover" data-bs-html="true"
+                <button type="button" class="btn btn-secondary p-0" data-bs-toggle="popover" data-bs-html="true"
                     data-bs-content="" id="popoverBtnSave" data-bs-custom-class="SavePopover">
                     Save More ON APP
                 </button>
             </span>
-            <div id="popoverContentSave" class="SavePopover" style="display:none;">
+            <div id="popoverContentSave" class="SavePopover">
                 <div>
                     Download the App
                 </div>
                 <div>
-                    <img src="assets/qr.png" alt="">
+                    <img src="assets/icons/qr.png" alt="">
                 </div>
                 <div>
-                    <img src="assets/appStoreFooterLogo.png" alt="">
-                    <img src="assets/googleFooterLogo.png" alt="">
+                    <img src="assets/icons/appStoreFooterLogo.png" alt="">
+                    <img src="assets/icons/googleFooterLogo.png" alt="">
                 </div>
             </div>
-            <span style="padding-top: 1px; display: flex; align-items: start;" class="sellondaraz"><a href="#">SELL ON
+            <span class="sellondaraz"><a href="#">SELL ON
                     DARAZ</a></span>
 
             <span>
-                <button type="button" class="btn btn-secondary" data-bs-toggle="popover" data-bs-html="true"
+                <button type="button" class="btn btn-secondary p-0" data-bs-toggle="popover" data-bs-html="true"
                     data-bs-content="" id="popoverBtnHelp" data-bs-custom-class="helpCenterPopover">
                     Help & Support
                 </button>
             </span>
 
-            <div id="popoverContentHelp" class="helpCenterPopover" style="display:none;">
+            <div id="popoverContentHelp" class="helpCenterPopover">
                 <div>
-                    <img style="width: 10px; height: 10px;" src="assets/support.png" alt="">
+                    <img src="assets/icons/support.png" alt="">
                     <span>Help Center</span>
                 </div>
                 <div>
-                    <img src="assets/support.png" alt="">
+                    <img src="assets/icons/support.png" alt="">
                     <span>Contact Customer Care</span>
                 </div>
                 <div>
@@ -83,227 +91,165 @@
 
             </div>
             <span>
-                <button type="button" class="btn loginButton" data-bs-toggle="modal" data-bs-target="#loginModel"
-                    style="padding: 6px 0; height: fit-content; display: flex; align-items: start;">
+                <button type="button" class="btn loginButton p-0" data-bs-toggle="modal" data-bs-target="#loginModel">
                     Login
                 </button>
             </span>
-            <span><button type="button" class="btn signUpButtonNav" data-bs-toggle="modal"
-                    style="padding: 6px 0; height: fit-content;" data-bs-target="#signupModel">
+            <span><button type="button" class="btn signUpButtonNav p-0" data-bs-toggle="modal"
+                    data-bs-target="#signupModel">
                     Sign Up
                 </button></span>
-            <span style="padding-right: 0px !important;">
-                <button type="button" class="btn btn-secondary" data-bs-toggle="popover" data-bs-html="true"
-                    data-bs-content="" id="popoverBtnLanguage" data-bs-custom-class="languagePopover"
-                    style="padding-right: 0px !important;">
+            <span class="languageChangeSpan">
+                <button type="button" class="btn btn-secondary languageChange p-0" data-bs-toggle="popover"
+                    data-bs-html="true" data-bs-content="" id="popoverBtnLanguage"
+                    data-bs-custom-class="languagePopover">
                     زبان تبدیل کریں
                 </button>
             </span>
 
-            <div id="popoverContentLanguage" class="languagePopover" style="display:none;">
+            <div id="popoverContentLanguage" class="languagePopover">
                 <div>
-                    <img src="assets/pakFlag.png" alt=""><span>Ur / Urdu</span>
-                    <img src="assets/englandFlag.png" alt=""><span>EN | English</span>
+                    <img src="assets/icons/pakFlag.png" alt=""><span>Ur / Urdu</span>
+                    <img src="assets/icons/englandFlag.png" alt=""><span>EN | English</span>
                 </div>
 
 
             </div>
         </div>
     </div>
-    <header
-        style="position: sticky; top: 0; z-index: 4; height: max-content; padding-top: 11px ; padding-bottom: 11px;  align-items: center; z-index: 100;">
-        <nav style="max-width: 1188px; margin: auto; display: flex; align-items: center;">
+    <div class="offcanvas offcanvas-start d-lg-none" tabindex="-1" id="appSideMenu">
 
-            <div class="logoSide" style="position: sticky; top: 0;">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title"></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+
+        <div class="offcanvas-body">
+
+            <!-- Save App -->
+            <div class="menu-section">
+                <button class="btn w-100" data-bs-toggle="popover" data-bs-html="true" id="appSaveBtn"
+                    data-bs-content="" data-bs-custom-class="appSavePopover">
+                    Save More ON APP
+                </button>
+
+                <div id="appSavePopoverContent" class="d-none">
+                    <div>Download the App</div>
+                    <img src="assets/icons/qr.png" width="120">
+                    <div>
+                        <img src="assets/icons/appStoreFooterLogo.png" width="100">
+                        <img src="assets/icons/googleFooterLogo.png" width="100">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sell -->
+            <div class="menu-section">
+                <a href="#" class="btn  w-100">SELL ON DARAZ</a>
+            </div>
+
+            <!-- Help -->
+            <div class="menu-section">
+                <button class="btn w-100" data-bs-toggle="popover" data-bs-html="true" id="appHelpBtn"
+                    data-bs-custom-class="appHelpPopover">
+                    Help & Support
+                </button>
+
+                <div id="appHelpPopoverContent" class="d-none">
+                    <div>Help Center</div>
+                    <div>Contact Customer Care</div>
+                    <div>Order</div>
+                    <div>Shipping and Delivery</div>
+                    <div>Payment</div>
+                    <div>Return & Refund</div>
+                </div>
+            </div>
+
+            <!-- Login / Signup -->
+            <div class="menu-section">
+                <button class="btn w-100" data-bs-toggle="modal" data-bs-target="#loginModel">
+                    Login
+                </button>
+            </div>
+            <div class="menu-section">
+                <button class="btn w-100" data-bs-toggle="modal" data-bs-target="#signupModel">
+                    Sign Up
+                </button>
+            </div>
+
+            <!-- Language -->
+            <div class="menu-section">
+                <button class="btn w-100" data-bs-toggle="popover" data-bs-html="true" id="appLangBtn"
+                    data-bs-custom-class="appLangPopover">
+                    Change Language
+                </button>
+
+                <div id="appLangPopoverContent" class="d-none">
+                    <div>
+                        <img src="assets/icons/pakFlag.png" width="20"> Urdu
+                    </div>
+                    <div>
+                        <img src="assets/icons/englandFlag.png" width="20"> English
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <header id="mainHeader">
+        <nav>
+            <button class="btn d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#appSideMenu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-list"
+                    viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+                </svg>
+            </button>
+            <div class="logoSide d-flex justify-content-center justify-content-lg-start">
                 <div class="logoImg">
                     <a href="index.html">
-                        <img src="assets/darazLogo.png" alt="">
+                        <img src="assets/icons/darazLogo.png" alt="">
                     </a>
                 </div>
-                <div class="search">
-                    <div class="searchInput">
-                        <input type="text" name="" id="" placeholder="Search in Daraz"
-                            style="border-radius: 2px; font-size: 14px; color: rgb(233, 233, 233);">
-                        <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                <div id="logoSearchSection" class="ms-0 ms-lg-0 me-2 me-lg-0">
+                    <div class="search">
+                        <div class="searchInput">
+                            <input type="text" name="" id="" placeholder="Search in Daraz" class="d-none d-md-block">
+                            <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                        </div>
+
+
                     </div>
-                    <div class="cart-icon">
-                        <img src="assets/trolley.png" alt="">
-                    </div>
+                </div>
+                <div class="cart-icon ms-0 ms-lg-4">
+                    <svg width="30" height="30" viewBox="0 0 32 32" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M4.51345 5H1.33325V3H6.15306L7.21972 8.33333H30.5315L27.5012 25H8.51345L4.51345 5ZM7.61972 10.3333L10.1531 23H25.832L28.135 10.3333H7.61972Z"
+                            fill="white"></path>
+                        <path
+                            d="M11.9999 28C11.9999 28.7364 11.403 29.3333 10.6666 29.3333C9.93021 29.3333 9.33325 28.7364 9.33325 28C9.33325 27.2636 9.93021 26.6667 10.6666 26.6667C11.403 26.6667 11.9999 27.2636 11.9999 28Z"
+                            fill="white"></path>
+                        <path
+                            d="M25.3333 29.3333C26.0696 29.3333 26.6666 28.7364 26.6666 28C26.6666 27.2636 26.0696 26.6667 25.3333 26.6667C24.5969 26.6667 23.9999 27.2636 23.9999 28C23.9999 28.7364 24.5969 29.3333 25.3333 29.3333Z"
+                            fill="white"></path>
+                    </svg>
                 </div>
             </div>
 
 
         </nav>
-        <div id="spacer" style="height: 25px;">
+        <div id="spacer">
 
 
         </div>
 
     </header>
     <!-- Modal -->
-    <div class="modal" id="loginModel" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-        aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog" style="width: 444px; height: 447px ; overflow: hidden;">
-            <div class="modal-content">
-                <div class="animationModel">
-                    <div class="modal-header" style="border-bottom-width: 0 !important;">
-                        <div class="model-LoginOption" style="position: relative;">
-                            <div id="errorBoxLogin" class="hidden">
-                                <span style="display: flex; align-items: center; gap: 10px;">
-                                    <i class="fa-solid fa-circle-xmark" style="color: red; font-size: 24px;"></i>
-                                    <p style="margin: 0%;" id="msg">Enter a Valid Login Password</p>
-                                </span>
-                            </div>
-                            <div style="cursor: pointer;" class="active" id="emailLoginButton">
-                                Password
-                            </div>
-                            <div class="inactive">|</div>
-                            <div class="inactive" style="cursor: pointer;" id="phoneLoginButton">
-                                Phone Number
-                            </div>
-                        </div>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
-                            style="position: absolute; right: 30px;"></button>
-                    </div>
-
-                    <form id="loginWithEmailSection" action="" class="modal-body" style="gap: 10px;">
-                        <div>
-                            <input type="email" class="form-control" id="loginEmail"
-                                placeholder="Please enter your Phone or Email">
-                        </div>
-                        <div>
-                            <div style="display: flex; align-items: center;">
-                                <input type="password" class="form-control" id="loginPassword"
-                                    aria-describedby="validationServer03Feedback"
-                                    placeholder="Please enter your Password" style="position: relative;">
-                                <img src="assets/eyebrow.png" id="showPass"
-                                    style="position: absolute; right: 60px; width: 20px; height: 20px; cursor: pointer; filter: grayscale(100%);">
-
-                            </div>
-                            <div id="passwordFeedback" class="invalid-feedback" style="display: none;">
-                                You can't leave this empty.
-                            </div>
-                        </div>
-                        <div class="forgotDiv"><a href="#" class="forgotPassword">Forgot password?</a></div>
-                        <div style="padding-top: 4px;">
-                            <input type="submit" name="" id="loginButton" value="LOGIN">
-                        </div>
-                    </form>
-                    <form id="loginwithPhone" action="" class="modal-body"
-                        style="display: none; gap: 60px; flex-direction: column; margin-top: 40px;">
-                        <div class="phoneSectionLogin">
-                            <div style="display: flex; gap: 4px; height: 48px;">
-                                <span style="font-size: 10px; position: relative; top: 3px;">PK</span>
-                                <span>+92</span>
-                            </div>
-                            <div style="flex-grow: 2; ">
-                                <input type="number" name="" id="phoneNumber"
-                                    placeholder="Please enter your phone number" style="width: 100%;">
-                            </div>
-                        </div>
-
-
-                        <button type="submit" class="submitLoginPhone"><img src="assets/whatsappIcon.png" alt=""
-                                style="width: 24px; height: 24px; position: absolute; left: 10px;">Send code
-                            via Whatsapp</button>
-
-
-                    </form>
-                    <div style="text-align: center;">
-                        <span style="color: #858b9c; font-weight: 300; font-weight: 10px;">Don't have an account?</span>
-                        <span><a href="#" data-bs-toggle="modal" data-bs-target="#signupModel" data-bs-dismiss="modal"
-                                aria-label="Close" style="text-decoration: none;">Sign up</a></span>
-                    </div>
-                    <div class="noAccount">
-
-                        <div class="loginThirdParty">
-                            <div>
-                                Or, login with
-                            </div>
-                            <div>
-                                <a><img src="assets/googleIcon.png" alt=""><span>Google</span></a>
-                                <a><img src="assets/facebookIcon - Copy.png" alt=""><span>Facebook</span></a>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="modal" id="signupModel" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-        aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog" style="width: 444px; height: 447px ; overflow: hidden;">
-            <div class="modal-content">
-                <div class="animationModel">
-                    <div class="modal-header" style="position: relative;">
-                        <div class="model-LoginOption" style="position: relative;">
-                            <div id="errorBoxSignUp" class="hidden">
-                                <span style="display: flex; align-items: center; gap: 10px;">
-                                    <i class="fa-solid fa-circle-xmark" style="color: red; font-size: 24px;"></i>
-                                    <p style="margin: 0%;" id="msg">Enter a Valid Login Password</p>
-                                </span>
-                            </div>
-                            <div style="cursor: pointer;" class="active">
-                                Sign Up
-                            </div>
-                        </div>
-
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
-                            style="position: absolute; right: 30px;"></button>
-                    </div>
-                    <form id="signUpPhone" action="" class="modal-body" style="gap: 10px; flex-direction: column;">
-                        <div class="phoneSectionLogin">
-                            <div>
-                                <span style="font-size: 10px; position: relative; top: 3px;">PK</span>
-                                <span>+92</span>
-                            </div>
-                            <div style="flex-grow: 2; ">
-                                <input type="number" name="signUpPhoneInput" id="signUpPhoneInput"
-                                    placeholder="Please enter your phone number" style="width: 100%;">
-                            </div>
-                        </div>
-                        <div
-                            style="display: flex; gap: 5px; font-size: 14px; font-weight: 400; color: rgb(133, 139, 156)">
-                            <input class="form-check-input" type="checkbox" id="checkboxPrivacyPolicy" value=""
-                                aria-label="..." style="width: 20px;">
-                            <label for="privacyPolicyCheck">By creating and/or using your account, you agree to our <a
-                                    href="#">Terms of Use</a> and <a href="#">Privacy Policy.</a></label>
-                        </div>
-
-
-                        <button type="submit" class="submitLoginPhone" id="signUpButton"><img
-                                src="assets/whatsappIcon.png" alt=""
-                                style="width: 30px; height: 30px; position: absolute; left: 10px;">Send code
-                            via Whatsapp</button>
-
-
-                    </form>
-                    <div style="text-align: center;">
-                        <span>Already have an account?</span>
-                        <span><a href="#" data-bs-toggle="modal" data-bs-target="#loginModel" data-bs-dismiss="modal"
-                                aria-label="Close"> Log in Now</a></span>
-                    </div>
-                    <div class="noAccount">
-
-                        <div class="loginThirdParty">
-                            <div>
-                                Or, login with
-                            </div>
-                            <div>
-                                <a><img src="assets/googleIcon.png" alt=""><span>Google</span></a>
-                                <a><img src="assets/facebookIcon - Copy.png" alt=""><span>Facebook</span></a>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div style="display: flex; justify-content: center; height: 344px;">
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval='2000'
-            data-bs-wrap="true" style="height: 100%; width: 1000px; position: relative !important;">
+    <div id="login-modal-container"></div>
+    <div id="signup-modal-container"></div>
+    <div class="carousel-section">
+        <div id="carouselExampleIndicators" class="carousel slide carousel-slide-indicators" data-bs-ride="carousel"
+            data-bs-interval='2000' data-bs-wrap="true">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
                     aria-current="true" aria-label="Slide 1"></button>
@@ -333,45 +279,45 @@
                     aria-label="Slide 11"></button>
 
             </div>
-            <div class="carousel-inner" style="height: 100%; max-width:  1188px;">
+            <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="assets/carouselC1.avif" class="d-block w-100" alt="...">
+                    <img src="assets/Carousels/carouselC1.avif" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="assets/carouselC2.avif" class="d-block w-100" alt="...">
+                    <img src="assets/Carousels/carouselC2.avif" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="assets/carouselC3.avif" class="d-block w-100" alt="...">
+                    <img src="assets/Carousels/carouselC3.avif" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="assets/carouselC4.avif" class="d-block w-100" alt="...">
+                    <img src="assets/Carousels/carouselC4.avif" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="assets/carouselC5.avif" class="d-block w-100" alt="...">
+                    <img src="assets/Carousels/carouselC5.avif" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="assets/carouselC6.avif" class="d-block w-100" alt="...">
+                    <img src="assets/Carousels/carouselC6.avif" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="assets/carouselC2.avif" class="d-block w-100" alt="...">
+                    <img src="assets/Carousels/carouselC7.avif" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="assets/carouselC6.avif" class="d-block w-100" alt="...">
+                    <img src="assets/Carousels/carouselC8.avif" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="assets/carouselC7.avif" class="d-block w-100" alt="...">
+                    <img src="assets/Carousels/carouselC9.avif" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="assets/carouselC8.avif" class="d-block w-100" alt="...">
+                    <img src="assets/Carousels/carouselC10.avif" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="assets/carouselC9.avif" class="d-block w-100" alt="...">
+                    <img src="assets/Carousels/carouselC11.avif" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="assets/carouselC10.avif" class="d-block w-100" alt="...">
+                    <img src="assets/Carousels/carouselC3.avif" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="assets/carouselC11.avif" class="d-block w-100" alt="...">
+                    <img src="assets/Carousels/carouselC7.avif" class="d-block w-100" alt="...">
                 </div>
 
 
@@ -386,17 +332,77 @@
                 <span class="arrow-icon">&#10095;</span>
             </button>
         </div>
-        <div class="pc-download-module" style="width: 200px; height: 100%;">
 
-            <img src="assets/darazFlashCard.png" alt="" srcset="" style="width: 100%; height: 100%;">
+
+        <!-- <img src="assets/darazFlashCard.png" alt="" srcset=""> -->
+        <div class="pc-download-module d-none d-lg-block">
+            <div class="flex flex-row flex-items-center topHead">
+                <div class="common-img logo">
+                    <img src="https://img.lazcdn.com/us/domino/1ee015d6a5c62fd0339c88c657c1c183.jpg_120x120q80.jpg"
+                        alt="Daraz Logo">
+                </div>
+                <span class="title two-line-clamp">TRY DARAZ APP</span>
+            </div>
+
+            <div class="module-content">
+                <div class="score flex flex-row flex-items-center">
+                    <div class="common-img star">
+                        <img src="https://img.lazcdn.com/g/tps/imgextra/i4/O1CN01cAMOjU1zqQJZU8EbT_!!6000000006765-2-tps-19-18.png"
+                            alt="Star">
+                    </div>
+                    <span class="rated-txt">4.8 Rated</span>
+                </div>
+
+                <div class="enjoy-tips-wrap flex flex-justify-center">
+                    <span class="enjoy-tips two-line-clamp">Download the App now</span>
+                </div>
+
+                <div class="free-voucher-icons">
+                    <div class="icon-item flex flex-row flex-items-center">
+                        <div class="common-img badge">
+                            <img src="assets/icons/freeShipping.avif" alt="Shipping">
+                        </div>
+                        <span class="txt two-line-clamp">Free Shipping</span>
+                    </div>
+                    <div class="icon-item flex flex-row flex-items-center">
+                        <div class="common-img badge">
+                            <img src="assets/icons/exclusiveVouchers.avif" alt="Voucher">
+                        </div>
+                        <span class="txt two-line-clamp">Exclusive Vouchers</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="module-qr">
+                <div class="content flex flex-row flex-items-center">
+                    <div class="common-img qr-code-image">
+                        <img src="assets/icons/qr-pc-download.avif" alt="QR Code">
+                    </div>
+                    <div class="download-btn" id="PCdownloadSection">
+                        <a href="#" id="appleStoreLink"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                fill="black" class="bi bi-apple" viewBox="0 0 16 16">
+                                <path
+                                    d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516s1.52.087 2.475-1.258.762-2.391.728-2.43m3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422s1.675-2.789 1.698-2.854-.597-.79-1.254-1.157a3.7 3.7 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56s.625 1.924 1.273 2.796c.576.984 1.34 1.667 1.659 1.899s1.219.386 1.843.067c.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758q.52-1.185.473-1.282" />
+                                <path
+                                    d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516s1.52.087 2.475-1.258.762-2.391.728-2.43m3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422s1.675-2.789 1.698-2.854-.597-.79-1.254-1.157a3.7 3.7 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56s.625 1.924 1.273 2.796c.576.984 1.34 1.667 1.659 1.899s1.219.386 1.843.067c.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758q.52-1.185.473-1.282" />
+                            </svg><span>App Store</span></a>
+                        <a href="#" id="playStoreLink">
+                            <img src="assets/icons/playStore.png" alt="">
+                            <span>Google Play</span>
+                        </a>
+                    </div>
+                </div>
+                <span class="download-tips two-line-clamp">Download the App Now!</span>
+            </div>
         </div>
     </div>
-    <section class="banner" style="display: flex; justify-content: center; margin-top: 24px; height: 140px;">
-        <img src="assets/gif.webp" alt="" style="height: 100%; max-width: 1188px;">
-    </section>
+
+    <!-- <section class="banner">
+        <img src="assets/gif.webp" alt="">
+    </section> -->
     <main>
-        <section class="flashSale" id="flashSale" style="max-width: 1188px; margin: auto;">
-            <p class="fs-banner">
+        <section class="flashSale" id="flashSale">
+            <p class="fs-banner ms-2 ms-lg-0">
                 Flash Sale
             </p>
             <div class="cardFsContent">
@@ -404,423 +410,106 @@
                     <p>On Sale Now</p>
                     <a href="#">Shop All Products</a>
                 </div>
-                <hr style="margin: 2px 0;">
-                <div class="cards" style="padding: 4px 4px;">
-                    <div class="card">
-                        <a href="" style="color: inherit; text-decoration: none;">
-                            <div class="img">
-                                <img src="assets/shopImg1.avif" alt="" id="fsProductImgLink">
-                            </div>
-                            <div class="cardDetail">
-                                <p id="fsProductTitle">Home Fabric Folding Storage Storage Box With Lid Dustproof
-                                    Portable Box Clothing Sundries Multifunctional Storage Box</p>
-                                <div class="itemPrice">
-                                    <p>Rs. <span id="fsProductPrice">205</span></p>
-                                </div>
-                                <div class="itemPriceDetail">
-                                    <span style="text-decoration: line-through;">
-                                        <span class="currency">RS</span>
-                                        <span class="actualPrice">499</span>
-                                    </span>
-                                    <span class="itemDiscount" id="fsProductDiscount">-59%</span>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="card">
-                        <a href="" style="color: inherit; text-decoration: none;">
-                            <div class="img">
-                                <img src="assets/shopImg2.avif" alt="" id="fsProductImgLink">
-                            </div>
-                            <div class="cardDetail">
-                                <p id="fsProductTitle">Daachi Posture belt, posture corrector belt, Back support belt,
-                                    Back Pain Relief Shoulder Back Support Belt</p>
-                                <div class="itemPrice">
-                                    <p>Rs. <span id="fsProductPrice">666</span></p>
-                                </div>
-                                <div class="itemPriceDetail">
-                                    <span>
-                                        <span class="currency">RS</span>
-                                        <span class="actualPrice">859</span>
-                                    </span>
-                                    <span class="itemDiscount">-22%</span>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="card">
-                        <a href="" style="color: inherit; text-decoration: none;">
-                            <div class="img">
-                                <img src="assets/shopImg3.avif" alt="" id="fsProductImgLink">
-                            </div>
-                            <div class="cardDetail">
-                                <p id="fsProductTitle">Laptop bag, Backpacks Travel bag</p>
-                                <div class="itemPrice">
-                                    <p>Rs. <span id="fsProductPrice">492</span></p>
-                                </div>
-                                <div class="itemPriceDetail">
-                                    <span>
-                                        <span class="currency">RS</span>
-                                        <span class="actualPrice">3899</span>
-                                    </span>
-                                    <span class="itemDiscount">-87%</span>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="card">
-                        <a href="" style="color: inherit; text-decoration: none;">
-                            <div class="img">
-                                <img src="assets/shopImg1.avif" alt="" id="fsProductImgLink">
-                            </div>
-                            <div class="cardDetail">
-                                <p id="fsProductTitle">pack of 3-Improved Quality LARGE Storage Bags FOR SHIRTS CLOTHS
-                                    AND BLANCKETS DOUBLE ZIPPER Organizer</p>
-                                <div class="itemPrice">
-                                    <p>Rs. <span id="fsProductPrice">404</span></p>
-                                </div>
-                                <div class="itemPriceDetail">
-                                    <span>
-                                        <span class="currency">RS</span>
-                                        <span class="actualPrice">999</span>
-                                    </span>
-                                    <span class="itemDiscount">-60%</span>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="card">
-                        <a href="" style="color: inherit; text-decoration: none;">
-                            <div class="img">
-                                <img src="assets/shopImg5.avif" alt="" id="fsProductImgLink">
-                            </div>
-                            <div class="cardDetail">
-                                <p id="fsProductTitle">Samsung Galaxy S26 Ultra - 512 GB - Get Free Galaxy Tab A11</p>
-                                <div class="itemPrice">
-                                    <p>Rs. <span id="fsProductPrice">489,996</span></p>
-                                </div>
-                                <div class="itemPriceDetail">
-                                    <span>
-                                        <span class="currency">RS</span>
-                                        <span class="actualPrice">489,999</span>
-                                    </span>
-                                    <span class="itemDiscount">-1%</span>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="card">
-                        <a href="" style="color: inherit; text-decoration: none;">
-                            <div class="img">
-                                <img src="assets/shopImg6.avif" alt="" id="fsProductImgLink">
-                            </div>
-                            <div class="cardDetail">
-                                <p id="fsProductTitle">Knorr Blazing Noodles 110G</p>
-                                <div class="itemPrice">
-                                    <p>Rs. <span id="fsProductPrice">196</span></p>
-                                </div>
-                                <div class="itemPriceDetail">
-                                    <span>
-                                        <span class="currency">RS</span>
-                                        <span class="actualPrice">150</span>
-                                    </span>
-                                    <span class="itemDiscount">-16%</span>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
+                <hr>
+                <div class="cards" id="product-container">
                 </div>
             </div>
         </section>
 
-        <section class="categories" id="categories" style="max-width: 1188px; margin: auto;">
+        <section class="categories sectionCategories" id="categories">
             <p class="fs-banner">
                 Categories
             </p>
             <div class="cards-categories">
-                <ul>
-                    <li>
-                        <a href="#" class="categories">
-                            <div class="categoryImg">
-                                <img src="assets/cat1.avif" alt="">
-                            </div>
-                            <div class="categoryDetail">
-                                3D Printers
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="categories">
-                            <div class="categoryImg">
-                                <img src="assets/cat2.avif" alt="">
-                            </div>
-                            <div class="categoryDetail">
-                                Pasta, Noodles & Pizza Tools
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="categories">
-                            <div class="categoryImg">
-                                <img src="assets/cat3.avif" alt="">
-                            </div>
-                            <div class="categoryDetail">
-                                SIM TOOLS
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="categories">
-                            <div class="categoryImg">
-                                <img src="assets/cat4.avif" alt="">
-                            </div>
-                            <div class="categoryDetail">
-                                Protective Lens
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="categories">
-                            <div class="categoryImg">
-                                <img src="assets/cat5.avif" alt="">
-                            </div>
-                            <div class="categoryDetail">
-                                Screen Protectors
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="categories">
-                            <div class="categoryImg">
-                                <img src="assets/cat6.avif" alt="">
-                            </div>
-                            <div class="categoryDetail">
-                                Shorts
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="categories">
-                            <div class="categoryImg">
-                                <img src="assets/cat7.avif" alt="">
-                            </div>
-                            <div class="categoryDetail">
-                                Casserole Pots
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="categories">
-                            <div class="categoryImg">
-                                <img src="assets/cat8.avif" alt="">
-                            </div>
-                            <div class="categoryDetail">
-                                Hoodies & Sweatshirts
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="categories">
-                            <div class="categoryImg">
-                                <img src="assets/cat19.avif" alt="">
-                            </div>
-                            <div class="categoryDetail">
-                                Coloring & Drawing
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="categories">
-                            <div class="categoryImg">
-                                <img src="assets/cat18.avif" alt="">
-                            </div>
-                            <div class="categoryDetail">
-                                Heatsinks
-                            </div>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#" class="categories">
-                            <div class="categoryImg">
-                                <img src="assets/cat11.avif" alt="">
-                            </div>
-                            <div class="categoryDetail">
-                                Dogs and Cats Electric Clippers
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="categories">
-                            <div class="categoryImg">
-                                <img src="assets/cat12.avif" alt="">
-                            </div>
-                            <div class="categoryDetail">
-                                Dinning Sets
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="categories">
-                            <div class="categoryImg">
-                                <img src="assets/cat13.avif" alt="">
-                            </div>
-                            <div class="categoryDetail">
-                                MicroPhones
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="categories">
-                            <div class="categoryImg">
-                                <img src="assets/cat14.avif" alt="">
-                            </div>
-                            <div class="categoryDetail">
-                                Leashes & Harnesses
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="categories">
-                            <div class="categoryImg">
-                                <img src="assets/cat15.avif" alt="">
-                            </div>
-                            <div class="categoryDetail">
-                                Paints
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="categories">
-                            <div class="categoryImg">
-                                <img src="assets/cat16.avif" alt="">
-                            </div>
-                            <div class="categoryDetail">
-                                Scooters
-
-                            </div>
-                        </a>
-                    </li>
+                <ul id="category-list" class="row row-cols-2 row-cols-md-3 row-cols-xl-8">
                 </ul>
             </div>
         </section>
-        <div class="container" id="just-for-you" style="max-width: 1188px; padding: 24px 0 0 0 !important;">
+        <div class="container justForYou" id="just-for-you">
             <p class="fs-banner">
                 Just For You
             </p>
-            <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-6" id="storeProducts"
-                style="row-gap:14px; max-width: 1188px;">
-                <div class="col">
-                    <div class="card">
-                        <a href="#" style="color: inherit; text-decoration: none;">
-                            <div class="img">
-                                <img src="assets/shopImg1.avif" alt="">
-                            </div>
-                            <div class="cardDetail">
-                                <p>Home Fabric Folding Storage Storage Box With Lid Dustproof Portable Box Clothing
-                                    Sundries
-                                    Multifunctional Storage Box</p>
-                                <div class="itemPrice" style="display: flex; gap: 4px;">
-                                    <p>RS.205</p>
-                                    <span class="itemDiscount"
-                                        style="color: grey !important; position: relative; top: 4px;">-59%</span>
-                                </div>
-                                <div class="productRating">
-                                    <span>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                    </span>
-                                    <span class="comments">355</span>
+            <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-6 justify-content-center g-3"
+                id="storeProducts">
 
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
 
             </div>
             <!-- load Products Button  -->
-            <div class="row" style="margin: 30px 0;">
-                <div class="col" style="display: flex; justify-content: center;">
-                    <a href="#loadProductsButton" id="loadProductsButton"
-                        style="color: #1a9cb8; border: 1px solid #1a9cb8; width: 387px; text-align: center; padding: 10px 20px; font-size: 14px; text-decoration: none;">Load
-                        More </a>
+            <div class="row" id="loadingProducts">
+                <div class="col">
+                    <a href="#" id="loadProductsButton">
+                        Load More
+                    </a>
                 </div>
             </div>
 
         </div>
-
-        <section class="footer-first" style="max-width: 1188px; margin: auto;">
-
-            <!-- First Footer Customer Section -->
-            <div class="customerCare">
-                <h3 class="footer-first-title">
-                    Customer Care
-                </h3>
-                <ul>
-                    <li><a href="#">Help Center</a></li>
-                    <li><a href="#">How to Buy</a></li>
-                    <li><a href="#">Corporate & Bulk Purchasing</a></li>
-                    <li><a href="#">Returns and Refunds</a></li>
-                    <li><a href="#">Daraz Shop</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                    <li><a href="#">Purchase Protection</a></li>
-                    <li><a href="#">Daraz Pick up Points</a></li>
-                </ul>
+        <section class="footer-first flex-wrap flex-lg-nowrap">
+            <div class="d-flex footer1Inner">
+                <!-- First Footer Customer Section -->
+                <div class="customerCare">
+                    <h3 class="footer-first-title">
+                        Customer Care
+                    </h3>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">How to Buy</a></li>
+                        <li><a href="#">Corporate & Bulk Purchasing</a></li>
+                        <li><a href="#">Returns and Refunds</a></li>
+                        <li><a href="#">Daraz Shop</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Purchase Protection</a></li>
+                        <li><a href="#">Daraz Pick up Points</a></li>
+                    </ul>
+                </div>
+                <!-- Daraz Care Section -->
+                <div class="darazCare">
+                    <h3 class="footer-first-title">
+                        Daraz
+                    </h3>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Digital Payments</a></li>
+                        <li><a href="#">Daraz Donates</a></li>
+                        <li><a href="#">Daraz Blog</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">NTN Number: 4012118-6</a></li>
+                        <li><a href="#">STRN Number: 1700401211818</a></li>
+                        <li><a href="#">Online Shopping App</a></li>
+                        <li><a href="#">Online Grocery Shooping</a></li>
+                        <li><a href="#">Daraz Exclusive</a></li>
+                        <li><a href="#">Daraz University</a></li>
+                        <li><a href="#">Sell on Daraz</a></li>
+                        <li><a href="#">Join Daraz Affiliate Program</a></li>
+                    </ul>
+                </div>
             </div>
-            <!-- Daraz Care Section -->
-            <div class="darazCare">
-                <h3 class="footer-first-title">
-                    Daraz
-                </h3>
-                <ul>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Digital Payments</a></li>
-                    <li><a href="#">Daraz Donates</a></li>
-                    <li><a href="#">Daraz Blog</a></li>
-                    <li><a href="#">Terms & Conditions</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">NTN Number: 4012118-6</a></li>
-                    <li><a href="#">STRN Number: 1700401211818</a></li>
-                    <li><a href="#">Online Shopping App</a></li>
-                    <li><a href="#">Online Grocery Shooping</a></li>
-                    <li><a href="#">Daraz Exclusive</a></li>
-                    <li><a href="#">Daraz University</a></li>
-                    <li><a href="#">Sell on Daraz</a></li>
-                    <li><a href="#">Join Daraz Affiliate Program</a></li>
-                </ul>
-            </div>
-
             <div class="footerLogoLink">
-                <div style="flex: 1 1 300px;">
+                <div class="happyshoppingsection">
                     <div class="darazImgFooter">
-                        <img src="assets/darazFooterLogo.png" alt="">
+                        <img src="assets/icons/darazFooterLogo.png" alt="">
                     </div>
                     <div class="downloadCom">
-                        <span style="color: #f36f36; font-size: 16px;font-weight: 400;">Happy Shopping</span>
-                        <span style="color: #0f136d; font-size: 14px; font-weight: 400; padding-top: 2px;">Download
+                        <span id="happyShoppingHeading">Happy Shopping</span>
+                        <span id="happyShoppingDownload">Download
                             App</span>
                     </div>
                 </div>
-                <div class="container" style="padding: 0; flex: 1 1 300px;">
+                <div class="container shoppingAppLinks">
                     <div class="row row-cols-2">
-                        <div class="col" style="padding: 0; width: 130px;">
+                        <div class="col downloadApp">
 
-                            <span><img src="assets/appStoreFooterLogo.png" alt=""></span>
-
-                        </div>
-                        <div class="col" style="padding: 0; width: 130px;">
-
-                            <span><img src="assets/googleFooterLogo.png" alt=""></span>
+                            <span><img src="assets/icons/appStoreFooterLogo.png" alt=""></span>
 
                         </div>
-                        <div class="col" style="padding: 0; width: 130px;">
+                        <div class="col downloadApp">
 
-                            <span><img src="assets/appGalleryFooter.png" alt=""></span>
+                            <span><img src="assets/icons/googleFooterLogo.png" alt=""></span>
 
+                        </div>
+                        <div class="col downloadApp">
+                            <span><img src="assets/icons/appGalleryFooter.png" alt=""></span>
 
                         </div>
 
@@ -831,29 +520,27 @@
 
         </section>
         <section class="footer-second">
-            <div class="footer2">
+            <div class="footer2 d-flex flex-column flex-lg-row">
                 <div class="payment-method">
-                    <h3
-                        style="color: #183544; font-size: 16px; font-weight: 400; line-height: 2.2em; margin-bottom: 15px;">
+                    <h3 class="footer2PaymentHeader">
                         Payment Method</h3>
                     <div class="payment-methods-type">
-                        <span><img src="assets/paymentCash.png" alt=""></span>
-                        <span><img src="assets/paymentVisa.png" alt=""></span>
-                        <span><img src="assets/paymentMasterCard.png" alt=""></span>
-                        <span><img src="assets/paymentEasypaisa.png" alt=""></span>
-                        <span><img src="assets/paymentDaraz.png" alt=""></span>
-                        <span><img src="assets/paymentJazzCash.png" alt=""></span>
-                        <span><img src="assets/paymentUnion.png" alt=""></span>
-                        <span><img src="assets/paymentHBL.png" alt=""></span>
-                        <span><img src="assets/paymentEasyInstallment.png" alt=""></span>
+                        <span><img src="assets/icons/paymentCash.png" alt=""></span>
+                        <span><img src="assets/icons/paymentVisa.png" alt=""></span>
+                        <span><img src="assets/icons/paymentMasterCard.png" alt=""></span>
+                        <span><img src="assets/icons/paymentEasypaisa.png" alt=""></span>
+                        <span><img src="assets/icons/paymentDaraz.png" alt=""></span>
+                        <span><img src="assets/icons/paymentJazzCash.png" alt=""></span>
+                        <span><img src="assets/icons/paymentUnion.png" alt=""></span>
+                        <span><img src="assets/icons/paymentHBL.png" alt=""></span>
+                        <span><img src="assets/icons/paymentEasyInstallment.png" alt=""></span>
                     </div>
                 </div>
                 <div class="verify-method">
-                    <h3
-                        style="color: #183544; font-size: 16px; font-weight: 400; line-height: 2.2em; margin-bottom: 15px;">
+                    <h3 class="footer2PaymentHeader">
                         Verified by</h3>
                     <div class="verify-methods-type">
-                        <span><img src="assets/pciDSS.png" alt=""></span>
+                        <span><img src="assets/icons/pciDSS.png" alt=""></span>
 
                     </div>
                 </div>
@@ -862,17 +549,17 @@
 
         </section>
         <!-- 2 columns daraz bio -->
-        <section class="footerThird" style="max-width: 1188px;">
-            <div style="column-count: 2; width: 50%;">
+        <section class="footerThird d-none d-lg-flex">
+            <div class="col1">
                 <!-- added column count 2 to given a display of newspaper type look -->
                 <!-- first div given 50% of container width -->
-                <div style="padding-right: 25%">
+                <div class="footer3sections">
                     <h1 class="footer-title">
                         How Daraz Transformed Online Shopping in Pakistan
                     </h1>
                     <p>How Daraz Transformed Online Shopping in Pakistan</p>
                 </div>
-                <div style="padding-right: 25%">
+                <div class="footer3sections">
                     Daraz first made waves in Pakistan's e-commerce market after its introduction in 2012. We have since
                     grown to become Pakistan's largest platform for online shopping with a network spread across Asia in
                     Pakistan, Bangladesh, Sri Lanka, Myanmar, and Daraz.com.np. Our vision was to provide a safe,
@@ -885,7 +572,7 @@
                     recommendations, and a smooth online shopping experience guaranteed.
 
                 </div>
-                <div style="padding-right: 25%">
+                <div class="footer3sections">
                     <h1 class="footer-title">
                         What Makes Us Different from Other Online Shopping Platforms?
                     </h1>
@@ -964,7 +651,7 @@
 
             </div>
             <!-- 3 footer section technology anchor links -->
-            <div style="width: 25%; padding-right: 7%">
+            <div class="topBrandSection">
                 <!-- 2nd div given 25% of container width -->
 
                 <h1 class="footer-title">
@@ -1088,7 +775,7 @@
                     <a href="#">Sharp Aquos R2</a>
                 </p>
             </div>
-            <div style="width: 25%; padding-right: 7%">
+            <div class="footerFashionSection">
                 <span>WOMEN'S FASHION</span>
                 <p>
                     <a href="#">Warda</a>,
@@ -1191,19 +878,19 @@
                 </p>
             </div>
         </section>
-        <section class="forth-footer">
+        <section class="forth-footer d-flex flex-column flex-md-row">
             <div class="footer4">
-                <div style="display: flex; gap: 70px;">
-                    <div>
+                <div class="footer4inner d-flex flex-column flex-lg-row">
+                    <div class="daraz-international-store">
                         <h3 class="footer-title">
                             Daraz International
                         </h3>
                         <div class="darazStores">
-                            <a href="#"><img src="assets/pakFlag.png" alt=""><span>Pakistan</span></a>
-                            <a href="#"><img src="assets/banFlag.png" alt=""><span>Bangladesh</span></a>
-                            <a href="#"><img src="assets/sriFlag.png" alt=""><span>Srilanka</span></a>
-                            <a href="#"><img src="assets/myanFlag.png" alt=""><span>Myanmar</span></a>
-                            <a href="#"><img src="assets/nepFlag.png" alt=""><span>Nepal</span></a>
+                            <a href="#"><img src="assets/icons/pakFlag.png" alt=""><span>Pakistan</span></a>
+                            <a href="#"><img src="assets/icons/banFlag.png" alt=""><span>Bangladesh</span></a>
+                            <a href="#"><img src="assets/icons/sriFlag.png" alt=""><span>Srilanka</span></a>
+                            <a href="#"><img src="assets/icons/myanFlag.png" alt=""><span>Myanmar</span></a>
+                            <a href="#"><img src="assets/icons/nepFlag.png" alt=""><span>Nepal</span></a>
                         </div>
 
 
@@ -1213,14 +900,14 @@
                             Follow Us
                         </h3>
                         <div class="darazFollowLinks">
-                            <a href="#"><img src="assets/facebookIcon.png" alt=""></a>
-                            <a href="#"><img src="assets/vicon.png" alt=""></a>
-                            <a href="#"><img src="assets/instaIcon.png" alt=""></a>
-                            <a href="#"><img src="assets/youtubeIcon.png" alt=""></a>
+                            <a href="#"><img src="assets/icons/facebookIcon.png" alt=""></a>
+                            <a href="#"><img src="assets/icons/vicon.png" alt=""></a>
+                            <a href="#"><img src="assets/icons/instaIcon.png" alt=""></a>
+                            <a href="#"><img src="assets/icons/youtubeIcon.png" alt=""></a>
                         </div>
                     </div>
                 </div>
-                <div>
+                <div class="daraz-copyright d-none d-lg-block">
                     © Daraz 2026
                 </div>
             </div>
@@ -1242,14 +929,18 @@
     </div>
 
     <div class="messageNow">
-        <i class="fa-solid fa-comment"></i>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-right-fill"
+            viewBox="0 0 16 16">
+            <path
+                d="M14 0a2 2 0 0 1 2 2v12.793a.5.5 0 0 1-.854.353l-2.853-2.853a1 1 0 0 0-.707-.293H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2z" />
+        </svg>
         <span>Messages</span>
     </div>
     <div class="message-expand openBox" id="messageBoxToggle">
         <div class="messages">
             <div>
                 <i class="fa-solid fa-comment"></i>
-                <span style="margin-left: 6px;">Messages</span>
+                <span id="openMessageCom">Messages</span>
             </div>
             <div>
 
@@ -1258,21 +949,18 @@
         <div class="messagePromotion">
             <div>
                 <span>Daraz</span>
-                <i class="fa-solid fa-xmark" style="position: absolute; right: 20px; font-size: 25px; cursor: pointer;"
-                    id="closeMessage"></i>
+                <i class="fa-solid fa-xmark" id="closeMessage"></i>
             </div>
             <div>
                 <i class="fa-solid fa-envelope"></i>
                 <a href="#">Use the App for exclusive offers</a>
                 <p>Once you start a new conversation, you’ll see it listed here.</p>
-                <div style="color: rgb(76, 130, 150); display: flex; align-items: center;">
-                    <button type="button" class="btn loginButton" data-bs-toggle="modal" data-bs-target="#loginModel"
-                        style="padding: 6px 0; height: fit-content; display: flex; align-items: start; font-size: 16px !important">
+                <div class="messageLoginSignup">
+                    <button type="button" class="btn loginButton" data-bs-toggle="modal" data-bs-target="#loginModel">
                         Login
                     </button>
                     /
                     <button type="button" class="btn signUpButtonNav" data-bs-toggle="modal"
-                        style="padding: 6px 0; height: fit-content; font-size: 16px !important"
                         data-bs-target="#signupModel">
                         SignUp
                     </button>
@@ -1286,7 +974,28 @@
 
 
 </body>
-<script src="scripts/scripts.js"></script>
-<script src="scripts/flash.js"></script>
+<!-- REMOVE all your current script tags and replace with this -->
+
+<script src="components/loader.js"></script>
+<script>
+  Promise.all([
+    loadComponent('#login-modal-container', 'components/loginModal.html'),
+    loadComponent('#signup-modal-container', 'components/signupModal.html')
+  ]).then(() => {
+    const scripts = [
+      'scripts/loginSignup.js',
+      'scripts/scripts.js',
+      'scripts/flash.js',
+      'scripts/category.js',
+      'scripts/messageDaraz.js'
+    ];
+
+    scripts.forEach(src => {
+      const tag = document.createElement('script');
+      tag.src = src;
+      document.body.appendChild(tag);
+    });
+  });
+</script>
 
 </html>

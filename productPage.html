@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="styles/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="icon" type="image/png" href="assets/darazFavicon.png">
+    <link rel="icon" type="image/png" href="assets/icons/darazProductPageIcon-removebg-preview.png">
     <link
         href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
@@ -23,44 +23,43 @@
 </head>
 
 <body>
-    <div style="background-color: #f85606; ">
-        <div onscroll="getPosition('headerOptions')" class="headerOptions" id="headerOptions" style="background-color: #f85606; margin-bottom: 0%; 
-    font-family: 'Roboto', 'Helvetica Neue', Helvetica, Tahoma, Arial, sans-serif !important">
+    <div id="topHeader" class="d-none d-lg-block">
+        <div onscroll="getPosition('headerOptions')" class="headerOptions" id="headerOptions">
             <span>
-                <button type="button" class="btn btn-secondary" data-bs-toggle="popover" data-bs-html="true"
+                <button type="button" class="btn btn-secondary p-0" data-bs-toggle="popover" data-bs-html="true"
                     data-bs-content="" id="popoverBtnSave" data-bs-custom-class="SavePopover">
                     Save More ON APP
                 </button>
             </span>
-            <div id="popoverContentSave" class="SavePopover" style="display:none;">
+            <div id="popoverContentSave" class="SavePopover">
                 <div>
                     Download the App
                 </div>
                 <div>
-                    <img src="assets/qr.png" alt="">
+                    <img src="assets/icons/qr.png" alt="">
                 </div>
                 <div>
-                    <img src="assets/appStoreFooterLogo.png" alt="">
-                    <img src="assets/googleFooterLogo.png" alt="">
+                    <img src="assets/icons/appStoreFooterLogo.png" alt="">
+                    <img src="assets/icons/googleFooterLogo.png" alt="">
                 </div>
             </div>
-            <span style="padding-top: 1px; display: flex; align-items: start;" class="sellondaraz"><a href="#">SELL ON
+            <span class="sellondaraz"><a href="#">SELL ON
                     DARAZ</a></span>
 
             <span>
-                <button type="button" class="btn btn-secondary" data-bs-toggle="popover" data-bs-html="true"
+                <button type="button" class="btn btn-secondary p-0" data-bs-toggle="popover" data-bs-html="true"
                     data-bs-content="" id="popoverBtnHelp" data-bs-custom-class="helpCenterPopover">
                     Help & Support
                 </button>
             </span>
 
-            <div id="popoverContentHelp" class="helpCenterPopover" style="display:none;">
+            <div id="popoverContentHelp" class="helpCenterPopover">
                 <div>
-                    <img style="width: 10px; height: 10px;" src="assets/support.png" alt="">
+                    <img src="assets/icons/support.png" alt="">
                     <span>Help Center</span>
                 </div>
                 <div>
-                    <img src="assets/support.png" alt="">
+                    <img src="assets/icons/support.png" alt="">
                     <span>Contact Customer Care</span>
                 </div>
                 <div>
@@ -82,60 +81,154 @@
 
             </div>
             <span>
-                <button type="button" class="btn loginButton" data-bs-toggle="modal" data-bs-target="#loginModel"
-                    style="padding: 7px 1px; height: fit-content; display: flex; align-items: start;">
+                <button type="button" class="btn loginButton p-0" data-bs-toggle="modal" data-bs-target="#loginModel">
                     Login
                 </button>
             </span>
-            <span><button type="button" class="btn signUpButtonNav" data-bs-toggle="modal"
-                    style="padding: 7px 1px; height: fit-content;" data-bs-target="#signupModel">
+            <span><button type="button" class="btn signUpButtonNav p-0" data-bs-toggle="modal"
+                    data-bs-target="#signupModel">
                     Sign Up
                 </button></span>
-            <span style="padding-right: 0px !important;">
-                <button type="button" class="btn btn-secondary" data-bs-toggle="popover" data-bs-html="true"
-                    data-bs-content="" id="popoverBtnLanguage" data-bs-custom-class="languagePopover"
-                    style="padding-right: 0px !important;">
+            <span class="languageChangeSpan">
+                <button type="button" class="btn btn-secondary languageChange p-0" data-bs-toggle="popover"
+                    data-bs-html="true" data-bs-content="" id="popoverBtnLanguage"
+                    data-bs-custom-class="languagePopover">
                     زبان تبدیل کریں
                 </button>
             </span>
 
-            <div id="popoverContentLanguage" class="languagePopover" style="display:none;">
+            <div id="popoverContentLanguage" class="languagePopover">
                 <div>
-                    <img src="assets/pakFlag.png" alt=""><span>Ur / Urdu</span>
-                    <img src="assets/englandFlag.png" alt=""><span>EN | English</span>
+                    <img src="assets/icons/pakFlag.png" alt=""><span>Ur / Urdu</span>
+                    <img src="assets/icons/englandFlag.png" alt=""><span>EN | English</span>
                 </div>
 
 
             </div>
         </div>
     </div>
-    <header
-        style="position: sticky; top: 0; z-index: 4; height: max-content; padding-top: 11px ; padding-bottom: 11px;  align-items: center; z-index: 100;">
-        <nav style="max-width: 1188px; margin: auto; display: flex; align-items: center;">
+    <div class="offcanvas offcanvas-start d-lg-none" tabindex="-1" id="appSideMenu">
 
-            <div class="logoSide" style="position: sticky; top: 0;">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title"></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+
+        <div class="offcanvas-body">
+
+            <!-- Save App -->
+            <div class="menu-section">
+                <button class="btn w-100" data-bs-toggle="popover" data-bs-html="true" id="appSaveBtn"
+                    data-bs-content="" data-bs-custom-class="appSavePopover">
+                    Save More ON APP
+                </button>
+
+                <div id="appSavePopoverContent" class="d-none">
+                    <div>Download the App</div>
+                    <img src="assets/icons/qr.png" width="120">
+                    <div>
+                        <img src="assets/icons/appStoreFooterLogo.png" width="100">
+                        <img src="assets/icons/googleFooterLogo.png" width="100">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sell -->
+            <div class="menu-section">
+                <a href="#" class="btn  w-100">SELL ON DARAZ</a>
+            </div>
+
+            <!-- Help -->
+            <div class="menu-section">
+                <button class="btn w-100" data-bs-toggle="popover" data-bs-html="true" id="appHelpBtn"
+                    data-bs-custom-class="appHelpPopover">
+                    Help & Support
+                </button>
+
+                <div id="appHelpPopoverContent" class="d-none">
+                    <div>Help Center</div>
+                    <div>Contact Customer Care</div>
+                    <div>Order</div>
+                    <div>Shipping and Delivery</div>
+                    <div>Payment</div>
+                    <div>Return & Refund</div>
+                </div>
+            </div>
+
+            <!-- Login / Signup -->
+            <div class="menu-section">
+                <button class="btn w-100" data-bs-toggle="modal" data-bs-target="#loginModel">
+                    Login
+                </button>
+            </div>
+            <div class="menu-section">
+                <button class="btn w-100" data-bs-toggle="modal" data-bs-target="#signupModel">
+                    Sign Up
+                </button>
+            </div>
+
+            <!-- Language -->
+            <div class="menu-section">
+                <button class="btn w-100" data-bs-toggle="popover" data-bs-html="true" id="appLangBtn"
+                    data-bs-custom-class="appLangPopover">
+                    Change Language
+                </button>
+
+                <div id="appLangPopoverContent" class="d-none">
+                    <div>
+                        <img src="assets/icons/pakFlag.png" width="20"> Urdu
+                    </div>
+                    <div>
+                        <img src="assets/icons/englandFlag.png" width="20"> English
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <header id="mainHeader" class="productPageHeader sticky-top">
+        <nav>
+            <button class="btn d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#appSideMenu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-list"
+                    viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+                </svg>
+            </button>
+            <div class="logoSide d-flex justify-content-between justify-content-lg-start">
                 <div class="logoImg">
                     <a href="index.html">
-                        <img src="assets/darazLogo.png" alt="">
+                        <img src="assets/icons/darazLogo.png" alt="">
                     </a>
                 </div>
-                <div>
+                <div id="logoSearchSection" class="ms-0 ms-lg-4 me-2 me-lg-0">
                     <div class="search">
                         <div class="searchInput">
-                            <input type="text" name="" id="" placeholder="Search in Daraz" style="border-radius: 2px; font-size: 14px; color: rgb(233, 233, 233);">
+                            <input type="text" name="" id="" placeholder="Search in Daraz" class="d-none d-md-block">
                             <span><i class="fa-solid fa-magnifying-glass"></i></span>
-
                         </div>
-                        <div class="cart-icon">
-                            <img src="assets/trolley.png" alt="">
+
+                        <div class="cart-icon ms-0 ms-lg-4">
+                            <svg width="30" height="30" viewBox="0 0 32 32" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M4.51345 5H1.33325V3H6.15306L7.21972 8.33333H30.5315L27.5012 25H8.51345L4.51345 5ZM7.61972 10.3333L10.1531 23H25.832L28.135 10.3333H7.61972Z"
+                                    fill="white"></path>
+                                <path
+                                    d="M11.9999 28C11.9999 28.7364 11.403 29.3333 10.6666 29.3333C9.93021 29.3333 9.33325 28.7364 9.33325 28C9.33325 27.2636 9.93021 26.6667 10.6666 26.6667C11.403 26.6667 11.9999 27.2636 11.9999 28Z"
+                                    fill="white"></path>
+                                <path
+                                    d="M25.3333 29.3333C26.0696 29.3333 26.6666 28.7364 26.6666 28C26.6666 27.2636 26.0696 26.6667 25.3333 26.6667C24.5969 26.6667 23.9999 27.2636 23.9999 28C23.9999 28.7364 24.5969 29.3333 25.3333 29.3333Z"
+                                    fill="white"></path>
+                            </svg>
                         </div>
                     </div>
-                    <div id="spacer" style="height: 12px; font-size: 12px; color: white;">
+                    <div class="productPageSpacer d-none d-lg-block">
                         <span>makeup</span>
                         <span>|</span>
                         <span>watch for boys</span>
                         <span>|</span>
                         <span>bags for girls</span>
+                        <span>|</span>
                         <span>airpods</span>
                         <span>|</span>
                         <span>kashmir bangles</span>
@@ -150,173 +243,13 @@
 
 
     </header> <!-- Modal -->
-    <div class="modal" id="loginModel" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-        aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog" style="width: 444px; height: 447px ; overflow: hidden;">
-            <div class="modal-content">
-                <div class="animationModel">
-                    <div class="modal-header" style="border-bottom-width: 0 !important;">
-                        <div class="model-LoginOption" style="position: relative;">
-                            <div id="errorBoxLogin" class="hidden">
-                                <span style="display: flex; align-items: center; gap: 10px;">
-                                    <i class="fa-solid fa-circle-xmark" style="color: red; font-size: 24px;"></i>
-                                    <p style="margin: 0%;" id="msg">Enter a Valid Login Password</p>
-                                </span>
-                            </div>
-                            <div style="cursor: pointer;" class="active" id="emailLoginButton">
-                                Password
-                            </div>
-                            <div class="inactive">|</div>
-                            <div class="inactive" style="cursor: pointer;" id="phoneLoginButton">
-                                Phone Number
-                            </div>
-                        </div>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
-                            style="position: absolute; right: 30px;"></button>
-                    </div>
-
-                    <form id="loginWithEmailSection" action="" class="modal-body" style="gap: 10px;">
-                        <div>
-                            <input type="email" class="form-control" id="loginEmail"
-                                placeholder="Please enter your Phone or Email">
-                        </div>
-                        <div>
-                            <div style="display: flex; align-items: center;">
-                                <input type="password" class="form-control" id="loginPassword"
-                                    aria-describedby="validationServer03Feedback"
-                                    placeholder="Please enter your Password" style="position: relative;">
-                                <img src="assets/eyebrow.png" id="showPass" 
-     style="position: absolute; right: 60px; width: 20px; height: 20px; cursor: pointer; filter: grayscale(100%);">
-
-                            </div>
-                            <div id="passwordFeedback" class="invalid-feedback" style="display: none;">
-                                You can't leave this empty.
-                            </div>
-                        </div>
-                        <div class="forgotDiv"><a href="#" class="forgotPassword">Forgot password?</a></div>
-                        <div style="padding-top: 4px;">
-                            <input type="submit" name="" id="loginButton" value="LOGIN">
-                        </div>
-                    </form>
-                    <form id="loginwithPhone" action="" class="modal-body"
-                        style="display: none; gap: 60px; flex-direction: column; margin-top: 40px;">
-                        <div class="phoneSectionLogin">
-                            <div style="display: flex; gap: 4px; height: 48px;">
-                                <span style="font-size: 10px; position: relative; top: 3px;">PK</span>
-                                <span>+92</span>
-                            </div>
-                            <div style="flex-grow: 2; ">
-                                <input type="number" name="" id="phoneNumber"
-                                    placeholder="Please enter your phone number" style="width: 100%;">
-                            </div>
-                        </div>
-
-
-                        <button type="submit" class="submitLoginPhone"><img src="assets/whatsappIcon.png" alt=""
-                                style="width: 24px; height: 24px; position: absolute; left: 10px;">Send code
-                            via Whatsapp</button>
-
-
-                    </form>
-                    <div style="text-align: center;">
-                        <span style="color: #858b9c; font-weight: 300;">Don't have an account?</span>
-                        <span><a href="#" data-bs-toggle="modal" data-bs-target="#signupModel" data-bs-dismiss="modal"
-                                aria-label="Close" style="text-decoration: none;">Sign up</a></span>
-                    </div>
-                    <div class="noAccount">
-
-                        <div class="loginThirdParty">
-                            <div>
-                                Or, login with
-                            </div>
-                            <div>
-                                <a><img src="assets/googleIcon.png" alt=""><span>Google</span></a>
-                                <a><img src="assets/facebookIcon - Copy.png" alt=""><span>Facebook</span></a>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="modal" id="signupModel" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-        aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog" style="width: 444px; height: 447px ; overflow: hidden;">
-            <div class="modal-content">
-                <div class="animationModel">
-                    <div class="modal-header" style="position: relative;">
-                        <div class="model-LoginOption" style="position: relative;">
-                            <div id="errorBoxSignUp" class="hidden">
-                                <span style="display: flex; align-items: center; gap: 10px;">
-                                    <i class="fa-solid fa-circle-xmark" style="color: red; font-size: 24px;"></i>
-                                    <p style="margin: 0%;" id="msg">Enter a Valid Login Password</p>
-                                </span>
-                            </div>
-                            <div style="cursor: pointer;" class="active">
-                                Sign Up
-                            </div>
-                        </div>
-
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
-                            style="position: absolute; right: 30px;"></button>
-                    </div>
-                    <form id="signUpPhone" action="" class="modal-body" style="gap: 10px; flex-direction: column;">
-                        <div class="phoneSectionLogin">
-                            <div>
-                                <span style="font-size: 10px; position: relative; top: 3px;">PK</span>
-                                <span>+92</span>
-                            </div>
-                            <div style="flex-grow: 2; ">
-                                <input type="number" name="signUpPhoneInput" id="signUpPhoneInput"
-                                    placeholder="Please enter your phone number" style="width: 100%;">
-                            </div>
-                        </div>
-                        <div
-                            style="display: flex; gap: 5px; font-size: 14px; font-weight: 400; color: rgb(133, 139, 156)">
-                            <input class="form-check-input" type="checkbox" id="checkboxPrivacyPolicy" value=""
-                                aria-label="..." style="width: 20px;">
-                            <label for="privacyPolicyCheck">By creating and/or using your account, you agree to our <a
-                                    href="#">Terms of Use</a> and <a href="#">Privacy Policy.</a></label>
-                        </div>
-
-
-                        <button type="submit" class="submitLoginPhone" id="signUpButton"><img
-                                src="assets/whatsappIcon.png" alt=""
-                                style="width: 30px; height: 30px; position: absolute; left: 10px;">Send code
-                            via Whatsapp</button>
-
-
-                    </form>
-                    <div style="text-align: center;">
-                        <span>Already have an account?</span>
-                        <span><a href="#" data-bs-toggle="modal" data-bs-target="#loginModel" data-bs-dismiss="modal"
-                                aria-label="Close"> Log in Now</a></span>
-                    </div>
-                    <div class="noAccount">
-
-                        <div class="loginThirdParty">
-                            <div>
-                                Or, login with
-                            </div>
-                            <div>
-                                <a><img src="assets/googleIcon.png" alt=""><span>Google</span></a>
-                                <a><img src="assets/facebookIcon - Copy.png" alt=""><span>Facebook</span></a>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <section class="CategoriesHeader" style="position: sticky; top: 65px; background-color: white; z-index: 10; ">
-        <div style="max-width: 1188px; margin: auto;">
-
-
-            <div class="categoriesWrapper" id="dropCategory" style="z-index: 9; width: 200px;">
-                <span class="categories" style="font-weight: 500;">Categories <i
-                        class="fa-solid fa-angle-down"></i></span>
+    <!-- Modal -->
+    <div id="login-modal-container"></div>
+    <div id="signup-modal-container"></div>
+    <section class="CategoriesHeader">
+        <div class="categoryBox">
+            <div class="categoriesWrapper" id="dropCategory">
+                <span class="categories">Categories <i class="fa-solid fa-angle-down"></i></span>
                 <ul class="categoriesOptions">
                     <li><a href="#">Electronics Accessories</a></li>
                     <li><a href="#">TV & Home Appliances</a></li>
@@ -335,50 +268,48 @@
         </div>
     </section>
     <section class="productRoute">
-        <span><a href="#" style="color: inherit; text-decoration: none;">Mobile & Tablets</a></span>
+        <span><a href="#">Mobile & Tablets</a></span>
         <i class="fa-solid fa-angle-right"></i>
-        <span><a href="#" style="color: inherit; text-decoration: none;">Tablets</a></span>
+        <span><a href="#">Tablets</a></span>
         <i class="fa-solid fa-angle-right"></i>
         <span id="productName">
             Mini Diecast KIA SPORTAGE Motor Car - Toynix
         </span>
 
     </section>
-    <main
-        style="display: flex; justify-content: center; flex-direction: column; margin: 0 30px; max-width: 1188px; margin: auto;">
+    <main>
         <section class="productDetails">
             <div class="productImages">
                 <div class="mainImg">
-                    <img src="assets/carToy.avif" alt="" id="mainProductImg" style="z-index: 2;">
+                    <img src="" alt="" id="mainProductImg">
                 </div>
                 <div class="product-slider">
 
                     <div class="thumb-wrapper">
 
-                        <button class="arrow left" id="arrowLeft">❮</button>
+                        <button class="arrow left" id="arrowLeft"><i class="fa-solid fa-angle-left"></i></button>
 
                         <div class="thumbnails" id="thumbContainer">
-                            <img src="assets/cat2.avif" onmouseover="changeImage(this)">
-                            <img src="assets/cat1.avif" onmouseover="changeImage(this)">
-                            <img src="assets/cat9.avif" onmouseover="changeImage(this)">
-                            <img src="assets/cat10.avif" onmouseover="changeImage(this)">
-                            <img src="assets/cat11.avif" onmouseover="changeImage(this)">
-                            <img src="assets/cat14.avif" onmouseover="changeImage(this)">
+                            <img src="assets/products/cat1.avif" onmouseover="changeImage(this)">
+                            <img src="assets/products/cat2.avif" onmouseover="changeImage(this)">
+                            <img src="assets/products/cat3.avif" onmouseover="changeImage(this)">
+                            <img src="assets/products/cat4.avif" onmouseover="changeImage(this)">
+                            <img src="assets/products/cat5.avif" onmouseover="changeImage(this)">
+                            <img src="assets/products/cat6.avif" onmouseover="changeImage(this)">
                         </div>
 
-                        <button class="arrow right" id="arrowRight">❯</button>
+                        <button class="arrow right" id="arrowRight"><i class="fa-solid fa-angle-right"></i></button>
 
                     </div>
 
                 </div>
 
             </div>
-            <div style="padding: 0 20px;">
+            <div class="mainProductDetail">
                 <div id="myresult" class="img-zoom-result"></div>
-                <h1 id="productName" style="-webkit-line-clamp: 2; line-clamp: 2;">Mini Diecast KIA SPORTAGE Motor Car -
-                    Toynix</h1>
+                <h1 id="productName"></h1>
                 <div class="productRatingAndShare">
-                    <div>
+                    <div class="productStars">
                         <span class="productRatingStars">
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
@@ -386,27 +317,27 @@
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                         </span>
-                        <span><a href="#" style="text-decoration: none;">ratings 38</a></span>
+                        <span><a href="#" id="ratingNum">Ratings 38</a></span>
                     </div>
                     <div>
-                        <img src="assets/share.png" class="iconProduct">
-                        <img src="assets/heart.png" class="iconProduct">
+                        <img src="assets/icons/share1.png" class="iconProduct">
+                        <img src="assets/icons/heart1.png" class="iconProduct">
                     </div>
 
 
                 </div>
                 <div class="brandInfo">
                     <div>
-                        <span>Brand:</span>
+                        <span id="brandHeading">Brand:</span>
                         <span><a href="#">Toynix</a></span>
                     </div>
-                    <span>|</span>
+                    <span id="divider">|</span>
                     <div>
                         <a href="#">More Remote Control & play Vehicles from Toynix</a>
                     </div>
 
                 </div>
-                <hr>
+                <hr class="productDetailSeparater">
                 <div class="productPrice">
                     <span class="discountedPrice" id="discPrice">Rs. 899</span>
                     <div>
@@ -414,17 +345,14 @@
                         <span class="discountRatio">-55%</span>
                     </div>
                 </div>
-                <hr>
+                <hr class="productDetailSeparater">
                 <div class="productSubImage">
                     <div>
                         <h6>Color Family</h6>
                         <span id="imageColor">Blue</span>
                     </div>
                     <div id="optionImagesVartants">
-                        <img src="assets/cat16.avif" alt="">
-                        <img src="assets/cat14.avif" alt="">
-                        <img src="assets/cat11.avif" alt="">
-                        <img src="assets/cat18.avif" alt="">
+
                     </div>
 
 
@@ -446,23 +374,28 @@
                 </div>
             </div>
             <div class="del_war_Options">
-                <div>
+                <div class="deliveryHeader">
                     <span>Delivery Options</span>
-                    <span class="icon"><i class="fa-solid fa-circle-info"></i></span>
+                    <span class="icon">
+                        <!-- <i class="fa-solid fa-circle-info"></i></span> -->
+                        <img class="infoIcon" src="assets/icons/info-circle.svg" alt="">
                 </div>
-                <div class="list">
-                    <div style="display: flex; gap: 10px;">
-                        <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
+                <div class="list" id="address">
+                    <div>
+                        <div class="icon">
+                            <!-- <i class="fa-solid fa-location-dot"></i> -->
+                            <img class="locationPin" src="assets/icons/geo-alt.svg" alt="" srcset="">
+                        </div>
                         <div class="mainText">
                             <span>Sindh, Karachi - Gulshan-e-Iqbal, Block 15</span>
                         </div>
                     </div>
-                    <div><a href="#" style="font-size: 16px; font-weight: 500; text-decoration: none;">Change</a></div>
+                    <div><a href="#" id="deliveryChange">Change</a></div>
                 </div>
                 <div class="list">
-                    <div style="display: flex; gap: 10px;">
+                    <div>
                         <div class="icon"><i class="fa-solid fa-box-archive"></i></div>
-                        <div class="mainText">
+                        <div class="mainText mainTextOptions">
                             <span>Standard Delivery</span>
                             <span>Guaranteed by 11-13 Mar</span>
                         </div>
@@ -470,9 +403,9 @@
                     <div>Rs. 130</div>
                 </div>
                 <div class="list">
-                    <div style="display: flex; gap: 10px;">
+                    <div>
                         <div class="icon"><i class="fa-solid fa-van-shuttle"></i></div>
-                        <div class="mainText">
+                        <div class="mainText mainTextOptions">
                             <span>Standard Collection Point</span>
                             <span>Guaranteed by 11-13 Mar</span>
                         </div>
@@ -480,107 +413,110 @@
                     <div>Rs. 30</div>
                 </div>
                 <div class="list">
-                    <div style="display: flex; gap: 10px;">
+                    <div>
                         <div class="icon"><i class="fa-solid fa-money-bill"></i></div>
-                        <div class="mainText">
+                        <div class="mainText mainTextOptions">
                             <span>Cash on Delivery Available</span>
 
                         </div>
                     </div>
 
                 </div>
-                <hr>
+                <hr class="deliverySectionDivider">
                 <div class="retAndWarr">
                     <span>Return & Warranty </span>
-                    <span class="icon"><i class="fa-solid fa-circle-info"></i></span>
+                    <span class="icon">
+                        <!-- <i class="fa-solid fa-circle-info"></i> -->
+                        <img class="infoIcon" src="assets/icons/info-circle.svg" alt="">
+                    </span>
                 </div>
 
-                <div class="list" style="display: flex; gap: 10px; justify-content: left;">
-                    <div><img src="assets/changeMind.png" alt="" style="width: 24px; height: 24px;"></div>
-                    <div class="mainText">
-                        <span>Change of Mind</span>
-                    </div>
+                <div class="list returnOptions">
+                    <img src="assets/icons/changeMind.png" alt="">
+                    <span class="mainText mainTextOptions returnWarranty">Change of Mind</span>
+
                 </div>
-                <div class="list" style="display: flex; gap: 10px; justify-content: left;">
-                    <div class="icon" style="width: 24px; height: 24px; text-align: center;"><i
-                            class="fa-solid fa-recycle"></i></div>
-                    <div class="mainText">
-                        <span>14 days easy return</span>
-                    </div>
+                <div class="list returnOptions">
+                    <div class="icon"><i class="fa-solid fa-recycle"></i></div>
+
+                    <span class="mainText mainTextOptions returnWarranty">14 days easy return</span>
+
                 </div>
 
-                <div class="list" style="display: flex; gap: 10px;  justify-content: left;">
-                    <div class="icon"><i class="fa-solid fa-shield"></i></div>
-                    <div class="mainText">
-                        <span>Warranty not available</span>
+                <div class="list returnOptions">
+                    <div class="icon" id="shieldSlash">
+                        <!-- <i class="fa-solid fa-shield"></i> -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-shield-slash" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1.093 3.093c-.465 4.275.885 7.46 2.513 9.589a11.8 11.8 0 0 0 2.517 2.453c.386.273.744.482 1.048.625.28.132.581.24.829.24s.548-.108.829-.24a7 7 0 0 0 1.048-.625 11.3 11.3 0 0 0 1.733-1.525l-.745-.745a10.3 10.3 0 0 1-1.578 1.392c-.346.244-.652.42-.893.533q-.18.085-.293.118a1 1 0 0 1-.101.025 1 1 0 0 1-.1-.025 2 2 0 0 1-.294-.118 6 6 0 0 1-.893-.533 10.7 10.7 0 0 1-2.287-2.233C3.053 10.228 1.879 7.594 2.06 4.06zM3.98 1.98l-.852-.852A59 59 0 0 1 5.072.559C6.157.266 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.483 3.626-.332 6.491-1.551 8.616l-.77-.77c1.042-1.915 1.72-4.469 1.29-7.702a.48.48 0 0 0-.33-.39c-.65-.213-1.75-.56-2.836-.855C9.552 1.29 8.531 1.067 8 1.067c-.53 0-1.552.223-2.662.524a50 50 0 0 0-1.357.39zm9.666 12.374-13-13 .708-.708 13 13z" />
+                        </svg>
                     </div>
+
+                    <span class="mainText mainTextOptions returnWarranty">Warranty not available</span>
+
                 </div>
-                <hr>
-                <div style="display: flex; gap: 10px;">
-                    <div style="display: flex; flex-direction: column; gap: 2px;">
-                        <img src="assets/qr.png" alt="" style="width: 111px; height: 111px;">
-                        <span
-                            style="font-size: 12px; display: flex; justify-content: space-between; align-items: center; gap: 2px;"><i
-                                class="fa-solid fa-mobile"></i> Scan with mobile</span>
+                <hr class="deliverySectionDivider">
+                <div class="qr-section">
+                    <div class="qrMain">
+                        <img src="assets/icons/qr.png" alt="qr">
+                        <span> <img src="assets/icons/iphone.png" alt="" id="phoneIcon"> Scan with mobile</span>
                     </div>
-                    <div
-                        style="background-color: white; padding: 10px 16px; box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; height: fit-content;">
-                        <img src="assets/darazIcon.png" alt="" srcset="" style="width: 43px; height: 43px;">
-                        <p style="color: #9e9e9e; font-size: 12px; margin-top: 4px;">
+                    <div class="downloadGuide">
+                        <img src="assets/icons/darazIcon.png" alt="" srcset="">
+                        <p>
                             Download app to enjoy exclusive discounts!
                         </p>
                     </div>
                 </div>
+                <div class="merchantSection">
+                    <div class="merchantdetail">
+                        <div>
+                            <div class="merchantSellHeader">Sold by</div>
+                            <div class="merchantNameSection">
+                                <a href="#">Rich
+                                    Man</a>
+                                <!-- <img src="assets/flagShipStore.png" alt="" srcset=""> -->
+                            </div>
+                        </div>
+                        <div class="chatmerchant">
+                            <div class="icon-container"></div>
+                            <span><a href="#">Chat
+                                    Now</a></span>
+                        </div>
+                    </div>
+                    <div class="merchantPerf">
+                        <div class="merchantCol">
+                            <div>
+                                Positive Seller Ratings
+                            </div>
+                            <div>
+                                82%
+                            </div>
+                        </div>
+                        <div class="merchantCol">
+                            <div>
+                                Ship on Time
+                            </div>
+                            <div>
+                                96%
+                            </div>
+                        </div>
+                        <div class="merchantCol">
+                            <div>
+                                Chat Response Rate
+                            </div>
+                            <div id="chatResponse">
+                                Not enough data
+                            </div>
+                        </div>
+                    </div>
+                    <div class="merchantStore">
+                        <a href="#">GO TO STORE</a>
+                    </div>
+                </div>
+            </div>
 
-                <div class="merchantdetail">
-                    <div>
-                        <div style="color: rgb(117, 117, 117); font-size: 12px; text-align: left;">Sold by</div>
-                        <div style="display: flex; flex-direction: column;">
-                            <a href="#" style="color: rgb(33, 33, 33); text-decoration: none; font-size: 16px;">Rich
-                                Man</a>
-                            <img src="assets/flagShipStore.png" alt="" srcset="" style="width: 112px; height: 16px;">
-                        </div>
-                    </div>
-                    <div>
-                        <div class="icon-container"></div>
-                        <span style="color: rgb(19, 108, 255); text-decoration: none;"><a href="#"
-                                style="text-decoration: none; color: inherit; font-size: 14px; font-weight: 600;">Chat
-                                Now</a></span>
-                    </div>
-                </div>
-                <div class="merchantPerf">
-                    <div class="merchantCol" style="gap: 0 !important; align-items: start !important;">
-                        <div>
-                            Positive Seller Ratings
-                        </div>
-                        <div>
-                            82%
-                        </div>
-                    </div>
-                    <div class="merchantCol">
-                        <div>
-                            Ship on Time
-                        </div>
-                        <div>
-                            96%
-                        </div>
-                    </div>
-                    <div class="merchantCol">
-                        <div>
-                            Chat Response Rate
-                        </div>
-                        <div style="color: #757575; font-size: 12px;">
-                            Not enough data
-                        </div>
-                    </div>
-                </div>
-                <div class="merchantStore">
-                    <a href="#"
-                        style="color: rgb(19, 108, 255); font-weight: 500; font-size: 14px; text-decoration: none; text-align: center;">GO
-                        TO STORE</a>
-                </div>
-            </div>
-            </div>
 
         </section>
         <section class="productTextDetail">
@@ -606,7 +542,7 @@
                 <li>Double-sided adhesive tape included for installation</li>
             </ul>
             <!-- <img src="assets/hookImgCar.webp" alt="" srcset="" id="hookImg"> -->
-            <a href="#" style="margin-bottom:20px ;">View More</a>
+
 
         </section>
         <section class="productRatingSection">
@@ -639,7 +575,7 @@
                                 class="fa-solid fa-star"></i></div>
                         <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25"
                             aria-valuemin="0" aria-valuemax="100">
-                            <div class="progress-bar" style="width: 25%"></div>
+                            <div class="progress-bar" id="star5Progress"></div>
                         </div>
                         <div>
                             34
@@ -648,12 +584,12 @@
                     <div class="starRowsRating">
                         <div>
                             <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"
-                                style="color: rgb(222, 221, 221)"></i>
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i>
                         </div>
                         <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25"
                             aria-valuemin="0" aria-valuemax="100">
-                            <div class="progress-bar" style="width: 4%"></div>
+                            <div class="progress-bar" id="star5Progress"></div>
                         </div>
                         <div>
                             4
@@ -661,40 +597,36 @@
                     </div>
                     <div class="starRowsRating">
                         <div><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"
-                                style="color: rgb(222, 221, 221)"></i><i class="fa-solid fa-star"
-                                style="color: rgb(222, 221, 221)"></i>
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star grayStar"></i><i
+                                class="fa-solid fa-star grayStar"></i>
                         </div>
                         <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25"
                             aria-valuemin="0" aria-valuemax="100">
-                            <div class="progress-bar" style="width: 3%"></div>
+                            <div class="progress-bar" id="progressBar3"></div>
                         </div>
                         <div>
                             3
                         </div>
                     </div>
                     <div class="starRowsRating">
-                        <div><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"
-                                style="color: rgb(222, 221, 221)"></i><i class="fa-solid fa-star"
-                                style="color: rgb(222, 221, 221)"></i><i class="fa-solid fa-star"
-                                style="color: rgb(222, 221, 221)"></i></div>
+                        <div><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star grayStar"></i><i class="fa-solid fa-star grayStar"></i><i
+                                class="fa-solid fa-star grayStar"></i></div>
                         <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25"
                             aria-valuemin="0" aria-valuemax="100">
-                            <div class="progress-bar" style="width: 15%"></div>
+                            <div class="progress-bar" class="progressBar15"></div>
                         </div>
                         <div>
                             10
                         </div>
                     </div>
                     <div class="starRowsRating">
-                        <div><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"
-                                style="color: rgb(222, 221, 221)"></i><i class="fa-solid fa-star"
-                                style="color: rgb(222, 221, 221)"></i><i class="fa-solid fa-star"
-                                style="color: rgb(222, 221, 221)"></i><i class="fa-solid fa-star"
-                                style="color: rgb(222, 221, 221)"></i></div>
+                        <div><i class="fa-solid fa-star"></i><i class="fa-solid fa-star grayStar"></i><i
+                                class="fa-solid fa-star grayStar"></i><i class="fa-solid fa-star grayStar"></i><i
+                                class="fa-solid fa-star grayStar"></i></div>
                         <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25"
                             aria-valuemin="0" aria-valuemax="100">
-                            <div class="progress-bar" style="width: 0%"></div>
+                            <div class="progress-bar" class="progressBar0"></div>
                         </div>
                         <div>
                             0
@@ -708,18 +640,18 @@
 
 
         </section>
-        <section class="productsReviews" style="margin-top: 0;">
+        <section class="productsReviews">
             <div class="productReviewHeader">
-                <div style="padding-left: 24px;">
+                <div class="productReviewHeaderText">
                     Product Reviews
                 </div>
-                <div class="sortAndFilter" style="height: 100%;">
+                <div class="sortAndFilter">
                     <div class="sort-section">
-                        <span>
-                            <i class="fa-solid fa-arrow-up" style="position: relative; bottom: 2px;"></i><i
-                                class="fa-solid fa-arrow-down" style="position: relative; right: 2px;"></i>
+                        <span class="arrowBox">
+                            <!-- <i class="fa-solid fa-arrow-up"></i><i class="fa-solid fa-arrow-down"></i> -->
+                            <img src="assets/icons/sortArrow.png" alt="">
                         </span>
-                        <span style="margin-right: 6px;">
+                        <span class="title">
                             Sort:
                         </span>
                         <span>
@@ -727,10 +659,10 @@
                         </span>
                     </div>
                     <div class="filter-section">
-                        <span>
+                        <span class="filterBox">
                             <i class="fa-solid fa-filter"></i>
                         </span>
-                        <span style="margin-right: 6px;">
+                        <span class="title">
                             Filter:
                         </span>
                         <span>
@@ -739,98 +671,9 @@
                     </div>
                 </div>
             </div>
-            <div class="productReview">
-                <div class="eachReviewHead">
-                    <div>
-                        <div class="ratingStar">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                        </div>
-                        <div class="reviewerName">
-                            <span>muhammadhuzaifa716336</span>
-                            <span>
-                                <i class="fa-solid fa-shield"></i>
-                                <p style="margin: 0;">Verified Purchase</p>
-                            </span>
+            <div id="reviewsContainer"></div>
 
-                        </div>
-                    </div>
-                    <div class="reviewDate">
-                        07 Oct 2025
-                    </div>
-                </div>
-                <div class="reviewMaterial">
-                    <pre>Design:very good and stylish 10/10 
-Durability:10/10
-Speed:10/10 very good color interior light and sound
-                    </pre>
-                    <div class="reviewImgs">
-                        <img src="assets/reviewImage.jpg" alt="">
-                        <img src="assets/reviewImage.jpg" alt="" srcset="">
-                    </div>
-                    <div class="likesAndColor">
-                        <div>
-                            <span>Color Family:</span>
-                            <span>Green</span>
-                        </div>
-                        <div>
-                            <i class="fa-regular fa-thumbs-up"></i>
-                            <span class="likes">0</span>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            <hr>
-            <div class="productReview">
-                <div class="eachReviewHead">
-                    <div>
-                        <div class="ratingStar">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                        </div>
-                        <div class="reviewerName">
-                            <span>muhammadhuzaifa716336</span>
-                            <span>
-                                <i class="fa-solid fa-shield"></i>
-                                <p style="margin: 0;">Verified Purchase</p>
-                            </span>
-
-                        </div>
-                    </div>
-                    <div class="reviewDate">
-                        07 Oct 2025
-                    </div>
-                </div>
-                <div class="reviewMaterial">
-                    <pre>Design:very good and stylish 10/10 
-Durability:10/10
-Speed:10/10 very good color interior light and sound
-                    </pre>
-                    <div class="reviewImgs">
-                        <img src="assets/reviewImage.jpg" alt="">
-                        <img src="assets/reviewImage.jpg" alt="" srcset="">
-                    </div>
-                    <div class="likesAndColor">
-                        <div>
-                            <span>Color Family:</span>
-                            <span>Green</span>
-                        </div>
-                        <div>
-                            <i class="fa-regular fa-thumbs-up"></i>
-                            <span class="likes">0</span>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
+            <div id="pagination"></div>
 
         </section>
     </main>
@@ -840,9 +683,9 @@ Speed:10/10 very good color interior light and sound
         </h6>
         <div class="alsoLikeCategory">
             <div class="card">
-                <a href="" style="color: inherit; text-decoration: none;">
+                <a href="" class="linkCard">
                     <div class="img">
-                        <img src="assets/shopImg3.avif" alt="" id="fsProductImgLink">
+                        <img src="assets/products/shopImg3.avif" alt="" id="fsProductImgLink">
                     </div>
                     <div class="cardDetail">
                         <p id="fsProductTitle">Laptop bag, Backpacks Travel bag</p>
@@ -863,9 +706,9 @@ Speed:10/10 very good color interior light and sound
                 </a>
             </div>
             <div class="card">
-                <a href="" style="color: inherit; text-decoration: none;">
+                <a href="" class="linkCard">
                     <div class="img">
-                        <img src="assets/shopImg1.avif" alt="" id="fsProductImgLink">
+                        <img src="assets/products/shopImg1.avif" alt="" id="fsProductImgLink">
                     </div>
                     <div class="cardDetail">
                         <p id="fsProductTitle">pack of 3-Improved Quality LARGE Storage Bags FOR SHIRTS CLOTHS
@@ -888,8 +731,9 @@ Speed:10/10 very good color interior light and sound
 
         </div>
     </div>
-    <section class="footer-first" >
-        <div class="foorter1" >
+    <div id="footer1Wrapper">
+        <section class="footer-first flex-wrap flex-lg-nowrap">
+
             <!-- First Footer Customer Section -->
             <div class="customerCare">
                 <h3 class="footer-first-title">
@@ -928,148 +772,108 @@ Speed:10/10 very good color interior light and sound
                     <li><a href="#">Join Daraz Affiliate Program</a></li>
                 </ul>
             </div>
+
             <div class="footerLogoLink">
-                <div style="flex: 1 1 300px;">
+                <div class="happyshoppingsection">
                     <div class="darazImgFooter">
-                        <img src="assets/darazFooterLogo.png" alt="">
+                        <img src="assets/icons/darazFooterLogo.png" alt="">
                     </div>
                     <div class="downloadCom">
-                        <span style="color: #f36f36; font-size: 16px;font-weight: 400;">Happy Shopping</span>
-                        <span style="color: #0f136d; font-size: 14px; font-weight: 400; padding-top: 2px;">Download
+                        <span id="happyShoppingHeading">Happy Shopping</span>
+                        <span id="happyShoppingDownload">Download
                             App</span>
                     </div>
                 </div>
-                <div class="container" style="padding: 0; flex: 1 1 300px;">
+                <div class="container shoppingAppLinks">
                     <div class="row row-cols-2">
-                        <div class="col" style="padding: 0; width: 130px;">
+                        <div class="col downloadApp">
 
-                            <span><img src="assets/appStoreFooterLogo.png" alt=""></span>
-
-                        </div>
-                        <div class="col" style="padding: 0; width: 130px;">
-
-                            <span><img src="assets/googleFooterLogo.png" alt=""></span>
+                            <span><img src="assets/icons/appStoreFooterLogo.png" alt=""></span>
 
                         </div>
-                        <div class="col" style="padding: 0; width: 130px;">
+                        <div class="col downloadApp">
 
-                            <span><img src="assets/appGalleryFooter.png" alt=""></span>
+                            <span><img src="assets/icons/googleFooterLogo.png" alt=""></span>
 
+                        </div>
+                        <div class="col downloadApp">
+                            <span><img src="assets/icons/appGalleryFooter.png" alt=""></span>
 
                         </div>
 
                     </div>
 
                 </div>
+            </div>
+
+        </section>
+    </div>
+    <section class="footer-second d-flex flex-column flex-md-row">
+        <div class="footer2 d-flex flex-column flex-lg-row">
+            <div class="payment-method">
+                <h3 class="footer2PaymentHeader">
+                    Payment Method</h3>
+                <div class="payment-methods-type">
+                    <span><img src="assets/icons/paymentVisa.png" alt=""></span>
+                    <span><img src="assets/icons/paymentCash.png" alt=""></span>
+                    <span><img src="assets/icons/paymentMasterCard.png" alt=""></span>
+                    <span><img src="assets/icons/paymentEasypaisa.png" alt=""></span>
+                    <span><img src="assets/icons/paymentDaraz.png" alt=""></span>
+                    <span><img src="assets/icons/paymentJazzCash.png" alt=""></span>
+                    <span><img src="assets/icons/paymentUnion.png" alt=""></span>
+                    <span><img src="assets/icons/paymentHBL.png" alt=""></span>
+                    <span><img src="assets/icons/paymentEasyInstallment.png" alt=""></span>
+                </div>
+            </div>
+            <div class="verify-method">
+                <h3 class="footer2PaymentHeader">
+                    Verified by</h3>
+                <div class="verify-methods-type">
+                    <span><img src="assets/icons/pciDSS.png" alt=""></span>
+
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+    <!-- 2 columns daraz bio -->
+
+    <section class="forth-footer d-flex flex-column flex-md-row">
+        <div class="footer4">
+            <div class="footer4inner d-flex flex-column flex-lg-row">
+                <div class="daraz-international-store">
+                    <h3 class="footer-title">
+                        Daraz International
+                    </h3>
+                    <div class="darazStores">
+                        <a href="#"><img src="assets/icons/pakFlag.png" alt=""><span>Pakistan</span></a>
+                        <a href="#"><img src="assets/icons/banFlag.png" alt=""><span>Bangladesh</span></a>
+                        <a href="#"><img src="assets/icons/sriFlag.png" alt=""><span>Srilanka</span></a>
+                        <a href="#"><img src="assets/icons/myanFlag.png" alt=""><span>Myanmar</span></a>
+                        <a href="#"><img src="assets/icons/nepFlag.png" alt=""><span>Nepal</span></a>
+                    </div>
+
+
+                </div>
+                <div>
+                    <h3 class="footer-title">
+                        Follow Us
+                    </h3>
+                    <div class="darazFollowLinks">
+                        <a href="#"><img src="assets/icons/facebookIcon.png" alt=""></a>
+                        <a href="#"><img src="assets/icons/vicon.png" alt=""></a>
+                        <a href="#"><img src="assets/icons/instaIcon.png" alt=""></a>
+                        <a href="#"><img src="assets/icons/youtubeIcon.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <div class="daraz-copyright d-none d-lg-block">
+                © Daraz 2026
             </div>
         </div>
     </section>
-    <section class="footer-second">
-            <div class="footer2">
-                <div class="payment-method">
-                    <h3
-                        style="color: #183544; font-size: 16px; font-weight: 400; line-height: 2.2em; margin-bottom: 15px;">
-                        Payment Method</h3>
-                    <div class="payment-methods-type">
-                        <span><img src="assets/paymentCash.png" alt=""></span>
-                        <span><img src="assets/paymentVisa.png" alt=""></span>
-                        <span><img src="assets/paymentMasterCard.png" alt=""></span>
-                        <span><img src="assets/paymentEasypaisa.png" alt=""></span>
-                        <span><img src="assets/paymentDaraz.png" alt=""></span>
-                        <span><img src="assets/paymentJazzCash.png" alt=""></span>
-                        <span><img src="assets/paymentUnion.png" alt=""></span>
-                        <span><img src="assets/paymentHBL.png" alt=""></span>
-                        <span><img src="assets/paymentEasyInstallment.png" alt=""></span>
-                    </div>
-                </div>
-                <div class="verify-method">
-                    <h3
-                        style="color: #183544; font-size: 16px; font-weight: 400; line-height: 2.2em; margin-bottom: 15px;">
-                        Verified by</h3>
-                    <div class="verify-methods-type">
-                        <span><img src="assets/pciDSS.png" alt=""></span>
 
-                    </div>
-                </div>
-            </div>
-
-
-        </section>
-    <!-- 2 columns daraz bio -->
-
-    <section class="forth-footer">
-            <div class="footer4">
-                <div style="display: flex; gap: 70px;">
-                    <div>
-                        <h3 class="footer-title">
-                            Daraz International
-                        </h3>
-                        <div class="darazStores">
-                            <a href="#"><img src="assets/pakFlag.png" alt=""><span>Pakistan</span></a>
-                            <a href="#"><img src="assets/banFlag.png" alt=""><span>Bangladesh</span></a>
-                            <a href="#"><img src="assets/sriFlag.png" alt=""><span>Srilanka</span></a>
-                            <a href="#"><img src="assets/myanFlag.png" alt=""><span>Myanmar</span></a>
-                            <a href="#"><img src="assets/nepFlag.png" alt=""><span>Nepal</span></a>
-                        </div>
-
-
-                    </div>
-                    <div>
-                        <h3 class="footer-title">
-                            Follow Us
-                        </h3>
-                        <div class="darazFollowLinks">
-                            <a href="#"><img src="assets/facebookIcon.png" alt=""></a>
-                            <a href="#"><img src="assets/vicon.png" alt=""></a>
-                            <a href="#"><img src="assets/instaIcon.png" alt=""></a>
-                            <a href="#"><img src="assets/youtubeIcon.png" alt=""></a>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    © Daraz 2026
-                </div>
-            </div>
-        </section>
-        <div class="messageNow">
-        <i class="fa-solid fa-comment"></i>
-        <span>Messages</span>
-    </div>
-    <div class="message-expand openBox" id="messageBoxToggle">
-        <div class="messages">
-            <div>
-                <i class="fa-solid fa-comment"></i>
-                <span style="margin-left: 6px;">Messages</span>
-            </div>
-            <div>
-
-            </div>
-        </div>
-        <div class="messagePromotion">
-            <div>
-                <span>Daraz</span>
-                <i class="fa-solid fa-xmark" style="position: absolute; right: 20px; font-size: 25px; cursor: pointer;"
-                    id="closeMessage"></i>
-            </div>
-            <div>
-                <i class="fa-solid fa-envelope"></i>
-                <a href="#">Use the App for exclusive offers</a>
-                <p>Once you start a new conversation, you’ll see it listed here.</p>
-                <div style="color: rgb(76, 130, 150); display: flex; align-items: center;">
-                    <button type="button" class="btn loginButton" data-bs-toggle="modal" data-bs-target="#loginModel"
-                        style="padding: 6px 0; height: fit-content; display: flex; align-items: start; font-size: 16px !important">
-                        Login
-                    </button>
-                    /
-                    <button type="button" class="btn signUpButtonNav" data-bs-toggle="modal"
-                        style="padding: 6px 0; height: fit-content; font-size: 16px !important"
-                        data-bs-target="#signupModel">
-                        SignUp
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
 
 
     <script>
@@ -1087,8 +891,28 @@ Speed:10/10 very good color interior light and sound
             });
         }
     </script>
-    <script src="scripts/scripts.js"></script>
-    <script src="scripts/productPageScript.js"></script>
+    <script src="components/loader.js"></script>
+    <script>
+        Promise.all([
+            loadComponent('#login-modal-container', 'components/loginModal.html'),
+            loadComponent('#signup-modal-container', 'components/signupModal.html')
+        ]).then(() => {
+            const scripts = [
+                'scripts/loginSignup.js',
+                'scripts/scripts.js',
+                'scripts/flash.js',
+                'scripts/category.js',
+                'scripts/messageDaraz.js',
+                'scripts/productPageScript.js'
+            ];
+
+            scripts.forEach(src => {
+                const tag = document.createElement('script');
+                tag.src = src;
+                document.body.appendChild(tag);
+            });
+        });
+    </script>
 </body>
 
 
