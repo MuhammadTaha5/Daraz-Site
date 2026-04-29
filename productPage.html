@@ -107,8 +107,94 @@
             </div>
         </div>
     </div>
+    <div class="offcanvas offcanvas-start d-lg-none" tabindex="-1" id="appSideMenu">
+
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title"></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+
+        <div class="offcanvas-body">
+
+            <!-- Save App -->
+            <div class="menu-section">
+                <button class="btn w-100" data-bs-toggle="popover" data-bs-html="true" id="appSaveBtn"
+                    data-bs-content="" data-bs-custom-class="appSavePopover">
+                    Save More ON APP
+                </button>
+
+                <div id="appSavePopoverContent" class="d-none">
+                    <div>Download the App</div>
+                    <img src="assets/icons/qr.png" width="120">
+                    <div>
+                        <img src="assets/icons/appStoreFooterLogo.png" width="100">
+                        <img src="assets/icons/googleFooterLogo.png" width="100">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sell -->
+            <div class="menu-section">
+                <a href="#" class="btn  w-100">SELL ON DARAZ</a>
+            </div>
+
+            <!-- Help -->
+            <div class="menu-section">
+                <button class="btn w-100" data-bs-toggle="popover" data-bs-html="true" id="appHelpBtn"
+                    data-bs-custom-class="appHelpPopover">
+                    Help & Support
+                </button>
+
+                <div id="appHelpPopoverContent" class="d-none">
+                    <div>Help Center</div>
+                    <div>Contact Customer Care</div>
+                    <div>Order</div>
+                    <div>Shipping and Delivery</div>
+                    <div>Payment</div>
+                    <div>Return & Refund</div>
+                </div>
+            </div>
+
+            <!-- Login / Signup -->
+            <div class="menu-section">
+                <button class="btn w-100" data-bs-toggle="modal" data-bs-target="#loginModel">
+                    Login
+                </button>
+            </div>
+            <div class="menu-section">
+                <button class="btn w-100" data-bs-toggle="modal" data-bs-target="#signupModel">
+                    Sign Up
+                </button>
+            </div>
+
+            <!-- Language -->
+            <div class="menu-section">
+                <button class="btn w-100" data-bs-toggle="popover" data-bs-html="true" id="appLangBtn"
+                    data-bs-custom-class="appLangPopover">
+                    Change Language
+                </button>
+
+                <div id="appLangPopoverContent" class="d-none">
+                    <div>
+                        <img src="assets/icons/pakFlag.png" width="20"> Urdu
+                    </div>
+                    <div>
+                        <img src="assets/icons/englandFlag.png" width="20"> English
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
     <header id="mainHeader" class="productPageHeader sticky-top">
         <nav>
+            <button class="btn d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#appSideMenu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-list"
+                    viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+                </svg>
+            </button>
             <div class="logoSide d-flex justify-content-between justify-content-lg-start">
                 <div class="logoImg">
                     <a href="index.html">
@@ -118,7 +204,7 @@
                 <div id="logoSearchSection" class="ms-0 ms-lg-4 me-2 me-lg-0">
                     <div class="search">
                         <div class="searchInput">
-                            <input type="text" name="" id="" placeholder="Search in Daraz"  class="d-none d-md-block">
+                            <input type="text" name="" id="" placeholder="Search in Daraz" class="d-none d-md-block">
                             <span><i class="fa-solid fa-magnifying-glass"></i></span>
                         </div>
 

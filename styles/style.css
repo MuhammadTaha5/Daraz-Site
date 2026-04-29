@@ -953,7 +953,7 @@ a#loadProductsButton {
 .footer-first ul{
     margin-bottom: 0 !important;
 }
-.customerCare {
+.customerCare, .darazCare {
     color: rgb(15, 19, 109);
     font-family: "euclid-Circular-A";
 
@@ -2032,7 +2032,8 @@ form#loginwithPhone {
 
 .footer-first,
 .footerThird {
-    padding: 20px 0 25px 0;
+
+    padding: 20px 0px 25px clamp(0px, calc(8px - 1vw), 8px);
     max-width: 1180px;
     margin: auto;
     width: 100% !important;
@@ -2047,17 +2048,17 @@ form#loginwithPhone {
 .forth-footer {
     width: 100%;
     margin: auto;
-    padding: 20px 0 25px 0;
+    
     background-color: white;
 }
 
 .footer-second,
 .forth-footer {
-    padding: 20px 0 25px 42px;
+    padding: 20px 0 25px clamp(8px, 2vw, 42px);
 }
 
 .footer-second {
-    padding: 20px 0 25px 0px;
+    padding: 20px clamp(8px, 2vw, 0px) 25px clamp(8px, 2vw, 0px);
 }
 
 .forth-footer {
@@ -2069,9 +2070,6 @@ form#loginwithPhone {
 .forth-footer .footer4 {
     max-width: 1188px;
     width: 100%;
-
-
-
     margin: auto;
     display: flex;
 
@@ -2165,7 +2163,7 @@ form#loginwithPhone {
 
 .customerCare li,
 .darazCare li {
-    width: 297px;
+    width: min(297px, 50vw) !important;
 }
 
 .cart-icon img {
@@ -2205,29 +2203,6 @@ body {
         width: 100% !important;
     }
 
-    .footer-first,
-    .footer-second,
-    .footerThird,
-    .forth-footer {
-        padding-left: 10px;
-    }
-
-    /* .footer4inner {
-        flex-direction: column;
-    } */
-
-    .customerCare li,
-    .darazCare li {
-        width: max-content;
-    }
-
-    /* .carousel-section {
-        height: max-content;
-    } */
-
-    /* p.fs-banner {
-        margin-left: 10px;
-    } */
 }
 #footer1Wrapper{
     width: 100%;
