@@ -451,9 +451,9 @@ h1#productName {
   width: 20px;
   height: 20px;
   background-color: rgb(19, 108, 255); /* The color you want the icon to be */
-  mask: url("../assets/chat.png") center/contain;
+  mask: url("../assets/icons/chat.png") center/contain;
   /* Vendor prefixes might be needed for broader support */
-  -webkit-mask: url("../assets/chat.png") center/contain;
+  -webkit-mask: url("../assets/icons/chat.png") center/contain;
 }
 .merchantdetail{
     display: flex;
