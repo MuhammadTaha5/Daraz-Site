@@ -93,8 +93,11 @@ let minus = document.getElementById("minus")
 let add = document.getElementById("add")
 
 add.addEventListener("click", () => {
-  valueQuantity = parseInt(productQuantity.value) + 1
+  if(productQuantity.value < 10){
+    valueQuantity = parseInt(productQuantity.value) + 1
   productQuantity.value = valueQuantity;
+  }
+  
 })
 
 minus.addEventListener("click", () => {
@@ -254,7 +257,7 @@ function renderReviews() {
               <span>${review.username}</span>
               ${review.verified ? `
                 <span>
-                  <i class="fa-solid fa-shield"></i>
+                  <img id='verifiedUser' src="assets/icons/verifiedUser.png" alt="">
                   <p>Verified Purchase</p>
                 </span>` : ''}
             </div>

@@ -965,7 +965,12 @@ a#loadProductsButton {
     line-height: 35px;
     font-family: "euclid-Circular-A";
     color: rgb(15, 19, 109);
+
 }
+.customerCare .footer-first-title, .darazCare .footer-first-title{
+    margin-bottom: 0px;
+}
+
 
 .customerCare ul,
 .darazCare ul {
@@ -1408,12 +1413,12 @@ label[for="privacyPolicyCheck"] a{
 
 }
 
-#loginModel .modal-dialog,
+/* #loginModel .modal-dialog,
 #signupModel .modal-dialog {
     margin-top: 60px;
-    /* adjust as needed */
     
-}
+    
+} */
 
 .modal-header {
     border-bottom-width: 0 !important;
@@ -1802,7 +1807,6 @@ form#loginwithPhone {
     height: 40px;
     width: 40px;
     justify-content: center;
-    padding-left: 10px;
 
 
 }
@@ -1849,7 +1853,7 @@ form#loginwithPhone {
 
 /* Initial state: start from bottom */
 .slide-up-modal .modal-dialog {
-    transform: translateY(10%);
+    transform: translateY(5%);
     transition: transform 0.9s ease-out;
 }
 

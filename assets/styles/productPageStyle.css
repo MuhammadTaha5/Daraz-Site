@@ -43,7 +43,7 @@ main{
 }
 .categoriesOptions{
     padding: 0%;
-    border: 1px solid #757575;
+    border: 0.3px solid #9e9e9e;
     display: none;
     flex-direction: column;
     position: absolute;
@@ -428,9 +428,7 @@ h1#productName {
     height: 22px !important;
     fill: #757575;
 }
-#shieldSlash{
-    padding-left: 4px;
-}
+
 .arrow{
     width: 28px;
 }
@@ -454,7 +452,7 @@ h1#productName {
   mask: url("../assets/icons/chat.png") center/contain;
   /* Vendor prefixes might be needed for broader support */
   -webkit-mask: url("../assets/icons/chat.png") center/contain;
-}
+} 
 .merchantdetail{
     display: flex;
     justify-content: space-between;
@@ -623,6 +621,9 @@ h1#productName {
     position: relative;
     top: -4px;
 }
+.chatmerchant .iconContainer{
+    justify-content: center !important;
+}
 .chatmerchant span{
     color: rgb(19, 108, 255); text-decoration: none;
 }
@@ -692,6 +693,11 @@ h1#productName {
 .ratingLeft .ratingStar i{
     color: rgb(255, 200, 60);
     font-size: 32px;
+}
+.ratingRight{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
 }
 .ratingRight i{
     color: rgb(255, 200, 60);
@@ -1132,6 +1138,7 @@ h1#productName {
 .reviewDivider{
     color: #9e9e9e;
     margin: 2px 0;
+    height: 0.7px !important;
 }
 #pagination {
     display: flex;
@@ -1169,4 +1176,19 @@ h1#productName {
     position: relative;
     left: 4px !important;
 
+}
+#deliveryCharges{
+    font-weight: 600;
+}
+.inactiveStar{
+    color: rgb(230, 232, 234) !important;
+}
+.reviewStarBox{
+    width: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+#verifiedUser{
+    width: 15px;
+    height: 16px;
 }

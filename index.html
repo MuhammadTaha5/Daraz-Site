@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Online Shopping in Pakistan</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="assets/styles/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -33,7 +33,7 @@
 
 <body>
     <div id="topHeader-container"></div>
-    
+
     <div class="offcanvas offcanvas-start d-lg-none" tabindex="-1" id="appSideMenu">
 
         <div class="offcanvas-header">
@@ -346,7 +346,7 @@
             <p class="fs-banner">
                 Just For You
             </p>
-            <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-6 justify-content-center g-3"
+            <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-6 justify-content-evenly g-3"
                 id="storeProducts">
 
 
@@ -363,7 +363,7 @@
         </div>
         <div id="darazCareFooter-container"></div>
         <div id="paymentVerifyFooter-container"></div>
-        
+
         <!-- 2 columns daraz bio -->
         <div id="darazVarietiesFooter-container"></div>
         <div id="darazStoresFooter-container"></div>
@@ -372,18 +372,33 @@
         <div id="headerOptions">
             <a href="#headerOptions" class="navigator-expand"><i class="fa-solid fa-angle-down"></i></a>
         </div>
-        <div id="flashSale"><a href="#flashSale" class="navigator-expand"><i class="fa-solid fa-fire"></i><span
-                    class="exp">Flash
+        <div id="flashSale"><a href="#flashSale" class="navigator-expand">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-fire"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M8 16c3.314 0 6-2 6-5.5 0-1.5-.5-4-2.5-6 .25 1.5-1.25 2-1.25 2C11 4 9 .5 6 0c.357 2 .5 4-2 6-1.25 1-2 2.729-2 4.5C2 14 4.686 16 8 16m0-1c-1.657 0-3-1-3-2.75 0-.75.25-2 1.25-3C6.125 10 7 10.5 7 10.5c-.375-1.25.5-3.25 2-3.5-.179 1-.25 2 1 3 .625.5 1 1.364 1 2.25C11 14 9.657 15 8 15" />
+                </svg>
+                <span class="exp">Flash
                     Sale</span></a> </div>
-        <div id="category"><a href="#categories" class="navigator-expand"> <i
-                    class="fa-solid fa-grip-vertical"></i><span class="exp">Categories </span></a></div>
-        <div id="justForYou"><a href="#just-for-you" class="navigator-expand"><i class="fa-solid fa-user"></i><span
-                    class="exp"> Just
+        <div id="category"><a href="#categories" class="navigator-expand">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-grid-3x3-gap-fill" viewBox="0 0 16 16">
+                    <path
+                        d="M1 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1zM1 7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1zM1 12a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1z" />
+                </svg>
+                <span class="exp">Categories </span></a></div>
+        <div id="justForYou"><a href="#just-for-you" class="navigator-expand">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z" />
+                </svg>
+                <span class="exp"> Just
                     For You</span></a></div>
 
     </div>
 
-    <div class="messageNow">
+    <div class="messageNow d-none d-md-flex">
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-right-fill"
             viewBox="0 0 16 16">
             <path
@@ -432,34 +447,6 @@
 <!-- REMOVE all your current script tags and replace with this -->
 
 <script src="components/loader.js"></script>
-<script>
-  Promise.all([
-    loadComponent('#login-modal-container', 'components/loginModal.html'),
-    loadComponent('#signup-modal-container', 'components/signupModal.html'),
-    loadComponent('#darazCareFooter-container', 'components/customerDarazCareFooter.html'),
-    loadComponent('#paymentVerifyFooter-container', 'components/paymentVerifyFooter.html'),
-    loadComponent('#darazVarietiesFooter-container', 'components/darazVarietiesFooter.html'),
-    loadComponent('#darazStoresFooter-container', 'components/darazStoresFooter.html'),
-    loadComponent('#topHeader-container', 'components/topHeaderComponent.html')
-    
-    
-
-    
-  ]).then(() => {
-    const scripts = [
-      'scripts/loginSignup.js',
-      'scripts/scripts.js',
-      'scripts/flash.js',
-      'scripts/category.js',
-      'scripts/messageDaraz.js'
-    ];
-
-    scripts.forEach(src => {
-      const tag = document.createElement('script');
-      tag.src = src;
-      document.body.appendChild(tag);
-    });
-  });
-</script>
+<script src="assets/scripts/scripts.js"></script>
 
 </html>
