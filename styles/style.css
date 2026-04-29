@@ -45,8 +45,8 @@ header#mainHeader {
     top: 0;
     z-index: 1050;
     height: max-content;
-    padding-top: 15px;
-    padding-bottom: 14px;
+    padding-top: 14px;
+    padding-bottom: 12px;
     align-items: center;
     z-index: 100;
     width: 100%;
@@ -246,6 +246,7 @@ button.languageChange {
     width: 100%;
     position: sticky;
     top: 0;
+    flex-wrap: wrap;
 }
 
 .logoSide .logoImg {
@@ -265,6 +266,10 @@ button.languageChange {
 #logoSearchSection{
     margin-left: 28px;
     padding-left: 4px;
+    position: relative;
+    top: -2px;
+    left: -2px;
+    
 }
 .search {
     height: 45px;
@@ -276,8 +281,7 @@ button.languageChange {
     width: 100%;
     justify-content: center;
     align-items: center;
-    margin-left: 2px;
-    margin-top: -2px;
+    position: relative;
 
 }
 
@@ -346,9 +350,10 @@ button.languageChange {
     font-size: 24px;
     color: white;
     position: relative;
-    top: 5px;
-    left: 5px;
+    top: 3px;
+    left: 3px;
     margin: 0 0 0 26px;
+    margin-right: 4px;
     
 }
 
@@ -2152,7 +2157,8 @@ form#loginwithPhone {
 }
 
 .carousel-item img {
-    height: 344px;
+    max-height: 344px;
+    height: 100%;
     /* same as your container */
     object-fit: cover;
 }
@@ -2194,9 +2200,6 @@ body {
         height: 135px;
     }
 
-    .carousel-item img {
-        height: 100% !important;
-    }
 
     .carouselExampleIndicators {
         width: 100% !important;
@@ -2209,22 +2212,22 @@ body {
         padding-left: 10px;
     }
 
-    .footer4inner {
+    /* .footer4inner {
         flex-direction: column;
-    }
+    } */
 
     .customerCare li,
     .darazCare li {
         width: max-content;
     }
 
-    .carousel-section {
+    /* .carousel-section {
         height: max-content;
-    }
+    } */
 
-    p.fs-banner {
+    /* p.fs-banner {
         margin-left: 10px;
-    }
+    } */
 }
 #footer1Wrapper{
     width: 100%;
