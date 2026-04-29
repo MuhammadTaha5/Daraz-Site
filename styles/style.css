@@ -2190,20 +2190,6 @@ body {
     font-size: 14px;
 }
 
-
-/* Medium devices (768px and up) */
-@media (max-width: 768px) {
-
-    .carousel {
-        height: 135px;
-    }
-
-
-    .carouselExampleIndicators {
-        width: 100% !important;
-    }
-
-}
 #footer1Wrapper{
     width: 100%;
     background-color: #f4f4f6 !important;
