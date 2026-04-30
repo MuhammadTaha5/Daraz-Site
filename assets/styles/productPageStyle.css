@@ -1192,3 +1192,20 @@ h1#productName {
     width: 15px;
     height: 16px;
 }
+
+.searchInput span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 225, 210);
+    width: 45px;
+    height: 45px;
+    display: inline-block;
+    color: #f85606;
+    font-size: 16px;
+    padding: 10px 11px;
+}
+#searchIcon{
+    width: 22px;
+    height: 22px;
+}
