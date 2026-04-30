@@ -1209,3 +1209,8 @@ h1#productName {
     width: 22px;
     height: 22px;
 }
+
+#iconPin{
+    position: relative;
+    top: -4px;
+}
