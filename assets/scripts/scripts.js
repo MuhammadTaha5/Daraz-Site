@@ -304,8 +304,8 @@ Promise.all([
 
     // Load remaining external scripts sequentially AFTER the DOM is ready
     return loadScriptsSequentially([
-      "scripts/loginSignup.js",
-      "scripts/messageDaraz.js",
+      "assets/scripts/loginSignup.js",
+      "assets/scripts/messageDaraz.js",
     ]);
   })
   .catch((err) => console.error("Initialisation error:", err));

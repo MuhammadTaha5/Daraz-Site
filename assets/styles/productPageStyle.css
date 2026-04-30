@@ -142,7 +142,7 @@ span.categories i{
     position: relative;
     z-index: 2;
     flex-wrap: wrap;
-    
+    justify-content: start;
     background-color: white;
 }
 .mainImg{
@@ -441,7 +441,7 @@ h1#productName {
 }
 .productDetails{
     width: 100%;
-    justify-content: center;
+    justify-content: start;
     
     
 }

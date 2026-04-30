@@ -56,7 +56,7 @@ header#mainHeader nav {
     max-width: 1188px;
     margin: auto;
     display: flex;
-    align-items: center;
+    align-items: end;
     padding-top: 2px;
     padding-bottom: 2px;
 }
@@ -286,7 +286,9 @@ button.languageChange {
 }
 
 .logoSide .searchInput input {
-    border-radius: 2px;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+
     font-size: 14px;
     color: #212121;
     font-family: "roboto-regular";
@@ -365,7 +367,7 @@ button.languageChange {
 .cardFsContent .cards {
     padding: 4px 4px;
     flex-wrap: wrap;
-    gap: 4px;
+    justify-content: space-between;
 }
 
 .cardFsContent .cards .card-inner {
@@ -1447,7 +1449,7 @@ label[for="privacyPolicyCheck"] a{
     margin-top: 36px !important;
     display: flex;
     width: 100%;
-    gap: 6px;
+    gap: 8px;
 }
 
 .phoneSectionLogin div:nth-child(1),
@@ -1553,7 +1555,7 @@ div#dontHaveAccount, #signupModel div#dontHaveAccount {
     height: 48px;
     width: 82px;
     font-family: "notoSans-Medium" !important;
-    color: rgb(46, 51, 70);
+    color: rgb(46, 51, 70) !important;
 
 
 }
@@ -1592,8 +1594,12 @@ div#dontHaveAccount, #signupModel div#dontHaveAccount {
 
 
 }
-#signUpPhoneInput{
+#signUpPhoneInput, #signUpPhoneInput::placeholder{
     outline: none !important;
+    padding: 0px !important;
+    font-size: 14px;
+    font-family: "roboto-regular";
+    
 }
 form#loginwithPhone {
     display: none;
@@ -2039,7 +2045,7 @@ form#loginwithPhone {
 .footer-first,
 .footerThird {
 
-    padding: 20px 0px 25px clamp(0px, calc(8px - 1vw), 8px);
+    padding: 20px 0px 25px clamp(0px, calc(12px - 1vw), 12px);
     max-width: 1180px;
     margin: auto;
     width: 100% !important;
@@ -2213,6 +2219,9 @@ body {
 .offcanvas-body{
     background-color: #f36f36;
 }
+.offcanvas{
+    background-color: #f36f36 !important;
+}
 .menu-section{
     width: 100% !important;
     padding: 0 10px !important;
@@ -2250,5 +2259,8 @@ body {
 @media (max-width: 1024px) { 
 .logoSide .searchInput input{
     width: 80%;
+}
+.logoImg{
+    margin-bottom: 6px;
 }
 }
