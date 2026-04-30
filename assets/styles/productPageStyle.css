@@ -142,7 +142,7 @@ span.categories i{
     position: relative;
     z-index: 2;
     flex-wrap: wrap;
-    justify-content: start;
+    justify-content: center;
     background-color: white;
 }
 .mainImg{
@@ -1012,7 +1012,7 @@ h1#productName {
 }
 .alsoLikeCategory{
     display: flex;
-    gap: 2px;
+
 }
 .alsoLikeSection{
     max-width: 1188px;

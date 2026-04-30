@@ -367,7 +367,8 @@ button.languageChange {
 .cardFsContent .cards {
     padding: 4px 4px;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
+    
 }
 
 .cardFsContent .cards .card-inner {
@@ -1546,6 +1547,7 @@ div#dontHaveAccount, #signupModel div#dontHaveAccount {
     position: relative;
     left: 12px;
     bottom: 2px;
+    font-family: "euclid-Circular-A" !important;
 
 }
 
@@ -1555,7 +1557,7 @@ div#dontHaveAccount, #signupModel div#dontHaveAccount {
     height: 48px;
     width: 82px;
     font-family: "notoSans-Medium" !important;
-    color: rgb(46, 51, 70) !important;
+    color: #000000 !important;
 
 
 }
@@ -1563,14 +1565,18 @@ div#dontHaveAccount, #signupModel div#dontHaveAccount {
 #countryCodeInput span:nth-child(1) {
     font-size: 10px;
     position: relative;
-    top: 1px;
-    left: 3px;
-    color: rgb(46, 51, 70);
+    top: 3px;
+    left: 1px;
+    color: #000000;
 
+}
+#countryCodeInput span:nth-child(2){
+    top: 3px;
 }
 
 #phoneNumber, #signUpPhoneInput {
     width: 100%;
+    padding: 0px;
 }
 
 .phoneInput {
@@ -1594,7 +1600,7 @@ div#dontHaveAccount, #signupModel div#dontHaveAccount {
 
 
 }
-#signUpPhoneInput, #signUpPhoneInput::placeholder{
+#signUpPhoneInput, #signUpPhoneInput::placeholder, #phoneInput, #phoneInput::placeholder{
     outline: none !important;
     padding: 0px !important;
     font-size: 14px;
@@ -2066,7 +2072,7 @@ form#loginwithPhone {
 
 .footer-second,
 .forth-footer {
-    padding: 20px 0 25px clamp(8px, 2vw, 42px);
+    padding: 20px 0 25px clamp(16px, 3vw, 42px);
 }
 
 .footer-second {
@@ -2175,7 +2181,7 @@ form#loginwithPhone {
 
 .customerCare li,
 .darazCare li {
-    width: min(297px, 50vw) !important;
+    width: min(297px, 40vw) !important;
 }
 
 .cart-icon img {
@@ -2263,4 +2269,8 @@ body {
 .logoImg{
     margin-bottom: 6px;
 }
+}
+#countryCodeInput span{
+    position: relative;
+    left: -2px;
 }
