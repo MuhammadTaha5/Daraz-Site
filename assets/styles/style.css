@@ -506,7 +506,11 @@ button.languageChange {
 .cardDetail .itemPrice p,
 .cardDetail .itemPrice span {
     font-size: 18px;
-    font-family: "notoSans-Regular";
+    font-family: "euclid-Circular-A";
+    
+}
+.cardDetail .itemPrice span{
+    letter-spacing: -0.56px;
 }
 
 
@@ -618,6 +622,7 @@ a#loadProductsButton {
     padding: 10px 20px;
     font-size: 14px;
     text-decoration: none;
+    text-transform: uppercase;
 }
 
 
