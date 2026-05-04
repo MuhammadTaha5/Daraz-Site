@@ -19,7 +19,7 @@ export function renderFlashSale(flashProducts) {
             <div class="itemPriceDetail">
               <span>
                 <span class="currency">RS</span>
-                <span class="actualPrice">${product.actualPrice}</span>
+                <span class="actualPrice">${product.actualPrice ?? 10000}</span>
               </span>
               <span class="itemDiscount">${product.discount}</span>
             </div>
