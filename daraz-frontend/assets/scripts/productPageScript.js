@@ -4,12 +4,11 @@ const productId = params.get("id");
 
 
 // Fetch JSON file
-fetch("assets/data/products.json")
+fetch(`http://localhost:5000/api/products/${productId}`)
   .then(res => res.json())
   .then(data => {
 
-    // Find product by ID
-    const product = data.find(item => item.id == productId);
+    product = data;
 
     if (!product) {
       console.error("Product not found");

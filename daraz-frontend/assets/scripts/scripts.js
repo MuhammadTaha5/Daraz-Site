@@ -37,7 +37,7 @@ let products = [];
 const displayProducts = document.getElementById("storeProducts");
 
 async function loadProducts() {
-  const res = await fetch("assets/data/products.json");
+  const res = await fetch("http://localhost:5000/api/products/");
   const data = await res.json();
   return data;
 }
@@ -54,7 +54,7 @@ async function initProducts() {
     displayProducts.innerHTML += `
       <div class="col me-1">
         <div class="card">
-          <a href="productPage.html?id=${product.id}" style="color:inherit;text-decoration:none;">
+          <a href="productPage.html?id=${product['_id']}" style="color:inherit;text-decoration:none;">
             <div class="img">
               <img src="assets/products/${product.link}" alt="${product.title}">
             </div>
@@ -160,26 +160,27 @@ async function loadFlashSaleProducts() {
   if (!container) return; // not on a page with flash sale
 
   try {
-    const response = await fetch("assets/data/flashSaleItems.json");
+    const response = await fetch("http://localhost:5000/api/products/flash-sale");
     const flashProducts = await response.json();
+    console.log(flashProducts)
 
     container.innerHTML = flashProducts
       .map(
         (product) => `
       <div class="card">
-        <a href="productPage.html?id=${product.id}" class="card-inner">
+        <a href="productPage.html?id=${product['_id']}" class="card-inner">
           <div class="img">
-            <img src="${product.img}" alt="${product.title}">
+            <img src="assets/products/${product.link}" alt="${product.title}">
           </div>
           <div class="cardDetail">
             <p class="product-title">${product.title}</p>
             <div class="itemPrice">
-              <p>Rs.<span>${product.price.toLocaleString()}</span></p>
+              <p>Rs.<span>${product.price}</span></p>
             </div>
             <div class="itemPriceDetail">
               <span>
                 <span class="currency">RS</span>
-                <span class="actualPrice">${product.actualPrice.toLocaleString()}</span>
+                <span class="actualPrice">${product.actualPrice}</span>
               </span>
               <span class="itemDiscount">${product.discount}</span>
             </div>
@@ -200,7 +201,7 @@ async function loadCategories() {
   if (!categoryList) return; // not on a page with categories
 
   try {
-    const response = await fetch("assets/data/categories.json");
+    const response = await fetch("http://localhost:5000/api/categories/");
     const categories = await response.json();
 
     categoryList.innerHTML = categories

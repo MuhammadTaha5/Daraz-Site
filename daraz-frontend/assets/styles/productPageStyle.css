@@ -975,6 +975,7 @@ h1#productName {
   height: 400px;
   position: absolute;
   visibility: hidden;
+  z-index: 1000;
 
 }
 

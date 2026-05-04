@@ -11,22 +11,22 @@ input::-webkit-inner-spin-button {
 
 @font-face {
     font-family: "euclid-Circular-A";
-    src: url(/assets/fonts/Euclid\ Circular\ A\ Regular.ttf);
+    src: url(/daraz-frontend/assets/fonts/Euclid\ Circular\ A\ Regular.ttf);
 }
 
 @font-face {
     font-family: "notoSans-Regular";
-    src: url(/assets/fonts/NotoSans-Regular.ttf);
+    src: url(/daraz-frontend/assets/fonts/NotoSans-Regular.ttf);
 }
 
 @font-face {
     font-family: "notoSans-Medium";
-    src: url(/assets/fonts/Roboto-Medium.ttf);
+    src: url(/daraz-frontend/assets/fonts/NotoSans-Regular.ttf);
 }
 
 @font-face {
     font-family: "roboto-regular";
-    src: url(/assets/fonts/Roboto-Regular.ttf);
+    src: url(/daraz-frontend/assets/fonts/Roboto-Regular.ttf);
 }
 
 body,
