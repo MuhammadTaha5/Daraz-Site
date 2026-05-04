@@ -1,4 +1,9 @@
-
+import { getProducts } from "./services/products.js";
+import { getCategories } from "./services/categories.js";
+import { getFlashSaleProducts } from "./services/flashSale.js"
+import { renderProducts } from "./renderers/products.js";
+import { renderCategories } from "./renderers/categories.js";
+import { renderFlashSale } from "./renderers/flashSale.js";
 /** Inject an HTML component into a selector. */
 function loadComponent(selector, url) {
   return fetch(url)
@@ -31,55 +36,55 @@ function loadScriptsSequentially(scripts) {
   );
 }
 
-/* ─── 2. PRODUCTS (index page) ───────────────────────────── */
+// /* ─── 2. PRODUCTS (index page) ───────────────────────────── */
 
-let products = [];
-const displayProducts = document.getElementById("storeProducts");
+// let products = [];
+// const displayProducts = document.getElementById("storeProducts");
 
-async function loadProducts() {
-  const res = await fetch("http://localhost:5000/api/products/");
-  const data = await res.json();
-  return data;
-}
+// async function loadProducts() {
+//   const res = await fetch("http://localhost:5000/api/products/");
+//   const data = await res.json();
+//   return data;
+// }
 
-async function initProducts() {
-  if (!displayProducts) return; // not on the products page
+// async function initProducts() {
+//   if (!displayProducts) return; // not on the products page
 
-  document.title =
-    "Online Shopping in Pakistan: Fashion, Electronics & Groceries";
+//   document.title =
+//     "Online Shopping in Pakistan: Fashion, Electronics & Groceries";
 
-  products = await loadProducts();
+//   products = await loadProducts();
 
-  products.forEach((product) => {
-    displayProducts.innerHTML += `
-      <div class="col me-1">
-        <div class="card">
-          <a href="productPage.html?id=${product['_id']}" style="color:inherit;text-decoration:none;">
-            <div class="img">
-              <img src="assets/products/${product.link}" alt="${product.title}">
-            </div>
-            <div class="cardDetail">
-              <p>${product.title}</p>
-              <div class="itemPrice" style="display:flex;gap:4px;">
-                <p>RS.${product.price}</p>
-                <span class="itemDiscount" style="color:grey!important;position:relative;top:2px;">${product.discount}</span>
-              </div>
-              <div class="productRating">
-                <span>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                </span>
-                <span class="comments">${product.comments}</span>
-              </div>
-            </div>
-          </a>
-        </div>
-      </div>`;
-  });
-}
+//   products.forEach((product) => {
+//     displayProducts.innerHTML += `
+//       <div class="col me-1">
+//         <div class="card">
+//           <a href="productPage.html?id=${product['_id']}" style="color:inherit;text-decoration:none;">
+//             <div class="img">
+//               <img src="assets/products/${product.link}" alt="${product.title}">
+//             </div>
+//             <div class="cardDetail">
+//               <p>${product.title}</p>
+//               <div class="itemPrice" style="display:flex;gap:4px;">
+//                 <p>RS.${product.price}</p>
+//                 <span class="itemDiscount" style="color:grey!important;position:relative;top:2px;">${product.discount}</span>
+//               </div>
+//               <div class="productRating">
+//                 <span>
+//                   <i class="fa-solid fa-star"></i>
+//                   <i class="fa-solid fa-star"></i>
+//                   <i class="fa-solid fa-star"></i>
+//                   <i class="fa-solid fa-star"></i>
+//                   <i class="fa-solid fa-star"></i>
+//                 </span>
+//                 <span class="comments">${product.comments}</span>
+//               </div>
+//             </div>
+//           </a>
+//         </div>
+//       </div>`;
+//   });
+// }
 
 /* ─── 3. LOAD MORE BUTTON ────────────────────────────────── */
 
@@ -155,72 +160,72 @@ function initFlashSaleLinks() {
   });
 }
 
-async function loadFlashSaleProducts() {
-  const container = document.getElementById("product-container");
-  if (!container) return; // not on a page with flash sale
+// async function loadFlashSaleProducts() {
+//   const container = document.getElementById("product-container");
+//   if (!container) return; // not on a page with flash sale
 
-  try {
-    const response = await fetch("http://localhost:5000/api/products/flash-sale");
-    const flashProducts = await response.json();
-    console.log(flashProducts)
+//   try {
+//     const response = await fetch("http://localhost:5000/api/products/flash-sale");
+//     const flashProducts = await response.json();
+//     console.log(flashProducts)
 
-    container.innerHTML = flashProducts
-      .map(
-        (product) => `
-      <div class="card">
-        <a href="productPage.html?id=${product['_id']}" class="card-inner">
-          <div class="img">
-            <img src="assets/products/${product.link}" alt="${product.title}">
-          </div>
-          <div class="cardDetail">
-            <p class="product-title">${product.title}</p>
-            <div class="itemPrice">
-              <p>Rs.<span>${product.price}</span></p>
-            </div>
-            <div class="itemPriceDetail">
-              <span>
-                <span class="currency">RS</span>
-                <span class="actualPrice">${product.actualPrice}</span>
-              </span>
-              <span class="itemDiscount">${product.discount}</span>
-            </div>
-          </div>
-        </a>
-      </div>`
-      )
-      .join("");
-  } catch (error) {
-    console.error("Error loading flash sale products:", error);
-  }
-}
+//     container.innerHTML = flashProducts
+//       .map(
+//         (product) => `
+//       <div class="card">
+//         <a href="productPage.html?id=${product['_id']}" class="card-inner">
+//           <div class="img">
+//             <img src="assets/products/${product.link}" alt="${product.title}">
+//           </div>
+//           <div class="cardDetail">
+//             <p class="product-title">${product.title}</p>
+//             <div class="itemPrice">
+//               <p>Rs.<span>${product.price}</span></p>
+//             </div>
+//             <div class="itemPriceDetail">
+//               <span>
+//                 <span class="currency">RS</span>
+//                 <span class="actualPrice">${product.actualPrice}</span>
+//               </span>
+//               <span class="itemDiscount">${product.discount}</span>
+//             </div>
+//           </div>
+//         </a>
+//       </div>`
+//       )
+//       .join("");
+//   } catch (error) {
+//     console.error("Error loading flash sale products:", error);
+//   }
+// }
 
 /* ─── 5. CATEGORIES ──────────────────────────────────────── */
 
-async function loadCategories() {
-  const categoryList = document.getElementById("category-list");
-  if (!categoryList) return; // not on a page with categories
+// async function loadCategories() {
+//   const categoryList = document.getElementById("category-list");
+//   if (!categoryList) return; // not on a page with categories
 
-  try {
-    const response = await fetch("http://localhost:5000/api/categories/");
-    const categories = await response.json();
+//   try {
+//     const response = await fetch("http://localhost:5000/api/categories/");
+//     const categories = await response.json();
 
-    categoryList.innerHTML = categories
-      .map(
-        (cat) => `
-      <li class="col p-0">
-        <a href="#" class="categories">
-          <div class="categoryImg">
-            <img src="${cat.img}" alt="${cat.name}">
-          </div>
-          <div class="categoryDetail">${cat.name}</div>
-        </a>
-      </li>`
-      )
-      .join("");
-  } catch (error) {
-    console.error("Error loading categories:", error);
-  }
-}
+//     categoryList.innerHTML = categories
+//       .map(
+//         (cat) => `
+//       <li class="col p-0">
+//         <a href="#" class="categories">
+//           <div class="categoryImg">
+//             <img src="${cat.img}" alt="${cat.name}">
+//           </div>
+//           <div class="categoryDetail">${cat.name}</div>
+//         </a>
+//       </li>`
+//       )
+//       .join("");
+//   } catch (error) {
+//     console.error("Error loading categories:", error);
+//   }
+// }
 
 /* ─── 6. SCROLL & NAV BEHAVIOURS ────────────────────────── */
 
@@ -274,6 +279,16 @@ function getPosition(pos) {
   const region = navigatorMain.querySelector(`#${pos}`);
   console.log(region);
 }
+async function init() {
+  const products = await getProducts();
+  renderProducts(products);
+
+  const categories = await getCategories();
+  renderCategories(categories);
+
+  const flashSale = await getFlashSaleProducts();
+  renderFlashSale(flashSale);
+}
 
 /* ─── 8. BOOTSTRAP — load components, then run everything ── */
 
@@ -295,9 +310,11 @@ Promise.all([
 
     // Async initialisers — run in parallel; each guards its own container
     return Promise.all([
-      initProducts(),
-      loadFlashSaleProducts(),
-      loadCategories(),
+      // initProducts(),
+
+      // loadFlashSaleProducts(),
+      // loadCategories(),
+      init()
     ]);
   })
   .then(() => {
