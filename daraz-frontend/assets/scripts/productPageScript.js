@@ -55,7 +55,8 @@ let add = document.getElementById("add")
 
 add.addEventListener("click", () => {
   if(productQuantity.value < 10){
-    valueQuantity = parseInt(productQuantity.value) + 1
+    
+    let valueQuantity = parseInt(productQuantity.value) + 1
   productQuantity.value = valueQuantity;
   }
   
@@ -64,7 +65,7 @@ add.addEventListener("click", () => {
 minus.addEventListener("click", () => {
 
   if (productQuantity.value > 1) {
-    valueQuantity = parseInt(productQuantity.value) - 1
+    let valueQuantity = parseInt(productQuantity.value) - 1
     productQuantity.value = valueQuantity;
 
   }
