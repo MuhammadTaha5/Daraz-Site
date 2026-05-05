@@ -5,9 +5,12 @@ const {
   getProducts,
   getFlashSaleProducts,
   getProductById,
+  loadMoreProducts
 } = require("../controllers/productController");
 
 router.get("/", getProducts);
+
+router.get("/loadProducts", loadMoreProducts);
 
 router.get("/flash-sale", getFlashSaleProducts);
 

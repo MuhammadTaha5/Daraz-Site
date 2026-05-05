@@ -18,7 +18,17 @@ exports.getProducts = async (req, res) => {
     res.status(500).json({ message: error.message });
   }
 };
+exports.loadMoreProducts = async (req, res) => {
+  try {
+    const products = await Product.aggregate([
+      { $sample: { size: 5 } }
+    ]);
+    res.json(products);
 
+  } catch (error) {
+    res.status(500).json({ message: error.message });
+  }
+}
 exports.getFlashSaleProducts = async (req, res) => {
   try {
     const products = await Product.find({ isFlashSale: true });
