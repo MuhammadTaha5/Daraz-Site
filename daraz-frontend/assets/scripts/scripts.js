@@ -130,7 +130,7 @@ function initScrollBehaviours() {
   });
 }
 
-/* ─── 7. NAVIGATOR HELPER ────────────────────────────────── */
+
 
 function getPosition(pos) {
   const navigatorMain = document.getElementsByClassName("navigatorMain")[0];

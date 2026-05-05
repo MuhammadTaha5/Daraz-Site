@@ -1,4 +1,5 @@
-const BASE_URL = "http://localhost:5000/api";
+import {BASE_URL} from "../../config/index.js"
+
 
 // Default headers
 const defaultHeaders = {
