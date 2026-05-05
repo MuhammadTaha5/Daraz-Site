@@ -169,10 +169,7 @@ Promise.all([
 
     // Async initialisers — run in parallel; each guards its own container
     return Promise.all([
-      // initProducts(),
 
-      // loadFlashSaleProducts(),
-      // loadCategories(),
       init()
     ]);
   })

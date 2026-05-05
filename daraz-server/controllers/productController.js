@@ -1,7 +1,5 @@
 const Product = require("../models/product");
 
-
-// ✅ Get all products
 exports.getProducts = async (req, res) => {
   try {
     const { category, keyword } = req.query;
@@ -21,8 +19,6 @@ exports.getProducts = async (req, res) => {
   }
 };
 
-
-// 🔥 Flash Sale
 exports.getFlashSaleProducts = async (req, res) => {
   try {
     const products = await Product.find({ isFlashSale: true });
@@ -32,8 +28,6 @@ exports.getFlashSaleProducts = async (req, res) => {
   }
 };
 
-
-// 🔍 Single Product
 exports.getProductById = async (req, res) => {
   try {
     const product = await Product.findById(req.params.id).populate("category");

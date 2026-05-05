@@ -11,9 +11,6 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// serve images
-app.use("/uploads", express.static("src/uploads"));
-
 // routes
 app.use("/api/products", require("./routes/productRoutes"));
 app.use("/api/categories", require("./routes/categoryRoutes"));

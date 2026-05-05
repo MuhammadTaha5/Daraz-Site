@@ -1,6 +1,5 @@
 import {BASE_URL} from "../../config/index.js"
 
-
 // Default headers
 const defaultHeaders = {
   "Content-Type": "application/json",

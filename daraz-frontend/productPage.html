@@ -1418,6 +1418,7 @@
       scripts.forEach(src => {
         const tag = document.createElement('script');
         tag.src = src;
+         tag.type = "module";  
         document.body.appendChild(tag);
       });
     });
