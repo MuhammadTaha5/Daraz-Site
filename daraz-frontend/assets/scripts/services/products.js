@@ -7,3 +7,6 @@ export function getProducts() {
 export function getProductById(id) {
   return apiClient.get(`/products/${id}`);
 }
+export function loadMoreProductsService(){
+  return apiClient.get(`/products/loadProducts`);
+}

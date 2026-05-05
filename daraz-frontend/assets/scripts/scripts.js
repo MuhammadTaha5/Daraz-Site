@@ -2,8 +2,10 @@ import { getProducts } from "./services/products.js";
 import { getCategories } from "./services/categories.js";
 import { getFlashSaleProducts } from "./services/flashSale.js"
 import { renderProducts } from "./renderers/products.js";
+import { loadMoreProductsService } from "./services/products.js";
 import { renderCategories } from "./renderers/categories.js";
 import { renderFlashSale } from "./renderers/flashSale.js";
+import { renderMoreProducts } from "./renderers/renderMoreProducts.js";
 
 
 function loadComponent(selector, url) {
@@ -39,52 +41,39 @@ function loadScriptsSequentially(scripts) {
 
 /* ─── 3. LOAD MORE BUTTON ────────────────────────────────── */
 
-function initLoadMoreButton() {
+async function initLoadMoreButton() {
   const loadProductsButton = document.getElementById("loadProductsButton");
   if (!loadProductsButton) return;
 
-  loadProductsButton.addEventListener("click", (e) => {
+  const text = loadProductsButton.querySelector(".btn-text");
+  const loader = document.getElementById("darazLoader");
+  const loadingProductBox = document.getElementById("loadingProducts");
+  
+
+  loadProductsButton.addEventListener("click", async (e) => {
     e.preventDefault();
 
-    fetch("assets/data/products.json")
-      .then((res) => res.json())
-      .then((addProducts) => {
-        for (let i = 0; i <= 5; i++) {
-          if (!addProducts[i]) break; // guard against short arrays
-          displayProducts.innerHTML += `
-            <div class="col m-1">
-              <div class="card">
-                <a href="productPage.html?id=${addProducts[i].id}" style="color:inherit;text-decoration:none;">
-                  <div class="img">
-                    <img src="assets/products/${addProducts[i].link}" alt="${addProducts[i].title}">
-                  </div>
-                  <div class="cardDetail">
-                    <p>${addProducts[i].title}</p>
-                    <div class="itemPrice" style="display:flex;gap:4px;">
-                      <p>RS.${addProducts[i].price}</p>
-                      <span class="itemDiscount" style="color:grey!important;position:relative;top:4px;">${addProducts[i].discount}</span>
-                    </div>
-                    <div class="productRating">
-                      <span>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                      </span>
-                      <span class="comments">${addProducts[i].comments}</span>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>`;
-        }
-      })
-      .catch((err) => console.error("Load more failed:", err));
+    try {
+      // show loader
+      loadProductsButton.style.pointerEvents = "none";
+      text.classList.add("d-none");
+      loadingProductBox.classList.add("d-none");
+      loader.classList.remove("d-none");
+
+      const loadProds = await loadMoreProductsService();
+      renderMoreProducts(loadProds);
+
+    } catch (error) {
+      console.error(error);
+    } finally {
+      // hide loader
+      loadProductsButton.style.pointerEvents = "auto";
+      text.classList.remove("d-none");
+      loader.classList.add("d-none");
+      loadingProductBox.classList.remove("d-none");
+    }
   });
 }
-
-
 
 /* ─── 6. SCROLL & NAV BEHAVIOURS ────────────────────────── */
 

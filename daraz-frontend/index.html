@@ -128,7 +128,9 @@
                             <input type="text" name="" id="" placeholder="Search in Daraz" class="d-md-block">
                             <span>
                                 <!-- <i class="fa-solid fa-magnifying-glass"></i> -->
-                                 <img id="searchIcon" src="https://lzd-img-global.slatic.net/g/tps/imgextra/i4/O1CN01cwHWrW1dwuHpJheqe_!!6000000003801-2-tps-72-72.png" alt="">
+                                <img id="searchIcon"
+                                    src="https://lzd-img-global.slatic.net/g/tps/imgextra/i4/O1CN01cwHWrW1dwuHpJheqe_!!6000000003801-2-tps-72-72.png"
+                                    alt="">
                             </span>
                         </div>
 
@@ -343,16 +345,19 @@
             <p class="fs-banner">
                 Just For You
             </p>
-            <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-6 justify-content-evenly g-2"
+            <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-6 justify-content-start g-2"
                 id="storeProducts">
 
 
             </div>
             <!-- load Products Button  -->
+            <div id="darazLoader" class="d-none"><img src="assets/icons/darazLoader.gif" alt=""></div>
             <div class="row" id="loadingProducts">
                 <div class="col">
+
                     <a href="#" id="loadProductsButton">
-                        Load More
+                        <span class="btn-text">Load More</span>
+
                     </a>
                 </div>
             </div>
