@@ -1,9 +1,9 @@
-import { apiGet } from "../api/client.js";
+import { apiClient } from "../api/client.js";
 
 export function getProducts() {
-  return apiGet("/products");
+  return apiClient.get("/products");
 }
 
 export function getProductById(id) {
-  return apiGet(`/products/${id}`);
+  return apiClient.get(`/products/${id}`);
 }

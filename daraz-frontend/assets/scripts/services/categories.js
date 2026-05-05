@@ -1,5 +1,5 @@
-import { apiGet } from "../api/client.js";
+import { apiClient } from "../api/client.js";
 
 export function getCategories() {
-  return apiGet("/categories");
+  return apiClient.get("/categories");
 }

@@ -1,5 +1,5 @@
-import { apiGet } from "../api/client.js";
+import { apiClient } from "../api/client.js";
 
 export function getFlashSaleProducts() {
-  return apiGet("/products/flash-sale");
+  return apiClient.get("/products/flash-sale");
 }

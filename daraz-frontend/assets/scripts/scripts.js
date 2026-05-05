@@ -4,7 +4,8 @@ import { getFlashSaleProducts } from "./services/flashSale.js"
 import { renderProducts } from "./renderers/products.js";
 import { renderCategories } from "./renderers/categories.js";
 import { renderFlashSale } from "./renderers/flashSale.js";
-/** Inject an HTML component into a selector. */
+
+
 function loadComponent(selector, url) {
   return fetch(url)
     .then((res) => {
@@ -82,34 +83,6 @@ function initLoadMoreButton() {
       .catch((err) => console.error("Load more failed:", err));
   });
 }
-
-/* ─── 4. FLASH SALE ──────────────────────────────────────── */
-
-function initFlashSaleLinks() {
-  // Guard: element may not exist on every page
-  const cardFsContent = document.getElementsByClassName("cardFsContent")[0];
-  if (!cardFsContent) return;
-
-  const cards = cardFsContent.querySelectorAll(".cards a");
-  cards.forEach((card) => {
-    const titleEl = card.querySelector("#fsProductTitle");
-    const priceEl = card.querySelector("#fsProductPrice");
-    const imgEl = card.querySelector("#fsProductImgLink");
-    if (!titleEl || !priceEl || !imgEl) return;
-
-    const fsProductTitle = titleEl.textContent;
-    const fsProductPrice = priceEl.textContent;
-    let fsProductImgLink = imgEl.getAttribute("src").replace("assets/", "");
-
-    card.setAttribute(
-      "href",
-      `productPage.html?title=${encodeURIComponent(fsProductTitle)}&price=${fsProductPrice}&img=${fsProductImgLink}`
-    );
-    card.style.color = "inherit";
-    card.style.textDecoration = "none";
-  });
-}
-
 
 
 
@@ -192,7 +165,7 @@ Promise.all([
 
     // Run inline feature initialisers (no extra script files needed)
     initScrollBehaviours();
-    initFlashSaleLinks();
+    // initFlashSaleLinks();
 
     // Async initialisers — run in parallel; each guards its own container
     return Promise.all([
