@@ -535,6 +535,7 @@ button.languageChange {
 section.categories {
     text-decoration: none;
     padding-top: 24px;
+    width: 100%;
 
 
 }
@@ -1073,12 +1074,13 @@ a#loadProductsButton {
     line-height: 2.2em;
     margin-bottom: 15px;
     font-family: "euclid-Circular-A";
+    width: 100%;
 }
 
 .footer-second .payment-methods-type {
     display: flex;
     flex-wrap: wrap;
-    width: 350px;
+    width: 300px;
     gap: 6px;
 
 }
@@ -2073,7 +2075,7 @@ form#loginwithPhone {
 
 .footer-second,
 .forth-footer {
-    width: 100%;
+    width: 100% !important; 
     margin: auto;
     
     background-color: white;
@@ -2085,7 +2087,7 @@ form#loginwithPhone {
 }
 
 .footer-second {
-    padding: 20px clamp(8px, 2vw, 0px) 25px clamp(8px, 2vw, 0px);
+    padding: 20px clamp(0px, 2vw, 0px) 25px clamp(8px, 2vw, 0px);
 }
 
 .forth-footer {
